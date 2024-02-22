@@ -1,7 +1,8 @@
 .hero {
     height: 100%;
+    margin-top: 16px;
     padding: 8px 0;
-    /* background: linear-gradient(180deg, lightblue, #e1ffea22 60%); */
+    background: linear-gradient(0deg, lightblue, white);
     display: flex;
 }
 
@@ -30,7 +31,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: lightblue; /* TODO: Color variable */
+    background: #171717;; /* TODO: Color variable */
     color: white; /* TODO: Color variable */
     font-size: 20px;
     font-weight: 500;
