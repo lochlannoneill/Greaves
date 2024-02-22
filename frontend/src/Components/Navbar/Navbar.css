@@ -32,12 +32,34 @@
     font-weight: 500;
 }
 
+@keyframes wiggleSmall {
+    0% {
+      transform: rotate(0deg);
+    }
+    5% {
+      transform: rotate(7deg);
+    }
+    10% {
+      transform: rotate(-7deg);
+    }
+    15% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
 .nav-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.nav-menu li:hover {
+    animation: 2.5s ease 0s normal forwards 1 wiggleSmall;
 }
 
 .nav-menu hr {
