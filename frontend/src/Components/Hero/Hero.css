@@ -30,6 +30,15 @@
         -webkit-text-fill-color: transparent;
 }
 
+@keyframes fadeInFast {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-latest-btn {
     display: flex;
     justify-content: center;
@@ -39,10 +48,17 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #171717;; /* TODO: Color variable */
+    background: rgb(10, 10, 10, 0.9); /* TODO: Color variable */
     color: white; /* TODO: Color variable */
+    cursor: pointer;
     font-size: 20px;
     font-weight: 500;
+    transition: 0.5s;
+    animation: 2.5s ease 0s normal forwards 1 fadeInFast;
+}
+
+.hero-latest-btn:hover {
+    background: rgb(10, 10, 10);
 }
 
 .hero-right {
