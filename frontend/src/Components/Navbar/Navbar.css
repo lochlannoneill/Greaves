@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    box-shadow: 0 1px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-logo p {
+    color: black; /* TODO - Color variables */
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: grey; /* TODO - Color variables */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 8px;
+    background: black; /* TODO - Color variables */
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-login-cart img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-login-cart .login {
+    width: 120px;
+    height: 48px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white; /* TODO - Color variables */
+    font-size: 20px;
+    font-weight: 500;
+    background: #333; /* TODO - Color variables */
+    cursor: pointer;
+}
+
+.nav-login-cart .login:hover {
+    background: black; /* TODO - Color variables */
+}
+
+.nav-cart-count {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -25px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red; /* TODO - Color variables */
+    color: white; /* TODO - Color variables */
+}
