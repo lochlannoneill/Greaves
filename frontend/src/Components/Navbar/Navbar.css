@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 32px;
-    box-shadow: 0 1px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 32px;
     color: grey; /* TODO - Color variables */
     font-size: 20px;
     font-weight: 500;
@@ -45,7 +45,7 @@
     width: 80%;
     height: 3px;
     border-radius: 8px;
-    background: black; /* TODO - Color variables */
+    background: lightblue; /* TODO - Color variables */
 }
 
 .nav-login-cart {
@@ -57,6 +57,7 @@
 .nav-login-cart img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .nav-login-cart .login {
@@ -86,6 +87,6 @@
     margin-left: -25px;
     border-radius: 11px;
     font-size: 14px;
-    background: red; /* TODO - Color variables */
+    background: lightblue; /* TODO - Color variables */
     color: white; /* TODO - Color variables */
 }
