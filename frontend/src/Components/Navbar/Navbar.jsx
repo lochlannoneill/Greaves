@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css'
-import logo from '../Assets/logo192.png'
-import icon_search from '../Assets/icon_search.png'
-import icon_user  from '../Assets/icon_user.png'
-import icon_cart from '../Assets/icon_cart.png'
+import icon_search from '../Assets/icons/search.png'
+import icon_user  from '../Assets/icons/user.png'
+import icon_heart_solid from '../Assets/icons/heart_solid.png'
+import icon_cart from '../Assets/icons/cart.png'
 
 export const Navbar = () => {
     const [menu,setMenu] = useState("shop")
@@ -24,6 +24,7 @@ export const Navbar = () => {
         <div className='nav-login-cart'>
             <img className='nav-search' src={icon_search} alt='search' />
             <Link to="/login-signup" style={{ textDecoration: 'none'}}><img className='nav-login' src={icon_user} alt='user' /></Link>
+            <Link to="/hearts" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_heart_solid} alt='heart' /></Link>
             <Link to="/cart" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_cart} alt='cart' /></Link>
             <div className='nav-cart-count'>0</div>
         </div>
