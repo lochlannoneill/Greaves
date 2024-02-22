@@ -16,10 +16,10 @@ export const Navbar = () => {
             <p>Greaves</p>
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("shop")}}><Link to="/" style={{ textDecoration: 'none'}}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("men")}}><Link to="/men" style={{ textDecoration: 'none'}}>Men</Link>{menu==="men"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("women")}}><Link to="/women" style={{ textDecoration: 'none'}}>Women</Link>{menu==="women"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("kids")}}><Link to="/kids" style={{ textDecoration: 'none'}}>Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("shop")}}><Link to="/" style={{ textDecoration: 'none', color: '#171717'}}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("men")}}><Link to="/men" style={{ textDecoration: 'none', color: '#171717'}}>Men</Link>{menu==="men"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("women")}}><Link to="/women" style={{ textDecoration: 'none', color: '#171717'}}>Women</Link>{menu==="women"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("kids")}}><Link to="/kids" style={{ textDecoration: 'none', color: '#171717'}}>Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
         </ul>
         <div className='nav-login-cart'>
             <img className='nav-search' src={icon_search} alt='search' />
