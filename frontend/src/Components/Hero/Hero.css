@@ -1,8 +1,13 @@
 .hero {
     height: 100%;
-    margin-top: 16px;
-    padding: 8px 0;
-    background: linear-gradient(0deg, lightblue, white);
+    /* margin-top: 16px; */
+    padding: 16px 0;
+    background: linear-gradient(0deg, #171717, white);
+    background-image: url("../Assets/hero_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
     display: flex;
 }
 
@@ -16,10 +21,13 @@
 }
 
 .hero-left p {
-    color: #171717; /* TODO: Color variable */
+    color: white; /* TODO: Color variable */
     font-size: 100px;
     font-weight: 700;
     float: left;
+    background: linear-gradient(45deg, white, #eeeeee);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .hero-latest-btn {

@@ -45,7 +45,7 @@
     width: 80%;
     height: 3px;
     border-radius: 8px;
-    background: lightblue; /* TODO - Color variables */
+    background: rgb(255, 145, 0); /* TODO - Color variables */
 }
 
 .nav-login-cart {
@@ -87,6 +87,6 @@
     margin-left: -25px;
     border-radius: 11px;
     font-size: 14px;
-    background: lightblue; /* TODO - Color variables */
+    background: rgb(255, 145, 0); /* TODO - Color variables */
     color: white; /* TODO - Color variables */
 }
