@@ -1,7 +1,7 @@
 .hero {
     height: 100%;
     padding: 8px 0;
-    /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */
+    /* background: linear-gradient(180deg, lightblue, #e1ffea22 60%); */
     display: flex;
 }
 
@@ -11,7 +11,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 16px; */
     line-height: 1.1;
 }
 
@@ -19,7 +18,7 @@
     color: #171717; /* TODO: Color variable */
     font-size: 100px;
     font-weight: 700;
-    /* justify-content: left; */
+    float: left;
 }
 
 .hero-latest-btn {

@@ -7,11 +7,11 @@ export const Hero = () => {
   return (
     <div className="hero">
         <div className="hero-left">
-            <div className="hero-text">
-                <p>New</p>
-                <p>collections</p>
-                <p>for everyone</p>
-            </div>
+            <p className="hero-text">
+                New<br/>
+                collections<br/>
+                for everyone<br/>
+            </p>
             <div className="hero-latest-btn">
                 <div>Latest Collection</div>
                 <img src={icon_arrow} alt="" />
