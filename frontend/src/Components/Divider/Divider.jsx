@@ -5,7 +5,7 @@ export const Divider = () => {
   return (
     <div className="divider">
       <h2>THE SPRING SALE IS HERE!</h2>
-      <p>Experience lower prices on all of our products.</p>
+      <p>Free shipping on all orders over $100. Orders placed now will ship on February 28th.</p>
     </div>
   )
 }
