@@ -30,14 +30,6 @@
         -webkit-text-fill-color: transparent;
 }
 
-/* Add a media query for smaller screen sizes */
-@media only screen and (max-width: 1250px) {
-    .hero-left p {
-        font-size: 60px;
-        padding-left: 8vw;
-    }
-}
-
 @keyframes fadeInFast {
   0% {
     opacity: 0;
@@ -86,5 +78,20 @@
 @media only screen and (max-width: 1400px) {
     .hero-right {
         display: none; /* Hide the image when screen size is smaller */
+    }
+}
+
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1250px) {
+    .hero-left p {
+        font-size: 60px;
+        padding-left: 8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-left p {
+        font-size: 48px;
+        padding-left: 8vw;
     }
 }
