@@ -5,7 +5,9 @@ import icon_heart from '../Assets/icons/heart.png'
 export const Item = (props) => {
   return (
     <div className="item">
-        <img src={props.img} alt={props.title} />
+        <div className="item-image-container">
+          <img className="item-image" src={props.img} alt={props.title} />
+        </div>
         <div className="item-description">
           <p>{props.title}</p>
 
