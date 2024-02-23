@@ -1,8 +1,9 @@
 import React from 'react'
 import './Popular.css'
 import data_product_women from '../Assets/products/product_data_popular_women.js'
+import data_product_girls from '../Assets/products/product_data_popular_girls.js'
 import data_product_men from '../Assets/products/product_data_popular_men.js'
-import data_product_kids from '../Assets/products/product_data_popular_kids.js'
+import data_product_boys from '../Assets/products/product_data_popular_boys.js'
 import { Item } from '../Item/Item'
 
 export const Popular = () => {
@@ -30,12 +31,24 @@ export const Popular = () => {
           </div>
         </div>
       </div>
-
-      <div className="popular-men">
-        <h1>Popular in Kids</h1>
+      
+      <div className="popular-girls">
+        <h1>Popular in Girls</h1>
         <div className="popular-list">
           <div className="popular-item">
-            {data_product_kids.map((item, index) => {
+            {data_product_girls.map((item, index) => {
+              return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
+            })}
+          </div>
+        </div>
+      </div>
+
+
+      <div className="popular-boys">
+        <h1>Popular in Boys</h1>
+        <div className="popular-list">
+          <div className="popular-item">
+            {data_product_boys.map((item, index) => {
               return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
             })}
           </div>
