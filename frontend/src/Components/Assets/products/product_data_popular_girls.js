@@ -1,45 +1,45 @@
 import p37_img from './product_37.png'
-import p26_img from './product_26.png'
-import p27_img from './product_27.png'
-import p28_img from './product_28.png'
-import p29_img from './product_29.png'
-import p30_img from './product_30.png'
+import p38_img from './product_38.png'
+import p39_img from './product_39.png'
+import p40_img from './product_40.png'
+import p41_img from './product_41.png'
+import p42_img from './product_42.png'
 
 let data_product = [
   {
     id:37,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+    title:"Blue Hooded Jacket",
     image:p37_img,
     price:50.00,
     price_old:80.50,
   },
-  {id:26,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
-    image:p26_img,
+  {id:38,
+    title:"Black Hooded Jacket",
+    image:p38_img,
     price:85.00,
     price_old:120.50,
   },
-  {id:27,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
-    image:p27_img,
+  {id:39,
+    title:"Yellow Cardigan",
+    image:p39_img,
     price:60.00,
     price_old:100.50,
   },
-  {id:28,
+  {id:40,
     title:"Boys Orange Colourblocked Hooded Sweatshirt",
-    image:p28_img,
+    image:p40_img,
     price:100.00,
     price_old:150.00,
   },
-  {id:29,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
-    image:p29_img,
+  {id:41,
+    title:"Blue Denim Jacket",
+    image:p41_img,
     price:115.00,
     price_old:150.00,
   },
-  {id:30,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
-    image:p30_img,
+  {id:42,
+    title:"Pink Fulffy Jacket",
+    image:p42_img,
     price:80.00,
     price_old:95.00,
   },
