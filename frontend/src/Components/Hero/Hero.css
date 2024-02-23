@@ -30,6 +30,14 @@
         -webkit-text-fill-color: transparent;
 }
 
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1250px) {
+    .hero-left p {
+        font-size: 60px;
+        padding-left: 8vw;
+    }
+}
+
 @keyframes fadeInFast {
   0% {
     opacity: 0;
@@ -72,4 +80,11 @@
     width: 800px;
     height: 100%;
     object-fit: cover;
+}
+
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1400px) {
+    .hero-right {
+        display: none; /* Hide the image when screen size is smaller */
+    }
 }
