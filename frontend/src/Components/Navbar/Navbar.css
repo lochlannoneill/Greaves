@@ -89,6 +89,10 @@
     cursor: pointer;
 }
 
+.nav-flag {
+    border-radius: 50%;
+}
+
 .nav-login-cart .login {
     width: 120px;
     height: 48px;
