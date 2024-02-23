@@ -1,8 +1,15 @@
+.navbar-parent {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
     padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-mobile {
+    display: none;
 }
 
 .nav-logo {
@@ -111,4 +118,15 @@
     font-size: 14px;
     background: rgb(255, 145, 0); /* TODO - Color variables */
     color: white; /* TODO - Color variables */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .nav-menu-large {
+        display:none;
+    }
 }
