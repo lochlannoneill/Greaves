@@ -1,0 +1,24 @@
+.new-collections {
+    gap: 10px;
+    margin: 64px 4vw;
+    text-align: center; /* Center the heading horizontally */
+}
+
+.new-collections h1 {
+    color: #171717; /* TODO: Color variables */
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.collections-parent {
+    display: flex;
+    justify-content: center; /* Center the collections horizontally */
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap; /* Prevent items from wrapping to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 2vw;
+    max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+}
