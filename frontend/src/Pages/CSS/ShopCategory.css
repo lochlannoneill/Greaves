@@ -67,6 +67,9 @@
 
 .shopcategory-loadmore {
     margin: 4vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .shopcategory-loadmore-results {
