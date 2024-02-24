@@ -1,7 +1,7 @@
 .hero {
     height: 100%;
     /* margin-top: 16px; */
-    padding: 16px 0;
+    padding: 2vh 0;
     background: linear-gradient(0deg, #171717, white);
     background-image: url("../Assets/hero_background.png");
     background-position: center;
@@ -47,7 +47,7 @@
     width: 310px;
     height: 70px;
     border-radius: 75px;
-    margin-top: 30px;
+    margin-top: 4vh;
     background: rgb(10, 10, 10, 0.9); /* TODO: Color variable */
     color: white; /* TODO: Color variable */
     cursor: pointer;
@@ -83,6 +83,10 @@
 
 /* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1250px) {
+    .hero-left {
+        flex-direction: row;
+        gap: 2vw;
+    }
     .hero-left p {
         font-size: 60px;
         padding-left: 8vw;
@@ -90,9 +94,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .hero-latest-btn {
+        margin-top: 0;
+    }
+    .hero-left {
+        flex-direction: column;
+    }
     .hero-left p {
         font-size: 48px;
-        padding-left: 8vw;
+        padding-left: 0;
     }
 
     .footer-information-child {
