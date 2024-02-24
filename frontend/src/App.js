@@ -1,4 +1,5 @@
 import './App.css';
+import Headroom from 'react-headroom';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Footer } from './Components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -13,7 +14,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Headroom>
         <Navbar/>
+        </Headroom>
         <Routes>
           {/* <Route path={["/", "/shop"]} element={<Shop />} />
           <Route path="/shop/:category" element={<ShopCategory />} />
