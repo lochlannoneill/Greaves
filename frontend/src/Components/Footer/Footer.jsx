@@ -15,15 +15,15 @@ export const Footer = () => {
         <hr/>
         <div className="footer-information">
           <div className="footer-information-child footer-left">
-              <h2>GREAVES</h2>
-              <p>This is a test.</p>
-              <p>This is a test.</p>
-              <p>This is a test.</p>
+            <h2>GREAVES</h2>
+            <p>Copyright @ 2024 - All rights reserved</p>
           </div>
           <div className="footer-information-child footer-middle">
-            <p>This is a test.</p>
-            <p>This is a test.</p>
-            <p>This is a test.</p>
+            <p>Lorem</p>
+            <p>Ipsum</p>
+            <p>Dolor</p>
+            <p>Sit</p>
+            <p>Amet</p>
           </div>
           <div className="footer-information-child footer-right">
             <h2>Show Us Your Haul</h2>
