@@ -1,32 +1,62 @@
 .popular {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    gap: 10px;
-    margin: 0 80px;
+    padding: 0 4vw;
+}
+
+.popular-category {
+    margin-top: 4vh;
 }
 
 .popular h1 {
-    margin-top: 64px;
     color: #171717; /* TODO: Color variables */
     font-size: 50px;
     font-weight: 600;
 }
 
+.popular-list-parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .popular-list {
-    /* display: flex; */
-    /* flex-direction: row; */
     overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer / Edge */
 }
 
 .popular-list::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
 }
 
-/* Optional: Hide scrollbar for other browsers */
-.popular-list {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer / Edge */
+@keyframes wiggleSmall {
+0% {
+    transform: rotate(0deg);
+}
+5% {
+    transform: rotate(7deg);
+}
+10% {
+    transform: rotate(-7deg);
+}
+15% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+
+.popular-arrow {
+    position: absolute;
+    top: 40%;
+    width: 80px; /* Adjust arrow width */
+    height: 80px; /* Adjust arrow height */
+    opacity: 0.7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    animation: wiggleSmall 4s infinite;
 }
 
 .popular hr {
