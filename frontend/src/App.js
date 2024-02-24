@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Headroom>
-        <Navbar/>
+          <Navbar/>
         </Headroom>
         <Routes>
           {/* <Route path={["/", "/shop"]} element={<Shop />} />
