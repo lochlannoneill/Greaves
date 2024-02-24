@@ -1,7 +1,7 @@
 .item {
     max-width: 320px;
     background: rgb(252, 252, 252); /* TODO: Color variable */
-    border-radius: 10px;
+    border-radius: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin-bottom: auto;
@@ -9,7 +9,7 @@
 
 .item-image {
     overflow: hidden;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 16px;
     max-width: 320px;
     /* height: 400px; */
     /* max-height: 420px; */
