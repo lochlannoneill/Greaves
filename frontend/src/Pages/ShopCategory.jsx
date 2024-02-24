@@ -12,9 +12,6 @@ export const ShopCategory = (props) => {
     <div className="shopcategory">
       {/* <img className="shopcategory-banner" src={props.banner} alt="banner"/> */}
       <div className="shopcategory-filter">
-        <div className="shopcategory-filter-button">
-          Sort by <FontAwesomeIcon icon={faChevronDown} size="2xs" />
-        </div>
         <div className="shopcategory-filter-search">
           <form className="schopcatergory-filter-search-form">
             <div className="shopcategory-filter-search-bar">
@@ -30,8 +27,11 @@ export const ShopCategory = (props) => {
             {/* <button type="shopcatergory-filter-search-button">Search</button> */}
           </form>
         </div>
+        <div className="shopcategory-filter-button">
+          Sort by <FontAwesomeIcon icon={faChevronDown} size="2xs" />
+        </div>
       </div>
-      <p className="shopcategory-query">Results for '<b>placeholder</b>'</p>
+      <p className="shopcategory-query">Results for '<b>products</b>'</p>
       <div className="shopcategory-products-parent">
         <div className="shopcategory-products">
           {products.map((item,index)=>{

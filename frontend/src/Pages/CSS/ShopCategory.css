@@ -6,7 +6,7 @@
 
 .shopcategory-filter {
     display: flex;
-    margin: 4vh 4vw;
+    margin: 4vh 8vw;
     justify-content: space-between;
     align-items: center;
     gap: 4vh;
@@ -19,8 +19,8 @@
     border-radius: 8px;
     border: 1px solid lightgrey;
     width: 100%;
-    min-width: 16vw;
-    overflow: hidden;
+    width: 32vh;
+    min-width: 20vw;
     gap: 4px;
 }
 
@@ -36,12 +36,13 @@
     outline: none;
     background: transparent;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .shopcategory-filter-button {
     text-align: center;
-    width: 12vh;
+    width: 16vw;
+    max-width: 16vh;
     padding: 10px 20px;
     color: white;
     background-color: #171717;
@@ -88,7 +89,32 @@
     cursor: pointer;
 }
 
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1250px) {
+    .shopcategory-filter-search-bar {
+        width: 32vh;
+        min-width: 32vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .shopcategory-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .shopcategory-filter-search-bar {
+        width: 80vw;
+    }
+    .shopcategory-filter-button {
+        width: 20vw;
+        min-width: 12vh;
+    }
     .shopcategory-indexSort {
         margin: 0 8vw;
     }
