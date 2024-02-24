@@ -27,7 +27,7 @@ export const Footer = () => {
           </div>
           <div className="footer-information-child footer-right">
             <h2>Show Us Your Haul</h2>
-            <p>Tag us <a href="#">@greaves</a> for a chance to be featured!</p>
+            <p>Tag us <a href="#">#greaves</a> for a chance to be featured!</p>
             <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon instagram" icon={faInstagram} /></a></span>
             <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon facebook" icon={faFacebook} /></a></span>
             <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon twitter" icon={faTwitter} /></a></span>
