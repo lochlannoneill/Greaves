@@ -1,6 +1,6 @@
 .new-collections {
-    gap: 10px;
-    margin: 64px 4vw;
+    /* gap: 10px; */
+    margin: 4vh 4vw;
     text-align: center; /* Center the heading horizontally */
 }
 
@@ -13,12 +13,19 @@
 .collections-parent {
     display: flex;
     justify-content: center; /* Center the collections horizontally */
+    padding: 2vh 0;
 }
 
 .collections {
     display: flex;
     flex-wrap: wrap; /* Prevent items from wrapping to the next line */
     justify-content: center; /* Center items horizontally */
-    gap: 2vw;
+    gap: 2vh;
     max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+}
+
+@media screen and (max-width: 768px) {
+    .new-collections h1 {
+        font-size: 32px;
+    }
 }
