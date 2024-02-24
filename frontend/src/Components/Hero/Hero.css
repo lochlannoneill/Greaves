@@ -94,4 +94,8 @@
         font-size: 48px;
         padding-left: 8vw;
     }
+
+    .footer-information-child {
+        margin-bottom: 4vh;
+    }
 }
