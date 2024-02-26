@@ -8,9 +8,6 @@
 E-commerce website using the MERN stack.
 MongoDB, Express, React, Node.js
 
-### About:
-27-11-22
+### Output (27-11-22):
 ![26-02-2024_1](https://github.com/lochlannoneill/greaves/blob/main/screenshots/26-02-2024_1.png?raw=true)  
-
-16-11-23
 ![26-02-2024_2](https://github.com/lochlannoneill/greaves/blob/main/screenshots/26-02-2024_2.png?raw=true)  
