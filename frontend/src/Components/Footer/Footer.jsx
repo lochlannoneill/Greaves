@@ -27,12 +27,12 @@ export const Footer = () => {
           </div>
           <div className="footer-information-child footer-right">
             <h2>Show Us Your Haul</h2>
-            <p>Tag us <a href="#">#greaves</a> for a chance to be featured!</p>
-            <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon instagram" icon={faInstagram} /></a></span>
-            <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon facebook" icon={faFacebook} /></a></span>
-            <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon twitter" icon={faTwitter} /></a></span>
-            <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon snapchat" icon={faSnapchat} /></a></span>
-            <span className="footer-social"><a href="#"><FontAwesomeIcon className="footer-icon tiktok" icon={faTiktok} /></a></span>
+            <p>Tag us <a href="https://greaves.store/">#greaves</a> for a chance to be featured!</p>
+            <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon instagram" icon={faInstagram} /></a></span>
+            <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon facebook" icon={faFacebook} /></a></span>
+            <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon twitter" icon={faTwitter} /></a></span>
+            <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon snapchat" icon={faSnapchat} /></a></span>
+            <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon tiktok" icon={faTiktok} /></a></span>
           </div>
         </div>
       </div>
