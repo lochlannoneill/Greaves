@@ -1,7 +1,6 @@
 .new-collections {
-    /* gap: 10px; */
     margin: 4vh 4vw;
-    text-align: center; /* Center the heading horizontally */
+    text-align: center;
 }
 
 .new-collections h1 {
@@ -12,16 +11,16 @@
 
 .collections-parent {
     display: flex;
-    justify-content: center; /* Center the collections horizontally */
+    justify-content: center;
     padding: 2vh 0;
 }
 
 .collections {
     display: flex;
-    flex-wrap: wrap; /* Prevent items from wrapping to the next line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2vh;
-    max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+    max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {

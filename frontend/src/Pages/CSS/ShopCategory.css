@@ -36,7 +36,6 @@
     outline: none;
     background: transparent;
     font-size: 16px;
-    /* font-weight: 600; */
 }
 
 .shopcategory-filter-button {
@@ -59,10 +58,10 @@
 
 .shopcategory-products {
     display: flex;
-    flex-wrap: wrap; /* Prevent items from wrapping to the next line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2vh;
-    max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+    max-width: 100%;
 }
 
 .shopcategory-loadmore {

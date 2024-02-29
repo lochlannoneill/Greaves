@@ -1,6 +1,5 @@
 .hero {
     height: 100%;
-    /* margin-top: 16px; */
     padding: 2vh 0;
     background: linear-gradient(0deg, #171717, white);
     background-image: url("../Assets/hero_background.png");
@@ -77,7 +76,7 @@
 /* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1400px) {
     .hero-right {
-        display: none; /* Hide the image when screen size is smaller */
+        display: none;
     }
 }
 

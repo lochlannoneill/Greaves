@@ -53,7 +53,7 @@
         margin: 0 auto;
     }
     .offers-right {
-        display: none; /* Hide the image when screen size is smaller */
+        display: none;
     }
 }
 
