@@ -1,11 +1,7 @@
 .offers {
-    /* width: 65%; */
-    /* height: 60vh; */
     min-height: 40vh;
     display: flex;
-    /* margin: auto; */
     padding: 0px 280px;
-    /* margin-bottom: 150px; */
     background: linear-gradient(180deg, white 0%, #171717 100%);
 }
 
@@ -16,7 +12,6 @@
     justify-content: center;
 }
 
-We really appreci
 .offers-left h1 {
     color: #171717;
     font-size: 80px;
@@ -56,7 +51,6 @@ We really appreci
     }
     .offers-left {
         margin: 0 auto;
-        /* margin: 0 auto; */
     }
     .offers-right {
         display: none; /* Hide the image when screen size is smaller */
@@ -69,6 +63,5 @@ We really appreci
     }
     .offers-left {
         margin: 0 auto;
-        /* margin: 0 auto; */
     }
 }
