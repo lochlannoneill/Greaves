@@ -50,14 +50,21 @@
 .popular-arrow {
     position: absolute;
     top: 40%;
-    width: 80px; /* Adjust arrow width */
-    height: 80px; /* Adjust arrow height */
+    width: 80px;
+    height: 80px;
     opacity: 0.7;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    /* z-index: 1; */
     animation: wiggleSmall 4s infinite;
+}
+
+.popular-arrow-left {
+    left: 0;
+}
+
+.popular-arrow-right {
+    right: 0;
 }
 
 .popular hr {
