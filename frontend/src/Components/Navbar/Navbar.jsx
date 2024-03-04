@@ -25,7 +25,7 @@ export const Navbar = () => {
             </ul>
             <div className='nav-login-cart'>
                 <img className='nav-flag' src={flag_ireland} alt='ireland' />
-                <Link to="/login-signup" style={{ textDecoration: 'none'}}><img className='nav-login' src={icon_user} alt='user' /></Link>
+                <Link to="/signup" style={{ textDecoration: 'none'}}><img className='nav-login' src={icon_user} alt='user' /></Link>
                 <Link to="/hearts" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_heart_solid} alt='heart' /></Link>
                 <Link to="/cart" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_cart} alt='cart' /></Link>
                 <div className='nav-cart-count'>0</div>

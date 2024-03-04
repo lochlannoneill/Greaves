@@ -26,7 +26,7 @@ function App() {
           <Route path="/shop/:category" element={<ShopCategory />} />
           <Route path="/shop/:category/:product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/login-signup" element={<LoginSignup />} /> */}
+          <Route path="/signup" element={<LoginSignup />} /> */}
           <Route path="/" element={<Shop />} />
           <Route path="/women" element={<ShopCategory banner={banner_women} category="women"/>} />
           <Route path="/men" element={<ShopCategory banner={banner_men} category="men"/>} />
@@ -37,7 +37,7 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/hearts" element={<Hearts />} />
-          <Route path="/login-signup" element={<LoginSignup />} />
+          <Route path="/signup" element={<LoginSignup />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

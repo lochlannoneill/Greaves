@@ -16,7 +16,7 @@ export const LoginSignup = () => {
             <input className="checkbox" type="checkbox" name='' id=''/>
             <p>I agree to the <span>Terms of Service</span> and <span>Privacy Policy</span></p>
           </div>
-          <div className="login-signup-buttons">
+          <div className="signup-buttons">
             <button>Sign Up</button>
             <button>Continue</button>
           </div>

@@ -32,7 +32,7 @@
     border: 1px solid #171717;
 }
 
-.login-signup-buttons {
+.signup-buttons {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -92,7 +92,7 @@
         width: 70vw;
     }
 
-    .login-signup-buttons {
+    .signup-buttons {
         flex-direction: column;
         width: 70vw;
     }
