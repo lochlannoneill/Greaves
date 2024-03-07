@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Item.css'
 import icon_heart from '../Assets/icons/heart.png'
 
 export const Item = (props) => {
   return (
     <div className="item">
-        <div className="item-image-container">
-          <img className="item-image" src={props.img} alt={props.title} />
-        </div>
+        <Link to={`/product/${props.id}`}>
+          <div className="item-image-container">
+            <img className="item-image" src={props.img} alt={props.title} />
+          </div>
+        </Link>
         <div className="item-description">
           <p>{props.title}</p>
 
