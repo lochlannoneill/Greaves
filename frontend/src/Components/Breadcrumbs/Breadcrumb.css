@@ -1,0 +1,15 @@
+.breadcrumb {
+    display: flex;
+    margin: 4vh 12vw;
+    align-items: center;
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumb {
+        display: none;
+    }
+}
