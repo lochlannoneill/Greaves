@@ -53,7 +53,7 @@ let products = [
     rating: 3,
     reviews: 117,
     price: 50.0,
-    old_price: 80.5,
+    price_old: 80.5,
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ let products = [
     rating: 3,
     reviews: 117,
     price: 85.0,
-    old_price: 120.5,
+    price_old: 120.5,
   },
   {
     id: 3,
