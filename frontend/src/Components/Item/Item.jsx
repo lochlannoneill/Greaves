@@ -7,7 +7,7 @@ import './Item.css'
 export const Item = (props) => {
   return (
     <div className="item">
-        <Link to={`/product/${props.id}`}>
+        <Link to={`/products/${props.id}`}>
           <div className="item-image-container">
             <img className="item-image" src={props.img} alt={props.title} />
           </div>
