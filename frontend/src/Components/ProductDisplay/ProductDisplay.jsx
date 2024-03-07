@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as faStar_solid } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStar_solid, faCartShopping as faCartShopping_solid, faHeart as faHeart_solid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import './ProductDisplay.css'
 
@@ -44,8 +44,8 @@ export const ProductDisplay = (props) => {
                 </div>
             </div>
             <div className="productdisplay-right-category-buttons">
-                <button>Add to Cart</button>
-                <button>Add to Favourites</button>
+                <button>Add to Cart<FontAwesomeIcon icon={faCartShopping_solid} /></button>
+                <button>Add to Favourites<FontAwesomeIcon icon={faHeart_solid} /></button>
             </div>
             <div className="productdisplay-right-category"><span>Categories: </span>{product.categories}</div>
             <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags}</div>
