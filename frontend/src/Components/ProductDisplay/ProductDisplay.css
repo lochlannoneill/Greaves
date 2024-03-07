@@ -20,6 +20,12 @@
     object-fit: cover;
 }
 
+.productdisplay-img-list img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+    transition: 0.25s;
+}
+
 .productdisplay-main-img {
     width: 20vw;
     height: 24vw;
@@ -135,9 +141,9 @@
 }
 
 .productdisplay-right button:hover {
-    background-color: darkgrey;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
-    transform: scale(1.025); /* Scale the button by 5% */
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
     transition: 0.25s;
 }
 
@@ -146,7 +152,7 @@
 }
 
 .productdisplay-right-category-buttons-cart:hover {
-    background-color: red !important;
+    background-color: rgb(255, 145, 0) !important;
 }
 
 .productdisplay-right-filters{
