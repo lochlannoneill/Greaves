@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart as icon_favourite_empty } from '@fortawesome/free-regular-svg-icons';
+// import { faHeart as faStar_full } from '@fortawesome/free-regular-svg-icons';
 import './Item.css'
-import icon_favourite from '../Assets/icons/favourite.png'
 
 export const Item = (props) => {
   return (
@@ -23,7 +25,7 @@ export const Item = (props) => {
                   €{props.price_old}
                 </div>
             </div>
-            <img className='item-favourite' src={icon_favourite} alt='favourite' /> {/* TODO - props.favourite ?? */}
+            <FontAwesomeIcon className="item-favourite" icon={icon_favourite_empty} />
           </div>
           
         </div>

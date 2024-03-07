@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart as icon_favourite_solid } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css'
 import flag_ireland from '../Assets/flags/ireland.png'
 import icon_user  from '../Assets/icons/user.png'
-import icon_favourite_solid from '../Assets/icons/favourite_solid.png'
 import icon_cart from '../Assets/icons/cart.png'
 
 export const Navbar = () => {
@@ -26,7 +27,7 @@ export const Navbar = () => {
             <div className='nav-login-cart'>
                 <img className='nav-flag' src={flag_ireland} alt='ireland' />
                 <Link to="/signup" style={{ textDecoration: 'none'}}><img className='nav-login' src={icon_user} alt='user' /></Link>
-                <Link to="/favourites" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_favourite_solid} alt='favourite' /></Link>
+                <Link to="/favourites" style={{ textDecoration: 'none'}}><FontAwesomeIcon className="nav-favourite" icon={icon_favourite_solid} /></Link>
                 <Link to="/cart" style={{ textDecoration: 'none'}}><img className='nav-cart' src={icon_cart} alt='cart' /></Link>
                 <div className='nav-cart-count'>0</div>
             </div>
