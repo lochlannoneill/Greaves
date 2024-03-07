@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Item.css'
-import icon_heart from '../Assets/icons/heart.png'
+import icon_favourite from '../Assets/icons/favourite.png'
 
 export const Item = (props) => {
   return (
@@ -23,7 +23,7 @@ export const Item = (props) => {
                   €{props.price_old}
                 </div>
             </div>
-            <img className='item-heart' src={icon_heart} alt='heart' /> {/* TODO - props.heart ?? */}
+            <img className='item-favourite' src={icon_favourite} alt='favourite' /> {/* TODO - props.favourite ?? */}
           </div>
           
         </div>

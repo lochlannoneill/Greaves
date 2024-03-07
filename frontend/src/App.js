@@ -7,7 +7,7 @@ import { Shop } from './Pages/Shop';
 import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
 import Cart from './Pages/Cart';
-import Hearts from './Pages/Hearts';
+import Favourites from './Pages/Favourites';
 import { LoginSignup } from './Pages/LoginSignup';
 import banner_women from './Components/Assets/banner_women.png';
 import banner_men from './Components/Assets/banner_men.png';
@@ -36,7 +36,7 @@ function App() {
             <Route path=":id" element={<Product />} />
           </Route>
           <Route path="/cart" element={<Cart />} />
-          <Route path="/hearts" element={<Hearts />} />
+          <Route path="/favourites" element={<Favourites />} />
           <Route path="/signup" element={<LoginSignup />} />
         </Routes>
         <Footer/>
