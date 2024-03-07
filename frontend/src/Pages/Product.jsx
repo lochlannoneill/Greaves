@@ -12,6 +12,8 @@ export const Product = () => {
     <>
     {product ? (
       <Breadcrumb product={product} />
+    ) : (
+      <p>Product not found</p>
     )}
   </>
   )
