@@ -19,7 +19,7 @@ export const LoginSignup = () => {
           <p className="loginsignup-error">Error message</p>
           <div className="signup-buttons">
             <button>Sign Up</button>
-            {/* <button>Continue</button> */}
+            {/* <button>Log In</button> */}
           </div>
           <div className="loginsignup-login">
             <p className="loginsignup-login-text">Already have an account?</p>
