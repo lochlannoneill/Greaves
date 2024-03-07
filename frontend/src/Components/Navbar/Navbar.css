@@ -85,10 +85,12 @@
     gap: 16px;
 }
 
-.nav-login-cart img {
+.nav-login-cart * {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    color: #171717; /* TODO - Color variables */
+    text-decoration: none;
 }
 
 .nav-flag {
