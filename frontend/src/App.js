@@ -1,8 +1,8 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Headroom from 'react-headroom';
+import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Footer } from './Components/Footer/Footer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Shop } from './Pages/Shop';
 import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';

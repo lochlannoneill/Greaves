@@ -1,6 +1,6 @@
 import React from 'react'
-import products from '../Components/Assets/products/product_data'
 import { createContext } from 'react'
+import products from '../Components/Assets/products/product_data'
 
 export const ShopContext = createContext(null);
 

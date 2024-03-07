@@ -1,8 +1,8 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStar_solid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import './ProductDisplay.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ProductDisplay = (props) => {
     const {product} = props;
