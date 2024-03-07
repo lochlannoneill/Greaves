@@ -66,6 +66,10 @@
     cursor: not-allowed;
 }
 
+.loginsignup-error {
+    color: red;
+}
+
 .loginsignup-login {
     color: #171717;
     font-size: 18px;

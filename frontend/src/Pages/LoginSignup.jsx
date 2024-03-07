@@ -12,6 +12,7 @@ export const LoginSignup = () => {
           <input type="text" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
+          <p className="loginsignup-error">Passwords must match</p>
           <div className="loginsignup-agree">
             <input className="checkbox" type="checkbox" name='' id=''/>
             <p>I agree to the <span>Terms of Service</span> and <span>Privacy Policy</span></p>
