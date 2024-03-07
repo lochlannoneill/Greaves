@@ -9,6 +9,11 @@
     padding: 16px 0;
 }
 
+.navbar * {
+    text-decoration: none;
+    color: #171717;
+}
+
 .navbar-mobile {
     display: none;
 }
@@ -93,6 +98,11 @@
     text-decoration: none;
 }
 
+.nav-login-cart-child:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
 .nav-flag {
     border-radius: 50%;
 }
@@ -120,12 +130,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -30px;
-    margin-left: -25px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 15px;
     border-radius: 11px;
     font-size: 14px;
     background: rgb(255, 145, 0); /* TODO - Color variables */
     color: white; /* TODO - Color variables */
+    z-index: 1 !important;
 }
 
 /* Media query for smaller screens */
