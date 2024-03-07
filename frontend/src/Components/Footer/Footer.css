@@ -18,6 +18,10 @@
     border: 1px solid #2e2e2e;
 }
 
+.footer-form-input:focus {
+    outline: none;
+}
+
 .footer-form-button {
     padding: 8px 16px;
     border: none;
