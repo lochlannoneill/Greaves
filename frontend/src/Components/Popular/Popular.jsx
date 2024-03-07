@@ -27,7 +27,7 @@ export const Popular = () => {
         </div>
       </div>
       
-      <div className="popular-category popular-girls">
+      {/* <div className="popular-category popular-girls">
         <h1>Popular in Girls</h1>
         <div className="popular-list-parent">
         <div className="popular-arrow popular-arrow-left"><FontAwesomeIcon icon={faArrowLeft} /></div>
@@ -40,7 +40,7 @@ export const Popular = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="popular-category popular-men">
         <h1>Popular in Men</h1>
@@ -57,7 +57,7 @@ export const Popular = () => {
         </div>
       </div>
 
-      <div className="popular-category popular-boys">
+      {/* <div className="popular-category popular-boys">
         <h1>Popular in Boys</h1>
         <div className="popular-list-parent">
         <div className="popular-arrow popular-arrow-left"><FontAwesomeIcon icon={faArrowLeft} /></div>
@@ -70,7 +70,7 @@ export const Popular = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
