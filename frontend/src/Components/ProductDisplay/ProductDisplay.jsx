@@ -1,9 +1,8 @@
 import React from 'react'
+import { faStar as faStar_solid } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import './ProductDisplay.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faStar as faStar_fill } from '@fortawesome/free-solid-svg-icons';
-import { faStar as faStar_empty } from '@fortawesome/free-regular-svg-icons';
 
 export const ProductDisplay = (props) => {
     const {product} = props;
@@ -23,11 +22,11 @@ export const ProductDisplay = (props) => {
         <div className="productdisplay-right">
             <h1>{product.title}</h1>
             <div className="productdisplay-right-rating">
-                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_fill} />
-                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_fill} />
-                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_fill} />
-                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_empty} />
-                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_empty} />
+                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
+                <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
             </div>
             <p>{product.description}</p>
             <div className="productdisplay-right-prices">

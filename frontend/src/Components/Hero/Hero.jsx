@@ -1,6 +1,7 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './Hero.css'
-import icon_arrow from '../Assets/icons/arrow_right_white.png'
 import image_hero from '../Assets/image_hero.png'
 
 export const Hero = () => {
@@ -14,7 +15,7 @@ export const Hero = () => {
             </p>
             <div className="hero-latest-btn">
                 <div>Latest Collection</div>
-                <img src={icon_arrow} alt="" />
+                <FontAwesomeIcon icon={faArrowRight} />
             </div>
         </div>
         <div className="hero-right">

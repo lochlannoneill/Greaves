@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import './CSS/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
 import { Item } from '../Components/Item/Item'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export const ShopCategory = (props) => {
   const {products} = useContext(ShopContext);
