@@ -20,7 +20,10 @@ export const LoginSignup = () => {
             <button>Sign Up</button>
             {/* <button>Continue</button> */}
           </div>
-          <p className="loginsignup-login">Already have an account? <span>Login Here</span></p>
+          <div className="loginsignup-login">
+            <p className="loginsignup-login-text">Already have an account?</p>
+            <p className="loginsignup-login-link">Login Here</p>
+          </div>
         </div>
       </div>
     </div>
