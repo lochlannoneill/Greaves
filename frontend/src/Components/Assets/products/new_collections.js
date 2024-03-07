@@ -11,6 +11,8 @@ let new_collections = [
   {
     id: 12,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p1_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 50.0,
@@ -19,6 +21,8 @@ let new_collections = [
   {
     id: 35,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p2_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 85.0,
@@ -27,6 +31,8 @@ let new_collections = [
   {
     id: 14,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p3_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 60.0,
@@ -35,6 +41,8 @@ let new_collections = [
   {
     id: 8,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p4_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 100.0,
@@ -43,6 +51,8 @@ let new_collections = [
   {
     id: 15,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p5_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 50.0,
@@ -51,6 +61,8 @@ let new_collections = [
   {
     id: 2,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p6_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 85.0,
@@ -59,6 +71,8 @@ let new_collections = [
   {
     id: 17,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p7_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 60.0,
@@ -67,6 +81,8 @@ let new_collections = [
   {
     id: 28,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     image: p8_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
     price: 100.0,

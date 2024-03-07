@@ -45,6 +45,8 @@ let products = [
   {
     id: 1,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p1_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -54,6 +56,8 @@ let products = [
   {
     id: 2,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p2_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -63,6 +67,8 @@ let products = [
   {
     id: 3,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p3_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -72,6 +78,8 @@ let products = [
   {
     id: 4,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p4_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -81,6 +89,8 @@ let products = [
   {
     id: 5,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p5_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -90,6 +100,8 @@ let products = [
   {
     id: 6,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p6_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -99,6 +111,8 @@ let products = [
   {
     id: 7,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p7_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -108,6 +122,8 @@ let products = [
   {
     id: 8,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p8_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -117,6 +133,8 @@ let products = [
   {
     id: 9,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p9_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -126,6 +144,8 @@ let products = [
   {
     id: 10,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p10_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -135,6 +155,8 @@ let products = [
   {
     id: 11,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p11_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -144,6 +166,8 @@ let products = [
   {
     id: 12,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "women",
     image: p12_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -153,6 +177,8 @@ let products = [
   {
     id: 13,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p13_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -162,6 +188,8 @@ let products = [
   {
     id: 14,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p14_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -171,6 +199,8 @@ let products = [
   {
     id: 15,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p15_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -180,6 +210,8 @@ let products = [
   {
     id: 16,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p16_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -189,6 +221,8 @@ let products = [
   {
     id: 17,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p17_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -198,6 +232,8 @@ let products = [
   {
     id: 18,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p18_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -207,6 +243,8 @@ let products = [
   {
     id: 19,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p19_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -216,6 +254,8 @@ let products = [
   {
     id: 20,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p20_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -225,6 +265,8 @@ let products = [
   {
     id: 21,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p21_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -234,6 +276,8 @@ let products = [
   {
     id: 22,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p22_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -243,6 +287,8 @@ let products = [
   {
     id: 23,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p23_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -252,6 +298,8 @@ let products = [
   {
     id: 24,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "men",
     image: p24_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -261,6 +309,8 @@ let products = [
   {
     id: 25,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p25_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -270,6 +320,8 @@ let products = [
   {
     id: 26,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p26_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -279,6 +331,8 @@ let products = [
   {
     id: 27,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p27_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -288,6 +342,8 @@ let products = [
   {
     id: 28,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p28_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -297,6 +353,8 @@ let products = [
   {
     id: 29,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p29_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -306,6 +364,8 @@ let products = [
   {
     id: 30,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p30_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -315,6 +375,8 @@ let products = [
   {
     id: 31,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p31_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -324,6 +386,8 @@ let products = [
   {
     id: 32,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p32_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -333,6 +397,8 @@ let products = [
   {
     id: 33,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p33_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -342,6 +408,8 @@ let products = [
   {
     id: 34,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p34_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -351,6 +419,8 @@ let products = [
   {
     id: 35,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p35_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -360,6 +430,8 @@ let products = [
   {
     id: 36,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "boys",
     image: p36_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -369,6 +441,8 @@ let products = [
   {
     id:37,
     title:"Blue Hooded Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p37_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -377,6 +451,8 @@ let products = [
   },
   {id:38,
     title:"Black Hooded Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p38_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -385,6 +461,8 @@ let products = [
   },
   {id:39,
     title:"Yellow Cardigan",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p39_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -393,6 +471,8 @@ let products = [
   },
   {id:40,
     title:"Boys Orange Colourblocked Hooded Sweatshirt",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p40_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -401,6 +481,8 @@ let products = [
   },
   {id:41,
     title:"Blue Denim Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p41_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
@@ -409,6 +491,8 @@ let products = [
   },
   {id:42,
     title:"Pink Fulffy Jacket",
+    tags: ["Modern", "Latest"],
+    categories: ["Tops", "Blouses"],
     category: "girls",
     image:p42_img,
     description: "This is a description of the product. It is a very good product. You should buy it.",
