@@ -23,7 +23,6 @@ export const ShopCategory = (props) => {
                 placeholder="Search products"
               />
             </div>
-            {/* <button type="shopcatergory-filter-search-button">Search</button> */}
           </form>
         </div>
         <div className="shopcategory-filter-button">
