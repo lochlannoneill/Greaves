@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { useParams } from 'react-router-dom'
 import { Breadcrumb } from '../Components/Breadcrumbs/Breadcrumb'
+import { ProductDisplay } from '../Components/ProductDisplay/ProductDisplay'
 
 export const Product = () => {
   const {products} = useContext(ShopContext);
@@ -10,11 +11,15 @@ export const Product = () => {
 
   return (
     <>
-    {product ? (
-      <Breadcrumb product={product} />
-    ) : (
-      <p>Product not found</p>
-    )}
-  </>
+      {product ? (
+        <>
+          <Breadcrumb product={product} />
+          <ProductDisplay product={product} />
+        </>
+      ) : (
+        <p>Product not found</p>
+      )}
+    </>
+
   )
 }
