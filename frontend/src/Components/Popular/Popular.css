@@ -13,16 +13,10 @@
     text-align: center;
 }
 
-.popular-list-parent {
-    position: relative;
+.popular-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.popular-list {
-    overflow-x: auto;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer / Edge */
 }
 
 .popular-list::-webkit-scrollbar {

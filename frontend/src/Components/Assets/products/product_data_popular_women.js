@@ -62,17 +62,6 @@ let data_product = [
     price:115.00,
     price_old:150.00,
   },
-  {id:6,
-    title:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    tags: ["Modern", "Latest"],
-    categories: ["Tops", "Blouses"],
-    image:p6_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
-    rating: 3,
-    reviews: 117,
-    price:80.00,
-    price_old:95.00,
-  },
 ];
 
 export default data_product;

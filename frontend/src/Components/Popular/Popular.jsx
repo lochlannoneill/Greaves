@@ -14,30 +14,22 @@ export const Popular = () => {
 
       <div className="popular-category popular-women">
         <h1>Popular in Women</h1>
-        <div className="popular-list-parent">
-          <div className="popular-arrow popular-arrow-left"><FontAwesomeIcon icon={faArrowLeft} /></div>
-          <div className="popular-arrow popular-arrow-right"><FontAwesomeIcon icon={faArrowRight} /></div>
-          <div className="popular-list">
-            <div className="popular-item">
-              {data_product_women.map((item, index) => {
-                return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
-              })}
-            </div>
+        <div className="popular-list">
+          <div className="popular-item">
+            {data_product_women.map((item, index) => {
+              return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
+            })}
           </div>
         </div>
       </div>
 
       <div className="popular-category popular-men">
         <h1>Popular in Men</h1>
-        <div className="popular-list-parent">
-          <div className="popular-arrow popular-arrow-left"><FontAwesomeIcon icon={faArrowLeft} /></div>
-          <div className="popular-arrow popular-arrow-right"><FontAwesomeIcon icon={faArrowRight} /></div>
-          <div className="popular-list">
-            <div className="popular-item">
-              {data_product_men.map((item, index) => {
-                return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
-              })}
-            </div>
+        <div className="popular-list">
+          <div className="popular-item">
+            {data_product_men.map((item, index) => {
+              return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
+            })}
           </div>
         </div>
       </div>
