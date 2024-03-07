@@ -4,7 +4,7 @@
 }
 
 .loginsignup-container {
-    width: 24vw;
+    width: 18vw;
     margin: auto;
     padding: 6vh 0;
 }
@@ -86,18 +86,27 @@
     font-weight: 500;
 }
 
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1400px) {
+    .loginsignup-container {
+        width: 25vw;
+    }
+}
+
+/* Add a media query for smaller screen sizes */
+@media only screen and (max-width: 1250px) {
+    .loginsignup-container {
+        width: 35vw;
+    }
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .loginsignup-container {
-        width: 70vw;
+        width: 60vw;
     }
 
     .signup-buttons {
         flex-direction: column;
-        width: 70vw;
     }
-}
-
-@media screen and (max-width: 480px) {
-    
 }

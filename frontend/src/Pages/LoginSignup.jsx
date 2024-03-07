@@ -18,7 +18,7 @@ export const LoginSignup = () => {
           </div>
           <div className="signup-buttons">
             <button>Sign Up</button>
-            <button>Continue</button>
+            {/* <button>Continue</button> */}
           </div>
           <p className="loginsignup-login">Already have an account? <span>Login Here</span></p>
         </div>
