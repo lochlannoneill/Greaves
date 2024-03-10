@@ -3,7 +3,6 @@ import p14_img from './product_14.png'
 import p15_img from './product_15.png'
 import p16_img from './product_16.png'
 import p17_img from './product_17.png'
-import p18_img from './product_18.png'
 
 let data_product = [
   {
