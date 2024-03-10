@@ -1,6 +1,6 @@
 .loginsignup {
     width: 100%;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .loginsignup-container {
@@ -16,8 +16,8 @@
 .loginsignup-fields {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 30px;
+    gap: 1vh;
+    margin-top: 2vh;
 }
 
 .loginsignup-fields input {
@@ -38,6 +38,7 @@
     gap: 8px;
     margin: auto;
     width: 100%;
+    margin-top: 2vh;
 }
 
 .loginsignup-fields button {
@@ -102,7 +103,7 @@
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .loginsignup-container {
-        width: 60vw;
+        width: 65vw;
     }
 
     .signup-buttons {
