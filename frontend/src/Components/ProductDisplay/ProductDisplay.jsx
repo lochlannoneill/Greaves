@@ -43,7 +43,7 @@ export const ProductDisplay = (props) => {
                 <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
             </div>
             <div className="productdisplay-right-stock">
-                <p>{product.stock} left in stock</p>
+                <p>{product.stock_small+product.stock_medium+product.stock_large+product.stock_xlarge+product.stock_xxlarge} left in stock</p>
             </div>
             <div className="productdisplay-right-details">
                 <h2>Product Details</h2>
