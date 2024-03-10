@@ -31,7 +31,7 @@
 }
 
 .footer h2 {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .footer-information {
@@ -58,8 +58,9 @@
 }
 
 .footer a {
-    color: rgb(220, 220, 220);
+    color: grey;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .footer-links li a:hover {
@@ -76,6 +77,14 @@
 
 .footer-social {
     margin-top: 16px;
+}
+
+.footer-social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    width: 100%;
 }
 
 .footer-icon {
@@ -128,12 +137,25 @@
     color: #f62755;
 }
 
-.signature {
-    margin-top: 8px;
+.footer-signature p {
+    margin-bottom: 8px;
 }
+
+.footer-signature p:last-child {
+    margin-top: 32px;
+}
+
+/* .signature {
+    margin-top: 8px;
+} */
 
 @media screen and (max-width: 768px) {
     .footer-information {
         display: block;
+    }
+
+    .footer-social-icons {
+        flex-direction: column;
+        gap: 0;
     }
 }
