@@ -55,7 +55,10 @@
     display: flex;
     align-items: center;
     gap: 0.5vh;
-    color: #171717;
+}
+
+.productdisplay-right-rating-stars {
+    color: orange;
 }
 
 .productdisplay-right-prices {
