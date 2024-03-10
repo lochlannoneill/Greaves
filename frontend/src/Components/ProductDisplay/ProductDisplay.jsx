@@ -42,6 +42,9 @@ export const ProductDisplay = (props) => {
                 <p className="productdisplay-right-price">&euro;{product.price}</p>
                 <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
             </div>
+            <div className="productdisplay-right-stock">
+                <p>{product.stock} left in stock</p>
+            </div>
             <div className="productdisplay-right-details">
                 <h2>Product Details</h2>
                 <p>{product.description}</p>
