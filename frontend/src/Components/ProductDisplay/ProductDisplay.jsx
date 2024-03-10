@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid, faHeart as faHeart_solid} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
@@ -6,6 +7,11 @@ import './ProductDisplay.css'
 
 export const ProductDisplay = (props) => {
     const {product} = props;
+    
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
+    }, []); // Empty dependency array ensures this effect runs only once after mounting
+
   return (
     <div className="productdisplay">
         <div className="productdisplay-left">
