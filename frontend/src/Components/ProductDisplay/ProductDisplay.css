@@ -62,6 +62,7 @@
 }
 
 .productdisplay-right-prices {
+    margin-top: 2vh;
     display: flex;
     align-items: center;
     gap: 8px;
