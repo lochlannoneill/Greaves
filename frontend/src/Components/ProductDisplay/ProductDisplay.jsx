@@ -16,13 +16,13 @@ export const ProductDisplay = (props) => {
     <div className="productdisplay">
         <div className="productdisplay-left">
             <div className="productdisplay-img-list">
-                <img src={product.image} alt="Product image" />
-                <img src={product.image} alt="Product image" />
-                <img src={product.image} alt="Product image" />
-                <img src={product.image} alt="Product image" />
+                <img src={product.image} alt="Product" />
+                <img src={product.image} alt="Product" />
+                <img src={product.image} alt="Product" />
+                <img src={product.image} alt="Product" />
             </div>
             <div className="productdisplay-img">
-                <img className="productdisplay-main-img" src={product.image} alt="Main product image" />
+                <img className="productdisplay-main-img" src={product.image} alt="Main product" />
             </div>
         </div>
         <div className="productdisplay-right">
