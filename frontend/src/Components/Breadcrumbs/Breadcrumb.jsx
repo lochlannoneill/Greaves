@@ -5,6 +5,6 @@ export const Breadcrumb = (props) => {
     const {product} = props;
 
   return (
-    <div className="breadcrumb">shop &gt; {product.category} &gt; products &gt; {product.title}</div>
+    <div className="breadcrumb">shop &gt; {product.category} &gt; {product.title}</div>
   )
 }
