@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faTiktok, faSnapchat } from '@fortawesome/free-brands-svg-icons'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Footer.css'
 
 export const Footer = () => {
@@ -10,7 +11,7 @@ export const Footer = () => {
         <form className="footer-form">
           <p>Get Exclusive Offers And Updates</p>
           <input className="footer-form-input" placeholder="Enter your email" type="email" />
-          <button className="footer-form-button">Sign Up</button>
+          <button className="footer-form-button">Sign Up <FontAwesomeIcon className="footer-icon envelope" icon={faEnvelope} /></button>
         </form>
         <hr/>
         <div className="footer-information">
@@ -25,25 +26,25 @@ export const Footer = () => {
             <h2>Show Us Your Haul</h2>
             <p>Tag us <a href="https://greaves.store/">#greaves</a> for a chance to be featured!</p>
             <div className="footer-social-icons">
-              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon instagram" icon={faInstagram} /></a></span>
-              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon facebook" icon={faFacebook} /></a></span>
-              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon twitter" icon={faTwitter} /></a></span>
-              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon snapchat" icon={faSnapchat} /></a></span>
-              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon tiktok" icon={faTiktok} /></a></span>
+              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon social instagram" icon={faInstagram} /></a></span>
+              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon social facebook" icon={faFacebook} /></a></span>
+              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon social twitter" icon={faTwitter} /></a></span>
+              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon social snapchat" icon={faSnapchat} /></a></span>
+              <span className="footer-social"><a href="https://greaves.store/"><FontAwesomeIcon className="footer-icon social tiktok" icon={faTiktok} /></a></span>
             </div>
           </div>
           <div className="footer-information-child footer-right">
-          <h2>GREAVES</h2>
-            <p>&copy; 2024 Greaves. All Rights Reserved.</p>
-            <br />
-            <p>Call us @ 123-4567890</p>
-            <br />
-            <p>1234 Greaves Street,</p>
-            <p>Greaves, GR 12345</p>
-            <p>Imaginary County</p>
-            <p>Fantasyland</p>
+            <h2>GREAVES</h2>
+              <p>2024 &copy; Greaves. All Rights Reserved.</p>
+              <br />
+              <p>1234 Greaves Street,</p>
+              <p>Greaves, GR 12345</p>
+              <p>Imaginary County</p>
+              <p>Fantasyland</p>
+              <br />
+              <p><FontAwesomeIcon className="footer-icon phone" icon={faPhone} /> 123-4567890</p>
           </div>
-        </div>
+          </div>
         </div>
       <hr/>
       <div className="footer-signature">
