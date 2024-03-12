@@ -142,7 +142,7 @@
 }
 
 .productdisplay-right button {
-    padding: 1vh 2vw;
+    padding: 8px 2vw;
     border: none;
     border-radius: 5px;
     background-color: grey;
@@ -217,6 +217,10 @@
 
     .productdisplay-right-rating {
         gap: 1vh;
+    }
+
+    .productdisplay-right-sizes div {
+        width: 100%;
     }
 
     .productdisplay-right-category-buttons {
