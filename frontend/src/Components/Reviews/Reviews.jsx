@@ -33,31 +33,31 @@ export const Reviews = () => {
             <div className="review">
                 <div className="review-user">
                     <img className="review-user-image" src={placeholder_user} alt="user" />
-                    <p className="review-user-name">John Doe</p>
+                    <p className="review-user-name">review.name</p>
                 </div>
                 <div className="review-rating">
-                    <p className="review-rating-number">rating</p>
+                    <p className="review-rating-number">review.rating</p>
                     <span className="review-rating-stars">
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
                         <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
                         <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
                         <FontAwesomeIcon className="review-rating-icon" icon={faStar_half} />
                         <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
+                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
                     </span>
-                    <p className="review-rating-summary">summary</p>
+                    <p className="review-rating-summary">review.summary</p>
                 </div>
                 <div className="review-date">
-                    <p>date</p>
+                    <p>review.date</p>
                 </div>
                 <div className="review-verification">
                     <FontAwesomeIcon className="review-verification-checkmark" icon={faCheck} />
-                    <p clasnnName="review-verification-checkmark">Verified purchase</p>
+                    <p clasnnName="review-verification-checkmark">review.verified</p>
                 </div>
                 <div className="review-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas dignissimos cum ipsam nobis recusandae in. Libero officia consequatur dicta nihil assumenda quam hic maiores reiciendis mollitia, ea placeat quisquam.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque a natus fugit atque vitae cumque quo harum inventore illum nostrum, molestias blanditiis nobis saepe ex id exercitationem dolorum dolor ut.</p>
                 </div>
                 <div className="review-helpful">
-                    <p className="review-helpful-count">helpful_count people found this review helpful</p>
+                    <p className="review-helpful-count">review.helpful people found this review helpful</p>
                     <div className="review-helpful-actions">
                         <button className="review-helpful-button">Helpful</button>
                         <a href="#report" className="review-helpful-report">Report</a>
