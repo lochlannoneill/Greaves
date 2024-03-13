@@ -49,6 +49,11 @@ export const ProductDisplay = (props) => {
                 <h2>Product Details</h2>
                 <p>{product.description}</p>
             </div>
+            <div className="productdisplay-right-filters">
+                <h2>Product Filters</h2>
+                <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
+                <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
+            </div>
             <div className="productdisplay-right-size">
                 <h2>Select Size</h2>
                 <div className="productdisplay-right-sizes">
@@ -62,10 +67,6 @@ export const ProductDisplay = (props) => {
             <div className="productdisplay-right-category-buttons">
                 <button className="productdisplay-right-category-buttons-favourite">Add to Favourites <FontAwesomeIcon icon={faHeart_solid} /></button>
                 <button className="productdisplay-right-category-buttons-cart">Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} /></button>
-            </div>
-            <div className="productdisplay-right-filters">
-                <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
-                <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
             </div>
         </div>
     </div>
