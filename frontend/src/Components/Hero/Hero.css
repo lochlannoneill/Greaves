@@ -53,11 +53,20 @@
     font-size: 20px;
     font-weight: 500;
     transition: 0.5s;
-    animation: 2.5s ease 0s normal forwards 1 fadeInFast;
+    animation: 1.5s ease 0s normal forwards 1 fadeInFast;
 }
 
 .hero-latest-btn:hover {
-    background: rgb(10, 10, 10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.025);
+    background: #171717;
+    transition: 0.25s;
+}
+
+.hero-latest-btn:active {
+    background-color: #171717;
+    transform: scale(0.975);
+    transition: 0.25s;
 }
 
 .hero-right {

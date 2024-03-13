@@ -50,7 +50,6 @@ export const ProductDisplay = (props) => {
                 <p>{product.description}</p>
             </div>
             <div className="productdisplay-right-filters">
-                <h2>Product Filters</h2>
                 <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
                 <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
             </div>

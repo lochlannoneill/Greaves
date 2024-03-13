@@ -1,7 +1,7 @@
 .reviews {
     display: flex;
     flex-direction: column;
-    margin: 4vh 24vw;
+    margin: 8vh 24vw;
 }
 
 .reviews h2 {
@@ -75,7 +75,6 @@
 }
 
 .review-input-submit button {
-    margin-top: 2vh;
     padding: 12px 2vw;
     border: none;
     border-radius: 5px;
