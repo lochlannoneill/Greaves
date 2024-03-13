@@ -131,33 +131,28 @@
     justify-content: center;
 }
 
-.review-rating {
+.review-info-rating {
     display: flex;
     flex-direction: row;
     gap: 0.5vh;
 }
 
-.review-rating-stars {
+.review-info-rating-stars {
     color: darkorange;
 }
 
-.review-rating-summary {
+.review-info-rating-summary {
     color: #3a3a3a;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.review-date {
+.review-info-date {
     color: #3a3a3a;
     font-size: 0.8rem;
 }
 
-.review-size {
-    color: #3a3a3a;
-    font-size: 0.8rem;
-}
-
-.review-verification {
+.review-info-verification {
     display: flex;
     flex-direction: row;
     gap: 0.5vh;
@@ -165,7 +160,7 @@
     font-size: 0.8rem;
 }
 
-.reivew-verification-checkmark {
+.reivew-info-verification-checkmark {
     color: darkorange;
 }
 

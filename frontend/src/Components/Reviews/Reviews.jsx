@@ -35,23 +35,27 @@ export const Reviews = () => {
                     <img className="review-user-image" src={placeholder_user} alt="user" />
                     <p className="review-user-name">review.name</p>
                 </div>
-                <div className="review-rating">
-                    <p className="review-rating-number">review.rating</p>
-                    <span className="review-rating-stars">
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_half} />
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
-                        <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
-                    </span>
-                    <p className="review-rating-summary">review.summary</p>
-                </div>
-                <div className="review-date">
-                    <p>review.date</p>
-                </div>
-                <div className="review-verification">
-                    <FontAwesomeIcon className="review-verification-checkmark" icon={faCheck} />
-                    <p clasnnName="review-verification-checkmark">review.verified</p>
+                <div className="review-info">
+                    <div className="review-info-rating">
+                        <p className="review-rating-number">review.rating</p>
+                        <span className="review-rating-stars">
+                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
+                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
+                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_half} />
+                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
+                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
+                        </span>
+                    </div>
+                    <div className="review-summary">
+                        <p>review.summary</p>
+                    </div>
+                    <div className="review-date">
+                        <p>review.date</p>
+                    </div>
+                    <div className="review-verification">
+                        <FontAwesomeIcon className="review-verification-checkmark" icon={faCheck} />
+                        <p clasnnName="review-verification-checkmark">review.verified</p>
+                    </div>
                 </div>
                 <div className="review-description">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque a natus fugit atque vitae cumque quo harum inventore illum nostrum, molestias blanditiis nobis saepe ex id exercitationem dolorum dolor ut.</p>
