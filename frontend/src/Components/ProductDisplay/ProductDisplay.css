@@ -130,6 +130,12 @@
     transition: 0.25s;
 }
 
+.productdisplay-right-sizes div:active {
+    background-color: #d5d5d5;
+    transform: scale(0.975);
+    transition: 0.25s;
+}
+
 .productdisplay-right-category-buttons {
     display: flex;
     margin-top: 2vh;
