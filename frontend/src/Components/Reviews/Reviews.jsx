@@ -37,24 +37,24 @@ export const Reviews = () => {
                 </div>
                 <div className="review-info">
                     <div className="review-info-rating">
-                        <p className="review-rating-number">review.rating</p>
-                        <span className="review-rating-stars">
-                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
-                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_solid} />
-                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_half} />
-                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
-                            <FontAwesomeIcon className="review-rating-icon" icon={faStar_regular} />
+                        <p className="review-info-rating-number">review.rating</p>
+                        <span className="review-info-rating-stars">
+                            <FontAwesomeIcon className="review-info-rating-icon" icon={faStar_solid} />
+                            <FontAwesomeIcon className="review-info-rating-icon" icon={faStar_solid} />
+                            <FontAwesomeIcon className="review-info-rating-icon" icon={faStar_half} />
+                            <FontAwesomeIcon className="review-info-rating-icon" icon={faStar_regular} />
+                            <FontAwesomeIcon className="review-info-rating-icon" icon={faStar_regular} />
                         </span>
                     </div>
-                    <div className="review-summary">
+                    <div className="review-info-summary">
                         <p>review.summary</p>
                     </div>
-                    <div className="review-date">
+                    <div className="review-info-date">
                         <p>review.date</p>
                     </div>
-                    <div className="review-verification">
-                        <FontAwesomeIcon className="review-verification-checkmark" icon={faCheck} />
-                        <p clasnnName="review-verification-checkmark">review.verified</p>
+                    <div className="review-info-verification">
+                        <FontAwesomeIcon className="review-info-verification-checkmark" icon={faCheck} />
+                        <p clasnnName="review-info-verification-text">review.verified</p>
                     </div>
                 </div>
                 <div className="review-description">
