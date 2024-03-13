@@ -158,10 +158,7 @@
     gap: 0.5vh;
     color: darkorange;
     font-size: 0.8rem;
-}
-
-.reivew-info-verification-checkmark {
-    color: darkorange;
+    align-items: center;
 }
 
 .review-description {
