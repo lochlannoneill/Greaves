@@ -8,28 +8,28 @@ import './Reviews.css'
 export const Reviews = () => {
   return (
     <div className="reviews">
-        <h2>Reviews</h2>
-        <div className="reviews-list">
-            <div className="review-input">
-                <form>
-                    <h3>Leave a review</h3>
-                    <div className="review-input-rating">
-                        <label htmlFor="rating">Rating</label>
-                        <input type="number" id="rating" name="rating" placeholder="5" min="1" max="5" />
-                    </div>
-                    <div className="review-input-summary">
-                        <label htmlFor="summary">Summary</label>
-                        <input type="text" id="summary" name="summary" placeholder="Summary"/>
-                    </div>
-                    <div className="review-input-description">
-                        <label htmlFor="description">Description</label>
-                        <textarea id="description" name="description" placeholder="Description"></textarea>
-                    </div>
-                    <div className="review-input-submit">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
+        {/* <h2>Reviews</h2> */}
+        <div className="review-input">
+            <form>
+                <h3>Leave a review</h3>
+                <div className="review-input-rating">
+                    <label htmlFor="rating">Rating</label>
+                    <input type="number" id="rating" name="rating" placeholder="5" min="1" max="5" />
+                </div>
+                <div className="review-input-summary">
+                    <label htmlFor="summary">Summary</label>
+                    <input type="text" id="summary" name="summary" placeholder="Summary"/>
+                </div>
+                <div className="review-input-description">
+                    <label htmlFor="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Description"></textarea>
+                </div>
+                <div className="review-input-submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div className="review-list">
             <div className="review">
                 <div className="review-user">
                     <img className="review-user-image" src={placeholder_user} alt="user" />
