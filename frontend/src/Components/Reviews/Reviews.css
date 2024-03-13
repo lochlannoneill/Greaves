@@ -139,7 +139,7 @@
 }
 
 .review-rating-stars {
-    color: orange;
+    color: darkorange;
 }
 
 .review-rating-summary {
@@ -162,12 +162,12 @@
     display: flex;
     flex-direction: row;
     gap: 0.5vh;
-    color: orange;
+    color: darkorange;
     font-size: 0.8rem;
 }
 
 .reivew-verification-checkmark {
-    color: orange;
+    color: darkorange;
 }
 
 .review-description {

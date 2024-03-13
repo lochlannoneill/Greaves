@@ -63,7 +63,7 @@
 }
 
 .productdisplay-right-rating-stars {
-    color: orange;
+    color: darkorange;
 }
 
 .productdisplay-right-prices {
@@ -165,7 +165,7 @@
 }
 
 .productdisplay-right-category-buttons-cart:hover {
-    background-color: rgb(255, 145, 0) !important;
+    background-color: darkorange !important;
 }
 
 .productdisplay-right-filters {

@@ -2,7 +2,7 @@
     min-height: 40vh;
     display: flex;
     padding: 0px 280px;
-    background: linear-gradient(180deg, white 0%, orange 100%);
+    background: linear-gradient(180deg, white 0%, darkorange 100%);
 }
 
 .offers-left {

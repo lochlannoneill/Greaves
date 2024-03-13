@@ -47,7 +47,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 4vh;
-    background: rgb(10, 10, 10, 0.9); /* TODO: Color variable */
+    background-color: #3a3a3a;
     color: white; /* TODO: Color variable */
     cursor: pointer;
     font-size: 20px;
