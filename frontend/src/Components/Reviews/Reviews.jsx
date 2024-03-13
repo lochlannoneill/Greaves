@@ -3,7 +3,6 @@ import placeholder_user from '../Assets/placeholder_user.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCheck} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
-import './Reviews.js'
 import './Reviews.css'
 
 export const Reviews = () => {
