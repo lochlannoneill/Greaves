@@ -16,11 +16,13 @@ export const Footer = () => {
         <hr/>
         <div className="footer-information">
           <div className="footer-information-child footer-left">
-            <h2>Lorem</h2>
-            <p>Ipsum</p>
-            <p>Dolor</p>
-            <p>Sit</p>
-            <p>Amet</p>
+            <h2>Contact Us</h2>
+            <p><FontAwesomeIcon className="footer-icon phone" icon={faPhone} /> 123-4567890</p>
+            <br />
+            <p>1234 Greaves Street,</p>
+            <p>Greaves, GR 12345</p>
+            <p>Imaginary County</p>
+            <p>Fantasyland</p>
           </div>
           <div className="footer-information-child footer-middle">
             <h2>Show Us Your Haul</h2>
@@ -37,12 +39,6 @@ export const Footer = () => {
             <h2>GREAVES</h2>
               <p>2024 &copy; Greaves. All Rights Reserved.</p>
               <br />
-              <p>1234 Greaves Street,</p>
-              <p>Greaves, GR 12345</p>
-              <p>Imaginary County</p>
-              <p>Fantasyland</p>
-              <br />
-              <p><FontAwesomeIcon className="footer-icon phone" icon={faPhone} /> 123-4567890</p>
           </div>
           </div>
         </div>
