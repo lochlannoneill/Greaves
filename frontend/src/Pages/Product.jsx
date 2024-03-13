@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { ShopContext } from '../Context/ShopContext'
 import { Breadcrumb } from '../Components/Breadcrumbs/Breadcrumb'
 import { ProductDisplay } from '../Components/ProductDisplay/ProductDisplay'
+import { Reviews } from '../Components/Reviews/Reviews'
 
 export const Product = () => {
   const {products} = useContext(ShopContext);
@@ -12,7 +13,7 @@ export const Product = () => {
       
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
-}, []); // Empty dependency array ensures this effect runs only once after mounting
+  }, []); // Empty dependency array ensures this effect runs only once after mounting
 
   return (
     <>
@@ -20,6 +21,7 @@ export const Product = () => {
         <>
           <Breadcrumb product={product} />
           <ProductDisplay product={product} />
+          <Reviews product={product} />
         </>
       ) : (
         <p>Product not found</p>

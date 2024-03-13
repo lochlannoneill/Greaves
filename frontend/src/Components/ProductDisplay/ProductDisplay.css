@@ -155,6 +155,11 @@
     transition: 0.25s;
 }
 
+.productdisplay-right button:active {
+    transform: scale(0.975);
+    transition: 0.25s;
+}
+
 .productdisplay-right-category-buttons-cart {
     background-color: #171717 !important;
 }
