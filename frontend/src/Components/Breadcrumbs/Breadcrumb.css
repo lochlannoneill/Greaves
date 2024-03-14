@@ -15,7 +15,7 @@
 }
 
 .breadcrumb a:hover {
-    color: #171717;
+    color: grey;
 }
 
 @media screen and (max-width: 768px) {
