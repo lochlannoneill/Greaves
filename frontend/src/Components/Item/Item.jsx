@@ -14,7 +14,6 @@ export const Item = (props) => {
         </Link>
         <div className="item-description">
           <p>{props.title}</p>
-
           <div className="item-stuff">
             <div className="item-prices">
                 <div className="item-price-new">
@@ -26,7 +25,6 @@ export const Item = (props) => {
             </div>
             <FontAwesomeIcon className="item-favourite" icon={icon_favourite_regular} />
           </div>
-          
         </div>
     </div>
   )
