@@ -1,0 +1,29 @@
+.related {
+    margin: 0 12vw;
+}
+
+.related h2 {
+    color: #3a3a3a;
+}
+
+.related-items-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.related-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .related-items {
+        gap: 4vw;
+    }
+}
