@@ -1,5 +1,5 @@
 .product-components {
     display: flex;
     flex-direction: column;
-    gap: 4vw;
+    gap: 4vh;
 }

@@ -143,6 +143,7 @@
 
 .productdisplay-right-sizes {
     display: flex;
+    margin-top: 1vh;
     gap: 1vw;
 }
 
@@ -295,7 +296,7 @@
     }
 
     .productdisplay-right {
-        margin: 2vh 0;
+        margin-top: 2vh;
     }
 
     .productdisplay-right h1 {

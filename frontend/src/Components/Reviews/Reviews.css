@@ -251,7 +251,7 @@
 
 @media screen and (max-width: 768px) {
     .reviews {
-        margin: 4vh 8vw;
+        margin: 0 8vw 4vh 8vw;
     }
     .reviews h2 {
         text-align: center;
