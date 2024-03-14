@@ -27,31 +27,33 @@ export const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right">
             <h1>{product.title}</h1>
-            <div className="productdisplay-right-rating">
-                <p>{product.rating}</p>
-                <span className="productdisplay-right-rating-stars">
-                    <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
-                    <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
-                    <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
-                    <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
-                    <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
-                </span>
-                <p>{product.reviews} reviews</p>
-            </div>
-            <div className="productdisplay-right-prices">
-                <p className="productdisplay-right-price">&euro;{product.price}</p>
-                <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
-            </div>
-            <div className="productdisplay-right-stock">
-                <p>{product.stock_small+product.stock_medium+product.stock_large+product.stock_xlarge+product.stock_xxlarge} left in stock</p>
+            <div className="productdisplay-right-info">
+                <div className="productdisplay-right-rating">
+                    <p>{product.rating}</p>
+                    <span className="productdisplay-right-rating-stars">
+                        <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                        <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                        <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
+                        <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
+                        <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
+                    </span>
+                    <p>{product.reviews} reviews</p>
+                </div>
+                <div className="productdisplay-right-prices">
+                    <p className="productdisplay-right-price">&euro;{product.price}</p>
+                    <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
+                </div>
+                <div className="productdisplay-right-stock">
+                    <p>{product.stock_small+product.stock_medium+product.stock_large+product.stock_xlarge+product.stock_xxlarge} left in stock</p>
+                </div>
             </div>
             <div className="productdisplay-right-details">
                 <h2>Product Details</h2>
                 <p>{product.description}</p>
             </div>
-            <div className="productdisplay-right-filters">
-                <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
-                <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
+            <div className="productdisplay-right-fit">
+                <h2>Sizing Help</h2>
+                <p>Still unsure what size to get? <a href="#">Find your recommended size</a> or check out our <a href="#">size guide</a>.</p>
             </div>
             <div className="productdisplay-right-size">
                 <h2>Select Size</h2>
@@ -66,6 +68,11 @@ export const ProductDisplay = (props) => {
             <div className="productdisplay-right-category-buttons">
                 <button className="productdisplay-right-category-buttons-favourite">Add to Favourites <FontAwesomeIcon icon={faHeart_solid} /></button>
                 <button className="productdisplay-right-category-buttons-cart">Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} /></button>
+            </div>
+            <div className="productdisplay-right-filters">
+                <div className="productdisplay-right-id"><span>Product Id: </span>{product.id}</div>
+                <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
+                <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
             </div>
         </div>
     </div>
