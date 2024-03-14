@@ -180,7 +180,7 @@
     min-height: 32px;
     border: none;
     border-radius: 5px;
-    background-color: grey;
+    background-color: darkgrey;
     color: white;
     font-size: 1rem;
     font-weight: 700;
@@ -189,15 +189,25 @@
 }
 
 .productdisplay-right button:hover {
-    background-color: red;
+    background-color: grey;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.025);
     transition: 0.25s;
 }
 
 .productdisplay-right button:active {
+    background-color: #171717;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transform: scale(0.975);
     transition: 0.25s;
+}
+
+.productdisplay-right-category-buttons-favourite:hover {
+    background-color: red !important;
+}
+
+.productdisplay-right-category-buttons-favourite:active {
+    background-color: darkred !important;
 }
 
 .productdisplay-right-category-buttons-cart {
@@ -205,6 +215,10 @@
 }
 
 .productdisplay-right-category-buttons-cart:hover {
+    background-color: orange !important;
+}
+
+.productdisplay-right-category-buttons-cart:active {
     background-color: darkorange !important;
 }
 
