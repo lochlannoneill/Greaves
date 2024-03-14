@@ -32,7 +32,7 @@ export const ProductDisplay = (props) => {
             <h1>{product.title}</h1>
             <div className="productdisplay-right-info">
                 <div className="productdisplay-right-rating">
-                    <p>{product.rating}</p>
+                    <p>rating</p>
                     <span className="productdisplay-right-rating-stars">
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
@@ -40,14 +40,14 @@ export const ProductDisplay = (props) => {
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
                     </span>
-                    <p>{product.reviews} reviews</p>
+                    <p>product.reviews</p>
                 </div>
                 <div className="productdisplay-right-prices">
                     <p className="productdisplay-right-price">&euro;{product.price}</p>
                     <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
                 </div>
                 <div className="productdisplay-right-stock">
-                    <p>{product.stock_small+product.stock_medium+product.stock_large+product.stock_xlarge+product.stock_xxlarge} left in stock</p>
+                    <p>product.stock left in stock</p>
                 </div>
             </div>
             <div className="productdisplay-right-details">
