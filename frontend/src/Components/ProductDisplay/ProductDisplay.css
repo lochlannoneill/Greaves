@@ -14,17 +14,48 @@
     gap: 1vh;
 }
 
-.productdisplay-img-list img {
+.productdisplay-img-list > * {
     width: 6vw;
     height: 6vw;
     object-fit: cover;
     border-radius: 16px;
 }
 
-.productdisplay-img-list img:hover {
+.productdisplay-img-list > *:hover {
+    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.025);
     transition: 0.25s;
+}
+
+.productdisplay-img-list-expand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 16px;
+    background-color: #171717;
+    font-size: 1.5vw;
+    color: white;
+    z-index: 2;
+}
+
+.productdisplay-img-list-expand img {
+    filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.productdisplay-img-list-expand-icon{
+    position: absolute;
+    align-items: center;
+    color: white;
+    z-index: 1;
 }
 
 .productdisplay-main-img {
@@ -35,16 +66,11 @@
     border-radius: 8px;
 }
 
-.productdisplay-img-list img:hover {
-    cursor: pointer;
-}
-
 .productdisplay-right {
     margin: 0 0 0 2vw;
     gap: 2vh;
     display: flex;
     flex-direction: column;
-    /* gap: 2vh; */
 }
 
 .productdisplay-right h1 {
@@ -206,10 +232,14 @@
 
 /* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1250px) {
-    .productdisplay-img-list img {
+    .productdisplay-img-list > * {
         width: 12vw;
         height: 12vw;
         object-fit: cover;
+    }
+
+    .productdisplay-img-list-expand {
+        font-size: 2.5vw;
     }
 
     .productdisplay-main-img {
@@ -232,13 +262,17 @@
     .productdisplay-img-list {
         display: flex;
         flex-direction: column;
-        gap: 1vw;
+        gap: 2vw;
     }
     
-    .productdisplay-img-list img {
+    .productdisplay-img-list > * {
         width: 16vw;
         height: 16vw;
         object-fit: cover;
+    }
+
+    .productdisplay-img-list-expand {
+        font-size: 4vw;
     }
 
     .productdisplay-main-img {

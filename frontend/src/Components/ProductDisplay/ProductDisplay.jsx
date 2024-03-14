@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid, faHeart as faHeart_solid} from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid, faHeart as faHeart_solid} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import './ProductDisplay.css'
 
@@ -19,7 +19,10 @@ export const ProductDisplay = (props) => {
                 <img src={product.image} alt="Product" />
                 <img src={product.image} alt="Product" />
                 <img src={product.image} alt="Product" />
-                <img src={product.image} alt="Product" />
+                <div class="productdisplay-img-list-expand">
+                    <FontAwesomeIcon className="productdisplay-img-list-expand-icon" icon={faPlus} />
+                    <img src={product.image} alt="Product" />
+                </div>
             </div>
             <div className="productdisplay-img">
                 <img className="productdisplay-main-img" src={product.image} alt="Main product" />
