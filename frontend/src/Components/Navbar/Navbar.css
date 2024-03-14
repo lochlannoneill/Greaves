@@ -73,8 +73,7 @@
 }
 
 .nav-menu li:hover {
-    transform: scale(1.1);
-    transition: 0.25s;
+    animation: 2.5s ease 0s normal forwards 1 wiggleSmall;
 }
 
 .nav-menu hr {
@@ -100,7 +99,8 @@
 }
 
 .nav-login-cart-child:hover{
-    animation: 2.5s ease 0s normal forwards 1 wiggleSmall;
+    transform: scale(1.1);
+    transition: 0.25s;
 }
 
 .nav-flag {
