@@ -103,6 +103,10 @@
     transition: 0.25s;
 }
 
+.reviews hr {
+    border: 1px solid #f0f0f0;
+}
+
 .review-list {
     display: flex;
     flex-direction: column;
