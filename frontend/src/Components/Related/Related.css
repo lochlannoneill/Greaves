@@ -23,6 +23,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .related {
+        margin: 0;
+    }
+
     .related-items {
         gap: 4vw;
     }

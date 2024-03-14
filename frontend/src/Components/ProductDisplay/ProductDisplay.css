@@ -1,6 +1,6 @@
 .productdisplay {
     display: flex;
-    margin: 0 12vw;
+    margin: 0 12vw; /* TODO - for some reason there's a gap at the top of the page */
 }
 
 .productdisplay-left {
@@ -263,7 +263,7 @@
 
 @media screen and (max-width: 768px) {
     .productdisplay {
-        margin: 4vh 8vw;
+        margin: 4vh 8vw 0 8vw; /* Breadcrumb is display:none on mobile, this removes its top margin; add  here */
     }
 
     .productdisplay-left {
