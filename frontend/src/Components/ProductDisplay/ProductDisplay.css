@@ -28,6 +28,11 @@
     transition: 0.25s;
 }
 
+.productdisplay-img-list > *:active {
+    transform: scale(0.975);
+    transition: 0.25s;
+}
+
 .productdisplay-img-list-expand {
     position: relative;
     display: flex;
@@ -36,9 +41,13 @@
     width: 6vw;
     height: 6vw;
     border-radius: 16px;
-    background-color: #171717;
+    background-color: #3a3a3a;
     font-size: 1.5vw;
     color: white;
+}
+
+.productdisplay-img-list-expand:hover {
+    background-color: #171717;
 }
 
 .productdisplay-img-list-expand img {
