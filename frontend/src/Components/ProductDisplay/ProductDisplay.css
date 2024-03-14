@@ -102,22 +102,19 @@
     font-weight: 400;
 }
 
-.productdisplay-right-fit a {
+.productdisplay-right-size a {
     color: #3a3a3a;
     text-decoration: none;
     font-weight: 700;
     transition: 0.25s;
 }
 
-.productdisplay-right-fit a:hover {
+.productdisplay-right-size a:hover {
     color: orange;
 }
 
-.productdisplay-right-fit a:active {
+.productdisplay-right-size a:active {
     color: darkorange;
-}
-
-.productdisplay-right-size {
 }
 
 .productdisplay-right-sizes {
