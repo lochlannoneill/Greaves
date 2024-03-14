@@ -52,7 +52,7 @@ export const ShopCategory = (props) => {
             Showing <span>1-12</span> of 36 results
           </p>
           <div className="shopcategory-loadmore-button">
-            See More
+            <p>See More <FontAwesomeIcon icon={faChevronDown} size="2xs" /></p>
           </div>
         </div>
       </div>
