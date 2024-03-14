@@ -29,6 +29,7 @@ export const Reviews = () => {
                 </div>
             </form>
         </div>
+        <hr></hr>
         <div className="review-list">
             <div className="review">
                 <div className="review-user">
