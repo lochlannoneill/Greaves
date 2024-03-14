@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 8vh 24vw;
+    gap: 4vh;
 }
 
 .reviews h2 {
@@ -106,14 +107,13 @@
 .review-list {
     display: flex;
     flex-direction: column;
-    margin-top: 4vh;
+    gap: 4vh;
 }
 
 .review {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 2vh 0;
     padding: 2vh;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Modified shadow values */
@@ -224,6 +224,28 @@
 
 .review-helpful-button:active {
     background-color: #d0d0d0;
+    transform: scale(0.975);
+    transition: 0.25s;
+}
+
+.review-showmore {
+    /* margin: 2vh 0; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+}
+
+.review-showmore p:hover {
+    color: #3a3a3a;
+    cursor: pointer; /* Apply cursor pointer to the paragraph element */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.review-showmore p:active {
+    color: #171717;
     transform: scale(0.975);
     transition: 0.25s;
 }

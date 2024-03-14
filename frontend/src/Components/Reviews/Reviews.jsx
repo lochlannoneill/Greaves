@@ -1,7 +1,7 @@
 import React from 'react'
 import placeholder_user from '../Assets/placeholder_user.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCheck} from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCheck, faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import './Reviews.css'
 
@@ -68,6 +68,9 @@ export const Reviews = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="review-showmore">
+            <p>Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" /></p>
         </div>
     </div>
   )
