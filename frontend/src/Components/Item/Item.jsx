@@ -7,7 +7,7 @@ import './Item.css'
 export const Item = (props) => {
   return (
     <div className="item">
-        <Link to={`/products/${props.id}`}>
+        <Link to={`/products/${props.id}`} onClick={window.scrollTo(0, 0)}> {/* TODO - I dont like the implementation here */}
           <div className="item-image-container">
             <img className="item-image" src={props.img} alt={props.title} />
           </div>
