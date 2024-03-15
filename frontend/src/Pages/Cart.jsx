@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { CartItems } from '../Components/CartItems/CartItems'
 import { CartCheckout } from '../Components/CartCheckout/CartCheckout'
+import { Related } from '../Components/Related/Related'
 import './CSS/Cart.css'
 
 export const Cart = () => {
@@ -12,8 +13,11 @@ export const Cart = () => {
 
   return (
     <div className="cart">
-      <CartItems />
-      <CartCheckout />
+      <div className="cart-main">
+        <CartItems />
+        <CartCheckout />
+      </div>
+      <Related />
     </div>
   )
 }

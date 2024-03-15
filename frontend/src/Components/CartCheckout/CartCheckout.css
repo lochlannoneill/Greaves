@@ -1,10 +1,11 @@
 .cartcheckout {
-    flex-basis: 20%;
+    flex-basis: 25%;
     display: flex;
     flex-direction: column;
     gap: 16px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 32px;
+    height: fit-content;
 }
 
 .cartcheckout h2 {
@@ -31,6 +32,12 @@
 .cartcheckout-currency {
     color: #171717;
     font-size: 20px;
+    font-weight: 600;
+}
+
+.cartcheckout-notification {
+    color: grey;
+    font-size: 16px;
     font-weight: 600;
 }
 

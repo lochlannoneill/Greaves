@@ -1,12 +1,21 @@
 .cart {
+    margin-bottom: 8vh;
+}
+
+.cart-main {
     margin: 4vh;
     padding: 4vh 8vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
     margin: 0 auto;
     min-height: 50vh;
+}
+
+.cart-main > * {
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 768px) {
