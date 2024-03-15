@@ -56,7 +56,7 @@ export const Reviews = () => {
                     </div>
                     <div className="review-info-verification">
                         <FontAwesomeIcon className="review-info-verification-checkmark" icon={faCheck} />
-                        <p clasnnName="review-info-verification-text">review.verified</p>
+                        <p className="review-info-verification-text">review.verified</p>
                     </div>
                 </div>
                 <div className="review-images">
