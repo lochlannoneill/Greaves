@@ -13,10 +13,10 @@ export const Hero = () => {
                 collections<br/>
                 for everyone<br/>
             </p>
-            <div className="hero-latest-btn">
+            {/* <div className="hero-latest-btn">
                 <div>Latest Collection</div>
                 <FontAwesomeIcon icon={faArrowRight} />
-            </div>
+            </div> */}
         </div>
         <div className="hero-right">
             <img src={image_hero} alt="" />
