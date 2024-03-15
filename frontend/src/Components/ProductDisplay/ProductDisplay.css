@@ -90,6 +90,11 @@
     flex-direction: column;
 }
 
+.productdisplay-right-title {
+    display: flex;
+    flex-direction: column;
+}
+
 .productdisplay-right h1 {
     color: #171717;
     font-size: 2rem;
