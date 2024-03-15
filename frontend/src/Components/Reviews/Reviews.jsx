@@ -60,12 +60,12 @@ export const Reviews = () => {
                     </div>
                 </div>
                 <div className="review-images">
-                    <img src={placeholder} alt="review.image" />
-                    <img src={placeholder} alt="review.image" />
-                    <img src={placeholder} alt="review.image" />
+                    <img src={placeholder} alt="review" />
+                    <img src={placeholder} alt="review" />
+                    <img src={placeholder} alt="review" />
                     <div class="review-images-expand">
                         <FontAwesomeIcon className="review-images-expand-icon" icon={faPlus} />
-                        <img src={placeholder} alt="review.image" />
+                        <img src={placeholder} alt="review" />
                     </div>
                 </div>
                 <div className="review-description">

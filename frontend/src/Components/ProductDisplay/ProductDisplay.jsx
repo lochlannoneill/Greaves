@@ -56,7 +56,7 @@ export const ProductDisplay = (props) => {
             </div>
             <div className="productdisplay-right-size">
                 <h2>Select Size</h2>
-                <p>Still unsure what size to get? <a href="#">Find your recommended size</a> or check out our <a href="#">size guide</a>.</p>
+                <p>Still unsure what size to get? <a href="/">Find your recommended size</a> or check out our <a href="/">size guide</a>.</p>
                 <div className="productdisplay-right-sizes">
                     <div>S</div>
                     <div>M</div>
