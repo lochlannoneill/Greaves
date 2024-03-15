@@ -26,9 +26,11 @@ export const CartItems = () => {
                 <div className="cartitems-item-right">
                   <p className="cartitems-item-right-title">{product.title}</p>
                   <div className="cartitems-item-right-cost">
-                    <p className="cartitems-item-right-price">{product.price} x </p>
-                    <button className="cartitems-item-quantity">{cart[product.id]}</button>
-                    <p className="cartitems-item-right-total"> = &euro;{product.price * cart[product.id]}</p>
+                    <p className="cartitems-item-right-price">{cart[product.id]}</p>
+                    <p>x</p>
+                    <p className="cartitems-item-quantity">&euro;{product.price}</p>
+                    <p>=</p>
+                    <p className="cartitems-item-right-total">&euro;{product.price * cart[product.id]}</p>
                   </div>
                   <div className="cartitems-right-actions">
                     <button className="cartitems-item-right-add" onClick={() => { addCart(product.id) }}>Add <FontAwesomeIcon icon={faPlus} /></button>
