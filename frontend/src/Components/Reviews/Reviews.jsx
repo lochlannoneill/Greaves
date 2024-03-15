@@ -63,7 +63,7 @@ export const Reviews = () => {
                     <img src={placeholder} alt="review" />
                     <img src={placeholder} alt="review" />
                     <img src={placeholder} alt="review" />
-                    <div class="review-images-expand">
+                    <div className="review-images-expand">
                         <FontAwesomeIcon className="review-images-expand-icon" icon={faPlus} />
                         <img src={placeholder} alt="review" />
                     </div>

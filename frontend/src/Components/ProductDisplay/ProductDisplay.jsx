@@ -19,7 +19,7 @@ export const ProductDisplay = (props) => {
                 <img src={product.image} alt="Product" />
                 <img src={product.image} alt="Product" />
                 <img src={product.image} alt="Product" />
-                <div class="productdisplay-img-list-expand">
+                <div className="productdisplay-img-list-expand">
                     <FontAwesomeIcon className="productdisplay-img-list-expand-icon" icon={faPlus} />
                     <img src={product.image} alt="Product" />
                 </div>
