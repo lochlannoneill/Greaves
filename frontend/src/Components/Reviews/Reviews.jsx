@@ -8,7 +8,7 @@ import './Reviews.css'
 
 export const Reviews = () => {
   return (
-    <div className="reviews">
+    <div id="reviews" className="reviews">
         {/* <h2>Reviews</h2> */}
         <div className="review-input">
             <form>

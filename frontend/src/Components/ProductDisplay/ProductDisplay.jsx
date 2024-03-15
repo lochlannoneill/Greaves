@@ -35,7 +35,7 @@ export const ProductDisplay = (props) => {
             <div className="productdisplay-right-title">
                 <h1>{product.title}</h1>
                 <div className="productdisplay-right-rating">
-                    <p>rating</p>
+                    {/* <p className="productdisplay-right-rating-value">rating</p> */}
                     <span className="productdisplay-right-rating-stars">
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
@@ -43,7 +43,7 @@ export const ProductDisplay = (props) => {
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
                     </span>
-                    <p>reviews</p>
+                    <a href="reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' }); }}>product.reviews</a>
                 </div>
             </div>
             <div className="productdisplay-right-info">

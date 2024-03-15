@@ -100,6 +100,21 @@
     font-size: 2rem;
 }
 
+.productdisplay-right a {
+    color: darkgrey;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.productdisplay-right a:hover {
+    color: grey;
+}
+
+.productdisplay-right a:active {
+    color: darkorange;
+}
+
 .productdisplay-right h2 {
     color: #3a3a3a;
     font-size: 1.2rem;
@@ -109,6 +124,10 @@
     display: flex;
     align-items: center;
     gap: 0.5vh;
+}
+
+.productdisplay-right-rating-value {
+    color: darkorange;
 }
 
 .productdisplay-right-rating-stars {
