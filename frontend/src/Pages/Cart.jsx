@@ -1,5 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { CartItems } from '../Components/CartItems/CartItems'
+import { CartCheckout } from '../Components/CartCheckout/CartCheckout'
+import './CSS/Cart.css'
 
 export const Cart = () => {
       
@@ -8,7 +11,10 @@ export const Cart = () => {
 }, []); // Empty dependency array ensures this effect runs only once after mounting
 
   return (
-    <div>Cart</div>
+    <div className="cart">
+      <CartItems />
+      <CartCheckout />
+    </div>
   )
 }
 
