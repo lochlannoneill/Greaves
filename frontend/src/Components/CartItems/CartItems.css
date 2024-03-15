@@ -9,7 +9,8 @@
 .cartitems hr {
     border: none;
     border-bottom: 1px solid #e0e0e0;
-    margin: 16px 0;
+    margin: 0;
+    margin-top: 16px;
 }
 
 .cartitems h1 {
@@ -19,8 +20,8 @@
 .cartitems-item {
     display: flex;
     flex-direction: row;
-    margin: 16px 0;
-    padding: 16px;
+    margin: 0;
+    padding: 32px;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -34,12 +35,16 @@
     height: 150px;
     object-fit: contain;
     margin-right: 16px;
+    border-radius: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cartitems-item-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    margin-left: 16px;
 }
 
 .cartitems-item-right-title {
@@ -60,7 +65,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
+}
+
+.cartitems-item-right-quantity {
+    font-weight: 700;
+    color: #171717;
 }
 
 .cartitems-item-right button {
@@ -103,5 +113,6 @@
     }
     .cartitems-item-right {
         margin-top: 16px;
+        margin-left: 0;
     }
 }
