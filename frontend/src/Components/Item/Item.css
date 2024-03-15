@@ -80,7 +80,7 @@
     }
 
     .item-image-container {
-        height: 160px;
+        height: 200px;
     }
 
     .item-description {
@@ -110,5 +110,22 @@
     .item-favourite {
         height: 24px;
         width: 24px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 420px) {
+    .item-stuff {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* Super Small devices */
+@media (max-width: 300px) {
+    .item-prices {
+        display: flex;
+        flex-direction: column;
     }
 }
