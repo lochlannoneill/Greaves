@@ -22,7 +22,7 @@ const getFavorites = () => {
 }
 
 const ShopContextProvider = (props) => {
-    { /* Cart Functionality */ }
+    // Cart Functionality
     const [cart, setCart] = useState(getCart());
     const addCart = (productId) => {
         setCart(prevCart => ({
@@ -41,7 +41,7 @@ const ShopContextProvider = (props) => {
         console.log(cart);
     };
 
-    { /* Favorites Functionality */ }
+    // Favorites Functionality
     const [favorites, setFavorites] = useState(getFavorites());
     const addFavorite = (productId) => {
         setFavorites([...favorites, productId])

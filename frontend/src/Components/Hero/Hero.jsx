@@ -1,6 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './Hero.css'
 import image_hero from '../Assets/image_hero.png'
 

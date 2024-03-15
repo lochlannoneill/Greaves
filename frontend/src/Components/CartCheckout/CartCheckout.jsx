@@ -3,7 +3,7 @@ import { ShopContext } from '../../Context/ShopContext';
 import './CartCheckout.css';
 
 export const CartCheckout = () => {
-    const { products, cart, removeCart } = useContext(ShopContext);
+    const { products, cart } = useContext(ShopContext);
     const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
 
     // Calculate subtotal
