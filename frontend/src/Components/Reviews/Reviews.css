@@ -173,6 +173,70 @@
     align-items: center;
 }
 
+.review-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.review-images img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.review-images > *:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+    transition: 0.25s;
+}
+
+.review-images > *:active {
+    transform: scale(0.975);
+    transition: 0.25s;
+}
+
+.review-images-expand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: darkgrey;
+}
+
+.review-images-expand-icon {
+    color: white;
+    z-index: 1; /* TODO - why is this above navbar? .headroom z-index is set to 1000 */
+}
+
+.review-images-expand:hover {
+    background-color: grey;
+}
+
+.review-images-expand:active {
+    background-color: #171717;
+}
+
+.review-images-expand img {
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.review-images-expand-icon{
+    position: absolute;
+    align-items: center;
+    color: white;
+}
+
 .review-description {
     color: #3a3a3a;
     font-size: 1rem;

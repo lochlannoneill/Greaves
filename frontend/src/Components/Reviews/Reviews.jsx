@@ -1,8 +1,9 @@
 import React from 'react'
 import placeholder_user from '../Assets/placeholder_user.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCheck, faChevronDown} from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStar_solid, faStarHalfStroke as faStar_half, faCheck, faPlus, faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
+import placeholder from '../Assets/placeholder.jpg'
 import './Reviews.css'
 
 export const Reviews = () => {
@@ -56,6 +57,15 @@ export const Reviews = () => {
                     <div className="review-info-verification">
                         <FontAwesomeIcon className="review-info-verification-checkmark" icon={faCheck} />
                         <p clasnnName="review-info-verification-text">review.verified</p>
+                    </div>
+                </div>
+                <div className="review-images">
+                    <img src={placeholder} alt="review.image" />
+                    <img src={placeholder} alt="review.image" />
+                    <img src={placeholder} alt="review.image" />
+                    <div class="review-images-expand">
+                        <FontAwesomeIcon className="review-images-expand-icon" icon={faPlus} />
+                        <img src={placeholder} alt="review.image" />
                     </div>
                 </div>
                 <div className="review-description">
