@@ -4,6 +4,7 @@ import './CartCheckout.css';
 
 export const CartCheckout = () => {
     const { products, cart, removeCart } = useContext(ShopContext);
+    const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
 
     // Calculate subtotal
     let subtotal = 0;
@@ -16,13 +17,12 @@ export const CartCheckout = () => {
     const tax = subtotal * VAT;
 
     // Delivery cost
-    const delivery = 4.95
+    const delivery = cartEmpty ? 0 : 4.95
 
     // Calculate total
     const total = subtotal + tax + delivery;
 
     // Check if there are any items in the cart
-    const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
 
     return (
         <div className="cartcheckout">
@@ -38,7 +38,7 @@ export const CartCheckout = () => {
             {!cartEmpty ? (
                 <button className="cartcheckout-confirm">Confirm Purchase</button>
             ) : (
-                <p>You haven't added anything to your cart yet.</p>
+                <p className="cartcheckout-notification">You haven't added anything to your cart yet.</p>
             )}
         </div>
     );
