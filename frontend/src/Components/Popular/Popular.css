@@ -78,4 +78,9 @@
     .popular h1 {
         font-size: 32px;
     }
+
+    .popular-item {
+        gap: 2vh;
+    }
+    
 }
