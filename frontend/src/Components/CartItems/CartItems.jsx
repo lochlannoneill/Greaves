@@ -13,7 +13,7 @@ export const CartItems = () => {
 
   return (
     <div className="cartitems">
-      <h2>My Cart</h2>
+      <h1>My Cart</h1>
       <hr />
       {products.map((product) => {
         if (cart[product.id] > 0) {
