@@ -43,7 +43,7 @@ export const ProductDisplay = (props) => {
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
                         <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
                     </span>
-                    <a href="reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' }); }}>product.reviews</a>
+                    <a href="reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' }); }}>product.reviews total reviews</a>
                 </div>
             </div>
             <div className="productdisplay-right-info">
