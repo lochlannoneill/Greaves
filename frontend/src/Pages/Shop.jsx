@@ -17,7 +17,7 @@ export const Shop = () => {
       <Hero/>
       {/* <Divider/> */}
       <Popular/>
-      <Offers/>
+      {/* <Offers/> */}
       <NewCollections/>
     </div>
   )
