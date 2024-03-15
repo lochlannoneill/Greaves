@@ -11,18 +11,27 @@
     color: #171717;
 }
 
+.cartcheckout-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cartcheckout-text p {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cartcheckout hr {
     border: none;
     border-bottom: 1px solid #e0e0e0;
     margin: 16px 0;
-
 }
 
 .cartcheckout-currency {
     color: #171717;
     font-size: 20px;
     font-weight: 600;
-
 }
 
 .cartcheckout-confirm {

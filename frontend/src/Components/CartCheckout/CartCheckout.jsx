@@ -5,16 +5,35 @@ import './CartCheckout.css';
 export const CartCheckout = () => {
     const { products, cart, removeCart } = useContext(ShopContext);
 
+    // Calculate subtotal
+    let subtotal = 0;
+    for (const product of products) {
+        subtotal += product.price * cart[product.id];
+    }
+
+    // Calculate tax (assuming taxRate is a constant)
+    const VAT = 0.23; // Example tax rate
+    const tax = subtotal * VAT;
+
+    // Delivery cost
+    const delivery = 4.95
+
+    // Calculate total
+    const total = subtotal + tax + delivery;
+
     // Check if there are any items in the cart
     const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
 
     return (
         <div className="cartcheckout">
             <h2>Checkout</h2>
-            <p>Subtotal: <span className="cartcheckout-currency">&euro;0</span></p>
-            <p>Tax: <span className="cartcheckout-currency">&euro;0</span></p>
-            <p>Total: <span className="cartcheckout-currency">&euro;0</span></p>
-            <hr />
+            <div className="cartcheckout-text">
+                <p><span>Total</span><span className="cartcheckout-currency">&euro;{subtotal.toFixed(2)}</span></p>
+                <p><span>Tax (+{VAT * 100}% VAT)</span><span className="cartcheckout-currency">&euro;{tax.toFixed(2)}</span></p>
+                <p><span>Delivery</span><span className="cartcheckout-currency">&euro;{delivery.toFixed(2)}</span></p>
+                <hr />
+                <p><span>SubTotal</span><span className="cartcheckout-currency">&euro;{total.toFixed(2)}</span></p>
+            </div>
             {/* Display "Confirm Purchase" button after the list if there are items in the cart */}
             {!cartEmpty ? (
                 <button className="cartcheckout-confirm">Confirm Purchase</button>
