@@ -1,5 +1,11 @@
 .product-components {
     display: flex;
     flex-direction: column;
-    gap: 6vh;
+    gap: 4vh;
+}
+
+@media screen and (max-width: 768px) {
+    .product-components {
+        gap: 8vh;
+    }
 }
