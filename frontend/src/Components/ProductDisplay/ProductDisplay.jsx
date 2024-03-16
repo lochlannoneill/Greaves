@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
-import { faHeart as faHeart_regular, faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
+import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
 import './ProductDisplay.css'
 

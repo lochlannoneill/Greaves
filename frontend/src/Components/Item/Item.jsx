@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as faHeart_solid } from '@fortawesome/free-solid-svg-icons';
-import { faHeart as faHeart_regular } from '@fortawesome/free-regular-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
 import './Item.css'
 
@@ -28,10 +27,12 @@ export const Item = (props) => {
                   €{props.price_old}
                 </div>
             </div>
-            <FontAwesomeIcon
-              className={`item-favourite ${isFavorite(props.id) ? 'isFavorite' : ''}`}
-              icon={isFavorite(props.id) ? faHeart_solid : faHeart_regular}
-            />
+            {isFavorite(props.id) ? (
+              <FontAwesomeIcon
+                  className={`item-favourite ${isFavorite(props.id) ? 'isFavorite' : ''}`}
+                  icon={faHeart_solid}
+              />
+            ) : null}
           </div>
         </div>
     </div>
