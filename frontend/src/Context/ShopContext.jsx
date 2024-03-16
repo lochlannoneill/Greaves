@@ -50,6 +50,9 @@ const ShopContextProvider = (props) => {
 
     // Favorites Functionality
     const [favorites, setFavorites] = useState(getFavorites());
+    const getFavoriteCount = () => {
+        return favorites.length;
+    };
     const addFavorite = (productId) => {
         setFavorites([...favorites, productId])
     }
@@ -57,7 +60,7 @@ const ShopContextProvider = (props) => {
         setFavorites(favorites.filter(id => id !== productId))
     }
 
-    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, addFavorite, removeFavorite};
+    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, getFavoriteCount, addFavorite, removeFavorite};
 
     return (
         <ShopContext.Provider value={contextValue}>
