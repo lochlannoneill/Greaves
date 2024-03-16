@@ -14,10 +14,6 @@ const getCart = () => {
 }
 
 const getFavorites = () => {
-    let favorites = {};
-    for (const product of products) {
-        favorites[product.id] = 0;
-    }
     return [];
 }
 
@@ -54,11 +50,14 @@ const ShopContextProvider = (props) => {
         return favorites.length;
     };
     const addFavorite = (productId) => {
-        setFavorites([...favorites, productId])
+        setFavorites(prevFavorites => {
+            const updatedFavorites = new Set([...prevFavorites, productId]);
+            return Array.from(updatedFavorites);
+        });
     }
     const removeFavorite = (productId) => {
-        setFavorites(favorites.filter(id => id !== productId))
-    }
+        setFavorites(prevFavorites => prevFavorites.filter(id => id !== productId));
+    }    
 
     const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, getFavoriteCount, addFavorite, removeFavorite};
 
