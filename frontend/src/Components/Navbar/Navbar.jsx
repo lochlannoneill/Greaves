@@ -33,13 +33,12 @@ export const Navbar = () => {
                     <li onClick={() => { setMenu("girls") }}><Link to="/girls">Girls</Link>{menu === "girls" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("boys") }}><Link to="/boys">Boys</Link>{menu === "boys" ? <hr /> : <></>}</li>
                 </ul>
-                <div className='nav-login-cart'>
-                    <img className='nav-login-cart-child nav-flag' src={flag_ireland} alt='ireland' />
-                    <Link className='nav-login-cart-child' to="/signup"><FontAwesomeIcon className="nav-login" icon={faUser_regular} /></Link>
-                    <Link className='nav-login-cart-child' to="/favourites"><FontAwesomeIcon className="nav-favourite" icon={faHeart_solid} /></Link>
-                    <div className='nav-login-cart-child'>
-                        <Link to="/cart"><FontAwesomeIcon className="nav-cart" icon={faCartShopping_solid} /></Link>
-                        <div className='nav-cart-count'>{totalCartItems}</div> {/* Display total cart items count */}
+                <div className='nav-state'>
+                    <img className='nav-state-flag' src={flag_ireland} alt='ireland' />
+                    <Link className="nav-state-login" to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
+                    <Link className="nav-state-favourite" to="/favourites"><FontAwesomeIcon icon={faHeart_solid} /></Link>
+                    <div>
+                        <Link className="nav-state-cart" to="/cart"><FontAwesomeIcon className="nav-cart" icon={faCartShopping_solid} /></Link>
                         {totalCartItems > 0 ? (
                             <div className='nav-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
                         ) : null}

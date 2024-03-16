@@ -84,13 +84,13 @@
     background: darkorange; /* TODO - Color variables */
 }
 
-.nav-login-cart {
+.nav-state {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.nav-login-cart * {
+.nav-state * {
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -98,16 +98,16 @@
     text-decoration: none;
 }
 
-.nav-login-cart-child:hover{
+.nav-state > *:hover{
     transform: scale(1.1);
     transition: 0.25s;
 }
 
-.nav-flag {
+.nav-state-flag {
     border-radius: 50%;
 }
 
-.nav-login-cart .login {
+.nav-state .login {
     width: 120px;
     height: 48px;
     outline: none;
@@ -120,11 +120,11 @@
     cursor: pointer;
 }
 
-.nav-login-cart .login:hover {
+.nav-state .login:hover {
     background: black; /* TODO - Color variables */
 }
 
-.nav-cart-count {
+.nav-state-cart-count {
     width: 20px;
     height: 20px;
     display: flex;
