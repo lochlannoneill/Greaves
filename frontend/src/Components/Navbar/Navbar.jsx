@@ -40,6 +40,9 @@ export const Navbar = () => {
                     <div className='nav-login-cart-child'>
                         <Link to="/cart"><FontAwesomeIcon className="nav-cart" icon={faCartShopping_solid} /></Link>
                         <div className='nav-cart-count'>{totalCartItems}</div> {/* Display total cart items count */}
+                        {totalCartItems > 0 ? (
+                            <div className='nav-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
+                        ) : null}
                     </div>
                 </div>
             </div>
