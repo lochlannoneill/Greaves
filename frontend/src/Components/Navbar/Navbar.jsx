@@ -34,9 +34,15 @@ export const Navbar = () => {
                     <li onClick={() => { setMenu("boys") }}><Link to="/boys">Boys</Link>{menu === "boys" ? <hr /> : <></>}</li>
                 </ul>
                 <div className='nav-state'>
-                    <img className='nav-state-flag' src={flag_ireland} alt='ireland' />
-                    <Link className="nav-state-login" to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
-                    <Link className="nav-state-favourite" to="/favourites"><FontAwesomeIcon icon={faHeart_solid} /></Link>
+                    <div className="nav-state-flag">
+                        <img className='nav-state-flag' src={flag_ireland} alt='ireland' />
+                    </div>
+                    <div className="nav-state-user">
+                        <Link to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
+                    </div>
+                    <div className="nav-state-favourites">
+                        <Link to="/favourites"><FontAwesomeIcon icon={faHeart_solid} /></Link>
+                    </div>
                     <div className="nav-state-cart">
                         <Link to="/cart"><FontAwesomeIcon icon={faCartShopping_solid} /></Link>
                         {totalCartItems > 0 ? (

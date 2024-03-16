@@ -90,9 +90,11 @@
     gap: 16px;
 }
 
-.nav-state * {
-    width: 24px;
-    height: 24px;
+.nav-state > * {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     color: #171717; /* TODO - Color variables */
     text-decoration: none;
@@ -104,22 +106,45 @@
 }
 
 .nav-state-flag {
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
 }
 
+.nav-state-cart {
+    position: relative; /* Ensure proper positioning of the count */
+}
+
 .nav-state-cart-count {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 16px;
+    height: 16px;
+    background-color: darkorange;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 14px;
-    background: darkorange;
-    color: white;
-    line-height: 20px;
+    padding: 2px;
 }
+
+/* .nav-state-cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -5px;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 50%;
+    z-index: 1;
+} */
 
 
 /* Media query for smaller screens */
