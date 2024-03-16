@@ -10,7 +10,7 @@ export const FavouriteItems = () => {
     <div className="favouriteitems">
       <h1>My Favorites</h1>
       {favorites.length === 0 ? (
-        <p>No items in favorites</p>
+        <p className="favouriteitems-message">No items in favorites</p>
       ) : (
         <div className="favouriteitems-item-list">
           {favorites.map((favoriteId) => {

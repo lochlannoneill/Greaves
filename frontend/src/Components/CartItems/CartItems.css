@@ -17,6 +17,10 @@
     color: #171717;
 }
 
+.cartitems-message {
+    color: grey;
+}
+
 .cartitems-item {
     display: flex;
     flex-direction: row;

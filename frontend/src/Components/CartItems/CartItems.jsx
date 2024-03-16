@@ -14,7 +14,7 @@ export const CartItems = () => {
   return (
     <div className="cartitems">
       <h1>My Cart</h1>
-      <hr />
+      {/* <hr /> */}
       {products.map((product) => {
         if (cart[product.id] > 0) {
           return (
@@ -45,7 +45,7 @@ export const CartItems = () => {
         }
       })}
 
-      {cartEmpty && <p>No items in cart</p>}
+      {cartEmpty && <p className="cartitems-message">No items in cart</p>}
     </div>
   )
 }
