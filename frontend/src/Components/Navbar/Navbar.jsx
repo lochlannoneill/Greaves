@@ -37,10 +37,10 @@ export const Navbar = () => {
                     <img className='nav-state-flag' src={flag_ireland} alt='ireland' />
                     <Link className="nav-state-login" to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
                     <Link className="nav-state-favourite" to="/favourites"><FontAwesomeIcon icon={faHeart_solid} /></Link>
-                    <div>
-                        <Link className="nav-state-cart" to="/cart"><FontAwesomeIcon className="nav-cart" icon={faCartShopping_solid} /></Link>
+                    <div className="nav-state-cart">
+                        <Link to="/cart"><FontAwesomeIcon icon={faCartShopping_solid} /></Link>
                         {totalCartItems > 0 ? (
-                            <div className='nav-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
+                            <div className='nav-state-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
                         ) : null}
                     </div>
                 </div>
