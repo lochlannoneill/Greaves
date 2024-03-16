@@ -67,6 +67,10 @@
     color: grey;
 }
 
+.item-favourite.isFavorite {
+    color: red; /* Red color */
+}
+
 .item:hover {
     transform: scale(1.025);
     transition: 0.6s;

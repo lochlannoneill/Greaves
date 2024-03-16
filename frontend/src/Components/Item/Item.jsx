@@ -8,7 +8,7 @@ import { ShopContext } from '../../Context/ShopContext';
 import './Item.css'
 
 export const Item = (props) => {
-  const { toggleFavorite, isFavorite } = useContext(ShopContext);
+  const { isFavorite } = useContext(ShopContext);
 
   return (
     <div className="item">
@@ -28,7 +28,10 @@ export const Item = (props) => {
                   €{props.price_old}
                 </div>
             </div>
-            <FontAwesomeIcon className="item-favourite" icon={isFavorite(props.id) ? faHeart_solid : faHeart_regular} onClick={() => toggleFavorite(props.id)} />
+            <FontAwesomeIcon
+              className={`item-favourite ${isFavorite(props.id) ? 'isFavorite' : ''}`}
+              icon={isFavorite(props.id) ? faHeart_solid : faHeart_regular}
+            />
           </div>
         </div>
     </div>
