@@ -107,23 +107,6 @@
     border-radius: 50%;
 }
 
-.nav-state .login {
-    width: 120px;
-    height: 48px;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    color: white; /* TODO - Color variables */
-    font-size: 20px;
-    font-weight: 500;
-    background: #333; /* TODO - Color variables */
-    cursor: pointer;
-}
-
-.nav-state .login:hover {
-    background: black; /* TODO - Color variables */
-}
-
 .nav-state-cart-count {
     width: 20px;
     height: 20px;
@@ -131,14 +114,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -40px;
-    margin-left: 15px;
-    border-radius: 11px;
+    border-radius: 50%;
     font-size: 14px;
-    background: darkorange; /* TODO - Color variables */
-    color: white; /* TODO - Color variables */
-    z-index: 1 !important;
+    background: darkorange;
+    color: white;
+    line-height: 20px;
 }
+
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
