@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
+import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faXmark, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
 import './ProductDisplay.css'
 
 export const ProductDisplay = (props) => {
     const { product } = props;
-    const { addCart, addFavorite, isFavorite } = useContext(ShopContext);
+    const { addCart, toggleFavorite, isFavorite } = useContext(ShopContext);
     
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
@@ -78,7 +78,10 @@ export const ProductDisplay = (props) => {
                     </div>
                 </div>
                 <div className="productdisplay-right-category-buttons">
-                    <button onClick={() => { addFavorite(product.id) }} className="productdisplay-right-category-buttons-favourite">Add to Favourites <FontAwesomeIcon icon={faHeart_solid} /></button>
+                    <button onClick={() => { toggleFavorite(product.id) }} className="productdisplay-right-category-buttons-favourite">
+                        {isFavorite(product.id) ? 'Remove from Favorites ' : 'Add to Favorites '}
+                        {isFavorite(product.id) ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faHeart_solid} />}
+                    </button>
                     <button onClick={() => { addCart(product.id) }} className="productdisplay-right-category-buttons-cart">Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} /></button>
                 </div>
                 {/* <div className="productdisplay-right-filters">
