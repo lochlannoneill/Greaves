@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { FavouriteItems } from '../Components/FavouriteItems/FavouriteItems';
 
 export const Favourites = () => {
       
@@ -8,7 +9,9 @@ export const Favourites = () => {
 }, []); // Empty dependency array ensures this effect runs only once after mounting
 
   return (
-    <div>Favourites</div>
+    <div className="favourites">
+      <FavouriteItems />
+    </div>
   )
 }
 
