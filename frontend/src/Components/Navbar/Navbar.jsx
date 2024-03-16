@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser as faUser_regular } from '@fortawesome/free-regular-svg-icons';
+import { faUser as faUser_regular, faHeart as faHeart_regular} from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faHeart_solid, faCartShopping as faCartShopping_solid } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import flag_ireland from '../Assets/flags/ireland.png';
@@ -9,7 +9,7 @@ import { ShopContext } from '../../Context/ShopContext';
 
 export const Navbar = () => {
     const [menu, setMenu] = useState("shop");
-    const { cart, getCartCount } = useContext(ShopContext); // Access the ShopContext
+    const { cart, getCartCount, getFavoriteCount } = useContext(ShopContext); // Access the ShopContext
 
     // State for total cart items count
     const [totalCartItems, setTotalCartItems] = useState(0);
@@ -41,7 +41,13 @@ export const Navbar = () => {
                         <Link to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
                     </div>
                     <div className="nav-state-favourites">
-                        <Link to="/favourites"><FontAwesomeIcon icon={faHeart_solid} /></Link>
+                        <Link to="/favourites">
+                            {getFavoriteCount() > 0 ? (
+                                <FontAwesomeIcon icon={faHeart_solid} />
+                            ) : (
+                                <FontAwesomeIcon icon={faHeart_regular} />
+                            )}
+                        </Link>
                     </div>
                     <div className="nav-state-cart">
                         <Link to="/cart"><FontAwesomeIcon icon={faCartShopping_solid} /></Link>
