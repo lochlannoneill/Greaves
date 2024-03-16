@@ -24,6 +24,13 @@ const getFavorites = () => {
 const ShopContextProvider = (props) => {
     // Cart Functionality
     const [cart, setCart] = useState(getCart());
+    const getCartCount = () => {
+        let count = 0;
+        Object.values(cart).forEach(quantity => {
+            count += quantity;
+        });
+        return count;
+    };
     const addCart = (productId) => {
         setCart(prevCart => ({
             ...prevCart,
@@ -50,7 +57,7 @@ const ShopContextProvider = (props) => {
         setFavorites(favorites.filter(id => id !== productId))
     }
 
-    const contextValue = {products, cart, addCart, removeCart, favorites, addFavorite, removeFavorite};
+    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, addFavorite, removeFavorite};
 
     return (
         <ShopContext.Provider value={contextValue}>
