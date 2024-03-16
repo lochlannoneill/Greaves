@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as icon_favourite_regular } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as faHeart_solid } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as faHeart_regular } from '@fortawesome/free-regular-svg-icons';
+import { ShopContext } from '../../Context/ShopContext';
 import './Item.css'
 
 export const Item = (props) => {
+  const { toggleFavorite, isFavorite } = useContext(ShopContext);
+
   return (
     <div className="item">
         <Link to={`/products/${props.id}`} onClick={window.scrollTo(0, 0)}> {/* TODO - I dont like the implementation here */}
@@ -23,7 +28,7 @@ export const Item = (props) => {
                   €{props.price_old}
                 </div>
             </div>
-            <FontAwesomeIcon className="item-favourite" icon={icon_favourite_regular} />
+            <FontAwesomeIcon className="item-favourite" icon={isFavorite(props.id) ? faHeart_solid : faHeart_regular} onClick={() => toggleFavorite(props.id)} />
           </div>
         </div>
     </div>

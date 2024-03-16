@@ -49,6 +49,9 @@ const ShopContextProvider = (props) => {
     const getFavoriteCount = () => {
         return favorites.length;
     };
+    const isFavorite = (productId) => {
+        return favorites.includes(productId);
+      };
     const addFavorite = (productId) => {
         setFavorites(prevFavorites => {
             const updatedFavorites = new Set([...prevFavorites, productId]);
@@ -57,9 +60,16 @@ const ShopContextProvider = (props) => {
     }
     const removeFavorite = (productId) => {
         setFavorites(prevFavorites => prevFavorites.filter(id => id !== productId));
-    }    
+    }
+    const toggleFavorite = (productId) => {
+        if (isFavorite(productId)) {
+          removeFavorite(productId);
+        } else {
+          addFavorite(productId);
+        }
+      };    
 
-    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, getFavoriteCount, addFavorite, removeFavorite};
+    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, getFavoriteCount, isFavorite, addFavorite, removeFavorite, toggleFavorite};
 
     return (
         <ShopContext.Provider value={contextValue}>
