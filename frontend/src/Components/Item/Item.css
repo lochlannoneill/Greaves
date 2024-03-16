@@ -38,7 +38,11 @@
     gap: 16px;
     justify-content: center;
     align-items: center;
-    line-height: 1.1;
+}
+
+.item-stuff > * {
+    display: flex;
+    align-items: center;
 }
 
 .item-prices {
