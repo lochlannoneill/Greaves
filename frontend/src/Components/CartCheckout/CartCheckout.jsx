@@ -3,9 +3,9 @@ import { ShopContext } from '../../Context/ShopContext';
 import './CartCheckout.css';
 
 export const CartCheckout = () => {
-    const { products, cart } = useContext(ShopContext);
-    const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
-
+    const { products, cart, getCartCount } = useContext(ShopContext);
+    const cartEmpty = getCartCount() === 0;
+    
     // Calculate subtotal
     let subtotal = 0;
     for (const product of products) {
@@ -17,7 +17,6 @@ export const CartCheckout = () => {
         { code: 'LOCHLANN', discountPercentage: 10 },
         { code: 'GREAVES', discountPercentage: 20 },
         { code: 'REACT', discountPercentage: 30 },
-        // Add more discounts here
     ];
 
     const [appliedDiscount, setAppliedDiscount] = useState(null);
@@ -47,22 +46,24 @@ export const CartCheckout = () => {
 
     return (
         <div className="cartcheckout">
-            <div className="cartcheckout-child">
-                <h2>Coupon</h2>
-                <p>Try a coupon code if you have one.</p>
-                <div className="cartcheckout-coupon">
-                    <input
-                        type="text"
-                        placeholder="Coupon code"
-                        value={couponCode}
-                        onChange={(e) => setCouponCode(e.target.value)}
-                    />
-                    <button onClick={applyDiscount}>Apply</button>
+            {!cartEmpty ? (
+                <div className="cartcheckout-child">
+                    <h2>Coupon</h2>
+                    <p>Try a coupon code if you have one.</p>
+                    <div className="cartcheckout-coupon">
+                        <input
+                            type="text"
+                            placeholder="Coupon code"
+                            value={couponCode}
+                            onChange={(e) => setCouponCode(e.target.value)}
+                        />
+                        <button onClick={applyDiscount}>Apply</button>
+                    </div>
+                    {appliedDiscount && (
+                        <p className="cartcheckout-coupon-confirmation">Coupon code applied: {appliedDiscount.code} ({appliedDiscount.discountPercentage}% off)</p>
+                    )}
                 </div>
-                {appliedDiscount && (
-                    <p className="cartcheckout-coupon-confirmation">Coupon code applied: {appliedDiscount.code} ({appliedDiscount.discountPercentage}% off)</p>
-                )}
-            </div>
+            ) : null}
             <div className="cartcheckout-child">
                 <h2>Checkout</h2>
                 <div className="cartcheckout-text">
