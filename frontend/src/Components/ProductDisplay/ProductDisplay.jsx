@@ -45,7 +45,7 @@ export const ProductDisplay = (props) => {
                         {product.title}
                     </h1>
                     <div className="productdisplay-right-rating">
-                        {/* <p className="productdisplay-right-rating-value">rating</p> */}
+                        <p className="productdisplay-right-rating-value">product.rating</p>
                         <span className="productdisplay-right-rating-stars">
                             <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
                             <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_solid} />
@@ -53,7 +53,7 @@ export const ProductDisplay = (props) => {
                             <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_half} />
                             <FontAwesomeIcon className="productdisplay-right-rating-icon" icon={faStar_regular} />
                         </span>
-                        <a href="reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' }); }}>product.reviews total reviews</a>
+                        <a href="reviews" onClick={(e) => { e.preventDefault(); document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' }); }}>product.reviews</a>
                     </div>
                 </div>
                 <div className="productdisplay-right-info">
@@ -62,7 +62,7 @@ export const ProductDisplay = (props) => {
                         <p className="productdisplay-right-price-old">&euro;{product.price_old}</p>
                     </div>
                     <div className="productdisplay-right-stock">
-                        <p>product.stock left in stock</p>
+                        <p>product.stock</p>
                     </div>
                 </div>
                 <div className="productdisplay-right-details">
