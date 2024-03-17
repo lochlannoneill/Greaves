@@ -6,7 +6,7 @@
     padding: 4vh 8vw;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 10vh); /* TODO - Navbar heights for differnet screen sizes */
+    min-height: calc(100vh - 15vh); /* TODO - Navbar heights for differnet screen sizes */
 }
 
 .favouriteitems h1 {
