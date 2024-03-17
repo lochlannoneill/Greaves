@@ -8,7 +8,7 @@ import './ProductDisplay.css'
 
 export const ProductDisplay = (props) => {
     const { product } = props;
-    const { addCart, toggleFavorite, isFavorite } = useContext(ShopContext);
+    const { cart, addCart, toggleFavorite, isFavorite } = useContext(ShopContext);
     
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
@@ -94,6 +94,11 @@ export const ProductDisplay = (props) => {
                     <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
                     <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
                 </div> */}
+                {cart[product.id] > 0 && (
+                    <p className="productdisplay-right-already">
+                        {cart[product.id] === 1 ? 'This item' : `${cart[product.id]} x `} already in the cart
+                    </p>
+                )}
             </div>
         </div>
     );
