@@ -87,14 +87,6 @@
 
 
 @media screen and (max-width: 768px) {
-    .item {
-        width: 40%;
-    }
-
-    .item-image-container {
-        height: 200px;
-    }
-
     .item-description {
         padding: 12px;
         display: flex;
@@ -104,10 +96,6 @@
 
     .item-description * {
         gap: 8px;
-    }
-
-    .item-description p {
-        font-size: 0.8rem;
     }
 
     .item-stuff * {
@@ -129,7 +117,6 @@
 @media (max-width: 420px) {
     .item-stuff {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
     }
 }
