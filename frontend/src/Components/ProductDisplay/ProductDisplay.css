@@ -306,8 +306,8 @@
     }
 
     .productdisplay-main-img {
-        width: 100%;
-        height: 48vw;
+        width: 45vw;
+        height: 56vw;
         object-fit: cover;
     }
 }
