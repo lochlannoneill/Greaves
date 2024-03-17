@@ -243,6 +243,14 @@
     transition: 0.25s;
 }
 
+.productdisplay-right-category-buttons-favourite {
+    background-color: grey; /* Default background color */
+}
+
+.productdisplay-right-category-buttons-favourite.in-favorites {
+    background-color: red;
+}
+
 .productdisplay-right-category-buttons-favourite:hover {
     background-color: red !important;
 }

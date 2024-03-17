@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faXmark, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
-import { faStar as faStar_regular } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStar_regular, faHeart as faHeart_regular } from '@fortawesome/free-regular-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
 import './ProductDisplay.css'
 
@@ -34,10 +34,13 @@ export const ProductDisplay = (props) => {
                 <div className="productdisplay-right-heading">
                     <h1 className="productdisplay-right-heading-title">
                         {isFavorite(product.id) ? (
-                            <FontAwesomeIcon
-                                className={`item-favourite ${isFavorite(product.id) ? 'isFavorite' : ''}`}
-                                icon={faHeart_solid}
-                            />
+                            <span>
+                                <FontAwesomeIcon
+                                    className={`item-favourite ${isFavorite(product.id) ? 'isFavorite' : ''}`}
+                                    icon={faHeart_solid}
+                                />
+                                &nbsp;
+                            </span>
                         ) : null}
                         {product.title}
                     </h1>
@@ -78,10 +81,12 @@ export const ProductDisplay = (props) => {
                     </div>
                 </div>
                 <div className="productdisplay-right-category-buttons">
-                    <button onClick={() => { toggleFavorite(product.id) }} className="productdisplay-right-category-buttons-favourite">
-                        {isFavorite(product.id) ? 'Remove from Favorites ' : 'Add to Favorites '}
-                        {isFavorite(product.id) ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faHeart_solid} />}
-                    </button>
+                <button 
+                    onClick={() => { toggleFavorite(product.id) }} 
+                    className={`productdisplay-right-category-buttons-favourite ${isFavorite(product.id) ? 'in-favorites' : 'not-in-favorites'}`}
+                    >
+                    {isFavorite(product.id) ? <FontAwesomeIcon icon={faHeart_solid} /> : <FontAwesomeIcon icon={faHeart_regular} />}
+                </button>
                     <button onClick={() => { addCart(product.id) }} className="productdisplay-right-category-buttons-cart">Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} /></button>
                 </div>
                 {/* <div className="productdisplay-right-filters">
