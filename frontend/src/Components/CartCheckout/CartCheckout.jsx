@@ -1,16 +1,20 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
 import './CartCheckout.css';
 
 export const CartCheckout = () => {
     const { products, cart, getCartCount } = useContext(ShopContext);
-    const cartEmpty = getCartCount() === 0;
-    
+    const [subtotal, setSubtotal] = useState(0);
+    const [discountAmount, setDiscountAmount] = useState(0);
+
     // Calculate subtotal
-    let subtotal = 0;
-    for (const product of products) {
-        subtotal += product.price * cart[product.id];
-    }
+    useEffect(() => {
+        let sub = 0;
+        for (const product of products) {
+            sub += product.price * cart[product.id];
+        }
+        setSubtotal(sub);
+    }, [products, cart]);
 
     // Discounts
     const discounts = [
@@ -21,7 +25,6 @@ export const CartCheckout = () => {
 
     const [appliedDiscount, setAppliedDiscount] = useState(null);
     const [couponCode, setCouponCode] = useState('');
-    const [discountAmount, setDiscountAmount] = useState(0);
 
     const applyDiscount = () => {
         const discount = discounts.find(d => d.code === couponCode.toUpperCase());
@@ -39,14 +42,14 @@ export const CartCheckout = () => {
     const tax = subtotal * VAT;
 
     // Delivery cost
-    const delivery = cartEmpty ? 0 : 4.95;
+    const delivery = getCartCount() > 0 ? 4.95 : 0;
 
     // Calculate total
-    const total = subtotal + tax - discountAmount + delivery;
+    const total = Math.max(0, subtotal + tax - discountAmount + delivery);
 
     return (
         <div className="cartcheckout">
-            {!cartEmpty ? (
+            {getCartCount() > 0 && (
                 <div className="cartcheckout-child">
                     <h2>Coupon</h2>
                     <p>Try a coupon code if you have one.</p>
@@ -63,7 +66,7 @@ export const CartCheckout = () => {
                         <p className="cartcheckout-coupon-confirmation">Coupon code applied: {appliedDiscount.code} ({appliedDiscount.discountPercentage}% off)</p>
                     )}
                 </div>
-            ) : null}
+            )}
             <div className="cartcheckout-child">
                 <h2>Checkout</h2>
                 <div className="cartcheckout-text">
@@ -77,7 +80,7 @@ export const CartCheckout = () => {
                     <p><span>Total</span><span className="cartcheckout-currency">&euro;{total.toFixed(2)}</span></p>
                 </div>
                 {/* Display "Confirm Purchase" button after the list if there are items in the cart */}
-                {!cartEmpty ? (
+                {getCartCount() > 0 ? (
                     <button className="cartcheckout-confirm">Confirm Purchase</button>
                 ) : (
                     <p className="cartcheckout-notification">You haven't added anything to your cart yet.</p>
