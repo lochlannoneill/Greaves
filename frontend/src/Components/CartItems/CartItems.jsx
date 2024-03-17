@@ -4,6 +4,7 @@ import { ShopContext } from '../../Context/ShopContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import './CartItems.css'
+import { Link } from 'react-router-dom';
 
 export const CartItems = () => {
   const {products, cart, addCart, removeCart} = useContext(ShopContext);
@@ -21,10 +22,16 @@ export const CartItems = () => {
             <div className="cartitems-list" key={product.id}>
               <div className="cartitems-item">
                 <div className="cartitems-item-left">
-                  <img className="cartitems-item-left-image" src={product.image} alt=""/>
+                  <Link to={`/products/${product.id}`}>
+                    <img className="cartitems-item-left-image" src={product.image} alt=""/>
+                  </Link>
                 </div>
                 <div className="cartitems-item-right">
-                  <p className="cartitems-item-right-title">{product.title}</p>
+                  <p className="cartitems-item-right-title">
+                    <Link to={`/products/${product.id}`} className="cartitems-item-right-link">
+                      {product.title}
+                    </Link>
+                  </p>
                   <p className="cartitems-item-right-size">Size: product.size</p>
                   <div className="cartitems-item-right-cost">
                     <p className="cartitems-item-right-quantity">{cart[product.id]}</p>

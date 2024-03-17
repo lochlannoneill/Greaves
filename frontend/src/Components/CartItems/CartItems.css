@@ -6,6 +6,15 @@
     padding: 32px;
 }
 
+.cartitems * {
+    text-decoration: none;
+}
+
+.cartitems-item-right-link {
+    color: #171717; /* Or any other color you prefer */
+}
+
+
 .cartitems hr {
     border: none;
     border-bottom: 1px solid #e0e0e0;
