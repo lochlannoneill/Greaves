@@ -96,7 +96,7 @@ export const ProductDisplay = (props) => {
                 </div> */}
                 {cart[product.id] > 0 && (
                     <p className="productdisplay-right-already">
-                        {cart[product.id] === 1 ? 'This item' : `${cart[product.id]} x `} already in the cart
+                        {cart[product.id] === 1 ? 'This item is' : `${cart[product.id]} x `} already in the cart
                     </p>
                 )}
             </div>
