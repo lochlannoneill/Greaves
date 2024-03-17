@@ -40,7 +40,6 @@
     object-fit: contain;
     margin-right: 16px;
     border-radius: 25%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cartitems-item-right {

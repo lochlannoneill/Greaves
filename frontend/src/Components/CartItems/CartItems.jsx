@@ -25,6 +25,7 @@ export const CartItems = () => {
                 </div>
                 <div className="cartitems-item-right">
                   <p className="cartitems-item-right-title">{product.title}</p>
+                  <p className="cartitems-item-right-size">Size: product.size</p>
                   <div className="cartitems-item-right-cost">
                     <p className="cartitems-item-right-quantity">{cart[product.id]}</p>
                     <p>x</p>
