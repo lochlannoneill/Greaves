@@ -81,12 +81,12 @@ export const ProductDisplay = (props) => {
                     </div>
                 </div>
                 <div className="productdisplay-right-category-buttons">
-                <button 
-                    onClick={() => { toggleFavorite(product.id) }} 
-                    className={`productdisplay-right-category-buttons-favourite ${isFavorite(product.id) ? 'in-favorites' : 'not-in-favorites'}`}
-                    >
-                    {isFavorite(product.id) ? <FontAwesomeIcon icon={faHeart_solid} /> : <FontAwesomeIcon icon={faHeart_regular} />}
-                </button>
+                    <button 
+                        onClick={() => { toggleFavorite(product.id) }} 
+                        className={`productdisplay-right-category-buttons-favourite ${isFavorite(product.id) ? 'in-favorites' : 'not-in-favorites'}`}
+                        >
+                        {isFavorite(product.id) ? <FontAwesomeIcon icon={faHeart_solid} /> : <FontAwesomeIcon icon={faHeart_regular} />}
+                    </button>
                     <button onClick={() => { addCart(product.id) }} className="productdisplay-right-category-buttons-cart">Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} /></button>
                 </div>
                 {/* <div className="productdisplay-right-filters">
