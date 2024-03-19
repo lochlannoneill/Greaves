@@ -2,13 +2,14 @@ import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser as faUser_regular, faHeart as faHeart_regular} from '@fortawesome/free-regular-svg-icons';
-import { faHeart as faHeart_solid, faCartShopping as faCartShopping_solid } from '@fortawesome/free-solid-svg-icons';
+import { faGear, faHeart as faHeart_solid, faCartShopping as faCartShopping_solid } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import flag_ireland from '../Assets/flags/ireland.png';
 import { ShopContext } from '../../Context/ShopContext';
 
 export const Navbar = () => {
     const [menu, setMenu] = useState("shop");
+    const [showSettings] = useState(false); // State to track whether settings dropdown is open
     const { cart, getCartCount, getFavoriteCount } = useContext(ShopContext); // Access the ShopContext
 
     // State for total cart items count
@@ -37,6 +38,18 @@ export const Navbar = () => {
                     <div className="nav-state-flag">
                         <img className='nav-state-flag' src={flag_ireland} alt='ireland' />
                     </div>
+                    {/* <div className="nav-state-gear">
+                        <FontAwesomeIcon icon={faGear} />
+                        <div className="settings-dropdown">
+                            <ul>
+                                <li>Settings 1</li>
+                                <li>Settings 2</li>
+                                <hr />
+                                <li>Settings 3</li>
+                                <li>Settings 4</li>
+                            </ul>
+                        </div>
+                    </div> */}
                     <div className="nav-state-user">
                         <Link to="/signup"><FontAwesomeIcon icon={faUser_regular} /></Link>
                     </div>

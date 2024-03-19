@@ -84,6 +84,51 @@
     background: darkorange; /* TODO - Color variables */
 }
 
+.settings-dropdown {
+    position: absolute;
+    top: calc(100%); /* Adjust as needed */
+    right: -16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 16px;
+    padding: 10px;
+    z-index: 999;
+    display: none; /* Initially hide the dropdown */
+}
+
+.settings-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-dropdown ul hr {
+    margin: 8px 0;
+    border: none;
+    width: 75%;
+    height: 1px;
+    text-align: center;
+    background: #ccc;
+}
+
+.settings-dropdown ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.settings-dropdown ul li:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-state-gear {
+    position: relative; /* Add relative positioning to the gear icon */
+}
+
+.nav-state-gear:hover .settings-dropdown {
+    display: block; /* Show the dropdown when gear icon is hovered */
+}
+
+
 .nav-state {
     display: flex;
     align-items: center;
