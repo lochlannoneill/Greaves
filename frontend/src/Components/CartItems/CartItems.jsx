@@ -1,13 +1,13 @@
-import React from 'react'
-import { useContext } from 'react'
-import { ShopContext } from '../../Context/ShopContext'
+import React from 'react';
+import { useContext } from 'react';
+import { ShopContext } from '../../Context/ShopContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import './CartItems.css'
+import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons'; // Added faTrash icon
+import './CartItems.css';
 import { Link } from 'react-router-dom';
 
 export const CartItems = () => {
-  const {products, cart, addCart, removeCart} = useContext(ShopContext);
+  const { products, cart, addCart, removeCart, removeAllCart } = useContext(ShopContext); // Added removeAllCart
 
   // Check if there are any items in the cart
   const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
@@ -43,6 +43,7 @@ export const CartItems = () => {
                   <div className="cartitems-right-actions">
                     <button className="cartitems-item-right-add" onClick={() => { addCart(product.id) }}><FontAwesomeIcon icon={faPlus} /></button>
                     <button className="cartitems-item-right-remove" onClick={() => { removeCart(product.id) }}><FontAwesomeIcon icon={faMinus} /></button>
+                    <button className="cartitems-item-right-delete" onClick={() => { removeAllCart(product.id) }}><FontAwesomeIcon icon={faTrash} /></button> {/* Added Delete button */}
                   </div>
                 </div>
               </div>

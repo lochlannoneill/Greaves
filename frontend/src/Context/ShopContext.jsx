@@ -58,6 +58,17 @@ const ShopContextProvider = (props) => {
             togglePopup('Removed from cart!');
         }
     };
+    const removeAllCart = (productId) => {
+        if (cart[productId] > 0) {
+            setCart(prevCart => ({
+                ...prevCart,
+                [productId]: 0 // Set the quantity to 0 to remove all of this product
+            }));
+            // Show popup message
+            togglePopup('Removed all from cart!');
+        }
+    };
+    
 
     // Favorites Functionality
     const [favorites, setFavorites] = useState(getFavorites());
@@ -96,6 +107,7 @@ const ShopContextProvider = (props) => {
         isInCart,
         addCart,
         removeCart,
+        removeAllCart,
         favorites,
         getFavoriteCount,
         isFavorite,

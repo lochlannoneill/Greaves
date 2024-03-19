@@ -109,6 +109,11 @@
     outline: none;
 }
 
+.cartitems-item-right-delete:hover {
+    background-color: red !important;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     .cartitems {
         padding: 0;
