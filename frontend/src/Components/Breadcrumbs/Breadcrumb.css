@@ -1,25 +1,25 @@
 .breadcrumb {
-    display: flex;
-    margin: 4vh 12vw 0 12vw;
-    align-items: center;
-    color: darkgrey;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+  display: flex;
+  margin: 4vh 12vw 0 12vw;
+  align-items: center;
+  color: darkgrey;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .breadcrumb a {
-    color: darkgrey;
-    text-decoration: none;
-    transition: 0.25s;
+  color: darkgrey;
+  text-decoration: none;
+  transition: 0.25s;
 }
 
 .breadcrumb a:hover {
-    color: grey;
+  color: grey;
 }
 
 @media screen and (max-width: 768px) {
-    .breadcrumb {
-        display: none;
-    }
+  .breadcrumb {
+    display: none;
+  }
 }

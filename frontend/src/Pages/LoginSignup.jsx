@@ -1,12 +1,11 @@
-import React from 'react'
-import { useEffect } from 'react'
-import './CSS/LoginSignup.css'
+import React from "react";
+import { useEffect } from "react";
+import "./CSS/LoginSignup.css";
 
 export const LoginSignup = () => {
-      
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
 
   return (
     <div className="loginsignup">
@@ -19,8 +18,11 @@ export const LoginSignup = () => {
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
           <div className="loginsignup-agree">
-            <input className="checkbox" type="checkbox" name='' id=''/>
-            <p>I agree to the <span>Terms of Service</span> and <span>Privacy Policy</span></p>
+            <input className="checkbox" type="checkbox" name="" id="" />
+            <p>
+              I agree to the <span>Terms of Service</span> and{" "}
+              <span>Privacy Policy</span>
+            </p>
           </div>
           <p className="loginsignup-error">Error message</p>
           <div className="signup-buttons">
@@ -33,5 +35,5 @@ export const LoginSignup = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

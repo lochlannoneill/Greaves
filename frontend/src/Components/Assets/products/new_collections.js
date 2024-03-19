@@ -14,7 +14,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p1_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -31,7 +32,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p2_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -48,7 +50,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p3_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -65,7 +68,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p4_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -82,7 +86,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p5_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -99,7 +104,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p6_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -116,7 +122,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p7_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -134,7 +141,8 @@ let new_collections = [
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
     image: p8_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,

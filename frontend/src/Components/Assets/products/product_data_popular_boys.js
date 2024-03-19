@@ -1,18 +1,19 @@
-import p25_img from './product_25.png'
-import p26_img from './product_26.png'
-import p27_img from './product_27.png'
-import p28_img from './product_28.png'
-import p29_img from './product_29.png'
-import p30_img from './product_30.png'
+import p25_img from "./product_25.png";
+import p26_img from "./product_26.png";
+import p27_img from "./product_27.png";
+import p28_img from "./product_28.png";
+import p29_img from "./product_29.png";
+import p30_img from "./product_30.png";
 
 let data_product = [
   {
-    id:25,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+    id: 25,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p25_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p25_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     tags: ["Modern", "Latest"],
     rating: 3.5,
     reviews: 117,
@@ -21,15 +22,17 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:50.00,
-    price_old:80.50,
+    price: 50.0,
+    price_old: 80.5,
   },
-  {id:26,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+  {
+    id: 26,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p26_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p26_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -37,15 +40,17 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:85.00,
-    price_old:120.50,
+    price: 85.0,
+    price_old: 120.5,
   },
-  {id:27,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+  {
+    id: 27,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p27_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p27_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -53,15 +58,17 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:60.00,
-    price_old:100.50,
+    price: 60.0,
+    price_old: 100.5,
   },
-  {id:28,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+  {
+    id: 28,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p28_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p28_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -69,15 +76,17 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:100.00,
-    price_old:150.00,
+    price: 100.0,
+    price_old: 150.0,
   },
-  {id:29,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+  {
+    id: 29,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p29_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p29_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -85,15 +94,17 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:115.00,
-    price_old:150.00,
+    price: 115.0,
+    price_old: 150.0,
   },
-  {id:30,
-    title:"Boys Orange Colourblocked Hooded Sweatshirt",
+  {
+    id: 30,
+    title: "Boys Orange Colourblocked Hooded Sweatshirt",
     tags: ["Modern", "Latest"],
     categories: ["Tops", "Blouses"],
-    image:p30_img,
-    description: "This is a description of the product. It is a very good product. You should buy it.",
+    image: p30_img,
+    description:
+      "This is a description of the product. It is a very good product. You should buy it.",
     rating: 3.5,
     reviews: 117,
     stock_small: 1,
@@ -101,8 +112,8 @@ let data_product = [
     stock_large: 1,
     stock_xlarge: 1,
     stock_xxlarge: 0,
-    price:80.00,
-    price_old:95.00,
+    price: 80.0,
+    price_old: 95.0,
   },
 ];
 

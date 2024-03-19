@@ -1,164 +1,164 @@
 .footer {
-    left: 0;
-    bottom: 0;
-    background-color: #171717;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-    font-family: Arial, sans-serif;
+  left: 0;
+  bottom: 0;
+  background-color: #171717;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
 }
 
 .footer-form p {
-    display: inline;
+  display: inline;
 }
 
 .footer-form-input {
-    margin-left: 8px;
-    padding: 8px;
-    border: 1px solid #2e2e2e;
+  margin-left: 8px;
+  padding: 8px;
+  border: 1px solid #2e2e2e;
 }
 
 .footer-form-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .footer-form-button {
-    padding: 8px 16px;
-    border: none;
-    background: #2e2e2e;
-    color: white;
-    cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  background: #2e2e2e;
+  color: white;
+  cursor: pointer;
 }
 
 .footer h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-information {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
-.footer-information-child  {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer-information-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
 }
 
 .footer-links li {
-    display: inline;
-    margin: 0 0.5rem;
+  display: inline;
+  margin: 0 0.5rem;
 }
 
 .footer a {
-    color: grey;
-    text-decoration: none;
-    font-weight: 700;
+  color: grey;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .footer a:hover {
-    color: darkgrey;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.25s;
+  color: darkgrey;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s;
 }
 
 .footer-links li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer hr {
-    margin: 1rem 0;
-    border: none;
-    border-top: 1px solid #2e2e2e;
-    width: 60vw;
-    margin: 32px auto;
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #2e2e2e;
+  width: 60vw;
+  margin: 32px auto;
 }
 
 .footer-social {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .footer-social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  width: 100%;
 }
 
 .footer-icon {
-    height: 32px;
-    width: 32px;
-    color: lightgrey;
+  height: 32px;
+  width: 32px;
+  color: lightgrey;
 }
 
 @keyframes spinIcon {
-    0% {
-      transform: rotate(0);
-    }
-    20% {
-      transform: rotate(359deg);
-    }
-    100% {
-      transform: rotate(359deg);
-    }
+  0% {
+    transform: rotate(0);
   }
+  20% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 
 .footer-icon.social:hover {
-    animation: spinIcon 1.5s infinite;
-    transition: 0.5s;
-    scale: 1.2;
-    cursor: pointer;
-    color: white
+  animation: spinIcon 1.5s infinite;
+  transition: 0.5s;
+  scale: 1.2;
+  cursor: pointer;
+  color: white;
 }
 
 .footer-icon.envelope {
-    height: 1em;
-    width: 1em;
+  height: 1em;
+  width: 1em;
 }
 
 .footer-icon.facebook:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 .footer-icon.twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 .footer-icon.instagram:hover {
-    color: #ee2b7b;
+  color: #ee2b7b;
 }
 
 .footer-icon.snapchat:hover {
-    color: #f7f300;
+  color: #f7f300;
 }
 
 .footer-icon.tiktok:hover {
-    color: #f62755;
+  color: #f62755;
 }
 
 .footer-icon.phone {
-    height: 1em;
-    width: 1em;
+  height: 1em;
+  width: 1em;
 }
 
 .footer-signature p {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-signature p:last-child {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 768px) {
-    .footer-information {
-        display: block;
-    }
+  .footer-information {
+    display: block;
+  }
 }
