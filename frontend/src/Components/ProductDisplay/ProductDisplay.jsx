@@ -33,16 +33,16 @@ export const ProductDisplay = (props) => {
             <div className="productdisplay-right">
                 <div className="productdisplay-right-heading">
                     <h1 className="productdisplay-right-heading-title">
+                        {product.title}
                         {isFavorite(product.id) ? (
                             <span>
+                                &nbsp;
                                 <FontAwesomeIcon
                                     className={`item-favourite ${isFavorite(product.id) ? 'isFavorite' : ''}`}
                                     icon={faHeart_solid}
                                 />
-                                &nbsp;
                             </span>
                         ) : null}
-                        {product.title}
                     </h1>
                     <div className="productdisplay-right-rating">
                         <p className="productdisplay-right-rating-value">product.rating</p>
