@@ -11,13 +11,25 @@ const getCart = () => {
         cart[product.id] = 0;
     }
     return cart;
-}
+};
 
 const getFavorites = () => {
     return [];
-}
+};
 
 const ShopContextProvider = (props) => {
+    // Popup Functionality
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState('');
+
+    const togglePopup = (message) => {
+        setPopupMessage(message);
+        setShowPopup(true);
+        setTimeout(() => {
+            setShowPopup(false);
+        }, 1000); // Hide popup after 2 seconds
+    };
+
     // Cart Functionality
     const [cart, setCart] = useState(getCart());
     const getCartCount = () => {
@@ -32,7 +44,8 @@ const ShopContextProvider = (props) => {
             ...prevCart,
             [productId]: prevCart[productId] + 1
         }));
-        console.log(cart);
+        // Show popup message
+        togglePopup('Added to cart!');
     };
     const removeCart = (productId) => {
         if (cart[productId] > 0) {
@@ -40,8 +53,9 @@ const ShopContextProvider = (props) => {
                 ...prevCart,
                 [productId]: prevCart[productId] - 1
             }));
+            // Show popup message
+            togglePopup('Removed from cart!');
         }
-        console.log(cart);
     };
 
     // Favorites Functionality
@@ -51,31 +65,47 @@ const ShopContextProvider = (props) => {
     };
     const isFavorite = (productId) => {
         return favorites.includes(productId);
-      };
+    };
     const addFavorite = (productId) => {
         setFavorites(prevFavorites => {
             const updatedFavorites = new Set([...prevFavorites, productId]);
             return Array.from(updatedFavorites);
         });
-    }
+        // Show popup message
+        togglePopup('Added to favorites!');
+    };
     const removeFavorite = (productId) => {
         setFavorites(prevFavorites => prevFavorites.filter(id => id !== productId));
-    }
+        // Show popup message
+        togglePopup('Removed from favorites!');
+    };
     const toggleFavorite = (productId) => {
         if (isFavorite(productId)) {
-          removeFavorite(productId);
+            removeFavorite(productId);
         } else {
-          addFavorite(productId);
+            addFavorite(productId);
         }
-      };    
+    };
 
-    const contextValue = {products, cart, getCartCount, addCart, removeCart, favorites, getFavoriteCount, isFavorite, toggleFavorite};
+    const contextValue = {
+        products,
+        popupMessage,
+        cart,
+        getCartCount,
+        addCart,
+        removeCart,
+        favorites,
+        getFavoriteCount,
+        isFavorite,
+        toggleFavorite,
+        showPopup
+    };
 
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
         </ShopContext.Provider>
-    )
-}
+    );
+};
 
 export default ShopContextProvider;

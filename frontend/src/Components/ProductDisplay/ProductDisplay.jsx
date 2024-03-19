@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as faHeart_solid, faPlus, faStar as faStar_solid, faStarHalfStroke as faStar_half, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar_regular, faHeart as faHeart_regular } from '@fortawesome/free-regular-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
+import Modal from '../Modal/Modal';
 import './ProductDisplay.css'
 
 export const ProductDisplay = (props) => {
     const { product } = props;
-    const { cart, addCart, toggleFavorite, isFavorite } = useContext(ShopContext);
+    const { cart, addCart, toggleFavorite, isFavorite, showPopup, popupMessage } = useContext(ShopContext);
     
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
@@ -16,6 +17,7 @@ export const ProductDisplay = (props) => {
 
     return (
         <div className="productdisplay">
+            {showPopup && <Modal message={popupMessage} />} {/* Render the modal if showPopup is true */}
             <div className="productdisplay-left">
                 <div className="productdisplay-img-list">
                     <img src={product.image} alt="Product" />
