@@ -1,7 +1,5 @@
-import React from 'react'
-import { createContext } from 'react'
-import { useState } from 'react'
-import products from '../Components/Assets/products/product_data'
+import React, { createContext, useState } from 'react';
+import products from '../Components/Assets/products/product_data';
 
 export const ShopContext = createContext(null);
 
