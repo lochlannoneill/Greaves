@@ -1,21 +1,20 @@
-import React, { useContext } from 'react'
-import { useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import './CSS/ShopCategory.css'
-import { ShopContext } from '../Context/ShopContext'
-import { Item } from '../Components/Item/Item'
+import React, { useContext } from "react";
+import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { ShopContext } from "../Context/ShopContext";
+import { Item } from "../Components/Item/Item";
+import "./CSS/ShopCategory.css";
 
 export const ShopCategory = (props) => {
-  const {products} = useContext(ShopContext);
+  const { products } = useContext(ShopContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
-}, []); // Empty dependency array ensures this effect runs only once after mounting
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="shopcategory">
-      {/* <img className="shopcategory-banner" src={props.banner} alt="banner"/> */}
       <div className="shopcategory-filter">
         <div className="shopcategory-filter-search">
           <form className="schopcatergory-filter-search-form">
@@ -35,14 +34,24 @@ export const ShopCategory = (props) => {
           Sort by <FontAwesomeIcon icon={faChevronDown} size="2xs" />
         </div>
       </div>
-      <p className="shopcategory-query">Results for '<b>products</b>'</p>
+      <p className="shopcategory-query">
+        Results for '<b>products</b>'
+      </p>
       <div className="shopcategory-products-parent">
         <div className="shopcategory-products">
-          {products.map((item,index)=>{
-            if (props.category===item.category) {
-              return <Item key={index} id={item.id} title={item.title} img={item.image} price={item.price} price_old={item.price_old} />
-            }
-            else {
+          {products.map((item, index) => {
+            if (props.category === item.category) {
+              return (
+                <Item
+                  key={index}
+                  id={item.id}
+                  title={item.title}
+                  img={item.image}
+                  price={item.price}
+                  price_old={item.price_old}
+                />
+              );
+            } else {
               return null;
             }
           })}
@@ -52,10 +61,12 @@ export const ShopCategory = (props) => {
             Showing <span>1-12</span> of 36 results
           </p>
           <div className="shopcategory-loadmore-button">
-            <p>See More <FontAwesomeIcon icon={faChevronDown} size="2xs" /></p>
+            <p>
+              See More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
+            </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
