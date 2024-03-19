@@ -50,10 +50,11 @@ export const Navbar = () => {
                         </Link>
                     </div>
                     <div className="nav-state-cart">
-                        <Link to="/cart"><FontAwesomeIcon icon={faCartShopping_solid} /></Link>
-                        {totalCartItems > 0 ? (
-                            <div className='nav-state-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
-                        ) : null}
+                        <Link to="/cart"><FontAwesomeIcon icon={faCartShopping_solid} />
+                            {totalCartItems > 0 ? (
+                                <div className='nav-state-cart-count'>{totalCartItems}</div> // Display total cart items count if greater than 0 - ternary operator
+                            ) : null}
+                        </Link>
                     </div>
                 </div>
             </div>
