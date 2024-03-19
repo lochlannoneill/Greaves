@@ -26,7 +26,7 @@ export const Item = (props) => {
                     €{props.price_old}
                   </div>
               </div>
-              <div className="item-price-favourite">
+              <div className="item-status">
                 {isFavorite(props.id) ? (
                   <FontAwesomeIcon
                       className={`item-favourite ${isFavorite(props.id) ? 'isFavorite' : ''}`}
