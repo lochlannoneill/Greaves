@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart as faHeart_solid } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as faHeart_solid, faCartShopping as faCartShopping_solid} from '@fortawesome/free-solid-svg-icons';
 import { ShopContext } from '../../Context/ShopContext';
 import './Item.css'
 
 export const Item = (props) => {
-  const { isFavorite } = useContext(ShopContext);
+  const { isFavorite, isInCart} = useContext(ShopContext);
 
   return (
     <div className="item">
@@ -31,6 +31,12 @@ export const Item = (props) => {
                   <FontAwesomeIcon
                       className={`item-favourite ${isFavorite(props.id) ? 'isFavorite' : ''}`}
                       icon={faHeart_solid}
+                  />
+                ) : null}
+                {isInCart(props.id) ? (
+                  <FontAwesomeIcon
+                      className={`item-cart ${isInCart(props.id) ? 'isInCart' : ''}`}
+                      icon={faCartShopping_solid}
                   />
                 ) : null}
               </div>

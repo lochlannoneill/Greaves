@@ -82,6 +82,8 @@
     color: red;
 }
 
+.item-cart {
+    color: orange;
 }
 
 .item:hover {

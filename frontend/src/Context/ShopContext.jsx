@@ -37,6 +37,9 @@ const ShopContextProvider = (props) => {
         });
         return count;
     };
+    const isInCart = (productId) => {
+        return cart[productId] > 0;
+    };
     const addCart = (productId) => {
         setCart(prevCart => ({
             ...prevCart,
@@ -90,6 +93,7 @@ const ShopContextProvider = (props) => {
         popupMessage,
         cart,
         getCartCount,
+        isInCart,
         addCart,
         removeCart,
         favorites,
