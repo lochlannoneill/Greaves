@@ -74,7 +74,10 @@ export const CartCheckout = () => {
                     {discountAmount > 0 && (
                         <p><span>Discount</span><span className="cartcheckout-currency cartcheckout-currency-discount">- &euro;{discountAmount.toFixed(2)}</span></p>
                     )}
-                    <p><span>Tax (+{VAT * 100}% VAT)</span><span className="cartcheckout-currency">&euro;{tax.toFixed(2)}</span></p>
+                    {/* Display "Tax" info if there are items in the cart */}
+                    {getCartCount() > 0 && (
+                        <p><span>Tax (+{VAT * 100}% VAT)</span><span className="cartcheckout-currency">&euro;{tax.toFixed(2)}</span></p>
+                    )}
                     <p><span>Delivery</span><span className="cartcheckout-currency">&euro;{delivery.toFixed(2)}</span></p>
                     <hr />
                     <p><span>Total</span><span className="cartcheckout-currency">&euro;{total.toFixed(2)}</span></p>
