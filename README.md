@@ -9,7 +9,9 @@ _Summary: React, MongoDB, HTML/CSS, Javascript_
 Developed an E-Commerce website from inception to deployment, utilizing the MERN stack (MongoDB, Express.js, React, Node.js).  
   
 **DONE** - Engineered the frontend with React, ensuring an engaging and user-friendly interface that enhances the shopping experience.  
+  
 **TO DO** - Implemented MongoDB as the database solution, enabling efficient data management and retrieval for seamless operation.  
+  
 **DONE** - Facilitated deployment on Cloudflare for optimized performance and reliability, complemented by a custom domain hosted on GoDaddy for enhanced brand identity and accessibility.  
 
 -----
