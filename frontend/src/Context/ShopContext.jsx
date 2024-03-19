@@ -25,7 +25,7 @@ const ShopContextProvider = (props) => {
         setShowPopup(true);
         setTimeout(() => {
             setShowPopup(false);
-        }, 1000); // Hide popup after 2 seconds
+        }, 9000); // Hide popup after 2 seconds
     };
 
     // Cart Functionality
