@@ -12,7 +12,7 @@ export const ProductDisplay = (props) => {
     const { cart, addCart, toggleFavorite, isFavorite, showPopup, popupMessage } = useContext(ShopContext);
     
     useEffect(() => {
-        window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
+        window.scrollTo(0, 0);
     }, []); // Empty dependency array ensures this effect runs only once after mounting
 
     return (

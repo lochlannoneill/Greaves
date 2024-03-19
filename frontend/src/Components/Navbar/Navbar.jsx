@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser as faUser_regular, faHeart as faHeart_regular} from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faHeart_solid, faCartShopping as faCartShopping_solid } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
 import flag_ireland from '../Assets/flags/ireland.png';
 import { ShopContext } from '../../Context/ShopContext';
+import './Navbar.css';
 
 export const Navbar = () => {
     const [menu, setMenu] = useState("shop");
     // const [showSettings] = useState(false); // State to track whether settings dropdown is open
     const { cart, getCartCount, getFavoriteCount } = useContext(ShopContext); // Access the ShopContext
-
-    // State for total cart items count
     const [totalCartItems, setTotalCartItems] = useState(0);
 
     // Update total cart items count when cart changes
@@ -25,7 +23,6 @@ export const Navbar = () => {
         <div className='navbar-parent'>
             <div className='navbar'>
                 <div className='nav-logo'>
-                    {/* <img src={logo} alt='logo' /> */}
                     <p onClick={() => { setMenu("shop") }}><Link to="/">Greaves</Link></p>
                 </div>
                 <ul className='nav-menu nav-menu-large'>

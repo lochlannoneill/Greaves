@@ -2,20 +2,19 @@ import React, { useContext } from 'react'
 import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import './CSS/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
 import { Item } from '../Components/Item/Item'
+import './CSS/ShopCategory.css'
 
 export const ShopCategory = (props) => {
   const {products} = useContext(ShopContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
-}, []); // Empty dependency array ensures this effect runs only once after mounting
+    window.scrollTo(0, 0);
+}, []);
 
   return (
     <div className="shopcategory">
-      {/* <img className="shopcategory-banner" src={props.banner} alt="banner"/> */}
       <div className="shopcategory-filter">
         <div className="shopcategory-filter-search">
           <form className="schopcatergory-filter-search-form">

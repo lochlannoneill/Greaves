@@ -120,7 +120,6 @@
     }
 }
 
-/* Small devices */
 @media (max-width: 420px) {
     .item-stuff {
         display: flex;
@@ -128,7 +127,6 @@
     }
 }
 
-/* Super Small devices */
 @media (max-width: 300px) {
     .item-prices {
         display: flex;

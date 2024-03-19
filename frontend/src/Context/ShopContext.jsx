@@ -16,10 +16,9 @@ const getFavorites = () => {
 };
 
 const ShopContextProvider = (props) => {
-    // Popup Functionality
+    // Popup
     const [showPopup, setShowPopup] = useState(false);
     const [popupMessage, setPopupMessage] = useState('');
-
     const togglePopup = (message) => {
         setPopupMessage(message);
         setShowPopup(true);
@@ -28,7 +27,7 @@ const ShopContextProvider = (props) => {
         }, 2000); // Hide popup after 2 seconds
     };
 
-    // Cart Functionality
+    // Cart
     const [cart, setCart] = useState(getCart());
     const getCartCount = () => {
         let count = 0;
@@ -45,7 +44,6 @@ const ShopContextProvider = (props) => {
             ...prevCart,
             [productId]: prevCart[productId] + 1
         }));
-        // Show popup message
         togglePopup('Added to cart!');
     };
     const removeCart = (productId) => {
@@ -54,7 +52,6 @@ const ShopContextProvider = (props) => {
                 ...prevCart,
                 [productId]: prevCart[productId] - 1
             }));
-            // Show popup message
             togglePopup('Removed from cart!');
         }
     };
@@ -62,15 +59,13 @@ const ShopContextProvider = (props) => {
         if (cart[productId] > 0) {
             setCart(prevCart => ({
                 ...prevCart,
-                [productId]: 0 // Set the quantity to 0 to remove all of this product
+                [productId]: 0
             }));
-            // Show popup message
             togglePopup('Removed all from cart!');
         }
     };
-    
 
-    // Favorites Functionality
+    // Favorites
     const [favorites, setFavorites] = useState(getFavorites());
     const getFavoriteCount = () => {
         return favorites.length;
@@ -83,12 +78,10 @@ const ShopContextProvider = (props) => {
             const updatedFavorites = new Set([...prevFavorites, productId]);
             return Array.from(updatedFavorites);
         });
-        // Show popup message
         togglePopup('Added to favorites!');
     };
     const removeFavorite = (productId) => {
         setFavorites(prevFavorites => prevFavorites.filter(id => id !== productId));
-        // Show popup message
         togglePopup('Removed from favorites!');
     };
     const toggleFavorite = (productId) => {

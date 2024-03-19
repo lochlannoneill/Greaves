@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css'; // Import CSS file for modal styling
+import './Modal.css';
 
 const Modal = ({ message }) => {
     return (

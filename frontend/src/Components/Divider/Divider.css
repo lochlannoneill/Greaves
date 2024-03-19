@@ -16,7 +16,6 @@
     font-weight: 300;
 }
 
-/* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1250px) {
     .divider h2 {
         font-size: 28px;

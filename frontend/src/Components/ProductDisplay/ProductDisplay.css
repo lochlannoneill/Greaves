@@ -281,7 +281,6 @@
     font-weight: 700;
 }
 
-/* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1400px) {
     .productdisplay {
         flex-direction: column;
@@ -293,7 +292,6 @@
     }
 }
 
-/* Add a media query for smaller screen sizes */
 @media only screen and (max-width: 1250px) {
     .productdisplay-img-list > * {
         width: 12vw;

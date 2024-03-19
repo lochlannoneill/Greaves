@@ -2,20 +2,17 @@ import React from 'react';
 import { useContext } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons'; // Added faTrash icon
-import './CartItems.css';
+import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import './CartItems.css';
 
 export const CartItems = () => {
   const { products, cart, addCart, removeCart, removeAllCart } = useContext(ShopContext); // Added removeAllCart
-
-  // Check if there are any items in the cart
-  const cartEmpty = Object.values(cart).every(quantity => quantity <= 0);
+  const cartEmpty = Object.values(cart).every(quantity => quantity <= 0); // Check if there are any items in the cart
 
   return (
     <div className="cartitems">
       <h1>My Cart</h1>
-      {/* <hr /> */}
       {products.map((product) => {
         if (cart[product.id] > 0) {
           return (

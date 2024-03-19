@@ -5,8 +5,8 @@ import './CSS/LoginSignup.css'
 export const LoginSignup = () => {
       
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
-}, []); // Empty dependency array ensures this effect runs only once after mounting
+    window.scrollTo(0, 0);
+}, []);
 
   return (
     <div className="loginsignup">
@@ -25,7 +25,6 @@ export const LoginSignup = () => {
           <p className="loginsignup-error">Error message</p>
           <div className="signup-buttons">
             <button>Sign Up</button>
-            {/* <button>Log In</button> */}
           </div>
           <div className="loginsignup-login">
             <p className="loginsignup-login-text">Already have an account?</p>

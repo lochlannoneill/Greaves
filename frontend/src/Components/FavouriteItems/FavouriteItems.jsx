@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
-import { Item } from '../Item/Item'; // Import the Item component
+import { Item } from '../Item/Item';
 import './FavouriteItems.css';
 
 export const FavouriteItems = () => {

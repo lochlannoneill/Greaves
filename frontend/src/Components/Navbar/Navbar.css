@@ -86,7 +86,7 @@
 
 .settings-dropdown {
     position: absolute;
-    top: calc(100%); /* Adjust as needed */
+    top: calc(100%);
     right: -16px;
     background-color: white;
     border: 1px solid #ccc;
@@ -94,7 +94,7 @@
     border-radius: 16px;
     padding: 10px;
     z-index: 999;
-    display: none; /* Initially hide the dropdown */
+    display: none;
 }
 
 .settings-dropdown ul {
@@ -121,11 +121,11 @@
 }
 
 .nav-state-gear {
-    position: relative; /* Add relative positioning to the gear icon */
+    position: relative;
 }
 
 .nav-state-gear:hover .settings-dropdown {
-    display: block; /* Show the dropdown when gear icon is hovered */
+    display: block;
 }
 
 
@@ -157,7 +157,7 @@
 }
 
 .nav-state-cart {
-    position: relative; /* Ensure proper positioning of the count */
+    position: relative;
 }
 
 .nav-state-cart-count {
@@ -177,23 +177,6 @@
     padding: 4px;
 }
 
-/* .nav-state-cart-count {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -5px;
-    top: -5px;
-    width: 20px;
-    height: 20px;
-    background-color: darkorange;
-    color: white;
-    border-radius: 50%;
-    z-index: 1;
-} */
-
-
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .navbar-mobile {
         display: flex;

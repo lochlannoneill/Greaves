@@ -22,10 +22,8 @@ export const CartCheckout = () => {
         { code: 'GREAVES', discountPercentage: 20 },
         { code: 'REACT', discountPercentage: 30 },
     ];
-
     const [appliedDiscount, setAppliedDiscount] = useState(null);
     const [couponCode, setCouponCode] = useState('');
-
     const applyDiscount = () => {
         const discount = discounts.find(d => d.code === couponCode.toUpperCase());
         if (discount) {

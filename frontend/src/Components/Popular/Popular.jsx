@@ -1,12 +1,8 @@
 import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import './Popular.css'
 import products_women from '../Assets/products/product_data_popular_women.js'
-// import data_product_girls from '../Assets/products/product_data_popular_girls.js'
 import products_men from '../Assets/products/product_data_popular_men.js'
-// import data_product_boys from '../Assets/products/product_data_popular_boys.js'
 import { Item } from '../Item/Item'
+import './Popular.css'
 
 export const Popular = () => {
   return (
