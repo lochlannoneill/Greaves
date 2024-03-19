@@ -202,4 +202,8 @@
     .nav-menu-large {
         display:none;
     }
+
+    .nav-state-flag {
+        display: none;
+    }
 }
