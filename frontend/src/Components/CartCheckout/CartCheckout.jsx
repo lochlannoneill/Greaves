@@ -70,7 +70,7 @@ export const CartCheckout = () => {
             <div className="cartcheckout-child">
                 <h2>Checkout</h2>
                 <div className="cartcheckout-text">
-                    <p><span>Total</span><span className="cartcheckout-currency">&euro;{subtotal.toFixed(2)}</span></p>
+                    <p><span>Subtotal</span><span className="cartcheckout-currency">&euro;{subtotal.toFixed(2)}</span></p>
                     {discountAmount > 0 && (
                         <p><span>Discount</span><span className="cartcheckout-currency cartcheckout-currency-discount">- &euro;{discountAmount.toFixed(2)}</span></p>
                     )}
