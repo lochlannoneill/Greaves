@@ -1,133 +1,132 @@
 .cartcheckout {
-    flex-basis: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .cartcheckout b {
-    color: darkgrey;
+  color: darkgrey;
 }
 
 .cartcheckout-child {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    gap: 16px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 32px;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  height: fit-content;
 }
 
 .cartcheckout h2 {
-    color: #171717;
+  color: #171717;
 }
 
 /* New styles for coupon */
 .cartcheckout-coupon {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .cartcheckout-coupon input {
-    flex-grow: 1;
-    padding: 8px;
-    background-color: #f0f0f0;
-    border: 1px solid #e0e0e0;
-    font-size: 16px;
+  flex-grow: 1;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
 }
 
 .cartcheckout-coupon input:focus {
-    outline: none;
-    border: 1px solid darkgrey;
+  outline: none;
+  border: 1px solid darkgrey;
 }
 
 .cartcheckout-coupon button {
-    padding: 8px 16px;
-    border: none;
-    background-color: darkgrey;
-    color: white;
-    font-size: 16px;
-    /* font-weight: 600; */
-    cursor: pointer;
-    transition: 0.25s;
+  padding: 8px 16px;
+  border: none;
+  background-color: darkgrey;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .cartcheckout-coupon button:hover {
-    background-color: grey;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.025);
-    transition: 0.25s;
+  background-color: grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.025);
+  transition: 0.25s;
 }
 
 .cartcheckout-coupon button:active {
-    background-color: #171717;
-    transform: scale(0.975);
-    transition: 0.25s;
+  background-color: #171717;
+  transform: scale(0.975);
+  transition: 0.25s;
 }
 
 .cartcheckout-coupon-confirmation {
-    color: green;
-    font-size: 16px;
-    font-weight: 600;
+  color: green;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .cartcheckout-text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .cartcheckout-text p {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cartcheckout hr {
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
-    margin: 16px 0;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 16px 0;
 }
 
 .cartcheckout-currency {
-    color: #171717;
-    font-size: 20px;
-    font-weight: 600;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .cartcheckout-currency-discount {
-    color: red;
+  color: red;
 }
 
 .cartcheckout-notification {
-    color: grey;
-    font-size: 16px;
-    font-weight: 600;
+  color: grey;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .cartcheckout-confirm {
-    border: none;
-    border-radius: 5px;
-    padding: 16px;
-    background-color: darkgrey;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  background-color: darkgrey;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .cartcheckout-confirm:hover {
-    background-color: grey;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.025);
-    transition: 0.25s;
+  background-color: grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.025);
+  transition: 0.25s;
 }
 
 .cartcheckout-confirm:active {
-    background-color: #171717;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    transform: scale(0.975);
-    transition: 0.25s;
+  background-color: #171717;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transform: scale(0.975);
+  transition: 0.25s;
 }

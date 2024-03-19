@@ -1,34 +1,34 @@
 .new-collections {
-    margin: 4vh 4vw;
-    text-align: center;
+  margin: 4vh 4vw;
+  text-align: center;
 }
 
 .new-collections h1 {
-    color: #171717; /* TODO: Color variables */
-    font-size: 50px;
-    font-weight: 600;
+  color: #171717; /* TODO: Color variables */
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .collections-parent {
-    display: flex;
-    justify-content: center;
-    padding: 2vh 0;
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
 }
 
 .collections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vh;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vh;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    .new-collections h1 {
-        font-size: 32px;
-    }
+  .new-collections h1 {
+    font-size: 32px;
+  }
 
-    .collections {
-        gap: 4vh    ;
-    }
+  .collections {
+    gap: 4vh;
+  }
 }

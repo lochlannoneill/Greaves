@@ -1,15 +1,14 @@
-import React from 'react'
-import { useEffect } from 'react'
-import { CartItems } from '../Components/CartItems/CartItems'
-import { CartCheckout } from '../Components/CartCheckout/CartCheckout'
-import { Related } from '../Components/Related/Related'
-import './CSS/Cart.css'
+import React from "react";
+import { useEffect } from "react";
+import { CartItems } from "../Components/CartItems/CartItems";
+import { CartCheckout } from "../Components/CartCheckout/CartCheckout";
+import { Related } from "../Components/Related/Related";
+import "./CSS/Cart.css";
 
 export const Cart = () => {
-      
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when the component mounts or updates
-}, []); // Empty dependency array ensures this effect runs only once after mounting
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="cart">
@@ -19,7 +18,7 @@ export const Cart = () => {
       </div>
       <Related />
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
