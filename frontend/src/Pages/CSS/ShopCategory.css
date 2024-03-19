@@ -112,7 +112,7 @@
         width: 20vw;
         min-width: 12vh;
     }
-    .shopcategory-indexSort {
-        margin: 0 8vw;
+    .shopcategory-products {
+        gap: 4vh;
     }
 }

@@ -27,4 +27,8 @@
     .new-collections h1 {
         font-size: 32px;
     }
+
+    .collections {
+        gap: 4vh    ;
+    }
 }

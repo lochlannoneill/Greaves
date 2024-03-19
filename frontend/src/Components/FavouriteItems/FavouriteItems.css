@@ -2,7 +2,6 @@
 .favouriteitems {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     padding: 4vh 8vw;
     align-items: center;
     justify-content: center;
@@ -26,3 +25,8 @@
     padding: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    .favouriteitems {
+        min-height: calc(100vh - 30vh); /* TODO - Navbar heights for differnet screen sizes */
+    }
+}
