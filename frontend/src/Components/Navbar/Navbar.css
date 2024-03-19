@@ -117,18 +117,19 @@
 
 .nav-state-cart-count {
     position: absolute;
-    top: -6px;
-    right: -6px;
+    top: -14px;
+    right: -14px;
     min-width: 16px;
     height: 16px;
     background-color: darkorange;
+    border: 2px solid white;
     color: white;
     font-size: 12px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 4px;
 }
 
 /* .nav-state-cart-count {
