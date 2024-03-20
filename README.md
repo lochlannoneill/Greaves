@@ -23,5 +23,7 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
 ![favorites](https://github.com/lochlannoneill/greaves/blob/main/screenshots/favorites.png?raw=true)  
 ![cart](https://github.com/lochlannoneill/greaves/blob/main/screenshots/cart.png?raw=true)  
   
+-----
+  
 ### Backend:
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
