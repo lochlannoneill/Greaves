@@ -1,4 +1,6 @@
-const port = 4000;
+const PORT = 4000;
+
+// Importing required modules
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -24,8 +26,8 @@ mongoose
       response.send("Express App is running");
     });
 
-    app.listen(port, () => {
-      console.log(`Server running on port: ${port}`);
+    app.listen(PORT, () => {
+      console.log(`Server is running on port: ${PORT}`);
     });
   })
   .catch((err) => {
@@ -59,7 +61,7 @@ app.post("/upload", (req, res) => {
     res.json({
       success: true,
       message: "Image uploaded successfully",
-      image_url: `http://localhost:${port}/images/${req.file.filename}`,
+      image_url: `http://localhost:${PORT}/images/${req.file.filename}`,
     });
   });
 });
