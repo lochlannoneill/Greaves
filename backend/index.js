@@ -8,10 +8,10 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
-const { error } = require("console");
 
-app.use(express.json()); // any request that comes in will be parsed to json
-app.use(cors()); // will connect to express app on port 4000
+// Middleware
+app.use(express.json());
+app.use(cors());
 
 // MongoDB database connection
 mongoose
