@@ -30,4 +30,36 @@ mongoose
   })
   .catch((err) => {
     console.error("Could not connect to MongoDB:", err);
+// Image storage engine
+const storage = multer.diskStorage({
+  destination: path.join(__dirname, "upload/images"), // Absolute path for file upload
+  filename: function (req, file, cb) {
+    cb(
+      null,
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
+    );
+  },
+});
+
+const upload = multer({
+  storage: storage,
+}).single("productImage");
+
+// API for image upload
+app.use("/images", express.static(path.join(__dirname, "upload/images")));
+app.post("/upload", (req, res) => {
+  upload(req, res, (err) => {
+    if (err) {
+      console.error("File upload failed:", err);
+      return res
+        .status(500)
+        .json({ success: false, message: "File upload failed" });
+    }
+    console.log("Image uploaded successfully.");
+    res.json({
+      success: true,
+      message: "Image uploaded successfully",
+      image_url: `http://localhost:${port}/images/${req.file.filename}`,
+    });
   });
+});
