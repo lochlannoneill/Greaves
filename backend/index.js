@@ -73,3 +73,40 @@ app.post("/upload", (req, res) => {
     });
   });
 });
+
+// Schema for creating products
+const product = new mongoose.Schema({
+  id: {
+    type: Number,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  tags: [String],
+  categories: [String],
+  rating: Number,
+  reviews: Number,
+  stock: {
+    small: Number,
+    medium: Number,
+    large: Number,
+    xlarge: Number,
+    xxlarge: Number,
+    default: 0
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  price_old: Number,
+  date:{
+    type: Date,
+    default: Date.now
+  }
+});
