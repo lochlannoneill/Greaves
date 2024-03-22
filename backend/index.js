@@ -77,14 +77,17 @@ app.post("/upload", (req, res) => {
 // Schema for creating products
 const product = new mongoose.Schema({
   id: {
-    type: Number,
+    type: mongoose.Schema.Types.ObjectId,
+    index: true,
     required: true,
+    unique: true,
+    auto: true
   },
   title: {
     type: String,
     required: true,
   },
-  image: {
+  images: {
     type: String,
     required: true,
   },
@@ -93,12 +96,31 @@ const product = new mongoose.Schema({
   rating: Number,
   reviews: Number,
   stock: {
-    small: Number,
-    medium: Number,
-    large: Number,
-    xlarge: Number,
-    xxlarge: Number,
-    default: 0
+    small: {
+      type: Number,
+      min: 0,
+      default: 0
+    },
+    medium: {
+      type: Number,
+      min: 0,
+      default: 0
+    },
+    large: {
+      type: Number,
+      min: 0,
+      default: 0
+    },
+    xlarge: {
+      type: Number,
+      min: 0,
+      default: 0
+    },
+    xxlarge: {
+      type: Number,
+      min: 0,
+      default: 0
+    }
   },
   price: {
     type: Number,
