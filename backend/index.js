@@ -135,3 +135,6 @@ const productSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+// Creating a Mongoose model for the product schema
+const Product = mongoose.model("Product", productSchema);
