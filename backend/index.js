@@ -73,3 +73,100 @@ app.post("/upload", (req, res) => {
     });
   });
 });
+
+// Schema for creating products
+const productSchema = new mongoose.Schema({
+  id: {
+    type: mongoose.Schema.Types.ObjectId,
+    index: true,
+    required: true,
+    unique: true,
+    auto: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  tags: [String],
+  categories: [String],
+  rating: Number,
+  reviews: Number,
+  stock: {
+    small: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
+    medium: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
+    large: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
+    xlarge: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
+    xxlarge: {
+      type: Number,
+      min: 0,
+      default: 0,
+    },
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  price_old: Number,
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+// Creating a Mongoose model for the product schema
+const Product = mongoose.model("Product", productSchema);
+
+app.post("/addProduct", (req, res) => {
+  const newProduct = new Product({
+    title: req.body.title,
+    image: req.body.image,
+    description: req.body.description,
+    tags: req.body.tags,
+    categories: req.body.categories,
+    rating: req.body.rating,
+    reviews: req.body.reviews,
+    stock: req.body.stock,
+    price: req.body.price,
+    price_old: req.body.price_old,
+  });
+  console.log("Adding product:", newProduct)
+  newProduct
+    .save()
+    .then(() => {
+      console.log("Product added successfully: " + req.body.title);
+      res.json({
+        success: true,
+        message: "Product added successfully: " + req.body.title,
+      });
+    })
+    .catch((err) => {
+      console.error("Failed to add product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to add product" });
+    });
+});
