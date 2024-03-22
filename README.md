@@ -17,8 +17,8 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
 -----
   
 ### Frontend
-PS D:\Documents\GitHub\greaves\frontend> npm start
-http://localhost:3000/
+PS D:\Documents\GitHub\greaves\frontend> npm start  
+http://localhost:3000/  
 ![home](https://github.com/lochlannoneill/greaves/blob/main/screenshots/home.png?raw=true)  
 ![category](https://github.com/lochlannoneill/greaves/blob/main/screenshots/category.png?raw=true)  
 ![product](https://github.com/lochlannoneill/greaves/blob/main/screenshots/product.png?raw=true)  
@@ -28,20 +28,20 @@ http://localhost:3000/
 -----
   
 ### Backend
-PS D:\Documents\GitHub\greaves\backend> node .\index.js
-http://localhost:4000/
+PS D:\Documents\GitHub\greaves\backend> node .\index.js  
+http://localhost:4000/  
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
 
 -----
   
 ### POST - addImage
-Thunder Client POST request :
+Thunder Client POST request :  
 ![post-image](https://github.com/lochlannoneill/greaves/blob/main/screenshots/post-image.png?raw=true)  
   
 -----
   
 ### POST - addProduct
-Thunder Client POST request :
+Thunder Client POST request :  
 ![addProduct_1](https://github.com/lochlannoneill/greaves/blob/main/screenshots/addProduct_1.png?raw=true)  
-Addition visable in MongoDB cluster greaves.products :
+Addition visable in MongoDB cluster greaves.products :  
 ![addProduct_2](https://github.com/lochlannoneill/greaves/blob/main/screenshots/addProduct_2.png?raw=true)  
