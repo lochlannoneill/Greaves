@@ -16,7 +16,8 @@ app.use(cors());
 // MongoDB database connection
 mongoose
   .connect(
-    "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves"
+    "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves",
+    {}
   )
   .then(() => {
     console.log("MongoDB connected successfully.");
