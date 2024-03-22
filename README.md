@@ -16,7 +16,9 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
   
 -----
   
-### Frontend:
+### Frontend
+PS D:\Documents\GitHub\greaves\frontend> npm start
+http://localhost:3000/
 ![home](https://github.com/lochlannoneill/greaves/blob/main/screenshots/home.png?raw=true)  
 ![category](https://github.com/lochlannoneill/greaves/blob/main/screenshots/category.png?raw=true)  
 ![product](https://github.com/lochlannoneill/greaves/blob/main/screenshots/product.png?raw=true)  
@@ -25,7 +27,8 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
   
 -----
   
-### Backend:
+### Backend
+PS D:\Documents\GitHub\greaves\backend> node .\index.js
 http://localhost:4000/
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
 
