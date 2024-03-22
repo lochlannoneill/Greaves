@@ -138,3 +138,33 @@ const productSchema = new mongoose.Schema({
 
 // Creating a Mongoose model for the product schema
 const Product = mongoose.model("Product", productSchema);
+
+app.post("/addProduct", (req, res) => {
+  const newProduct = new Product({
+    title: req.body.title,
+    image: req.body.image,
+    tags: req.body.tags,
+    categories: req.body.categories,
+    rating: req.body.rating,
+    reviews: req.body.reviews,
+    stock: req.body.stock,
+    price: req.body.price,
+    price_old: req.body.price_old,
+  });
+
+  newProduct
+    .save()
+    .then(() => {
+      console.log("Product added successfully: " + req.body.title);
+      res.json({
+        success: true,
+        message: "Product added successfully: " + req.body.title,
+      });
+    })
+    .catch((err) => {
+      console.error("Failed to add product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to add product" });
+    });
+});
