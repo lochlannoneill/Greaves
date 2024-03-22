@@ -94,6 +94,10 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  description: {
+    type: String,
+    required: true,
+  },
   tags: [String],
   categories: [String],
   rating: Number,
@@ -143,6 +147,7 @@ app.post("/addProduct", (req, res) => {
   const newProduct = new Product({
     title: req.body.title,
     image: req.body.image,
+    description: req.body.description,
     tags: req.body.tags,
     categories: req.body.categories,
     rating: req.body.rating,
