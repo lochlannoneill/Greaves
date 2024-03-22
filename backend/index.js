@@ -15,10 +15,13 @@ app.use(cors());
 
 // MongoDB database connection
 mongoose
-  .connect("mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("MongoDB connected successfully.");
     console.log("Database: greaves");
@@ -75,19 +78,19 @@ app.post("/upload", (req, res) => {
 });
 
 // Schema for creating products
-const product = new mongoose.Schema({
+const productSchema = new mongoose.Schema({
   id: {
     type: mongoose.Schema.Types.ObjectId,
     index: true,
     required: true,
     unique: true,
-    auto: true
+    auto: true,
   },
   title: {
     type: String,
     required: true,
   },
-  images: {
+  image: {
     type: String,
     required: true,
   },
@@ -99,36 +102,36 @@ const product = new mongoose.Schema({
     small: {
       type: Number,
       min: 0,
-      default: 0
+      default: 0,
     },
     medium: {
       type: Number,
       min: 0,
-      default: 0
+      default: 0,
     },
     large: {
       type: Number,
       min: 0,
-      default: 0
+      default: 0,
     },
     xlarge: {
       type: Number,
       min: 0,
-      default: 0
+      default: 0,
     },
     xxlarge: {
       type: Number,
       min: 0,
-      default: 0
-    }
+      default: 0,
+    },
   },
   price: {
     type: Number,
     required: true,
   },
   price_old: Number,
-  date:{
+  date: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
