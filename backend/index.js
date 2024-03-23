@@ -91,10 +91,12 @@ const productSchema = new mongoose.Schema({
   tags: [String],
   categories: [String],
   rating: Number,
-  reviews: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Review'
-  }],
+  reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Review",
+    },
+  ],
   stock: {
     small: {
       type: Number,
