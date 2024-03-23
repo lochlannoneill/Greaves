@@ -90,7 +90,10 @@ const productSchema = new mongoose.Schema({
   },
   tags: [String],
   categories: [String],
-  rating: Number,
+  rating: {
+    type: Number,
+    default: 0,
+  },
   reviews: [
     {
       type: mongoose.Schema.Types.ObjectId,
