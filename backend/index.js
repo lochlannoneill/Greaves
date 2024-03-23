@@ -146,7 +146,7 @@ app.post("/addProduct", (req, res) => {
     price: req.body.price,
     price_old: req.body.price_old,
   });
-  console.log("Adding product:", newProduct)
+  console.log("Adding product:", newProduct);
   newProduct
     .save()
     .then(() => {
