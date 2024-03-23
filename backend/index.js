@@ -76,13 +76,6 @@ app.post("/upload", (req, res) => {
 
 // Schema for creating products
 const productSchema = new mongoose.Schema({
-  id: {
-    type: mongoose.Schema.Types.ObjectId,
-    index: true,
-    required: true,
-    unique: true,
-    auto: true,
-  },
   title: {
     type: String,
     required: true,
@@ -97,8 +90,16 @@ const productSchema = new mongoose.Schema({
   },
   tags: [String],
   categories: [String],
-  rating: Number,
-  reviews: Number,
+  rating: {
+    type: Number,
+    default: 0,
+  },
+  reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Review",
+    },
+  ],
   stock: {
     small: {
       type: Number,
@@ -153,7 +154,7 @@ app.post("/addProduct", (req, res) => {
     price: req.body.price,
     price_old: req.body.price_old,
   });
-  console.log("Adding product:", newProduct)
+  console.log("Adding product:", newProduct);
   newProduct
     .save()
     .then(() => {
