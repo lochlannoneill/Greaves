@@ -76,13 +76,6 @@ app.post("/upload", (req, res) => {
 
 // Schema for creating products
 const productSchema = new mongoose.Schema({
-  id: {
-    type: mongoose.Schema.Types.ObjectId,
-    index: true,
-    required: true,
-    unique: true,
-    auto: true,
-  },
   title: {
     type: String,
     required: true,
