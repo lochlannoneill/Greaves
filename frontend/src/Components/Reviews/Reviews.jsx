@@ -108,7 +108,7 @@ export const Reviews = ({ reviews, productId }) => {
                       className="review-info-verification-checkmark"
                       icon={faCheck}
                     />
-                    <p className="review-info-verification-text">Verified</p>
+                    <p className="review-info-verification-text">Verified Review</p>
                   </>
                 ) : null}
               </div>
