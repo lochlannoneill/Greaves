@@ -65,7 +65,10 @@ export const Reviews = ({ reviews, productId }) => {
                 src={review.profile_image || placeholder_user}
                 alt="user"
               />
-              <p className="review-user-name">{review.name}</p>
+              <div className="review-user-info">
+                <p className="review-user-name">{review.userName}</p>
+                <p className="review-user-handle">{review.userHandle}</p>
+              </div>
             </div>
             <div className="review-info">
               <div className="review-info-rating">
@@ -108,7 +111,9 @@ export const Reviews = ({ reviews, productId }) => {
                       className="review-info-verification-checkmark"
                       icon={faCheck}
                     />
-                    <p className="review-info-verification-text">Verified Review</p>
+                    <p className="review-info-verification-text">
+                      Verified Review
+                    </p>
                   </>
                 ) : null}
               </div>
@@ -130,9 +135,13 @@ export const Reviews = ({ reviews, productId }) => {
               <p>{review.description}</p>
             </div>
             <div className="review-helpful">
-              <p className="review-helpful-count">
-                review.helpful people found this review helpful
-              </p>
+              {review.helpful.length > 0 && (
+                <p className="review-helpful-count">
+                  {review.helpful.length}{" "}
+                  {review.helpful.length === 1 ? "person" : "people"} found this
+                  review helpful
+                </p>
+              )}
               <div className="review-helpful-actions">
                 <button className="review-helpful-button">Helpful</button>
                 <a href="#report" className="review-helpful-report">
