@@ -69,29 +69,29 @@ export const Reviews = ({ reviews, productId }) => {
             </div>
             <div className="review-info">
               <div className="review-info-rating">
-                <p className="review-info-rating-number">{review.rating}</p>
                 <span className="review-info-rating-stars">
-                  <FontAwesomeIcon
-                    className="review-info-rating-icon"
-                    icon={faStar_solid}
-                  />
-                  <FontAwesomeIcon
-                    className="review-info-rating-icon"
-                    icon={faStar_solid}
-                  />
-                  <FontAwesomeIcon
-                    className="review-info-rating-icon"
-                    icon={faStar_half}
-                  />
-                  <FontAwesomeIcon
-                    className="review-info-rating-icon"
-                    icon={faStar_regular}
-                  />
-                  <FontAwesomeIcon
-                    className="review-info-rating-icon"
-                    icon={faStar_regular}
-                  />
+                  {[...Array(Math.floor(review.rating))].map((_, index) => (
+                    <FontAwesomeIcon
+                      key={index}
+                      className="review-info-rating-icon"
+                      icon={faStar_solid}
+                    />
+                  ))}
+                  {review.rating % 1 !== 0 && (
+                    <FontAwesomeIcon
+                      className="review-info-rating-icon"
+                      icon={faStar_half}
+                    />
+                  )}
+                  {[...Array(5 - Math.ceil(review.rating))].map((_, index) => (
+                    <FontAwesomeIcon
+                      key={index + Math.ceil(review.rating)}
+                      className="review-info-rating-icon"
+                      icon={faStar_regular}
+                    />
+                  ))}
                 </span>
+                <p className="review-info-rating-number">{review.rating}</p>
               </div>
               <div className="review-info-summary">
                 <p>{review.summary}</p>
