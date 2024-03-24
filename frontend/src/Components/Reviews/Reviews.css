@@ -116,7 +116,7 @@
 .review {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   padding: 2vh;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -139,8 +139,7 @@
 .review-user-info {
   display: flex;
   flex-direction: column;
-  /* gap: 4px; */
-  line-height: 1.25;
+  /* line-height: 1.25; */
 }
 
 .review-user-name {
@@ -202,6 +201,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1vh;
+  margin-top: 8px;
 }
 
 .review-images img {

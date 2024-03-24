@@ -45,7 +45,7 @@ let reviews = [
     date: "2021-01-04",
     time: "13:00:00",
     verified: true,
-    images: [p1_product_i4, p1_product_i3],
+    images: [p1_product_i4, p1_product_i3, p1_product_i1],
     description: "This is a bad product. I would not recommend it to anyone.",
     helpful: []
   },
