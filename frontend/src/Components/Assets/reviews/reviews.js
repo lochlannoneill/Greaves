@@ -12,7 +12,7 @@ let reviews = [
     userName: "Lochlann O Neill",
     userHandle: "@lochlannoneill",
     rating: 4.5,
-    summary: "This is an absolutely great product!",
+    summary: "This is an absolutely amazing product!",
     date: "2022-02-22",
     time: "17:40:22",
     verified: true,
