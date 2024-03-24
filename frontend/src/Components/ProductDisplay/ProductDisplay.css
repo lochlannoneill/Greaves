@@ -120,9 +120,6 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5vh;
-}
-
-.productdisplay-right-rating-value {
   color: grey;
 }
 

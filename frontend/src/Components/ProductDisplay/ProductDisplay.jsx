@@ -67,40 +67,48 @@ export const ProductDisplay = (props) => {
             ) : null}
           </h1>
           <div className="productdisplay-right-rating">
-            <p className="productdisplay-right-rating-value">{reviewAverageRating}</p>
-            <span className="productdisplay-right-rating-stars">
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_half}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_regular}
-              />
-            </span>
-            <a
-              href="#reviews"
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById("reviews")
-                  .scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              out of {reviewCount} reviews
-            </a>
+            {reviewCount > 0 ? (
+              <>
+                <p className="productdisplay-right-rating-value">
+                  {reviewAverageRating}
+                </p>
+                <span className="productdisplay-right-rating-stars">
+                  <FontAwesomeIcon
+                    className="productdisplay-right-rating-icon"
+                    icon={faStar_solid}
+                  />
+                  <FontAwesomeIcon
+                    className="productdisplay-right-rating-icon"
+                    icon={faStar_solid}
+                  />
+                  <FontAwesomeIcon
+                    className="productdisplay-right-rating-icon"
+                    icon={faStar_solid}
+                  />
+                  <FontAwesomeIcon
+                    className="productdisplay-right-rating-icon"
+                    icon={faStar_half}
+                  />
+                  <FontAwesomeIcon
+                    className="productdisplay-right-rating-icon"
+                    icon={faStar_regular}
+                  />
+                </span>
+                <a
+                  href="#reviews"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("reviews")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  out of {reviewCount} reviews
+                </a>
+              </>
+            ) : (
+              <p className="productdisplay-right-rating-default">No reviews yet</p>
+            )}
           </div>
         </div>
         <div className="productdisplay-right-info">
