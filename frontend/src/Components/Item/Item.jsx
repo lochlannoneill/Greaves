@@ -12,6 +12,13 @@ import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
 import "./Item.css";
 
+const truncateTitle = (title, maxChars) => {
+  if (title.length > maxChars) {
+    return title.substring(0, maxChars) + "...";
+  }
+  return title;
+};
+
 export const Item = (props) => {
   const { isFavorite, isInCart } = useContext(ShopContext);
 
@@ -24,7 +31,9 @@ export const Item = (props) => {
           <img className="item-image" src={props.img} alt={props.title} />
         </div>
         <div className="item-description">
-          <p className="item-description-title">{props.title}</p>
+          <p className="item-description-title">
+            {truncateTitle(props.title, 28)} {/* Adjust maxChars as needed */}
+          </p>
           <div className="item-description-reviews">
             <span className="item-description-reviews-stars">
               <FontAwesomeIcon
@@ -52,9 +61,7 @@ export const Item = (props) => {
           </div>
           <div className="item-stuff">
             <div className="item-prices">
-              <div
-                className={`item-price ${props.price_old ? "reduced" : ""}`}
-              >
+              <div className={`item-price ${props.price_old ? "reduced" : ""}`}>
                 &euro;{props.price}
               </div>
               {props.price_old && (
