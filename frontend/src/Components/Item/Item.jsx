@@ -48,15 +48,20 @@ export const Item = (props) => {
                 icon={faStar_regular}
               />
             </span>
-            <p className="item-description-reviews-text">
-              product.reviews
-            </p>
+            <p className="item-description-reviews-text">product.reviews</p>
           </div>
           <div className="item-stuff">
             <div className="item-prices">
-              <div className="item-price-new">€{props.price}</div>
-              <div className="item-price-old">€{props.price_old}</div>
+              <div
+                className={`item-price-new ${props.price_old ? "reduced" : ""}`}
+              >
+                &euro;{props.price}
+              </div>
+              {props.price_old && (
+                <div className="item-price-old">&euro;{props.price_old}</div>
+              )}
             </div>
+
             <div className="item-status">
               {isFavorite(props.id) ? (
                 <FontAwesomeIcon

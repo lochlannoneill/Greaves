@@ -90,6 +90,11 @@
   font-weight: 600;
 }
 
+.item-price-new.reduced {
+  color: red;
+  font-weight: 700;
+}
+
 .item-price-old {
   color: grey;
   font-size: 14px;
