@@ -17,6 +17,7 @@
   overflow: hidden;
   height: 320px;
   width: 100%;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .item-image {
@@ -31,7 +32,7 @@
 .item-description {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  /* gap: 2px; */
   padding: 16px;
 }
 
@@ -66,9 +67,10 @@
   flex: 1;
   display: flex;
   gap: 16px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 4px;
+  padding: 0 16px;
 }
 
 .item-stuff > * {
@@ -119,29 +121,10 @@
 
 @media screen and (max-width: 768px) {
   .item-description {
-    padding: 12px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
   }
 
-  .item-description * {
-    gap: 8px;
-  }
-
-  .item-price-old {
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .item-stuff {
-    gap: 16px;
-  }
-
-  .item-status * {
-    height: 24px;
-    width: 24px;
-  }
 }
 
 @media (max-width: 420px) {

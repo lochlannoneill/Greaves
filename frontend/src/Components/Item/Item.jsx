@@ -25,7 +25,7 @@ export const Item = (props) => {
         </div>
         <div className="item-description">
           <p className="item-description-title">{props.title}</p>
-          <p className="item-description-reviews">
+          <div className="item-description-reviews">
             <span className="item-description-reviews-stars">
               <FontAwesomeIcon
                 className="productdisplay-right-rating-icon"
@@ -48,10 +48,10 @@ export const Item = (props) => {
                 icon={faStar_regular}
               />
             </span>
-            <span className="item-description-reviews-text">
-              product.reviews
-            </span>
-          </p>
+            <p className="item-description-reviews-text">
+              product.review
+            </p>
+          </div>
           <div className="item-stuff">
             <div className="item-prices">
               <div className="item-price-new">€{props.price}</div>
