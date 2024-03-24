@@ -9,7 +9,8 @@ let reviews = [
     id: 1,
     productId: 1,
     profile_image: profile,
-    name: "Lochlann O Neill",
+    userName: "Lochlann O Neill",
+    userHandle: "@lochlannoneill",
     rating: 4.5,
     summary: "This is an absolutely great product!",
     date: "2022-02-22",
@@ -17,12 +18,13 @@ let reviews = [
     verified: true,
     images: [p1_product_i1, p1_product_i2, p1_product_i3, p1_product_i4],
     description: "This is a great product. I would recommend it to anyone. It is very easy to use and has great features. I am very happy with my purchase. I will definitely buy more products from this brand in the future.",
-    helpful: []
+    helpful: ["user1_id", "user2_id", "user3_id", "user4_id", "user5_id"]
   },
   {
     id: 2,
     productId: 1,
-    name: "John Doe",
+    userName: "John Doe",
+    userHandle: "@johndoe",
     rating: 1,
     summary: "Terrible product",
     date: "2021-01-05",
@@ -31,12 +33,13 @@ let reviews = [
     images: [p1_product_i2],
     description:
       "This is a terrible product. I would not recommend it to anyone.",
-    helpful: []
+    helpful: ["user1_id"]
   },
   {
     id: 3,
     productId: 1,
-    name: "Jane Smith",
+    userName: "Jane Smith",
+    userHandle: "@janesmith",
     rating: 2.5,
     summary: "Bad product",
     date: "2021-01-04",
@@ -49,7 +52,8 @@ let reviews = [
   {
     id: 4,
     productId: 1,
-    name: "Jane Doe",
+    userName: "Jane Doe",
+    userHandle: "@janedoe",
     rating: 4,
     summary: "Good product",
     date: "2021-01-02",
@@ -62,7 +66,8 @@ let reviews = [
   {
     id: 5,
     productId: 1,
-    name: "John Smith",
+    userName: "John Smith",
+    userHandle: "@johnsmith",
     rating: 3.5,
     summary: "Okay product",
     date: "2021-01-03",
