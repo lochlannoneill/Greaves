@@ -3,6 +3,7 @@ import p1_review1_1 from "./p1_review1_1.jpg";
 import p1_review1_2 from "./p1_review1_2.jpg";
 import p1_review1_3 from "./p1_review1_3.jpg";
 import p1_review1_4 from "./p1_review1_4.jpg";
+import p1_review2_1 from "./p1_review2_1.jpg";
 import p1_review3_1 from "./p1_review3_1.jpg";
 import p1_review3_2 from "./p1_review3_2.jpg";
 import p1_review3_3 from "./p1_review3_3.jpg";
@@ -26,21 +27,6 @@ let reviews = [
   {
     id: 2,
     productId: 1,
-    userName: "John Doe",
-    userHandle: "@johndoe",
-    rating: 3.5,
-    summary: "Great for the autumn",
-    date: "2021-01-05",
-    time: "14:00:00",
-    verified: false,
-    images: [p1_review1_2],
-    description:
-      "This jumper is lovely and soft and feels warm when worn without being too bulky. It can be worn on smart casual occasions and it looks stylish with the button detail on the v neckline it has a slight ribbed effect. I found the sleeve length perfect and body length was not too long just sat nicely on my hips. I got the black which looked smart worn with black trousers or jeans and the size s fitted very well I’m usually a size 10 . I would consider buying in a different colour as there is a good selection.",
-    helpful: ["user1_id"]
-  },
-  {
-    id: 3,
-    productId: 1,
     userName: "Jane Smith",
     userHandle: "@janesmith",
     rating: 3,
@@ -51,6 +37,21 @@ let reviews = [
     images: [p1_review3_1, p1_review3_2, p1_review3_3],
     description: "Casual fit and style, 93% cotton and 7% spandex. (Not to tumble dry).Size fitted well on family members wearing L. Simple but nice looking long sleeve V Top.",
     helpful: []
+  },
+  {
+    id: 1,
+    productId: 1,
+    userName: "John Doe",
+    userHandle: "@johndoe",
+    rating: 3.5,
+    summary: "Great for the autumn",
+    date: "2021-01-05",
+    time: "14:00:00",
+    verified: false,
+    images: [p1_review2_1],
+    description:
+      "This jumper is lovely and soft and feels warm when worn without being too bulky. It can be worn on smart casual occasions and it looks stylish with the button detail on the v neckline it has a slight ribbed effect. I found the sleeve length perfect and body length was not too long just sat nicely on my hips. I got the black which looked smart worn with black trousers or jeans and the size s fitted very well I’m usually a size 10 . I would consider buying in a different colour as there is a good selection.",
+    helpful: ["user1_id"]
   },
   {
     id: 4,
