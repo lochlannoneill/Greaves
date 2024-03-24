@@ -64,7 +64,6 @@ export const Reviews = () => {
           </div>
           <div className="review-info">
             <div className="review-info-rating">
-              <p className="review-info-rating-number">review.rating</p>
               <span className="review-info-rating-stars">
                 <FontAwesomeIcon
                   className="review-info-rating-icon"
@@ -87,6 +86,7 @@ export const Reviews = () => {
                   icon={faStar_regular}
                 />
               </span>
+              <p className="review-info-rating-text">review.rating</p>
             </div>
             <div className="review-info-summary">
               <p>review.summary</p>
