@@ -150,7 +150,11 @@
   gap: 0.5vh;
 }
 
-.review-info-rating-text {
+.review-info-rating * {
+  font-size: 1rem;
+}
+
+.review-info-rating-number {
   color: grey;
 }
 
@@ -166,7 +170,7 @@
 }
 
 .review-info-date {
-  color: grey;
+  color: darkgrey;
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -177,7 +181,7 @@
   gap: 0.5vh;
   color: darkorange;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   align-items: center;
 }
 
