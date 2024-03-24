@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import products from "../Components/Assets/products/product_data";
+import reviews from "../Components/Assets/reviews/reviews";
 
 export const ShopContext = createContext(null);
 
@@ -96,6 +97,7 @@ const ShopContextProvider = (props) => {
 
   const contextValue = {
     products,
+    reviews,
     popupMessage,
     cart,
     getCartCount,

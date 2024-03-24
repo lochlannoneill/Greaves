@@ -9,7 +9,7 @@ import { Reviews } from "../Components/Reviews/Reviews";
 import "./CSS/Product.css";
 
 export const Product = () => {
-  const { products } = useContext(ShopContext);
+  const { products, reviews } = useContext(ShopContext);
   const { id } = useParams();
   const product = products.find((e) => e.id === Number(id));
 
@@ -17,18 +17,18 @@ export const Product = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  if (!product) {
+    return <p>Product not found</p>;
+  }
+
   return (
     <div className="product">
-      {product ? (
-        <div className="product-components">
-          <Breadcrumb product={product} />
-          <ProductDisplay product={product} />
-          <Related />
-          <Reviews product={product} />
-        </div>
-      ) : (
-        <p>Product not found</p>
-      )}
+      <div className="product-components">
+        <Breadcrumb product={product} />
+        <ProductDisplay product={product} />
+        <Related />
+        <Reviews reviews={reviews} productId={product.id} />
+      </div>
     </div>
   );
 };
