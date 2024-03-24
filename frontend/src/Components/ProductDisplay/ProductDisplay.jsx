@@ -17,7 +17,7 @@ import Modal from "../Modal/Modal";
 import "./ProductDisplay.css";
 
 export const ProductDisplay = (props) => {
-  const { product } = props;
+  const { product, reviewAverageRating, reviewCount } = props;
   const { cart, addCart, toggleFavorite, isFavorite, showPopup, popupMessage } =
     useContext(ShopContext);
 
@@ -67,7 +67,7 @@ export const ProductDisplay = (props) => {
             ) : null}
           </h1>
           <div className="productdisplay-right-rating">
-            <p className="productdisplay-right-rating-value">product.rating</p>
+            <p className="productdisplay-right-rating-value">{reviewAverageRating}</p>
             <span className="productdisplay-right-rating-stars">
               <FontAwesomeIcon
                 className="productdisplay-right-rating-icon"
@@ -91,7 +91,7 @@ export const ProductDisplay = (props) => {
               />
             </span>
             <a
-              href="reviews"
+              href="#reviews"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -99,7 +99,7 @@ export const ProductDisplay = (props) => {
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              product.reviews
+              out of {reviewCount} reviews
             </a>
           </div>
         </div>

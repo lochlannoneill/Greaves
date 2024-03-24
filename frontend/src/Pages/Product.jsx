@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../Context/ShopContext";
 import { Breadcrumb } from "../Components/Breadcrumbs/Breadcrumb";
@@ -12,6 +12,26 @@ export const Product = () => {
   const { products, reviews } = useContext(ShopContext);
   const { id } = useParams();
   const product = products.find((e) => e.id === Number(id));
+  const [reviewCount, setReviewCount] = useState(0);
+  const [reviewAverageRating, setReviewAverageRating] = useState(0);
+
+  useEffect(() => {
+    if (product) {
+      // Filter reviews by product ID
+      const productReviews = reviews.filter(
+        (review) => review.productId === product.id
+      );
+      setReviewCount(productReviews.length);
+
+      // Calculate average rating
+      const totalRating = productReviews.reduce(
+        (acc, review) => acc + review.rating,
+        0
+      );
+      const avgRating = totalRating / productReviews.length;
+      setReviewAverageRating(avgRating);
+    }
+  }, [product, reviews]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,7 +45,7 @@ export const Product = () => {
     <div className="product">
       <div className="product-components">
         <Breadcrumb product={product} />
-        <ProductDisplay product={product} />
+        <ProductDisplay product={product} reviewAverageRating={reviewAverageRating} reviewCount={reviewCount} />
         <Related />
         <Reviews reviews={reviews} productId={product.id} />
       </div>
