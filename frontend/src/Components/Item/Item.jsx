@@ -53,7 +53,7 @@ export const Item = (props) => {
           <div className="item-stuff">
             <div className="item-prices">
               <div
-                className={`item-price-new ${props.price_old ? "reduced" : ""}`}
+                className={`item-price ${props.price_old ? "reduced" : ""}`}
               >
                 &euro;{props.price}
               </div>

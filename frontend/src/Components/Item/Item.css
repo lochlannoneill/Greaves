@@ -85,12 +85,12 @@
   gap: 8px;
 }
 
-.item-price-new {
+.item-price {
   color: #171717; /* TODO: Color variable */
   font-weight: 600;
 }
 
-.item-price-new.reduced {
+.item-price.reduced {
   color: red;
   font-weight: 700;
 }
