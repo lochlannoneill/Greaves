@@ -56,13 +56,13 @@ export const ShopCategory = (props) => {
             }
           })}
         </div>
-        <div className="shopcategory-loadmore">
-          <p className="shopcategory-loadmore-results">
-            Showing <span>1-12</span> of 36 results
+        <div className="shopcategory-showmore">
+          <p className="shopcategory-showmore-results">
+            Showing <b>1-12</b> of {props.category}.total results
           </p>
-          <div className="shopcategory-loadmore-button">
+          <div className="shopcategory-showmore-button">
             <p>
-              See More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
+              Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
             </p>
           </div>
         </div>
