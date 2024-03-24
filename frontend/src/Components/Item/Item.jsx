@@ -24,7 +24,7 @@ export const Item = (props) => {
           <img className="item-image" src={props.img} alt={props.title} />
         </div>
         <div className="item-description">
-          <p>{props.title}</p>
+          <p className="item-description-title">{props.title}</p>
           <p className="item-description-reviews">
             <span className="item-description-reviews-stars">
               <FontAwesomeIcon
