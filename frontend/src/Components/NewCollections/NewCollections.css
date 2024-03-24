@@ -1,9 +1,9 @@
 .new-collections {
   margin: 4vh 4vw;
-  text-align: center;
 }
 
 .new-collections h1 {
+  text-align: center;
   color: #171717; /* TODO: Color variables */
   font-size: 50px;
   font-weight: 600;

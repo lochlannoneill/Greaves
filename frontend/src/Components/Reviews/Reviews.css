@@ -146,10 +146,16 @@
 .review-info-rating {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.5vh;
 }
 
+.review-info-rating-text {
+  color: grey;
+}
+
 .review-info-rating-stars {
+  font-size: 1.2rem;
   color: darkorange;
 }
 
@@ -160,8 +166,9 @@
 }
 
 .review-info-date {
-  color: #3a3a3a;
+  color: grey;
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .review-info-verification {
@@ -170,6 +177,7 @@
   gap: 0.5vh;
   color: darkorange;
   font-size: 0.8rem;
+  font-weight: 600;
   align-items: center;
 }
 
@@ -310,12 +318,12 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.25s;
 }
 
 .review-showmore p:active {
   color: #171717;
   transform: scale(0.975);
-  transition: 0.25s;
 }
 
 @media screen and (max-width: 768px) {

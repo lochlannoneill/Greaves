@@ -9,9 +9,39 @@ _Summary: React, MongoDB, HTML/CSS, Javascript_
 Developed an E-Commerce website from inception to deployment, utilizing the MERN stack (MongoDB, Express.js, React, Node.js).  
   
 **DONE** - Engineered the frontend with React, ensuring an engaging and user-friendly interface that enhances the shopping experience.  
-**TO DO** - Implemented MongoDB as the database solution, enabling efficient data management and retrieval for seamless operation.  
-**DONE** - Facilitated deployment on Cloudflare for optimized performance and reliability, complemented by a custom domain hosted on GoDaddy for enhanced brand identity and accessibility.  
 
-### Output (26-02-24):
-![26-02-2024_1](https://github.com/lochlannoneill/greaves/blob/main/screenshots/26-02-2024_1.png?raw=true)  
-![26-02-2024_2](https://github.com/lochlannoneill/greaves/blob/main/screenshots/26-02-2024_2.png?raw=true)  
+**DONE** - Facilitated deployment on Cloudflare for optimized performance and reliability, complemented by a custom domain hosted on GoDaddy for enhanced brand identity and accessibility.  
+  
+**DOING** - Implemented MongoDB as the database solution, enabling efficient data management and retrieval for seamless operation.  
+  
+-----
+  
+### Frontend
+PS D:\Documents\GitHub\greaves\frontend> npm start  
+http://localhost:3000/  
+![home](https://github.com/lochlannoneill/greaves/blob/main/screenshots/home.png?raw=true)  
+![category](https://github.com/lochlannoneill/greaves/blob/main/screenshots/category.png?raw=true)  
+![product](https://github.com/lochlannoneill/greaves/blob/main/screenshots/product.png?raw=true)  
+![favorites](https://github.com/lochlannoneill/greaves/blob/main/screenshots/favorites.png?raw=true)  
+![cart](https://github.com/lochlannoneill/greaves/blob/main/screenshots/cart.png?raw=true)  
+  
+-----
+  
+### Backend
+PS D:\Documents\GitHub\greaves\backend> node .\index.js  
+http://localhost:4000/  
+![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
+
+-----
+  
+### POST - addImage
+Thunder Client POST request :  
+![post-image](https://github.com/lochlannoneill/greaves/blob/main/screenshots/post-image.png?raw=true)  
+  
+-----
+  
+### POST - addProduct
+Thunder Client POST request :  
+![addProduct_1](https://github.com/lochlannoneill/greaves/blob/main/screenshots/addProduct_1.png?raw=true)  
+Addition visable in MongoDB cluster greaves.products :  
+![addProduct_2](https://github.com/lochlannoneill/greaves/blob/main/screenshots/addProduct_2.png?raw=true)  

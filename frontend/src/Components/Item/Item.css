@@ -16,6 +16,8 @@
   border-top-right-radius: 16px;
   overflow: hidden;
   height: 320px;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .item-image {
@@ -28,6 +30,9 @@
 }
 
 .item-description {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2px; */
   padding: 16px;
 }
 
@@ -36,13 +41,36 @@
   color: #171717;
 }
 
+.item-description-reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.item-description-reviews * {
+  font-size: 14px;
+}
+
+.item-description-reviews-stars {
+  color: darkorange;
+}
+
+.item-description-reviews-text {
+  color: grey !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .item-stuff {
   flex: 1;
   display: flex;
   gap: 16px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 4px;
+  padding: 0 16px;
 }
 
 .item-stuff > * {
@@ -59,13 +87,12 @@
 
 .item-price-new {
   color: #171717; /* TODO: Color variable */
-  font-size: 20px;
   font-weight: 600;
 }
 
 .item-price-old {
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-decoration: line-through;
 }
@@ -94,29 +121,10 @@
 
 @media screen and (max-width: 768px) {
   .item-description {
-    padding: 12px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
   }
 
-  .item-description * {
-    gap: 8px;
-  }
-
-  .item-price-old {
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .item-stuff {
-    gap: 16px;
-  }
-
-  .item-status * {
-    height: 24px;
-    width: 24px;
-  }
 }
 
 @media (max-width: 420px) {
