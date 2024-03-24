@@ -12,11 +12,12 @@ let reviews = [
     name: "Lochlann O Neill",
     rating: 5,
     summary: "Great product",
-    date: "2021-01-01",
-    time: "10:00:00",
+    date: "2022-02-22",
+    time: "17:40:22",
     verified: true,
     images: [p1_product_i1, p1_product_i2, p1_product_i3, p1_product_i4],
     description: "This is a great product. I would recommend it to anyone.",
+    helpful: []
   },
   {
     id: 2,
@@ -26,10 +27,11 @@ let reviews = [
     summary: "Terrible product",
     date: "2021-01-05",
     time: "14:00:00",
-    verified: true,
+    verified: false,
     images: [p1_product_i2],
     description:
       "This is a terrible product. I would not recommend it to anyone.",
+    helpful: []
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ let reviews = [
     verified: true,
     images: [p1_product_i4, p1_product_i3],
     description: "This is a bad product. I would not recommend it to anyone.",
+    helpful: []
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ let reviews = [
     verified: true,
     images: [],
     description: "This is a good product. I would recommend it to anyone.",
+    helpful: []
   },
   {
     id: 5,
@@ -63,9 +67,10 @@ let reviews = [
     summary: "Okay product",
     date: "2021-01-03",
     time: "12:00:00",
-    verified: true,
+    verified: false,
     images: [],
     description: "This is an okay product. I would recommend it to anyone.",
+    helpful: []
   },
 ];
 
