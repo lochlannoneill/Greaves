@@ -12,7 +12,10 @@ import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import placeholder from "../Assets/placeholder.jpg";
 import "./Reviews.css";
 
-export const Reviews = () => {
+export const Reviews = ({ reviews, productId }) => {
+  const filteredReviews = reviews.filter(
+    (review) => review.productId === productId
+  );
   return (
     <div id="reviews" className="reviews">
       <div className="review-input">
@@ -52,89 +55,95 @@ export const Reviews = () => {
         </form>
       </div>
       <hr></hr>
+      {/* Review list */}
       <div className="review-list">
-        <div className="review">
-          <div className="review-user">
-            <img
-              className="review-user-image"
-              src={placeholder_user}
-              alt="user"
-            />
-            <p className="review-user-name">review.name</p>
-          </div>
-          <div className="review-info">
-            <div className="review-info-rating">
-              <p className="review-info-rating-number">review.rating</p>
-              <span className="review-info-rating-stars">
-                <FontAwesomeIcon
-                  className="review-info-rating-icon"
-                  icon={faStar_solid}
-                />
-                <FontAwesomeIcon
-                  className="review-info-rating-icon"
-                  icon={faStar_solid}
-                />
-                <FontAwesomeIcon
-                  className="review-info-rating-icon"
-                  icon={faStar_half}
-                />
-                <FontAwesomeIcon
-                  className="review-info-rating-icon"
-                  icon={faStar_regular}
-                />
-                <FontAwesomeIcon
-                  className="review-info-rating-icon"
-                  icon={faStar_regular}
-                />
-              </span>
-            </div>
-            <div className="review-info-summary">
-              <p>review.summary</p>
-            </div>
-            <div className="review-info-date">
-              <p>review.date</p>
-            </div>
-            <div className="review-info-verification">
-              <FontAwesomeIcon
-                className="review-info-verification-checkmark"
-                icon={faCheck}
+        {filteredReviews.map((review) => (
+          <div key={review.id} className="review">
+            <div className="review-user">
+              <img
+                className="review-user-image"
+                src={review.profile_image || placeholder_user}
+                alt="user"
               />
-              <p className="review-info-verification-text">review.verified</p>
+              <p className="review-user-name">{review.name}</p>
+            </div>
+            <div className="review-info">
+              <div className="review-info-rating">
+                <p className="review-info-rating-number">{review.rating}</p>
+                <span className="review-info-rating-stars">
+                  <FontAwesomeIcon
+                    className="review-info-rating-icon"
+                    icon={faStar_solid}
+                  />
+                  <FontAwesomeIcon
+                    className="review-info-rating-icon"
+                    icon={faStar_solid}
+                  />
+                  <FontAwesomeIcon
+                    className="review-info-rating-icon"
+                    icon={faStar_half}
+                  />
+                  <FontAwesomeIcon
+                    className="review-info-rating-icon"
+                    icon={faStar_regular}
+                  />
+                  <FontAwesomeIcon
+                    className="review-info-rating-icon"
+                    icon={faStar_regular}
+                  />
+                </span>
+              </div>
+              <div className="review-info-summary">
+                <p>{review.summary}</p>
+              </div>
+              <div className="review-info-date">
+                <p>
+                  {review.date} at {review.time}
+                </p>
+              </div>
+              <div className="review-info-verification">
+                {review.verified ? (
+                  <>
+                    <FontAwesomeIcon
+                      className="review-info-verification-checkmark"
+                      icon={faCheck}
+                    />
+                    <p className="review-info-verification-text">Verified</p>
+                  </>
+                ) : null}
+              </div>
+            </div>
+            {/* Render review images */}
+            <div className="review-images">
+              {review.images.map((image, index) => (
+                <img key={index} src={image} alt={`review-${index}`} />
+              ))}
+              <div className="review-images-expand">
+                <FontAwesomeIcon
+                  className="review-images-expand-icon"
+                  icon={faPlus}
+                />
+                <img src={placeholder} alt="review" />
+              </div>
+            </div>
+            <div className="review-description">
+              <p>{review.description}</p>
+            </div>
+            <div className="review-helpful">
+              <p className="review-helpful-count">
+                review.helpful people found this review helpful
+              </p>
+              <div className="review-helpful-actions">
+                <button className="review-helpful-button">Helpful</button>
+                <a href="#report" className="review-helpful-report">
+                  Report
+                </a>
+              </div>
             </div>
           </div>
-          <div className="review-images">
-            <img src={placeholder} alt="review" />
-            <img src={placeholder} alt="review" />
-            <img src={placeholder} alt="review" />
-            <div className="review-images-expand">
-              <FontAwesomeIcon
-                className="review-images-expand-icon"
-                icon={faPlus}
-              />
-              <img src={placeholder} alt="review" />
-            </div>
-          </div>
-          <div className="review-description">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque a natus fugit atque vitae cumque quo harum inventore
-              illum nostrum, molestias blanditiis nobis saepe ex id
-              exercitationem dolorum dolor ut.
-            </p>
-          </div>
-          <div className="review-helpful">
-            <p className="review-helpful-count">
-              review.helpful people found this review helpful
-            </p>
-            <div className="review-helpful-actions">
-              <button className="review-helpful-button">Helpful</button>
-              <a href="#report" className="review-helpful-report">
-                Report
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+      {/* Show more button */}
       <div className="review-showmore">
         <p>
           Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
