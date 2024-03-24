@@ -120,16 +120,19 @@ export const Reviews = ({ reviews, productId }) => {
             </div>
             {/* Render review images */}
             <div className="review-images">
-              {review.images.map((image, index) => (
+              {review.images.slice(0, 3).map((image, index) => (
                 <img key={index} src={image} alt={`review-${index}`} />
               ))}
-              <div className="review-images-expand">
-                <FontAwesomeIcon
-                  className="review-images-expand-icon"
-                  icon={faPlus}
-                />
-                <img src={placeholder} alt="review" />
-              </div>
+              {/* Conditionally render the expand button */}
+              {review.images.length > 3 && (
+                <div className="review-images-expand">
+                  <FontAwesomeIcon
+                    className="review-images-expand-icon"
+                    icon={faPlus}
+                  />
+                  <img src={review.images[3]} alt={`review-3`} />
+                </div>
+              )}
             </div>
             <div className="review-description">
               <p>{review.description}</p>
