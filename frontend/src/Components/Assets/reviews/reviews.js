@@ -1,8 +1,11 @@
 import profile from "./profile.png";
-import p1_product_i1 from "./p1_product_i1.png";
-import p1_product_i2 from "./p1_product_i2.png";
-import p1_product_i3 from "./p1_product_i3.png";
-import p1_product_i4 from "./p1_product_i4.png";
+import p1_review1_1 from "./p1_review1_1.jpg";
+import p1_review1_2 from "./p1_review1_2.jpg";
+import p1_review1_3 from "./p1_review1_3.jpg";
+import p1_review1_4 from "./p1_review1_4.jpg";
+import p1_review3_1 from "./p1_review3_1.jpg";
+import p1_review3_2 from "./p1_review3_2.jpg";
+import p1_review3_3 from "./p1_review3_3.jpg";
 
 let reviews = [
   {
@@ -16,8 +19,8 @@ let reviews = [
     date: "2022-02-22",
     time: "17:40:22",
     verified: true,
-    images: [p1_product_i1, p1_product_i2, p1_product_i3, p1_product_i4],
-    description: "This is a great product. I would recommend it to anyone. It is very easy to use and has great features. I am very happy with my purchase. I will definitely buy more products from this brand in the future.",
+    images: [p1_review1_1, p1_review1_2, p1_review1_3, p1_review1_4],
+    description: "Wow, this top is one of the softest tops I've ever owned, it really feels so lovely on.It's quite lightweight so won't keep you very warm but is stylish,I love the unusual sleeves however, I'm quite tall (5'9), and found the sleeves short.For reference I wear a 10-12 in tops but got the S as didn't want it to be too baggy, there is loads of stretch so I'm happy with the size, actually wish it was a bit more slim fitting.",
     helpful: ["user1_id", "user2_id", "user3_id", "user4_id", "user5_id"]
   },
   {
@@ -25,14 +28,14 @@ let reviews = [
     productId: 1,
     userName: "John Doe",
     userHandle: "@johndoe",
-    rating: 1,
-    summary: "Terrible product",
+    rating: 3.5,
+    summary: "Great for the autumn",
     date: "2021-01-05",
     time: "14:00:00",
     verified: false,
-    images: [p1_product_i2],
+    images: [p1_review1_2],
     description:
-      "This is a terrible product. I would not recommend it to anyone.",
+      "This jumper is lovely and soft and feels warm when worn without being too bulky. It can be worn on smart casual occasions and it looks stylish with the button detail on the v neckline it has a slight ribbed effect. I found the sleeve length perfect and body length was not too long just sat nicely on my hips. I got the black which looked smart worn with black trousers or jeans and the size s fitted very well I’m usually a size 10 . I would consider buying in a different colour as there is a good selection.",
     helpful: ["user1_id"]
   },
   {
@@ -40,13 +43,13 @@ let reviews = [
     productId: 1,
     userName: "Jane Smith",
     userHandle: "@janesmith",
-    rating: 2.5,
-    summary: "Bad product",
+    rating: 3,
+    summary: "93% Cotton, fits nicely",
     date: "2021-01-04",
     time: "13:00:00",
     verified: true,
-    images: [p1_product_i4, p1_product_i3, p1_product_i1],
-    description: "This is a bad product. I would not recommend it to anyone.",
+    images: [p1_review3_1, p1_review3_2, p1_review3_3],
+    description: "Casual fit and style, 93% cotton and 7% spandex. (Not to tumble dry).Size fitted well on family members wearing L. Simple but nice looking long sleeve V Top.",
     helpful: []
   },
   {
@@ -60,21 +63,21 @@ let reviews = [
     time: "11:00:00",
     verified: true,
     images: [],
-    description: "This is a good product. I would recommend it to anyone.",
+    description: "Tbh I didn’t have desperately high expectations but this top is nice. It’s soft, long and just looks nice, sits well with a v-neck t shirt underneath just visible. Plus it’s a bit different, I haven’t seen anything similar in the shops.",
     helpful: []
   },
   {
     id: 5,
-    productId: 1,
+    productId: 3,
     userName: "John Smith",
     userHandle: "@johnsmith",
     rating: 3.5,
-    summary: "Okay product",
+    summary: "Too Short",
     date: "2021-01-03",
     time: "12:00:00",
     verified: false,
     images: [],
-    description: "This is an okay product. I would recommend it to anyone.",
+    description: "Loved the design but wanted it to come to the top of my thighs. I'm 5'4 and it barely reaches my hips. I'm not sure I want to go larger as it fits well.",
     helpful: []
   },
 ];
