@@ -20,6 +20,10 @@ export const ProductDisplay = (props) => {
   const { product, reviewAverageRating, reviewCount } = props;
   const { cart, addCart, toggleFavorite, isFavorite, showPopup, popupMessage } =
     useContext(ShopContext);
+  const totalStock = Object.values(product.stock).reduce(
+    (acc, curr) => acc + curr,
+    0
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -107,7 +111,9 @@ export const ProductDisplay = (props) => {
                 </a>
               </>
             ) : (
-              <p className="productdisplay-right-rating-default">No reviews yet</p>
+              <p className="productdisplay-right-rating-default">
+                No reviews yet
+              </p>
             )}
           </div>
         </div>
@@ -126,15 +132,16 @@ export const ProductDisplay = (props) => {
               </p>
             )}
           </div>
-          <div className="productdisplay-right-stock">
-            {/* Calculate total stock quantity */}
+          <div
+            className={`productdisplay-right-stock ${
+              totalStock < 5 ? "low-stock" : ""
+            }`}
+          >
+            {/* Display stock information */}
             <p>
-              {" "}
-              {Object.values(product.stock).reduce(
-                (acc, curr) => acc + curr,
-                0
-              )}
-              &nbsp;remaining
+              {totalStock < 5
+                ? ` Only ${totalStock} left in stock!`
+                : ` ${totalStock} left in stock`}
             </p>
           </div>
         </div>

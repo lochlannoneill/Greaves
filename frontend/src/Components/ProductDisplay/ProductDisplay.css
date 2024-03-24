@@ -135,9 +135,17 @@
 }
 
 .productdisplay-right-stock {
-  color: green;
+  color: darkgrey;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.productdisplay-right-stock.low-stock {
+  color: red;
+}
+
+.productdisplay-right-stock.out-of-stock {
+  color: red;
 }
 
 .productdisplay-right-price {
