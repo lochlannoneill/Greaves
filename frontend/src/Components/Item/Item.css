@@ -36,6 +36,25 @@
   color: #171717;
 }
 
+.item-description-reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.item-description-reviews-stars {
+  color: darkorange;
+}
+
+.item-description-reviews-text {
+  color: grey !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .item-stuff {
   flex: 1;
   display: flex;
