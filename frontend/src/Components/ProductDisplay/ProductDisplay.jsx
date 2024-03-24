@@ -77,28 +77,33 @@ export const ProductDisplay = (props) => {
                   {reviewAverageRating}
                 </p>
                 <span className="productdisplay-right-rating-stars">
-                  <FontAwesomeIcon
-                    className="productdisplay-right-rating-icon"
-                    icon={faStar_solid}
-                  />
-                  <FontAwesomeIcon
-                    className="productdisplay-right-rating-icon"
-                    icon={faStar_solid}
-                  />
-                  <FontAwesomeIcon
-                    className="productdisplay-right-rating-icon"
-                    icon={faStar_solid}
-                  />
-                  <FontAwesomeIcon
-                    className="productdisplay-right-rating-icon"
-                    icon={faStar_half}
-                  />
-                  <FontAwesomeIcon
-                    className="productdisplay-right-rating-icon"
-                    icon={faStar_regular}
-                  />
+                  {[...Array(Math.floor(reviewAverageRating))].map(
+                    (_, index) => (
+                      <FontAwesomeIcon
+                        key={index}
+                        className="productdisplay-right-rating-icon"
+                        icon={faStar_solid}
+                      />
+                    )
+                  )}
+                  {reviewAverageRating % 1 !== 0 && (
+                    <FontAwesomeIcon
+                      className="productdisplay-right-rating-icon"
+                      icon={faStar_half}
+                    />
+                  )}
+                  {[...Array(5 - Math.ceil(reviewAverageRating))].map(
+                    (_, index) => (
+                      <FontAwesomeIcon
+                        key={index + Math.ceil(reviewAverageRating)}
+                        className="productdisplay-right-rating-icon"
+                        icon={faStar_regular}
+                      />
+                    )
+                  )}
                 </span>
                 <a
+                  className="productdisplay-right-rating-reviews"
                   href="#reviews"
                   onClick={(e) => {
                     e.preventDefault();
