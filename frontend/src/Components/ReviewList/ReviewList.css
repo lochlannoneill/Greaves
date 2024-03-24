@@ -30,7 +30,7 @@
   .review-user-info {
     display: flex;
     flex-direction: column;
-    /* line-height: 1.25; */
+    line-height: 1.375;
   }
   
   .review-user-name {
