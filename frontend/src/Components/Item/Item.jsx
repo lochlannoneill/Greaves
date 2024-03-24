@@ -49,7 +49,7 @@ export const Item = (props) => {
               />
             </span>
             <p className="item-description-reviews-text">
-              product.review
+              product.reviews
             </p>
           </div>
           <div className="item-stuff">
