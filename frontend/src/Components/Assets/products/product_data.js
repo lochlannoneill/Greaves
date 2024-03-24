@@ -60,7 +60,6 @@ let products = [
       xxlarge: 3,
     },
     price: 49.99,
-    price_old: 59.99,
   },
   {
     id: 2,

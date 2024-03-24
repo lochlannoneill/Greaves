@@ -142,8 +142,12 @@
 .productdisplay-right-price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: red; /* TODO: Color variable */
+  color: #171717;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.productdisplay-right-price.reduced {
+  color: red;
 }
 
 .productdisplay-right-price-old {

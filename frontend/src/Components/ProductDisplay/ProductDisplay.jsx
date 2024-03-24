@@ -105,10 +105,18 @@ export const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right-info">
           <div className="productdisplay-right-prices">
-            <p className="productdisplay-right-price">&euro;{product.price}</p>
-            <p className="productdisplay-right-price-old">
-              &euro;{product.price_old}
+            <p
+              className={`productdisplay-right-price ${
+                product.price_old ? "reduced" : ""
+              }`}
+            >
+              &euro;{product.price}
             </p>
+            {product.price_old && (
+              <p className="productdisplay-right-price-old">
+                &euro;{product.price_old}
+              </p>
+            )}
           </div>
           <div className="productdisplay-right-stock">
             {/* Calculate total stock quantity */}
