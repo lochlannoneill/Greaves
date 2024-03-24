@@ -845,7 +845,7 @@ let products = [
   {
     id: 41,
     title: "Blue Denim Jacket",
-    image: p38_img,
+    image: p41_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["Modern", "Latest"],
@@ -865,7 +865,7 @@ let products = [
   {
     id: 42,
     title: "Pink Fulffy Jacket",
-    image: p38_img,
+    image: p42_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["Modern", "Latest"],
