@@ -12,9 +12,10 @@ import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
 import "./Item.css";
 
-const truncateTitle = (title, maxChars) => {
-  if (title.length > maxChars) {
-    return title.substring(0, maxChars) + "...";
+const maxTitleChars = 28;
+const truncateTitle = (title) => {
+  if (title.length > maxTitleChars) {
+    return title.substring(0, maxTitleChars) + "...";
   }
   return title;
 };
@@ -32,7 +33,7 @@ export const Item = (props) => {
         </div>
         <div className="item-description">
           <p className="item-description-title">
-            {truncateTitle(props.title, 28)} {/* Adjust maxChars as needed */}
+            {truncateTitle(props.title)} {/* Adjust maxChars as needed */}
           </p>
           <div className="item-description-reviews">
             <span className="item-description-reviews-stars">
