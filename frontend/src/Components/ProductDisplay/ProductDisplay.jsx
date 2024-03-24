@@ -111,7 +111,15 @@ export const ProductDisplay = (props) => {
             </p>
           </div>
           <div className="productdisplay-right-stock">
-            <p>product.stock</p>
+            {/* Calculate total stock quantity */}
+            <p>
+              {" "}
+              {Object.values(product.stock).reduce(
+                (acc, curr) => acc + curr,
+                0
+              )}
+              &nbsp;remaining
+            </p>
           </div>
         </div>
         <div className="productdisplay-right-details">
