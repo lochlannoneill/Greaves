@@ -51,7 +51,6 @@ let products = [
     tags: ["Knit", "Cozy", "Modern"],
     category: "women",
     rating: 4.0,
-    reviews: [],
     stock: {
       small: 0,
       medium: 2,
@@ -71,7 +70,6 @@ let products = [
     tags: ["Floral", "Wrap Dress", "Elegant"],
     category: "women",
     rating: 4.2,
-    reviews: [],
     stock: {
       small: 5,
       medium: 7,
@@ -90,7 +88,6 @@ let products = [
     tags: ["Denim", "Button-Up", "Casual", "Modern"],
     category: "women",
     rating: 4.5,
-    reviews: [],
     stock: {
       small: 10,
       medium: 12,
@@ -109,7 +106,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 13,
       medium: 6,
@@ -129,7 +125,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -148,7 +143,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -167,7 +161,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -186,7 +179,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -205,7 +197,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -224,7 +215,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -243,7 +233,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -262,7 +251,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "women",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -282,7 +270,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -301,7 +288,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -321,7 +307,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -340,7 +325,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -359,7 +343,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -379,7 +362,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -398,7 +380,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -417,7 +398,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -436,7 +416,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -455,7 +434,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -474,7 +452,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -494,7 +471,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "men",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -513,7 +489,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -533,7 +508,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -552,7 +526,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -571,7 +544,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -590,7 +562,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -610,7 +581,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -629,7 +599,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -648,7 +617,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -668,7 +636,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -687,7 +654,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -706,7 +672,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -725,7 +690,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "boys",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -744,7 +708,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -763,7 +726,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -783,7 +745,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -802,7 +763,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -821,7 +781,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,
@@ -841,7 +800,6 @@ let products = [
     tags: ["Modern", "Latest"],
     category: "girls",
     rating: 3.5,
-    reviews: [],
     stock: {
       small: 1,
       medium: 1,

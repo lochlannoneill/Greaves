@@ -94,12 +94,6 @@ const productSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
-  reviews: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Review",
-    },
-  ],
   stock: {
     small: {
       type: Number,
@@ -149,7 +143,6 @@ app.post("/addProduct", (req, res) => {
     tags: req.body.tags,
     categories: req.body.categories,
     rating: req.body.rating,
-    reviews: req.body.reviews,
     stock: req.body.stock,
     price: req.body.price,
     price_old: req.body.price_old,
