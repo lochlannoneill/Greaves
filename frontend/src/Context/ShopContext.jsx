@@ -97,6 +97,10 @@ const ShopContextProvider = (props) => {
 
   // Reviews
   const getReviewInfo = (productId, reviews) => {
+    if (!reviews) {
+      // Handle case where reviews are undefined
+      return { reviewCount: 0, reviewAverageRating: 0 };
+    }
     const productReviews = reviews.filter(
       (review) => review.productId === productId
     );
@@ -105,9 +109,10 @@ const ShopContextProvider = (props) => {
       (acc, review) => acc + review.rating,
       0
     );
-    const reviewAverageRating = (totalRating / reviewCount).toFixed(1);
+    const reviewAverageRating = reviewCount > 0 ? (totalRating / reviewCount).toFixed(1) : 0;
     return { reviewCount, reviewAverageRating };
   };
+  
 
   const contextValue = {
     products,
