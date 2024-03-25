@@ -92,15 +92,15 @@ export const ProductDisplay = (props) => {
                       icon={faStar_half}
                     />
                   )}
-                  {[...Array(5 - Math.ceil(reviewAverageRating))].map(
-                    (_, index) => (
-                      <FontAwesomeIcon
-                        key={index + Math.ceil(reviewAverageRating)}
-                        className="productdisplay-right-rating-icon"
-                        icon={faStar_regular}
-                      />
-                    )
-                  )}
+                  {[
+                    ...Array(Math.max(0, 5 - Math.ceil(reviewAverageRating))),
+                  ].map((_, index) => (
+                    <FontAwesomeIcon
+                      key={index}
+                      className="productdisplay-right-rating-icon"
+                      icon={faStar_regular}
+                    />
+                  ))}
                 </span>
                 <a
                   className="productdisplay-right-rating-reviews"
