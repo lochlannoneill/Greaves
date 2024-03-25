@@ -1,44 +1,46 @@
-const PORT = 4000;
-
 // Importing required modules
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
-const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
+
+// Define PORT
+const PORT = 4000;
+
+// Create Express app
+const app = express();
 
 // Middleware
 app.use(express.json());
 app.use(cors());
 
-// MongoDB database connection
-mongoose
-  .connect(
-    "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves",
-    {}
-  )
-  .then(() => {
-    console.log("MongoDB connected successfully.");
-    console.log("Database: greaves");
-    console.log("Host: cluster0.5jlntnb.mongodb.net");
-    console.log("Port: default MongoDB port (27017)");
+// API Creation
+app.get("/", (request, response) => {
+  console.log("GET request received at '/'");
+  response.send("Express App is running");
+});
 
-    // API Creation
-    app.get("/", (request, response) => {
-      console.log("GET request received at '/'");
-      response.send("Express App is running");
-    });
+// Start the server
+const server = app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on port: ${PORT}`);
+  // MongoDB database connection
+  mongoose
+    .connect(
+      "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves"
+    )
+    .then(() => {
+      console.log("MongoDB connected successfully.");
+      console.log("Database: greaves");
+      console.log("Host: cluster0.5jlntnb.mongodb.net");
+      console.log("Port: default MongoDB port (27017)");
+    })
+    .catch((err) => {
+      console.error("Failed to connect to MongoDB:", err);
+      process.exit(1); // Exit process on MongoDB connection failure
     });
-  })
-  .catch((err) => {
-    console.error("Failed to connect to MongoDB:", err);
-    process.exit(1); // Exit process on MongoDB connection failure
-  });
+});
 
 // Image storage engine
 const storage = multer.diskStorage({
@@ -51,9 +53,7 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({
-  storage: storage,
-}).single("product");
+const upload = multer({ storage: storage }).single("product");
 
 // API for image upload
 app.use("/images", express.static(path.join(__dirname, "upload/images")));
@@ -76,60 +76,22 @@ app.post("/upload", (req, res) => {
 
 // Schema for creating products
 const productSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
+  title: { type: String, required: true },
+  image: { type: String, required: true },
+  description: { type: String, required: true },
   tags: [String],
   categories: [String],
-  rating: {
-    type: Number,
-    default: 0,
-  },
+  rating: { type: Number, default: 0 },
   stock: {
-    small: {
-      type: Number,
-      min: 0,
-      default: 0,
-    },
-    medium: {
-      type: Number,
-      min: 0,
-      default: 0,
-    },
-    large: {
-      type: Number,
-      min: 0,
-      default: 0,
-    },
-    xlarge: {
-      type: Number,
-      min: 0,
-      default: 0,
-    },
-    xxlarge: {
-      type: Number,
-      min: 0,
-      default: 0,
-    },
+    small: { type: Number, min: 0, default: 0 },
+    medium: { type: Number, min: 0, default: 0 },
+    large: { type: Number, min: 0, default: 0 },
+    xlarge: { type: Number, min: 0, default: 0 },
+    xxlarge: { type: Number, min: 0, default: 0 },
   },
-  price: {
-    type: Number,
-    required: true,
-  },
+  price: { type: Number, required: true },
   price_old: Number,
-  date: {
-    type: Date,
-    default: Date.now,
-  },
+  date: { type: Date, default: Date.now },
 });
 
 // Creating a Mongoose model for the product schema
