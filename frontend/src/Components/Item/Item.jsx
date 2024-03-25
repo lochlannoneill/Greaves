@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,44 +21,56 @@ const truncateTitle = (title) => {
 };
 
 export const Item = (props) => {
-  const { isFavorite, isInCart } = useContext(ShopContext);
+  const { isFavorite, isInCart, reviews, getReviewInfo } = useContext(ShopContext);
+  const [reviewCount, setReviewCount] = useState(0);
+  const [reviewAverageRating, setReviewAverageRating] = useState(0);
+  console.log(`${props.id} + ${props.reviews}`);
+
+  useEffect(() => {
+    if (reviews) {
+      const { reviewCount, reviewAverageRating } = getReviewInfo(props.id);
+      setReviewCount(reviewCount);
+      setReviewAverageRating(reviewAverageRating);
+    }
+  }, [reviews, props.id, getReviewInfo]);
 
   return (
     <div className="item">
-      <Link to={`/products/${props.id}`} onClick={window.scrollTo(0, 0)}>
-        {" "}
-        {/* TODO - I dont like the implementation here */}
+      <Link to={`/products/${props.id}`} onClick={() => window.scrollTo(0, 0)}> 
         <div className="item-image-container">
           <img className="item-image" src={props.img} alt={props.title} />
         </div>
         <div className="item-description">
           <p className="item-description-title">
-            {truncateTitle(props.title)} {/* Adjust maxChars as needed */}
+            {truncateTitle(props.title)}
           </p>
           <div className="item-description-reviews">
+            <p className="item-description-reviews-rating">{reviewAverageRating}</p>
             <span className="item-description-reviews-stars">
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_solid}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_half}
-              />
-              <FontAwesomeIcon
-                className="productdisplay-right-rating-icon"
-                icon={faStar_regular}
-              />
+              {[...Array(Math.floor(reviewAverageRating))].map((_, index) => (
+                <FontAwesomeIcon
+                  key={index}
+                  className="item-description-reviews-star-icon"
+                  icon={faStar_solid}
+                />
+              ))}
+              {reviewAverageRating % 1 !== 0 && (
+                <FontAwesomeIcon
+                  className="item-description-reviews-star-icon"
+                  icon={faStar_half}
+                />
+              )}
+              {[...Array(Math.max(0, 5 - Math.ceil(reviewAverageRating)))].map(
+                (_, index) => (
+                  <FontAwesomeIcon
+                    key={index}
+                    className="item-description-reviews-star-icon"
+                    icon={faStar_regular}
+                  />
+                )
+              )}
             </span>
-            <p className="item-description-reviews-text">product.reviews</p>
+            <p className="item-description-reviews-text">{reviewCount} reviews</p>
           </div>
           <div className="item-stuff">
             <div className="item-prices">
@@ -69,7 +81,6 @@ export const Item = (props) => {
                 <div className="item-price-old">&euro;{props.price_old}</div>
               )}
             </div>
-
             <div className="item-status">
               {isFavorite(props.id) ? (
                 <FontAwesomeIcon
