@@ -28,7 +28,7 @@ export const Product = () => {
         (acc, review) => acc + review.rating,
         0
       );
-      const avgRating = totalRating / productReviews.length;
+      const avgRating = (totalRating / productReviews.length).toFixed(1);
       setReviewAverageRating(avgRating);
     }
   }, [product, reviews]);
