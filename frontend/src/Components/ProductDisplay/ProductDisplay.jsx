@@ -20,6 +20,10 @@ export const ProductDisplay = (props) => {
   const { product, reviewAverageRating, reviewCount } = props;
   const { cart, addCart, toggleFavorite, isFavorite, showPopup, popupMessage } =
     useContext(ShopContext);
+  const percentageReduced = (
+    ((product.price - product.price_old) / product.price) *
+    100
+  ).toFixed(0);
   const totalStock = Object.values(product.stock).reduce(
     (acc, curr) => acc + curr,
     0
@@ -123,6 +127,11 @@ export const ProductDisplay = (props) => {
           </div>
         </div>
         <div className="productdisplay-right-info">
+          {product.price_old && (
+            <p className="productdisplay-right-discount">
+              {percentageReduced}% off
+            </p>
+          )}
           <div className="productdisplay-right-prices">
             <p
               className={`productdisplay-right-price ${
@@ -139,14 +148,20 @@ export const ProductDisplay = (props) => {
           </div>
           <div
             className={`productdisplay-right-stock ${
-              totalStock < 5 ? "low-stock" : ""
+              totalStock === 0
+                ? "out-of-stock"
+                : totalStock < 5
+                ? "low-stock"
+                : ""
             }`}
           >
             {/* Display stock information */}
             <p>
-              {totalStock < 5
-                ? ` Only ${totalStock} left in stock!`
-                : ` ${totalStock} left in stock`}
+              {totalStock === 0
+                ? "Out of stock"
+                : totalStock < 5
+                ? `Only ${totalStock} left in stock!`
+                : `${totalStock} left in stock`}
             </p>
           </div>
         </div>

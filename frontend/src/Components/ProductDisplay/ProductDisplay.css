@@ -130,6 +130,12 @@
   color: darkorange;
 }
 
+.productdisplay-right-discount {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .productdisplay-right-prices {
   display: flex;
   align-items: center;
@@ -145,7 +151,7 @@
 
 .productdisplay-right-stock.low-stock {
   font-weight: 700;
-  color: red;
+  color: green;
 }
 
 .productdisplay-right-stock.out-of-stock {
