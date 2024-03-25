@@ -39,7 +39,7 @@ let reviews = [
     helpful: []
   },
   {
-    id: 1,
+    id: 3,
     productId: 1,
     userName: "John Doe",
     userHandle: "@johndoe",
@@ -55,7 +55,7 @@ let reviews = [
   },
   {
     id: 4,
-    productId: 1,
+    productId: 3,
     userName: "Jane Doe",
     userHandle: "@janedoe",
     rating: 4,

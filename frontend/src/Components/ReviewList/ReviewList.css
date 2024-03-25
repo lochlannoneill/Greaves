@@ -232,3 +232,15 @@
     color: #171717;
     transform: scale(0.975);
   }
+
+  @media screen and (max-width: 768px) {
+    .review {
+      padding: 16px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .review-images {
+      justify-content: center;
+    }
+  }
