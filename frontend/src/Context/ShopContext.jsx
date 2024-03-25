@@ -95,25 +95,20 @@ const ShopContextProvider = (props) => {
     }
   };
 
-  // Reviews
-  const getReviewInfo = (productId, reviews) => {
-    if (!reviews) {
-      // Handle case where reviews are undefined
-      return { reviewCount: 0, reviewAverageRating: 0 };
-    }
-    const productReviews = reviews.filter(
-      (review) => review.productId === productId
-    );
+  const getReviewInfo = (productId) => {
+    const productReviews = reviews.filter((review) => review.productId === productId);
     const reviewCount = productReviews.length;
-    const totalRating = productReviews.reduce(
-      (acc, review) => acc + review.rating,
-      0
-    );
-    const reviewAverageRating = reviewCount > 0 ? (totalRating / reviewCount).toFixed(1) : 0;
+    
+    // Calculate average rating only if there are reviews
+    let reviewAverageRating = 0;
+    if (reviewCount > 0) {
+      const totalRating = productReviews.reduce((acc, review) => acc + review.rating, 0);
+      reviewAverageRating = (totalRating / reviewCount).toFixed(1);
+    }
+    
     return { reviewCount, reviewAverageRating };
   };
   
-
   const contextValue = {
     products,
     reviews,

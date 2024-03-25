@@ -17,10 +17,7 @@ export const Product = () => {
   // Fetch reviews data associated with the product
   useEffect(() => {
     if (product) {
-      const productReviews = reviews.filter(
-        (review) => review.productId === product.id
-      );
-      const { reviewCount, reviewAverageRating } = getReviewInfo(product.id, productReviews);
+      const { reviewCount, reviewAverageRating } = getReviewInfo(product.id);
       setReviewCount(reviewCount);
       setReviewAverageRating(reviewAverageRating);
     }
