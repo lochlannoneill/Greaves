@@ -9,29 +9,29 @@ import { Reviews } from "../Components/Reviews/Reviews";
 import "./CSS/Product.css";
 
 export const Product = () => {
-  const { products, reviews } = useContext(ShopContext);
+  const { products, reviews, getReviewInfo } = useContext(ShopContext);
   const { id } = useParams();
   const product = products.find((e) => e.id === Number(id));
   const [reviewCount, setReviewCount] = useState(0);
   const [reviewAverageRating, setReviewAverageRating] = useState(0);
 
+  // Filter reviews by product ID
   useEffect(() => {
     if (product) {
-      // Filter reviews by product ID
       const productReviews = reviews.filter(
         (review) => review.productId === product.id
       );
       setReviewCount(productReviews.length);
-
-      // Calculate average rating
-      const totalRating = productReviews.reduce(
-        (acc, review) => acc + review.rating,
-        0
-      );
-      const avgRating = (totalRating / productReviews.length).toFixed(1);
-      setReviewAverageRating(avgRating);
     }
   }, [product, reviews]);
+
+  useEffect(() => {
+    if (product) {
+      const { reviewCount, reviewAverageRating } = getReviewInfo(product.id, reviews);
+      setReviewCount(reviewCount);
+      setReviewAverageRating(reviewAverageRating);
+    }
+  }, [product, reviews, getReviewInfo]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -95,6 +95,20 @@ const ShopContextProvider = (props) => {
     }
   };
 
+  // Reviews
+  const getReviewInfo = (productId, reviews) => {
+    const productReviews = reviews.filter(
+      (review) => review.productId === productId
+    );
+    const reviewCount = productReviews.length;
+    const totalRating = productReviews.reduce(
+      (acc, review) => acc + review.rating,
+      0
+    );
+    const reviewAverageRating = (totalRating / reviewCount).toFixed(1);
+    return { reviewCount, reviewAverageRating };
+  };
+
   const contextValue = {
     products,
     reviews,
@@ -109,6 +123,7 @@ const ShopContextProvider = (props) => {
     getFavoriteCount,
     isFavorite,
     toggleFavorite,
+    getReviewInfo,
     showPopup,
   };
 
