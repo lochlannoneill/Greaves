@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
-import { CartItems } from "../Components/CartItems/CartItems";
-import { CartCheckout } from "../Components/CartCheckout/CartCheckout";
-import { Related } from "../Components/Related/Related";
-import "./CSS/Cart.css";
+import { CartItems } from "../../Components/Cart/CartItems/CartItems";
+import { CartCheckout } from "../../Components/Cart/CartCheckout/CartCheckout";
+import { Related } from "../../Components/Related/Related";
+import "./Cart.css";
 
 export const Cart = () => {
   useEffect(() => {

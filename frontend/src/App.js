@@ -2,12 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Headroom from "react-headroom";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
-import { Shop } from "./Pages/Shop";
-import { ShopCategory } from "./Pages/ShopCategory";
-import { Product } from "./Pages/Product";
-import Cart from "./Pages/Cart";
-import Favourites from "./Pages/Favourites";
-import { LoginSignup } from "./Pages/LoginSignup";
+import { Shop } from "./Pages/Shop/Shop";
+import { ShopCategory } from "./Pages/ShopCategory/ShopCategory";
+import { Product } from "./Pages/Product/Product";
+import Cart from "./Pages/Cart/Cart";
+import Favourites from "./Pages/Favourites/Favourites";
+import { LoginSignup } from "./Pages/LoginSignup/LoginSignup";
 import "./App.css";
 
 function App() {

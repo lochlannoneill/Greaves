@@ -1,6 +1,6 @@
 import React from "react";
-import products_women from "../Assets/products/product_data_popular_women.js";
-import products_men from "../Assets/products/product_data_popular_men.js";
+import products_women from "../../Assets/products/product_data_popular_women.js";
+import products_men from "../../Assets/products/product_data_popular_men.js";
 import { Item } from "../Item/Item";
 import "./Popular.css";
 

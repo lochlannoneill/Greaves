@@ -1,11 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { ShopContext } from "../Context/ShopContext";
-import { Breadcrumb } from "../Components/Breadcrumbs/Breadcrumb";
-import { ProductDisplay } from "../Components/ProductDisplay/ProductDisplay";
-import { Related } from "../Components/Related/Related";
-import { Reviews } from "../Components/Reviews/Reviews";
-import "./CSS/Product.css";
+import { ShopContext } from "../../Context/ShopContext";
+import { Breadcrumb } from "../../Components/Breadcrumbs/Breadcrumb";
+import { ProductDisplay } from "../../Components/ProductDisplay/ProductDisplay";
+import { Related } from "../../Components/Related/Related";
+import { Reviews } from "../../Components/Reviews/Reviews";
+import "./Product.css";
 
 export const Product = () => {
   const { products, reviews, getReviewInfo } = useContext(ShopContext);

@@ -9,7 +9,7 @@ import {
   faHeart as faHeart_solid,
   faCartShopping as faCartShopping_solid,
 } from "@fortawesome/free-solid-svg-icons";
-import flag_ireland from "../Assets/flags/ireland.png";
+import flag_ireland from "../../Assets/flags/ireland.png";
 import { ShopContext } from "../../Context/ShopContext";
 import "./Navbar.css";
 

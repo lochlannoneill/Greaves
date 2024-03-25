@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { ShopContext } from "../../Context/ShopContext";
+import { ShopContext } from "../../../Context/ShopContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";

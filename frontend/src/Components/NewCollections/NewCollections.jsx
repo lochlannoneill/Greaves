@@ -1,5 +1,5 @@
 import React from "react";
-import products from "../Assets/products/new_collections";
+import products from "../../Assets/products/new_collections";
 import { Item } from "../Item/Item";
 import "./NewCollections.css";
 

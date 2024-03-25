@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import "./CSS/LoginSignup.css";
+import "./LoginSignup.css";
 
 export const LoginSignup = () => {
   useEffect(() => {

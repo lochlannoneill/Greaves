@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { ShopContext } from "../../Context/ShopContext";
+import { ShopContext } from "../../../Context/ShopContext";
 import "./CartCheckout.css";
 
 export const CartCheckout = () => {

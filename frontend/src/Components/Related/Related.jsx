@@ -1,5 +1,5 @@
 import React from "react";
-import products from "../Assets/products/related";
+import products from "../../Assets/products/related";
 import { Item } from "../Item/Item";
 import "./Related.css";
 

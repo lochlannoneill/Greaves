@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { ShopContext } from "../Context/ShopContext";
-import { Item } from "../Components/Item/Item";
-import "./CSS/ShopCategory.css";
+import { ShopContext } from "../../Context/ShopContext";
+import { Item } from "../../Components/Item/Item";
+import "./ShopCategory.css";
 
 export const ShopCategory = (props) => {
   const { products } = useContext(ShopContext);

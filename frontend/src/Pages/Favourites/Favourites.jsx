@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { FavouriteItems } from "../Components/FavouriteItems/FavouriteItems";
+import { FavouriteItems } from "../../Components/FavouriteItems/FavouriteItems";
 
 export const Favourites = () => {
   useEffect(() => {

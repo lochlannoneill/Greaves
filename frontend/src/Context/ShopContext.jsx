@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
-import products from "../Components/Assets/products/product_data";
-import reviews from "../Components/Assets/reviews/reviews";
+import products from "../Assets/products/product_data";
+import reviews from "../Assets/reviews/reviews";
 
 export const ShopContext = createContext(null);
 

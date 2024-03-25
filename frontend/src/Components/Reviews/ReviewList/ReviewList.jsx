@@ -1,5 +1,5 @@
 import React from "react";
-import placeholder_user from "../Assets/placeholder_user.jpg";
+import placeholder_user from "../../../Assets/placeholder_user.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar as faStar_solid,
