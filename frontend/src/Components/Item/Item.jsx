@@ -12,7 +12,7 @@ import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
 import "./Item.css";
 
-const maxTitleChars = 28;
+const maxTitleChars = 26;
 const truncateTitle = (title) => {
   if (title.length > maxTitleChars) {
     return title.substring(0, maxTitleChars) + "...";
