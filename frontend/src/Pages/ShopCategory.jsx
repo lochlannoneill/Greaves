@@ -49,6 +49,7 @@ export const ShopCategory = (props) => {
                   img={item.image}
                   price={item.price}
                   price_old={item.price_old}
+                  reviews={item.reviews}
                 />
               );
             } else {

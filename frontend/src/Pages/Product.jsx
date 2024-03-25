@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../Context/ShopContext";
 import { Breadcrumb } from "../Components/Breadcrumbs/Breadcrumb";
@@ -15,19 +14,13 @@ export const Product = () => {
   const [reviewCount, setReviewCount] = useState(0);
   const [reviewAverageRating, setReviewAverageRating] = useState(0);
 
-  // Filter reviews by product ID
+  // Fetch reviews data associated with the product
   useEffect(() => {
     if (product) {
       const productReviews = reviews.filter(
         (review) => review.productId === product.id
       );
-      setReviewCount(productReviews.length);
-    }
-  }, [product, reviews]);
-
-  useEffect(() => {
-    if (product) {
-      const { reviewCount, reviewAverageRating } = getReviewInfo(product.id, reviews);
+      const { reviewCount, reviewAverageRating } = getReviewInfo(product.id, productReviews);
       setReviewCount(reviewCount);
       setReviewAverageRating(reviewAverageRating);
     }
