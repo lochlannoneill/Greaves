@@ -132,7 +132,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 45.99,
   },
   {
     id: 6,
@@ -150,7 +150,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 76.99,
   },
   {
     id: 7,
@@ -168,7 +168,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 67.99,
   },
   {
     id: 8,
@@ -186,7 +186,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 89.99,
   },
   {
     id: 9,
@@ -204,7 +204,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 45.99,
   },
   {
     id: 10,
@@ -222,7 +222,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 65.99,
   },
   {
     id: 11,
@@ -240,7 +240,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 49.99,
   },
   {
     id: 12,
@@ -277,7 +277,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 34.99,
   },
   {
     id: 14,
@@ -314,7 +314,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 63.99,
   },
   {
     id: 16,
@@ -332,7 +332,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 82.99,
   },
   {
     id: 17,
@@ -369,7 +369,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 73.99,
   },
   {
     id: 19,
@@ -387,7 +387,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 52.99,
   },
   {
     id: 20,
@@ -405,7 +405,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 45.99,
   },
   {
     id: 21,
@@ -423,7 +423,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 65.99,
   },
   {
     id: 22,
@@ -441,7 +441,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 83.99,
   },
   {
     id: 23,
@@ -478,7 +478,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 43.99,
   },
   {
     id: 25,
@@ -515,7 +515,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 76.99,
   },
   {
     id: 27,
@@ -533,7 +533,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 54.99,
   },
   {
     id: 28,
@@ -551,7 +551,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 87.99,
   },
   {
     id: 29,
@@ -588,7 +588,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 34.99,
   },
   {
     id: 31,
@@ -606,7 +606,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 65.99,
   },
   {
     id: 32,
@@ -643,7 +643,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 76.99,
   },
   {
     id: 34,
@@ -661,7 +661,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 54.99,
   },
   {
     id: 35,
@@ -679,7 +679,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 83.99,
   },
   {
     id: 36,
@@ -697,7 +697,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 39.99,
   },
   {
     id: 37,
@@ -715,7 +715,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 49.99,
   },
   {
     id: 38,
@@ -752,7 +752,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 54.99,
   },
   {
     id: 40,
@@ -770,7 +770,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 64.99,
   },
   {
     id: 41,
@@ -807,7 +807,7 @@ let products = [
       xlarge: 1,
       xxlarge: 0,
     },
-    price: 99.99,
+    price: 57.99,
   },
 ];
 
