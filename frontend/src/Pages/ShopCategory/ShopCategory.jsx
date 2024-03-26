@@ -1,8 +1,9 @@
+// ShopCategory.jsx
 import React, { useContext, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
-import { Item } from "../../Components/Item/Item";
+import { ItemList } from "../../Components/ItemList/ItemList";
 import "./ShopCategory.css";
 
 export const ShopCategory = (props) => {
@@ -36,35 +37,15 @@ export const ShopCategory = (props) => {
       <p className="shopcategory-query">
         Results for '<b>products</b>'
       </p>
-      <div className="shopcategory-products-parent">
-        <div className="shopcategory-products">
-          {products.map((item, index) => {
-            if (props.category === item.category) {
-              return (
-                <Item
-                  key={index}
-                  id={item.id}
-                  title={item.title}
-                  img={item.image}
-                  price={item.price}
-                  price_previous={item.price_previous}
-                  reviews={item.reviews}
-                />
-              );
-            } else {
-              return null;
-            }
-          })}
-        </div>
-        <div className="shopcategory-showmore">
-          <p className="shopcategory-showmore-results">
-            Showing <b>1-12</b> of {props.category}.total results
+      <ItemList products={products} category={props.category} />
+      <div className="shopcategory-showmore">
+        <p className="shopcategory-showmore-results">
+          Showing <b>1-12</b> of {props.category}.total results
+        </p>
+        <div className="shopcategory-showmore-button">
+          <p>
+            Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
           </p>
-          <div className="shopcategory-showmore-button">
-            <p>
-              Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
-            </p>
-          </div>
         </div>
       </div>
     </div>
