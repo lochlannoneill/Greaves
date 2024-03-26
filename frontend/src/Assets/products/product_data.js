@@ -48,7 +48,7 @@ let products = [
     image: p1_img,
     description:
       "Stay cozy and stylish during the colder months with this striped knit sweater. Made from soft and warm fabric, it features a timeless striped pattern that adds a touch of sophistication to any outfit.",
-    tags: ["popular", "knit", "cozy", "modern"],
+    tags: ["popular", "elegant", "knit", "cozy"],
     category: "women",
     rating: 4.0,
     stock: {
@@ -67,7 +67,7 @@ let products = [
     image: p2_img,
     description:
       "Add a touch of elegance to your wardrobe with this stunning floral print wrap dress. Featuring a flattering ruffle trim and a comfortable fit, it's perfect for both casual outings and special occasions.",
-    tags: ["new", "popular", "floral", "wrap Dress", "elegant"],
+    tags: ["new", "popular", "wrap Dress", "elegant", "knit"],
     category: "women",
     rating: 4.2,
     stock: {
@@ -140,7 +140,7 @@ let products = [
     image: p6_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["modern", "latest"],
+    tags: ["modern", "elegant", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -194,7 +194,7 @@ let products = [
     image: p9_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["modern", "latest"],
+    tags: ["modern", "latest", "floral"],
     category: "women",
     rating: 3.5,
     stock: {

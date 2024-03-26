@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { CartItems } from "../../Components/Cart/CartItems/CartItems";
 import { CartCheckout } from "../../Components/Cart/CartCheckout/CartCheckout";
-import { Related } from "../../Components/Related/Related";
+import { Popular } from "../../Components/Popular/Popular";
 import "./Cart.css";
 
 export const Cart = () => {
@@ -16,7 +16,7 @@ export const Cart = () => {
         <CartItems />
         <CartCheckout />
       </div>
-      <Related />
+      <Popular />
     </div>
   );
 };
