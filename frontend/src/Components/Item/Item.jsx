@@ -25,7 +25,6 @@ export const Item = (props) => {
     useContext(ShopContext);
   const [reviewCount, setReviewCount] = useState(0);
   const [reviewAverageRating, setReviewAverageRating] = useState(0);
-  console.log(`${props.id} + ${props.reviews}`);
 
   useEffect(() => {
     if (reviews) {
