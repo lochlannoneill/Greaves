@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
+import { Filters } from "../../Components/Filters/Filters";
 import { ItemList } from "../../Components/ItemList/ItemList";
 import "./ShopCategory.css";
 
@@ -15,22 +16,22 @@ export const ShopCategory = (props) => {
 
   return (
     <div className="shopcategory">
-      <div className="shopcategory-filter">
-        <div className="shopcategory-filter-search">
-          <form className="schopcatergory-filter-search-form">
-            <div className="shopcategory-filter-search-bar">
-              <div className="shopcategory-filter-search-icon">
+      <div className="shopcategory-sort">
+        <div className="shopcategory-sort-search">
+          <form className="schopcatergory-sort-search-form">
+            <div className="shopcategory-sort-search-bar">
+              <div className="shopcategory-sort-search-icon">
                 <FontAwesomeIcon icon={faSearch} />
               </div>
               <input
-                className="shopcategory-filter-search-input"
+                className="shopcategory-sort-search-input"
                 type="text"
                 placeholder="Search products"
               />
             </div>
           </form>
         </div>
-        <div className="shopcategory-filter-button">
+        <div className="shopcategory-sort-button">
           Sort by <FontAwesomeIcon icon={faChevronDown} size="2xs" />
         </div>
       </div>
