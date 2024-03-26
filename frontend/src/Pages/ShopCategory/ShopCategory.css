@@ -1,12 +1,13 @@
-.shopcategory-banner {
-  display: block;
-  margin: 30px auto;
-  width: 82%;
+.shopcategory {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin: 4vh 0;
 }
 
 .shopcategory-filter {
   display: flex;
-  margin: 4vh 8vw;
+  margin: 0 8vw;
   justify-content: space-between;
   align-items: center;
   gap: 4vh;
