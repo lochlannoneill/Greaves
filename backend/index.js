@@ -90,7 +90,7 @@ const productSchema = new mongoose.Schema({
     xxlarge: { type: Number, min: 0, default: 0 },
   },
   price: { type: Number, required: true, min: 0},
-  price_previous: { type: Number, default: 0, min: price},
+  price_previous: { type: Number, min: 0},
   date: { type: Date, default: Date.now },
 });
 
