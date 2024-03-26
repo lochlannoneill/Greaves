@@ -1,26 +1,24 @@
 import React from "react";
 import products from "../../Assets/products/new_collections";
-import { Item } from "../Item/Item";
+import { ItemList } from "../ItemList/ItemList";
 import "./NewCollections.css";
 
 export const NewCollections = () => {
+  // Filter products for new collections
+  const newCollectionsProducts = products.filter(
+    (product) => product.tags && product.tags.includes("new")
+  );
+
   return (
     <div className="new-collections">
       <h1>New Collections</h1>
       <div className="collections-parent">
         <div className="collections">
-          {products.map((item, index) => {
-            return (
-              <Item
-                key={index}
-                id={item.id}
-                title={item.title}
-                img={item.image}
-                price={item.price}
-                price_previous={item.price_previous}
-              />
-            );
-          })}
+          <div className="collections-category">
+            <div className="collections-list">
+              <ItemList products={newCollectionsProducts} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
