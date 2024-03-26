@@ -1,23 +1,32 @@
-
 import React from "react";
 import products from "../../Assets/products/product_data.js";
 import { ItemList } from "../ItemList/ItemList";
 import "./Popular.css";
 
 export const Popular = () => {
+  // Filter products for women and men based on the "Popular" tag
+  const popularWomenProducts = products.filter(
+    (product) =>
+      product.tags && product.tags.includes("Popular") && product.category === "women"
+  );
+  const popularMenProducts = products.filter(
+    (product) =>
+      product.tags && product.tags.includes("Popular") && product.category === "men"
+  );
+
   return (
     <div className="popular">
       <div className="popular-category popular-women">
         <h1>Popular in Women</h1>
         <div className="popular-list">
-          <ItemList products={products} category="Women" />
+          <ItemList products={popularWomenProducts} category="Women" />
         </div>
       </div>
 
       <div className="popular-category popular-men">
         <h1>Popular in Men</h1>
         <div className="popular-list">
-          <ItemList products={products} category="Men" />
+          <ItemList products={popularMenProducts} category="Men" />
         </div>
       </div>
     </div>
