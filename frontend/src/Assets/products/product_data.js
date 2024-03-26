@@ -48,7 +48,7 @@ let products = [
     image: p1_img,
     description:
       "Stay cozy and stylish during the colder months with this striped knit sweater. Made from soft and warm fabric, it features a timeless striped pattern that adds a touch of sophistication to any outfit.",
-    tags: ["Popular", "Knit", "Cozy", "Modern"],
+    tags: ["popular", "knit", "cozy", "modern"],
     category: "women",
     rating: 4.0,
     stock: {
@@ -67,7 +67,7 @@ let products = [
     image: p2_img,
     description:
       "Add a touch of elegance to your wardrobe with this stunning floral print wrap dress. Featuring a flattering ruffle trim and a comfortable fit, it's perfect for both casual outings and special occasions.",
-    tags: ["New", "Popular", "Floral", "Wrap Dress", "Elegant"],
+    tags: ["new", "popular", "floral", "wrap Dress", "elegant"],
     category: "women",
     rating: 4.2,
     stock: {
@@ -85,7 +85,7 @@ let products = [
     image: p3_img,
     description:
       "Stay effortlessly cool with this timeless denim button-up shirt. Crafted with high-quality denim fabric, it offers both style and comfort. Pair it with your favorite jeans for a classic double denim look.",
-    tags: ["Popular", "Denim", "Button-Up", "Casual", "Modern"],
+    tags: ["popular", "denim", "button-up", "casual", "modern"],
     category: "women",
     rating: 4.5,
     stock: {
@@ -103,7 +103,7 @@ let products = [
     image: p4_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Popular", "Modern", "Latest"],
+    tags: ["popular", "modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -122,7 +122,7 @@ let products = [
     image: p5_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Popular", "Modern", "Latest"],
+    tags: ["popular", "modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -140,7 +140,7 @@ let products = [
     image: p6_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -158,7 +158,7 @@ let products = [
     image: p7_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -176,7 +176,7 @@ let products = [
     image: p8_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Modern", "Latest"],
+    tags: ["new", "modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -194,7 +194,7 @@ let products = [
     image: p9_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -212,7 +212,7 @@ let products = [
     image: p10_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -230,7 +230,7 @@ let products = [
     image: p11_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -248,7 +248,7 @@ let products = [
     image: p12_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Modern", "Latest"],
+    tags: ["new", "modern", "latest"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -267,7 +267,7 @@ let products = [
     image: p13_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Popular", "Modern", "Latest"],
+    tags: ["popular", "modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -285,7 +285,7 @@ let products = [
     image: p14_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Popular", "Modern", "Latest"],
+    tags: ["new", "popular", "modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -304,7 +304,7 @@ let products = [
     image: p15_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Popular", "Modern", "Latest"],
+    tags: ["new", "popular", "modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -322,7 +322,7 @@ let products = [
     image: p16_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Popular", "Modern", "Latest"],
+    tags: ["popular", "modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -340,7 +340,7 @@ let products = [
     image: p17_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Popular", "Modern", "Latest"],
+    tags: ["new", "popular", "modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -359,7 +359,7 @@ let products = [
     image: p18_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -377,7 +377,7 @@ let products = [
     image: p19_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -395,7 +395,7 @@ let products = [
     image: p20_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -413,7 +413,7 @@ let products = [
     image: p21_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -431,7 +431,7 @@ let products = [
     image: p22_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -449,7 +449,7 @@ let products = [
     image: p23_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -468,7 +468,7 @@ let products = [
     image: p24_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "men",
     rating: 3.5,
     stock: {
@@ -486,7 +486,7 @@ let products = [
     image: p25_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -505,7 +505,7 @@ let products = [
     image: p26_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -523,7 +523,7 @@ let products = [
     image: p27_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -541,7 +541,7 @@ let products = [
     image: p28_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Modern", "Latest"],
+    tags: ["New", "modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -559,7 +559,7 @@ let products = [
     image: p29_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -578,7 +578,7 @@ let products = [
     image: p30_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -596,7 +596,7 @@ let products = [
     image: p31_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -614,7 +614,7 @@ let products = [
     image: p32_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -633,7 +633,7 @@ let products = [
     image: p33_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -651,7 +651,7 @@ let products = [
     image: p34_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -669,7 +669,7 @@ let products = [
     image: p35_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["New", "Modern", "Latest"],
+    tags: ["New", "modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -687,7 +687,7 @@ let products = [
     image: p36_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "boys",
     rating: 3.5,
     stock: {
@@ -705,7 +705,7 @@ let products = [
     image: p37_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {
@@ -723,7 +723,7 @@ let products = [
     image: p38_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {
@@ -742,7 +742,7 @@ let products = [
     image: p39_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {
@@ -760,7 +760,7 @@ let products = [
     image: p40_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {
@@ -778,7 +778,7 @@ let products = [
     image: p41_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {
@@ -797,7 +797,7 @@ let products = [
     image: p42_img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["Modern", "Latest"],
+    tags: ["modern", "latest"],
     category: "girls",
     rating: 3.5,
     stock: {

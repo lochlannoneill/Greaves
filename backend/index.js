@@ -79,8 +79,8 @@ const productSchema = new mongoose.Schema({
   title: { type: String, required: true },
   image: { type: String, required: true },
   description: { type: String, required: true },
-  tags: [String],
-  categories: String,
+  tags: [{ type: String, lowercase: true }],
+  category: { type: String, lowercase: true, required: true},
   rating: { type: Number, default: 0 },
   stock: {
     small: { type: Number, min: 0, default: 0 },
@@ -89,21 +89,29 @@ const productSchema = new mongoose.Schema({
     xlarge: { type: Number, min: 0, default: 0 },
     xxlarge: { type: Number, min: 0, default: 0 },
   },
-  price: { type: Number, required: true, min: 0},
-  price_previous: { type: Number, min: 0},
+  price: { type: Number, required: true, min: 0 },
+  price_previous: { type: Number, min: 0 },
   date: { type: Date, default: Date.now },
+});
+
+// Middleware to convert tags and categories to lowercase before saving
+productSchema.pre("save", function (next) {
+  this.tags = this.tags.map((tag) => tag.toLowerCase());
+  this.category = this.category.toLowerCase();
+  next();
 });
 
 // Creating a Mongoose model for the product schema
 const Product = mongoose.model("Product", productSchema);
 
+// API for adding a product
 app.post("/addProduct", (req, res) => {
   const newProduct = new Product({
     title: req.body.title,
     image: req.body.image,
     description: req.body.description,
     tags: req.body.tags,
-    categories: req.body.categories,
+    category: req.body.category,
     rating: req.body.rating,
     stock: req.body.stock,
     price: req.body.price,
