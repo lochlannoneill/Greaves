@@ -36,7 +36,7 @@ export const Product = () => {
       <div className="product-components">
         <Breadcrumb product={product} />
         <ProductDisplay product={product} reviewAverageRating={reviewAverageRating} reviewCount={reviewCount} />
-        <Related />
+        <Related tags={product.tags} />
         <Reviews reviews={reviews} productId={product.id} />
       </div>
     </div>
