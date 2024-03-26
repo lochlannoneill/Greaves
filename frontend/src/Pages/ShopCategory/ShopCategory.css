@@ -58,14 +58,6 @@
   margin-bottom: 2vh;
 }
 
-.shopcategory-products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2vh;
-  max-width: 100%;
-}
-
 .shopcategory-showmore {
   display: flex;
   flex-direction: column;
@@ -97,18 +89,6 @@
   color: #171717;
   transform: scale(0.975);
 }
-
-/* .shopcategory-showmore-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 12vh;
-  padding: 8px 16px;
-  background-color: #171717;
-  color: white;
-  cursor: pointer;
-} */
 
 @media only screen and (max-width: 1250px) {
   .shopcategory-filter-search-bar {
