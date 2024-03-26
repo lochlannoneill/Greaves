@@ -1,12 +1,12 @@
 import React from "react";
-import products from "../../Assets/products/new_collections";
+import products from "../../Assets/products/product_data";
 import { ItemList } from "../ItemList/ItemList";
 import "./NewCollections.css";
 
 export const NewCollections = () => {
   // Filter products for new collections
   const newCollectionsProducts = products.filter(
-    (product) => product.tags && product.tags.includes("new")
+    (product) => product.tags?.includes("new")
   );
 
   return (
