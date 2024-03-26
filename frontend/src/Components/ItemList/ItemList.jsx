@@ -2,10 +2,15 @@ import React from "react";
 import { Item } from "../Item/Item";
 import "./ItemList.css";
 
-export const ItemList = ({ products }) => {
+export const ItemList = ({ products, category }) => {
+  // Filter products based on the category
+  const filteredProducts = category
+    ? products.filter((product) => product.category === category)
+    : products;
+
   return (
     <div className="itemlist">
-      {products.map((item, index) => (
+      {filteredProducts.map((item, index) => (
         <Item
           key={index}
           id={item.id}
