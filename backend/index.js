@@ -80,7 +80,19 @@ const productSchema = new mongoose.Schema({
   image: { type: String, required: true },
   description: { type: String, required: true },
   tags: [{ type: String, lowercase: true }],
-  category: { type: String, lowercase: true, required: true},
+  category: {
+    type: String,
+    lowercase: true,
+    required: true,
+    validate: {
+      validator: function (value) {
+        const allowedCategories = ["men", "women", "boys", "girls"];
+        return allowedCategories.includes(value.toLowerCase());
+      },
+      message: (props) =>
+        `${props.value} is not a valid category. Category must be 'men', 'women', 'boys', or 'girls'.`,
+    },
+  },
   rating: { type: Number, default: 0 },
   stock: {
     small: { type: Number, min: 0, default: 0 },
