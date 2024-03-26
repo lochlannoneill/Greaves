@@ -21,7 +21,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 50.0,
-    price_old: 80.5,
+    price_previous: 80.5,
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 60.0,
-    price_old: 100.5,
+    price_previous: 100.5,
   },
   {
     id: 4,
@@ -78,7 +78,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 100.0,
-    price_old: 150.0,
+    price_previous: 150.0,
   },
 ];
 

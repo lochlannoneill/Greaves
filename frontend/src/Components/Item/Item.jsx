@@ -76,11 +76,11 @@ export const Item = (props) => {
           )}
           <div className="item-stuff">
             <div className="item-prices">
-              <div className={`item-price ${props.price_old ? "reduced" : ""}`}>
+              <div className={`item-price ${props.price_previous ? "reduced" : ""}`}>
                 &euro;{props.price}
               </div>
-              {props.price_old && (
-                <div className="item-price-old">&euro;{props.price_old}</div>
+              {props.price_previous && (
+                <div className="item-price-old">&euro;{props.price_previous}</div>
               )}
             </div>
             <div className="item-status">

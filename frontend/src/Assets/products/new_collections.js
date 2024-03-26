@@ -24,7 +24,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 50.0,
-    price_old: 80.5,
+    price_previous: 80.5,
   },
   {
     id: 35,
@@ -42,7 +42,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 14,
@@ -60,7 +60,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 60.0,
-    price_old: 100.5,
+    price_previous: 100.5,
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 100.0,
-    price_old: 150.0,
+    price_previous: 150.0,
   },
   {
     id: 15,
@@ -96,7 +96,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 50.0,
-    price_old: 80.5,
+    price_previous: 80.5,
   },
   {
     id: 2,
@@ -114,7 +114,7 @@ let new_collections = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 17,
@@ -133,7 +133,7 @@ let new_collections = [
     stock_xxlarge: 0,
     stock: 7,
     price: 60.0,
-    price_old: 100.5,
+    price_previous: 100.5,
   },
   {
     id: 28,
@@ -152,7 +152,7 @@ let new_collections = [
     stock_xxlarge: 0,
     stock: 7,
     price: 100.0,
-    price_old: 150.0,
+    price_previous: 150.0,
   },
 ];
 

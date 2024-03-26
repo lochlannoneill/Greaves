@@ -23,7 +23,7 @@ export const FavouriteItems = () => {
                   title={product.title}
                   img={product.image}
                   price={product.price}
-                  price_old={product.price_old}
+                  price_previous={product.price_previous}
                 />
               );
             } else {

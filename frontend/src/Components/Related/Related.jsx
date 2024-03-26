@@ -17,7 +17,7 @@ export const Related = () => {
                 title={item.title}
                 img={item.image}
                 price={item.price}
-                price_old={item.price_old}
+                price_previous={item.price_previous}
               />
             );
           })}

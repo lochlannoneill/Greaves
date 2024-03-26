@@ -22,7 +22,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 50.0,
-    price_old: 80.5,
+    price_previous: 80.5,
   },
   {
     id: 38,
@@ -40,7 +40,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 39,
@@ -58,7 +58,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 60.0,
-    price_old: 100.5,
+    price_previous: 100.5,
   },
   {
     id: 40,
@@ -76,7 +76,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 100.0,
-    price_old: 150.0,
+    price_previous: 150.0,
   },
   {
     id: 41,
@@ -94,7 +94,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 115.0,
-    price_old: 150.0,
+    price_previous: 150.0,
   },
   {
     id: 42,
@@ -112,7 +112,7 @@ let data_product = [
     stock_xlarge: 1,
     stock_xxlarge: 0,
     price: 80.0,
-    price_old: 95.0,
+    price_previous: 95.0,
   },
 ];
 

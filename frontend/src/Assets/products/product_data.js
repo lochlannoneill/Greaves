@@ -59,7 +59,7 @@ let products = [
       xxlarge: 0,
     },
     price: 49.99,
-    price_old: 69.99,
+    price_previous: 69.99,
   },
   {
     id: 2,
@@ -114,7 +114,7 @@ let products = [
       xxlarge: 2,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 5,
@@ -259,7 +259,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 13,
@@ -296,7 +296,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.99,
-    price_old: 120.99,
+    price_previous: 120.99,
   },
   {
     id: 15,
@@ -351,7 +351,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 18,
@@ -460,7 +460,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 24,
@@ -497,7 +497,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 26,
@@ -570,7 +570,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 30,
@@ -625,7 +625,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 33,
@@ -734,7 +734,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 39,
@@ -789,7 +789,7 @@ let products = [
       xxlarge: 0,
     },
     price: 85.0,
-    price_old: 120.5,
+    price_previous: 120.5,
   },
   {
     id: 42,
