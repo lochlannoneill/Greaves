@@ -80,7 +80,7 @@ const productSchema = new mongoose.Schema({
   image: { type: String, required: true },
   description: { type: String, required: true },
   tags: [String],
-  categories: [String],
+  categories: String,
   rating: { type: Number, default: 0 },
   stock: {
     small: { type: Number, min: 0, default: 0 },
