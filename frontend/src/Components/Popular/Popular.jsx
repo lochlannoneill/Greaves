@@ -4,13 +4,13 @@ import { ItemList } from "../ItemList/ItemList";
 import "./Popular.css";
 
 export const Popular = () => {
+  // Filter popular products for women and men
   const popularWomenProducts = products.filter(
     (product) =>
-      product.tags && product.tags.includes("popular") && product.category === "women"
+      product.tags?.includes("popular") && product.category === "women"
   );
   const popularMenProducts = products.filter(
-    (product) =>
-      product.tags && product.tags.includes("popular") && product.category === "men"
+    (product) => product.tags?.includes("popular") && product.category === "men"
   );
 
   return (
@@ -18,14 +18,14 @@ export const Popular = () => {
       <div className="popular-category popular-women">
         <h1>Popular in Women</h1>
         <div className="popular-list">
-          <ItemList products={popularWomenProducts} category="Women" />
+          <ItemList products={popularWomenProducts} />
         </div>
       </div>
 
       <div className="popular-category popular-men">
         <h1>Popular in Men</h1>
         <div className="popular-list">
-          <ItemList products={popularMenProducts} category="Men" />
+          <ItemList products={popularMenProducts} />
         </div>
       </div>
     </div>
