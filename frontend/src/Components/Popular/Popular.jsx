@@ -4,7 +4,6 @@ import { ItemList } from "../ItemList/ItemList";
 import "./Popular.css";
 
 export const Popular = () => {
-  // Filter products for women and men based on the "Popular" tag
   const popularWomenProducts = products.filter(
     (product) =>
       product.tags && product.tags.includes("Popular") && product.category === "women"
