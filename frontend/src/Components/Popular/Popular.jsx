@@ -6,11 +6,11 @@ import "./Popular.css";
 export const Popular = () => {
   const popularWomenProducts = products.filter(
     (product) =>
-      product.tags && product.tags.includes("Popular") && product.category === "women"
+      product.tags && product.tags.includes("popular") && product.category === "women"
   );
   const popularMenProducts = products.filter(
     (product) =>
-      product.tags && product.tags.includes("Popular") && product.category === "men"
+      product.tags && product.tags.includes("popular") && product.category === "men"
   );
 
   return (
