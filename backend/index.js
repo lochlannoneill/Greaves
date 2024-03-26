@@ -90,16 +90,7 @@ const productSchema = new mongoose.Schema({
     xxlarge: { type: Number, min: 0, default: 0 },
   },
   price: { type: Number, required: true, min: 0},
-  price_old: {
-    type: Number,
-    default: 0,
-    validate: {
-      validator: function(value) {
-        return value >= this.price; // Ensure price_old is greater than or equal to price
-      },
-      message: props => `Price old must be greater than or equal to price (${props.value} is not valid)`,
-    },
-  },
+  price_old: { type: Number, default: 0, min: price},
   date: { type: Date, default: Date.now },
 });
 
