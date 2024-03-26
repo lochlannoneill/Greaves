@@ -1,0 +1,56 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding: 2vh;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.filters-form > * {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f5f5f5; */
+}
+
+.filters-form-label {
+    font-weight: 600;
+}
+
+.filters-form-reduced-options {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.filters-form-price-value {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.filters-form-price-value input {
+    width: 100%;
+}
+
+.filters-form-tags-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vh;
+}
+.filters-form-reduced-options label,
+.filters-form-tags-options label,
+.filters-form-colors-options label {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+@media screen and (max-width: 768px) {
+
+}
