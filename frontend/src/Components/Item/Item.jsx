@@ -34,11 +34,25 @@ export const Item = (props) => {
     }
   }, [reviews, props.id, getReviewInfo]);
 
+  // Calculate the discount percentage for each item individually
+  const calculateDiscountPercentage = (price, price_previous) => {
+    return (((price_previous - price) / price_previous) * 100).toFixed(0);
+  };
+
   return (
     <div className="item">
       <Link to={`/products/${props.id}`} onClick={() => window.scrollTo(0, 0)}>
         <div className="item-image-container">
           <img className="item-image" src={props.img} alt={props.title} />
+          {props.price < props.price_previous && (
+            <div className="item-reduced">
+              <div className="item-reduced-content">
+                -
+                {calculateDiscountPercentage(props.price, props.price_previous)}
+                % ON SALE
+              </div>
+            </div>
+          )}
         </div>
         <div className="item-description">
           <p className="item-description-title">{truncateTitle(props.title)}</p>
@@ -75,11 +89,17 @@ export const Item = (props) => {
           )}
           <div className="item-stuff">
             <div className="item-prices">
-              <div className={`item-price ${props.price_previous ? "reduced" : ""}`}>
+              <div
+                className={`item-price ${
+                  props.price_previous ? "reduced" : ""
+                }`}
+              >
                 &euro;{props.price}
               </div>
               {props.price_previous && (
-                <div className="item-price-old">&euro;{props.price_previous}</div>
+                <div className="item-price-old">
+                  &euro;{props.price_previous}
+                </div>
               )}
             </div>
             <div className="item-status">
