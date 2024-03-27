@@ -176,5 +176,32 @@ router.post("/products/:id/reviews", (req, res) => {
         .json({ success: false, message: "Failed to add review to product" });
     });
 });
+
+// DELETE - review by ID
+router.delete("/products/:id/reviews/:reviewId", (req, res) => {
+  const productId = req.params.id;
+  const reviewId = req.params.reviewId;
+  Product.findByIdAndUpdate(
+    productId,
+    {
+      $pull: { reviews: { _id: reviewId } },
+    },
+    { new: true }
+  )
+    .then((product) => {
+      console.log("Review deleted from product:", productId);
+      res.json(product);
+    })
+    .catch((err) => {
+      console.error("Failed to delete review from product:", err);
+      res
+        .status(500)
+        .json({
+          success: false,
+          message: "Failed to delete review from product",
+        });
+    });
+});
+
 // Export router
 module.exports = router;
