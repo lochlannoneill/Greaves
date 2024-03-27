@@ -154,5 +154,27 @@ router.get("/products/:id/reviews", (req, res) => {
         });
     });
 });
+
+// POST - new review
+router.post("/products/:id/reviews", (req, res) => {
+  const productId = req.params.id;
+  Product.findByIdAndUpdate(
+    productId,
+    {
+      $push: { reviews: req.body },
+    },
+    { new: true }
+  )
+    .then((product) => {
+      console.log("Review added to product:", productId);
+      res.json(product);
+    })
+    .catch((err) => {
+      console.error("Failed to add review to product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to add review to product" });
+    });
+});
 // Export router
 module.exports = router;
