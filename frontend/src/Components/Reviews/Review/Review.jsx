@@ -5,7 +5,6 @@ import {
   faStarHalfStroke as faStar_half,
   faCheck,
   faPlus,
-  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import placeholder_user from "../../../Assets/placeholder_user.jpg";
