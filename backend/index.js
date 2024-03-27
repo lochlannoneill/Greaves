@@ -223,7 +223,7 @@ app.get("/:category/products", (req, res) => {
 });
 
 // API for getting a product by ID
-app.get("/product/:id", (req, res) => {
+app.get("/products/:id", (req, res) => {
   const productId = req.params.id;
   Product.findById(productId)
     .then((product) => {
@@ -239,7 +239,7 @@ app.get("/product/:id", (req, res) => {
 });
 
 // API for updating a product by ID
-app.put("/updateProduct/:id", (req, res) => {
+app.put("/products/:id", (req, res) => {
   const productId = req.params.id;
   Product.findByIdAndUpdate(
     productId,
