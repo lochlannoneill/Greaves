@@ -41,7 +41,9 @@ export const ShopCategory = (props) => {
         <p className="shopcategory-query">
           Results for '<b>products</b>'
         </p>
-        <ItemList products={products} category={props.category} />
+        <div className="shopcateogry-items">
+          <ItemList products={products} category={props.category} />
+        </div>
         <div className="shopcategory-showmore">
           <p className="shopcategory-showmore-results">
             Showing <b>1-12</b> of {props.category}.total results

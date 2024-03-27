@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2vh;
+  gap: 4vh;
   max-width: 100%;
 }
 
