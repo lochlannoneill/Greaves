@@ -238,3 +238,32 @@ app.get("/product/:id", (req, res) => {
     });
 });
 
+// API for updating a product by ID
+app.put("/updateProduct/:id", (req, res) => {
+  const productId = req.params.id;
+  Product.findByIdAndUpdate(
+    productId,
+    {
+      title: req.body.title,
+      image: req.body.image,
+      description: req.body.description,
+      tags: req.body.tags,
+      category: req.body.category,
+      rating: req.body.rating,
+      stock: req.body.stock,
+      price: req.body.price,
+      price_previous: req.body.price_previous,
+    },
+    { new: true }
+  )
+    .then((product) => {
+      console.log("Product updated:", productId);
+      res.json(product);
+    })
+    .catch((err) => {
+      console.error("Failed to update product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to update product" });
+    });
+});
