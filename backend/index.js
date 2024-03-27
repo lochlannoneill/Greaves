@@ -190,3 +190,18 @@ app.delete("/products/:id", (req, res) => {
         .json({ success: false, message: "Failed to delete product" });
     });
 });
+
+// API for getting all products
+app.get("/products", (req, res) => {
+  Product.find()
+    .then((products) => {
+      console.log("Products retrieved.");
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve products:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve products" });
+    });
+});
