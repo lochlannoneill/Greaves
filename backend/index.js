@@ -158,10 +158,10 @@ app.post("/addProduct", (req, res) => {
   newProduct
     .save()
     .then(() => {
-      console.log("Product added successfully: " + req.body.title);
+      console.log("Product added: " + req.body.title);
       res.json({
         success: true,
-        message: "Product added successfully: " + req.body.title,
+        message: "Product added: " + req.body.title,
       });
     })
     .catch((err) => {
