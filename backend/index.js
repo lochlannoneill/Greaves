@@ -205,3 +205,19 @@ app.get("/products", (req, res) => {
         .json({ success: false, message: "Failed to retrieve products" });
     });
 });
+
+// API for getting all products by category
+app.get("/:category/products", (req, res) => {
+  const category = req.params.category;
+  Product.find({ category: category })
+    .then((products) => {
+      console.log("Products retrieved:", category);
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve products:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve products" });
+    });
+});
