@@ -3,7 +3,7 @@ const path = require("path");
 
 // Image storage engine
 const storage = multer.diskStorage({
-  destination: path.join(__dirname, "upload/images"), // Absolute path for file upload
+  destination: path.join(__dirname, "./upload/images"), // Absolute path for file upload
   filename: function (req, file, cb) {
     cb(
       null,
@@ -14,6 +14,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({
   storage: storage,
-}).single("product");
+}).single("image");
 
 module.exports = upload;
