@@ -171,3 +171,22 @@ app.post("/addProduct", (req, res) => {
         .json({ success: false, message: "Failed to add product" });
     });
 });
+
+// Delete product by ID
+app.delete("/products/:id", (req, res) => {
+  const productId = req.params.id;
+  Product.findByIdAndDelete(productId)
+    .then(() => {
+      console.log("Product deleted:", productId);
+      res.json({
+        success: true,
+        message: "Product deleted",
+      });
+    })
+    .catch((err) => {
+      console.error("Failed to delete product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to delete product" });
+    });
+});
