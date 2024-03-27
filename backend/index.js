@@ -141,7 +141,7 @@ const productSchema = new mongoose.Schema({
 // Creating a Mongoose model for the product schema
 const Product = mongoose.model("Product", productSchema);
 
-app.post("/addProduct", (req, res) => {
+app.post("/products", (req, res) => {
   const newProduct = new Product({
     title: req.body.title,
     image: req.body.image,
