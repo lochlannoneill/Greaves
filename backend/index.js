@@ -221,3 +221,20 @@ app.get("/:category/products", (req, res) => {
         .json({ success: false, message: "Failed to retrieve products" });
     });
 });
+
+// API for getting a product by ID
+app.get("/product/:id", (req, res) => {
+  const productId = req.params.id;
+  Product.findById(productId)
+    .then((product) => {
+      console.log("Product retrieved:", productId);
+      res.json(product);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve product" });
+    });
+});
+
