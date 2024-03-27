@@ -136,5 +136,23 @@ router.put("/products/:id", (req, res) => {
     });
 });
 
+// GET - Reviews by product ID
+router.get("/products/:id/reviews", (req, res) => {
+  const productId = req.params.id;
+  Product.findById(productId)
+    .then((product) => {
+      console.log("Product reviews retrieved:", productId);
+      res.json(product.reviews);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product reviews:", err);
+      res
+        .status(500)
+        .json({
+          success: false,
+          message: "Failed to retrieve product reviews",
+        });
+    });
+});
 // Export router
 module.exports = router;
