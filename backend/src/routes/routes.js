@@ -223,12 +223,35 @@ router.post("/reviews", async (req, res) => {
     res.status(500).json({ success: false, message: "Failed to add review to product" });
   }
 });
+
+// GET - all reviews
+router.get("/reviews", (req, res) => {
+  Review.find()
+    .then((reviews) => {
+      console.log("Reviews retrieved.");
+      res.json(reviews);
     })
     .catch((err) => {
-      console.error("Failed to add review to product:", err);
+      console.error("Failed to retrieve reviews:", err);
       res
         .status(500)
-        .json({ success: false, message: "Failed to add review to product" });
+        .json({ success: false, message: "Failed to retrieve reviews" });
+    });
+});
+
+// GET - review by ID
+router.get("/reviews/:id", (req, res) => {
+  const reviewId = req.params.id;
+  Review.findById(reviewId) // Add parentheses to call the method
+    .then((review) => {
+      console.log("Review retrieved:", reviewId);
+      res.json(review);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve review:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve review" });
     });
 });
 
