@@ -24,7 +24,7 @@ export const LoginSignup = () => {
               <span>Privacy Policy</span>
             </p>
           </div>
-          <p className="loginsignup-error">Error message</p>
+          {/* <p className="loginsignup-error">Error message</p> */}
           <div className="signup-buttons">
             <button>Sign Up</button>
           </div>
