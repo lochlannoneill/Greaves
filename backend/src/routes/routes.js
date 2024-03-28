@@ -93,6 +93,21 @@ router.get("/products", (req, res) => {
     });
 });
 
+// GET - all product ids
+router.get("/products/ids", (req, res) => {
+  Product.find({}, "_id")
+    .then((products) => {
+      console.log("Product IDs retrieved.");
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product IDs:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve product IDs" });
+    });
+});
+
 // GET - products by category
 router.get("/:category/products", (req, res) => {
   const category = req.params.category;
