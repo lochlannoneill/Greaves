@@ -61,7 +61,7 @@ const productSchema = new mongoose.Schema({
     required: true,
   },
   price_old: Number,
-  date: {
+  datetime: {
     type: Date,
     default: Date.now,
   },
