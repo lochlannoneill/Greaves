@@ -284,6 +284,21 @@ router.get("/users", (req, res) => {
     });
 });
 
+// GET - all users ids
+router.get("/users/ids", (req, res) => {
+  User.find({}, "_id")
+    .then((users) => {
+      console.log("User IDs retrieved.");
+      res.json(users);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve user IDs:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve user IDs" });
+    });
+});
+
 // GET - user by ID
 router.get("/users/:id", (req, res) => {
   const userId = req.params.id;
