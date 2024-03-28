@@ -8,7 +8,7 @@ const routes = require("./routes/routes");
 // Middleware
 app.use(express.json());
 app.use(cors());
-app.use('/images', express.static(path.join(__dirname, 'upload/images')));
+app.use("/images", express.static(path.join(__dirname, "upload/images")));
 
 // MongoDB database connection
 mongoose
