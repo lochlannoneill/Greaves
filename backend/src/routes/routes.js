@@ -37,7 +37,6 @@ router.post("/products", (req, res) => {
     description: req.body.description,
     tags: req.body.tags,
     category: req.body.category,
-    rating: req.body.rating,
     reviews: req.body.reviews,
     stock: req.body.stock,
     price: req.body.price,
