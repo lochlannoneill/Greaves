@@ -256,28 +256,21 @@ router.get("/reviews/:id", (req, res) => {
 });
 
 // DELETE - review by ID
-router.delete("/products/:id/reviews/:reviewId", (req, res) => {
-  const productId = req.params.id;
-  const reviewId = req.params.reviewId;
-  Product.findByIdAndUpdate(
-    productId,
-    {
-      $pull: { reviews: { _id: reviewId } },
-    },
-    { new: true }
-  )
-    .then((product) => {
-      console.log("Review deleted from product:", productId);
-      res.json(product);
+router.delete("/reviews/:id", (req, res) => {
+  const reviewId = req.params.id;
+  Review.findByIdAndDelete(reviewId)
+    .then(() => {
+      console.log("Review deleted:", reviewId);
+      res.json({
+        success: true,
+        message: "Review deleted",
+      });
     })
     .catch((err) => {
-      console.error("Failed to delete review from product:", err);
+      console.error("Failed to delete review:", err);
       res
         .status(500)
-        .json({
-          success: false,
-          message: "Failed to delete review from product",
-        });
+        .json({ success: false, message: "Failed to delete review" });
     });
 });
 
