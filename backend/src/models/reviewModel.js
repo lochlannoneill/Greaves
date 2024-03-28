@@ -9,11 +9,19 @@ const reviewSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User' // Referencing the User model
   },
-  rating: Number,
-  summary: String,
-  date: Date,
-  time: String,
-  verified: Boolean,
+  rating: {
+    type: Number,
+    default: 0
+  },
+  summary: {
+    type: String,
+    required: true
+  },
+  datetime: {
+    type: Date,
+    default: Date.now
+  },
+  verifiedPurchase: Boolean,
   images: [String],
   description: String,
   helpful: [String]

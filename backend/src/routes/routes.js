@@ -191,18 +191,38 @@ router.get("/products/:id/reviews", (req, res) => {
 });
 
 // POST - new review
-router.post("/products/:id/reviews", (req, res) => {
-  const productId = req.params.id;
-  Product.findByIdAndUpdate(
-    productId,
-    {
-      $push: { reviews: req.body },
-    },
-    { new: true }
-  )
-    .then((product) => {
-      console.log("Review added to product:", productId);
-      res.json(product);
+router.post("/reviews", async (req, res) => {
+  try {
+    // Create a new Review document
+    const newReview = new Review({
+      userId: req.body.userId,
+      productId: req.body.productId,
+      rating: req.body.rating,
+      summary: req.body.summary,
+      verifiedPurchase: req.body.verifiedPurchase,
+      images: req.body.images,
+      description: req.body.description,
+      helpful: req.body.helpful,
+    });
+
+    // Save the new review
+    await newReview.save();
+
+    // Update the corresponding product with the ObjectId of the saved review
+    const updatedProduct = await Product.findByIdAndUpdate(
+      req.body.productId,
+      { $push: { reviews: newReview._id } },
+      { new: true }
+    );
+
+    console.log("Review (", newReview, ") added to Product (", req.body.productId, ")");
+
+    res.json(updatedProduct);
+  } catch (err) {
+    console.error("Failed to add review to product:", err);
+    res.status(500).json({ success: false, message: "Failed to add review to product" });
+  }
+});
     })
     .catch((err) => {
       console.error("Failed to add review to product:", err);
