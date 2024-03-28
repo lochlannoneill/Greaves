@@ -18,9 +18,15 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
   
 -----
   
-### Frontend
-PS D:\Documents\GitHub\greaves\frontend> npm start  
-http://localhost:3000/  
+### Frontend http://localhost:3000/  
+
+1. Navigate to the entrypoint directory
+   ```bash
+   cd frontend
+2. Start the development server
+   ```bash
+   npm start  
+
 ![home](https://github.com/lochlannoneill/greaves/blob/main/screenshots/home.png?raw=true)  
 ![category](https://github.com/lochlannoneill/greaves/blob/main/screenshots/category.png?raw=true)  
 ![product](https://github.com/lochlannoneill/greaves/blob/main/screenshots/product.png?raw=true)  
@@ -29,10 +35,25 @@ http://localhost:3000/
   
 -----
   
-### Backend
-PS D:\Documents\GitHub\greaves\backend>src npm install  
-PS D:\Documents\GitHub\greaves\backend>src node .\index.js  
-http://localhost:4000/  
+### Backend http://localhost:4000/  
+
+1. Create **backend/config/env.js** to store your MongoDB connection URI  
+   ```bash
+   module.exports = {
+     mongoURI:
+     "YOUR_MONGODB_URI",
+   };
+2. Replace "YOUR_MONGODB_URI" with your MongoDB connection URI
+3. Navigate to the entrypoint directory
+   ```bash
+   cd backend/src
+5. Install the required dependencies supplied in **package.json**
+   ```bash
+   npm install
+6. Start the backend server
+   ```bash
+   node .\index.js
+  
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
 
 -----
