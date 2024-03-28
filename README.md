@@ -30,7 +30,8 @@ http://localhost:3000/
 -----
   
 ### Backend
-PS D:\Documents\GitHub\greaves\backend> node .\index.js  
+PS D:\Documents\GitHub\greaves\backend>src npm install  
+PS D:\Documents\GitHub\greaves\backend>src node .\index.js  
 http://localhost:4000/  
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
 
