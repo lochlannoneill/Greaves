@@ -51,6 +51,12 @@ userSchema.pre('save', async function(next) {
   try {
     const hash = await bcrypt.hash(user.password, 10);
     user.password = hash;
+
+    // Add '@' symbol to the start of the username
+    if (!user.username.startsWith('@')) {
+      user.username = '@' + user.username;
+    }
+
     next();
   } catch (error) {
     next(error);
