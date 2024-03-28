@@ -61,6 +61,10 @@ const productSchema = new mongoose.Schema({
     required: true,
   },
   price_old: Number,
+  purchases: {
+    type: Number,
+    default: 0,
+  },
   datetime: {
     type: Date,
     default: Date.now,
