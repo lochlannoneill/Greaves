@@ -5,15 +5,16 @@
 * **[Lochlann O Neill](https://github.com/lochlannoneill)**
 
 ### About:
-_Summary: React, Node.js, Express.js, MongoDB, HTML, CSS, Javascript_  
-  
+_Summary: React, MERN, HTML/CSS, Javascript_  
 Developed an E-Commerce website from inception to deployment, utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js).  
   
 **DONE** - Engineered the frontend with React, ensuring an engaging and user-friendly interface that enhances the shopping experience.  
 
 **DONE** - Facilitated deployment on Cloudflare for optimized performance and reliability, complemented by a custom domain hosted on GoDaddy for enhanced brand identity and accessibility.  
-  
-**DOING** - Implemented MongoDB as the database solution, enabling efficient data management and retrieval for seamless operation.  
+
+**DOING** - Incorporated Express.js to streamline server-side operations, ensuring robust API development and smooth communication between the frontend and MongoDB database.  
+
+**TODO** - Implemented MongoDB as the database solution, enabling efficient data management and retrieval for seamless operation.  
   
 -----
   
