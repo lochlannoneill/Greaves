@@ -161,4 +161,20 @@ router.get("/rating", (req, res) => {
     });
 });
 
+// GET - reviews by user ID
+router.get("/users/:id", (req, res) => {
+  const userId = req.params.id;
+  Review.find({ userId: userId })
+    .then((reviews) => {
+      console.log("Reviews retrieved for user:", userId);
+      res.json(reviews);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve reviews for user:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve reviews for user" });
+    });
+});
+
 module.exports = router;
