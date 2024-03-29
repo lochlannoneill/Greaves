@@ -187,4 +187,18 @@ router.get("/price/:min/:max", (req, res) => {
     });
 });
 
+// GET - products IDS in stock
+router.get("/stock", (req, res) => {
+  Product.find({ stock: { $gt: 0 } }, "_id")
+    .then((products) => {
+      console.log("Product IDs in stock retrieved.");
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product IDs:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve product IDs" });
+    });
+});
+
+
 module.exports = router;
