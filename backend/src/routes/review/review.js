@@ -113,4 +113,20 @@ router.delete("/:id", (req, res) => {
     });
 });
 
+// GET - reviews sorted by helpful count
+router.get("/helpful", (req, res) => {
+  Review.find()
+    .sort({ helpful: -1 })
+    .then((reviews) => {
+      console.log("Reviews retrieved and sorted by helpful count.");
+      res.json(reviews);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve reviews:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve reviews" });
+    });
+});
+
 module.exports = router;
