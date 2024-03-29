@@ -50,7 +50,7 @@ export const CartItems = () => {
                     </p>
                     <p>=</p>
                     <p className="cartitems-item-right-total">
-                      &euro;{product.price * cart[product.id]}
+                      &euro;{(product.price * cart[product.id]).toFixed(2)}
                     </p>
                   </div>
                   <div className="cartitems-right-actions">
