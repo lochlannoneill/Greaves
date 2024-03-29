@@ -200,4 +200,18 @@ router.get("/stock", (req, res) => {
     });
 });
 
+// TODO - fix 500 Internal Server Error
+// GET - products IDS where price reduced
+router.get("/reduced", (req, res) => {
+  Product.find({ price_previous: { $gt: 0 } }, "_id")
+    .then((products) => {
+      console.log("Product IDs where reduced retrieved.");
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product IDs:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve product IDs" });
+    });
+});
+
 module.exports = router;
