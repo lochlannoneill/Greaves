@@ -71,14 +71,23 @@
   font-weight: 500;
 }
 
-.review-info-verification {
+.review-purchase {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.review-purchase-verification {
   display: flex;
   flex-direction: row;
   gap: 0.5vh;
   color: darkorange;
-  font-size: 0.8rem;
-  font-weight: 500;
   align-items: center;
+}
+
+.review-purchase-size {
+  color: grey;
 }
 
 .review-images {

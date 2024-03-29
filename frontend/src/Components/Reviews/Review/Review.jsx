@@ -58,19 +58,24 @@ const Review = ({ review }) => {
             {review.date} at {review.time}
           </p>
         </div>
-        <div className="review-info-verification">
-          {review.verified ? (
-            <>
+      </div>
+      {review.verified ? (
+        <>
+          <div className="review-purchase">
+            <div className="review-purchase-verification">
               <FontAwesomeIcon
-                className="review-info-verification-checkmark"
+                className="review-purchase-verification-checkmark"
                 icon={faCheck}
               />
-              <p className="review-info-verification-text">Verified Review</p>
-            </>
-          ) : null}
-        </div>
-      </div>
-      {/* Render review images */}
+              <p className="review-purchase-verification-text">Verified Purchase</p>
+            </div>
+            <div className="review-purchase-size">
+              <p>Size: purchase.size</p>
+              <p>Color: purchase.color</p>
+            </div>
+          </div>
+        </>
+      ) : null}
       {review.images.length > 0 && (
         <div className="review-images">
           {review.images.slice(0, 3).map((image, index) => (
