@@ -172,4 +172,19 @@ router.get("/tags/:tag/ids", (req, res) => {
     });
 });
 
+// GET - products by price range
+router.get("/price/:min/:max", (req, res) => {
+  const min = req.params.min;
+  const max = req.params.max;
+  Product.find({ price: { $gte: min, $lte: max } })
+    .then((products) => {
+      console.log(`Products retrieved for price range: ${min} - ${max}`);
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve products:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve products" });
+    });
+});
+
 module.exports = router;
