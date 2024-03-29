@@ -11,6 +11,11 @@ export const CartItems = () => {
     useContext(ShopContext); // Added toggleFavorite and isFavorite
   const cartEmpty = Object.values(cart).every((quantity) => quantity <= 0); // Check if there are any items in the cart
 
+  // Calculate the discount percentage for each item individually
+  const calculateDiscountPercentage = (price, price_previous) => {
+    return (((price_previous - price) / price_previous) * 100).toFixed(0);
+  };
+
   return (
     <div className="cartitems">
       <h1>My Cart</h1>
@@ -26,20 +31,26 @@ export const CartItems = () => {
                       src={product.image}
                       alt=""
                     />
+                    {product.price < product.price_previous && (
+                      <div className="cartitems-item-left-reduced">
+                        <div className="cartitems-item-left-reduced-content">
+                          -
+                          {calculateDiscountPercentage(product.price, product.price_previous)}
+                          %
+                        </div>
+                      </div>
+                    )}
                   </Link>
                 </div>
                 <div className="cartitems-item-right">
-                  <p className="cartitems-item-right-title">
-                    <Link
-                      to={`/products/${product.id}`}
-                      className="cartitems-item-right-link"
-                    >
-                      {product.title}
-                    </Link>
-                  </p>
-                  <p className="cartitems-item-right-size">
-                    Size: product.size
-                  </p>
+                  <div className="cartitems-item-right-heading">
+                    <p className="cartitems-item-right-title">
+                      <Link
+                        to={`/products/${product.id}`}
+                        className="cartitems-item-right-link"
+                      >
+                        {product.title}
+                      </Link>
                     </p>
                   </div>
                   <div className="cartitems-item-right-info">
@@ -56,7 +67,7 @@ export const CartItems = () => {
                         {cart[product.id]}
                       </p>
                       <p>x</p>
-                      <p className="cartitems-item-price">
+                      <p className={`cartitems-item-price ${product.price_previous ? 'is-reduced' : ''}`}>
                         &euro;{product.price}
                       </p>
                       <p>=</p>
