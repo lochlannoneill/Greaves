@@ -20,7 +20,7 @@ export const CartItems = () => {
             <div className="cartitems-list" key={product.id}>
               <div className="cartitems-item">
                 <div className="cartitems-item-left">
-                  <Link to={`/products/${product.id}`}>
+                  <Link to={`/products/${product.id}`}> {/* TODO - remove gap under this (hard coded bottom:0.3rem for Link(a) ) */}
                     <img
                       className="cartitems-item-left-image"
                       src={product.image}
