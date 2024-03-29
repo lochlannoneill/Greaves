@@ -129,4 +129,20 @@ router.get("/helpful", (req, res) => {
     });
 });
 
+// GET - reviews sorted by date
+router.get("/date", (req, res) => {
+  Review.find()
+    .sort({ date: -1 })
+    .then((reviews) => {
+      console.log("Reviews retrieved and sorted by date.");
+      res.json(reviews);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve reviews:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve reviews" });
+    });
+});
+
 module.exports = router;
