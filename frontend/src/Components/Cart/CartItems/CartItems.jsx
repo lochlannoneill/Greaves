@@ -1,5 +1,3 @@
-import React from "react";
-import { useContext } from "react";
 import React, { useContext } from "react";
 import { ShopContext } from "../../../Context/ShopContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
