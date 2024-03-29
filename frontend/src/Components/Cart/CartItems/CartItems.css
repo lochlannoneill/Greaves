@@ -121,15 +121,6 @@
   gap: 8px;
 }
 
-.cartitems-item-right-favourite.in-favorites {
-  color: white;
-  background-color: red;
-}
-
-.cartitems-item-right-favourite.in-favorites:hover {
-  background-color: darkred;
-}
-
 .cartitems-item-right-quantity {
   font-weight: 700;
   color: #171717;
