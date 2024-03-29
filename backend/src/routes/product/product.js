@@ -144,4 +144,18 @@ router.put("/:id", (req, res) => {
     });
 });
 
+// GET - products by tag
+router.get("/tags/:tag", (req, res) => {
+  const tag = req.params.tag;
+  Product.find({ tags: tag })
+    .then((products) => {
+      console.log(`Products retrieved for tag: ${tag}`);
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve products:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve products" });
+    });
+});
+
 module.exports = router;
