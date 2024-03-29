@@ -47,7 +47,7 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
 3. Navigate to the entrypoint directory
    ```bash
    cd backend/src
-5. Install the required dependencies supplied in **package.json**
+5. Install the required dependencies pre-supplied in **package.json**
    ```bash
    npm install
 6. Start the backend server
