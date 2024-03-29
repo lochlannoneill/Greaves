@@ -158,4 +158,18 @@ router.get("/tags/:tag", (req, res) => {
     });
 });
 
+// GET - product IDs by tag
+router.get("/tags/:tag/ids", (req, res) => {
+  const tag = req.params.tag;
+  Product.find({ tags: tag }, "_id")
+    .then((products) => {
+      console.log(`Product IDs retrieved for tag: ${tag}`);
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve product IDs:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve product IDs" });
+    });
+});
+
 module.exports = router;
