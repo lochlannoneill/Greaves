@@ -145,4 +145,20 @@ router.get("/date", (req, res) => {
     });
 });
 
+// GET - reviews sorted by rating
+router.get("/rating", (req, res) => {
+  Review.find()
+    .sort({ rating: -1 })
+    .then((reviews) => {
+      console.log("Reviews retrieved and sorted by rating.");
+      res.json(reviews);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve reviews:", err);
+      res
+        .status(500)
+        .json({ success: false, message: "Failed to retrieve reviews" });
+    });
+});
+
 module.exports = router;
