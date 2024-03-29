@@ -55,10 +55,10 @@ export const CartItems = () => {
                   </div>
                   <div className="cartitems-item-right-info">
                     <p className="cartitems-item-right-size">
-                      <b>Size:</b> product.size
+                      <b>Size:</b> order.size
                     </p>
                     <p className="cartitems-item-right-color">
-                      <b>Color:</b> product.color
+                      <b>Color:</b> order.color
                     </p>
                   </div>
                   <div className="cartitems-item-right-calculations">
