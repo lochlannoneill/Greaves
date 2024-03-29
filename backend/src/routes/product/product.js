@@ -82,37 +82,35 @@ router.get("/ids", (req, res) => {
     });
 });
 
-// GET - products by category
-router.get("/:category", (req, res) => {
-  const category = req.params.category;
-  Product.find({ category: category })
-    .then((products) => {
-      console.log("Products retrieved:", category);
-      res.json(products);
-    })
-    .catch((err) => {
-      console.error("Failed to retrieve products:", err);
-      res
-        .status(500)
-        .json({ success: false, message: "Failed to retrieve products" });
-    });
-});
-
-// TODO - FIX THIS
-// ERROR - THIS IS NOT WORKING
 // GET - product by ID
 router.get("/:id", (req, res) => {
-  const productId = req.params.id;
-  Product.findById(productId)
+  const id = req.params.id;
+  Product.findById(id)
     .then((product) => {
-      console.log("Product retrieved:", productId);
+      if (!product) {
+        console.log("Product not found:", id);
+        return res.status(404).json({ success: false, message: "Product not found" });
+      }
+      console.log("Product retrieved:", id);
       res.json(product);
     })
     .catch((err) => {
       console.error("Failed to retrieve product:", err);
-      res
-        .status(500)
-        .json({ success: false, message: "Failed to retrieve product" });
+      res.status(500).json({ success: false, message: "Failed to retrieve product" });
+    });
+});
+
+// GET - products by category
+router.get("/category/:category", (req, res) => {
+  const category = req.params.category;
+  Product.find({ category: category })
+    .then((products) => {
+      console.log("Products retrieved for category:", category);
+      res.json(products);
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve products:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve products" });
     });
 });
 
