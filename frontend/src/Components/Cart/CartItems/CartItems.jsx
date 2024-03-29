@@ -41,7 +41,13 @@ export const CartItems = () => {
                     Size: product.size
                   </p>
                     </p>
+                  </div>
+                  <div className="cartitems-item-right-info">
+                    <p className="cartitems-item-right-size">
+                      <b>Size:</b> product.size
                     </p>
+                    <p className="cartitems-item-right-color">
+                      <b>Color:</b> product.color
                     </p>
                   </div>
                   <div className="cartitems-item-right-calculations">

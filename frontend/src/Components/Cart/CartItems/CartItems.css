@@ -35,34 +35,63 @@
   flex-direction: row;
   margin: 0;
   padding: 16px;
-  border-bottom: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cartitems-item-left {
-  display: flex;
-  align-items: center;
+  margin-right: 16px;
+}
+
+.cartitems-item-left a {
+  position: relative;
+  width: fit-content;
 }
 
 .cartitems-item-left-image {
   width: 160px;
   height: 150px;
-  object-fit: contain;
-  margin-right: 16px;
-  border-radius: 25%;
+  object-fit: cover;
+  border-radius: 12.5%;
+}
+
+.cartitems-item-left-reduced {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 0;
 }
 
 .cartitems-item-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  margin-left: 16px;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
 }
 
 .cartitems-item-right-title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 8px;
+}
+
+.cartitems-item-right-reduced {
+  color: red;
+  font-weight: 700;
+}
+
+.cartitems-item-right-info b {
+  color: grey;
+}
+
+.cartitems-item-right-calculations {
+  width: 100%;
 }
 
 .cartitems-item-right-cost {
@@ -70,14 +99,35 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  margin: 8px 0;
+}
+
+.cartitems-item-price.is-reduced {
+  position: relative;
+  color: red;
+  font-weight: 700;
 }
 
 .cartitems-right-actions {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cartitems-right-actions * {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.cartitems-item-right-favourite.in-favorites {
+  color: white;
+  background-color: red;
+}
+
+.cartitems-item-right-favourite.in-favorites:hover {
+  background-color: darkred;
 }
 
 .cartitems-item-right-quantity {
@@ -117,19 +167,18 @@
 @media screen and (max-width: 768px) {
   .cartitems {
     padding: 0;
-    gap: 0;
   }
   .cartitems-list {
     margin: 0;
   }
   .cartitems-item {
     flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+  }
+  .cartitems-item-left {
     margin: 0;
   }
   .cartitems-item-right {
-    margin-top: 16px;
-    margin-left: 0;
+    margin-top: 8px;
   }
 }
