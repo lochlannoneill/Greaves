@@ -5,19 +5,19 @@ import './Sidebar.css'
 export const Sidebar = () => {
   return (
     <div className="sidebar">
-        <Link to={'/addproduct'} style={{textDecoration:"none"}}>
+        <Link to={'/products'} style={{textDecoration:"none"}}>
             <div className="sidebar-item">
-                Add Product
+                Products
             </div>
         </Link>
-        <Link to={'/addproduct'} style={{textDecoration:"none"}}>
+        <Link to={'/users'} style={{textDecoration:"none"}}>
             <div className="sidebar-item">
-                Add Product
+                Users
             </div>
         </Link>
-        <Link to={'/addproduct'} style={{textDecoration:"none"}}>
+        <Link to={'/reviews'} style={{textDecoration:"none"}}>
             <div className="sidebar-item">
-                Add Product
+                Reviews
             </div>
         </Link>
     </div>
