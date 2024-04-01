@@ -1,10 +1,10 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import { Table } from '../../Components/Table/Table'
-import { Products } from '../../Components/Products/Products'
-import { Users } from '../../Components/Users/Users'
-import { Reviews } from '../../Components/Reviews/Reviews'
-import './Admin.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Table } from "../../Components/Table/Table";
+import { Products } from "../../Components/Products/Products";
+import { Users } from "../../Components/Users/Users";
+import { Reviews } from "../../Components/Reviews/Reviews";
+import "./Admin.css";
 
 export const Admin = () => {
   return (
@@ -16,5 +16,5 @@ export const Admin = () => {
         <Route path="/reviews" element={<Reviews />} />
       </Routes>
     </div>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { Navbar } from './Components/Navbar/Navbar'
-import { Admin } from './Pages/Admin/Admin'
+import React from "react";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Admin } from "./Pages/Admin/Admin";
 
 export const App = () => {
   return (
@@ -8,5 +8,5 @@ export const App = () => {
       <Navbar />
       <Admin />
     </div>
-  )
-}
+  );
+};
