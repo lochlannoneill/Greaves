@@ -24,7 +24,7 @@
 .products input,
 .products select,
 .products-add-description textarea {
-    width: 100%; /* Make inputs and selects take full width */
+    width: 100%;
     padding: 0.5rem;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
@@ -34,8 +34,8 @@
 .products input:focus,
 .products select:focus,
 .products-add-description textarea:focus {
-    outline: none; /* Remove the default outline */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow when focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .products-add-description textarea {
