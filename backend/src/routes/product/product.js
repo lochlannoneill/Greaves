@@ -6,7 +6,7 @@ const Product = require("../../models/productModel");
 router.post("/", (req, res) => {
   const newProduct = new Product({
     title: req.body.title,
-    image: req.body.image,
+    images: req.body.images,
     description: req.body.description,
     tags: req.body.tags,
     category: req.body.category,
@@ -121,7 +121,7 @@ router.put("/:id", (req, res) => {
     productId,
     {
       title: req.body.title,
-      image: req.body.image,
+      images: req.body.images,
       description: req.body.description,
       tags: req.body.tags,
       category: req.body.category,

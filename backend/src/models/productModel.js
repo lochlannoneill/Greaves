@@ -6,8 +6,8 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
-    type: String,
+  images: {
+    type: [String],
     default: "http://localhost:4000/images/default.png",
   },
   description: {
