@@ -1,0 +1,55 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: white;
+    padding: 2vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products > *.field-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    align-items: center;
+}
+
+.products input,
+.products select {
+    padding: 0.5rem;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+}
+
+.products-add-image img {
+    cursor: pointer;
+}
+
+.products-add-image img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.products-add-image input {
+    cursor: pointer;
+}
+
+.products-add-description textarea {
+    width: 100%;
+    height: 128px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding: 0.5rem;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    resize: none;
+}
+
+.products-add-button {
+    padding: 0.5rem;
+    background-color: #171717;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

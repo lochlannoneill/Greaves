@@ -1,0 +1,12 @@
+.admin {
+    display: flex;
+    flex-direction: row;
+    margin: 2vh;
+    gap: 2vh;
+}
+
+@media (max-width: 768px) {
+    .admin {
+        flex-direction: column;
+    }
+}

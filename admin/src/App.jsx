@@ -4,7 +4,7 @@ import { Admin } from './Pages/Admin/Admin'
 
 export const App = () => {
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Admin />
     </div>
