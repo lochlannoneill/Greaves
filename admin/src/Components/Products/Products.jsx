@@ -4,17 +4,23 @@ import upload_placeholder from "../../Assets/placeholder.jpg"
 import "./Products.css"
 
 export const Products = () => {
-    const [image, setImage] = useState(null); // Initialize with null
+    const [images, setImages] = useState([]);
 
     const imageHandler = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = () => {
-                setImage(reader.result);
-            };
-            reader.readAsDataURL(file);
-        }
+        const files = Array.from(e.target.files);
+
+        Promise.all(files.map(file => {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    resolve(e.target.result);
+                };
+                reader.onerror = reader.onabort = reject;
+                reader.readAsDataURL(file);
+            });
+        })).then(images => {
+            setImages(prevImages => [...prevImages, ...images]);
+        });
     };
 
   return (
@@ -44,12 +50,19 @@ export const Products = () => {
             </select>
         </div>
         <div className="products-add-image">
-            <p>Product Image</p>
-            <label className="products-add-image-input" htmlFor="file-input">
-                <img src={image ? image : upload_placeholder} alt="Product" />
-                <input onChange={imageHandler} type="file" name="image" id="file-input" placeholder="Image" hidden />
-            </label>
-        </div>
+                <p>Images</p>
+                <div className="image-preview-container">
+                    {images.map((imageDataUrl, index) => (
+                        <div key={index} className="image-preview">
+                            <img src={imageDataUrl} alt={`Product ${index + 1}`} />
+                        </div>
+                    ))}
+                    <label className="image-preview placeholder" htmlFor="file-input">
+                        <img src={upload_placeholder} alt="Upload" />
+                        <input onChange={imageHandler} type="file" name="image" id="file-input" multiple hidden />
+                    </label>
+                </div>
+            </div>
         <div className="products-add-description">
             <p>Description</p>
             <textarea name="description" placeholder="Required"></textarea>

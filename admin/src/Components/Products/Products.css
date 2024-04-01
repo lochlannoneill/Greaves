@@ -59,9 +59,16 @@
 }
 
 .products-add-image img {
-    width: 128px;
-    height: 128px;
+    width: 96px;
+    height: 96px;
     object-fit: cover;
+}
+
+.image-preview-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
 
 .products-add-image input {
