@@ -5,10 +5,8 @@ import "./Products.css"
 
 export const Products = () => {
     const [images, setImages] = useState([]);
-
     const imageHandler = (e) => {
         const files = Array.from(e.target.files);
-
         Promise.all(files.map(file => {
             return new Promise((resolve, reject) => {
                 const reader = new FileReader();
@@ -22,13 +20,25 @@ export const Products = () => {
             setImages(prevImages => [...prevImages, ...images]);
         });
     };
-
     const removeImage = (index) => {
         setImages(prevImages => prevImages.filter((_, i) => i !== index));
     };
 
-  return (
-    <div className="products">
+    const [tags, setTags] = useState([]);
+    const handleInputChange = (e) => {
+        const value = e.target.value.trim();
+        if (value.includes(',')) {
+            const newTags = value.split(',').map(tag => tag.trim()).filter(tag => tag !== '');
+            setTags(prevTags => [...prevTags, ...newTags]);
+            e.target.value = ''; // Clear input field
+        }
+    };
+    const removeTag = (index) => {
+        setTags(prevTags => prevTags.filter((_, i) => i !== index));
+    };
+    
+    return (
+        <div className="products">
         <h2 className="products-add-heading">Add Product</h2>
         <div className="products-add-title field-row">
             <p>Title</p>
@@ -72,6 +82,23 @@ export const Products = () => {
             <p>Description</p>
             <textarea name="description" placeholder="Required"></textarea>
         </div>
+        <div className="products-add-tags field-row">
+                <p>Tags</p>
+                <div className="tags-container">
+                    {tags.map((tag, index) => (
+                        <div key={index} className="tag">
+                            {tag}
+                            <button className="tag-remove" onClick={() => removeTag(index)}>X</button>
+                        </div>
+                    ))}
+                </div>
+                <input
+                    type="text"
+                    name="tags"
+                    placeholder="Separate with commas"
+                    onChange={handleInputChange}
+                />
+            </div>
         <button className="products-add-button">Add Product</button>
     </div>
   )

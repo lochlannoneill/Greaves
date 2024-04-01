@@ -94,14 +94,45 @@
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s;
-
 }
+
 .image-preview-container .image-preview-remove:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .products-add-image input {
     cursor: pointer;
+}
+
+.products-add-tags .tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.products-add-tags .tags-container .tag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 0.3rem 0.5rem;
+    border-radius: 16px
+}
+
+.products-add-tags .tags-container .tag-remove {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.products-add-tags .tags-container .tag-remove:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .products-add-button {
