@@ -7,6 +7,7 @@
 
 .table a {
     text-decoration: none;
+    color: #171717;
 }
 
 .table-item {
@@ -15,7 +16,7 @@
     gap: 1rem;
     padding: 1rem;
     text-decoration: none;
-    background-color: #f6f6f6;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
