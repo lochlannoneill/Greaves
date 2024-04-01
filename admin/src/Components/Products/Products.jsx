@@ -23,6 +23,10 @@ export const Products = () => {
         });
     };
 
+    const removeImage = (index) => {
+        setImages(prevImages => prevImages.filter((_, i) => i !== index));
+    };
+
   return (
     <div className="products">
         <h2 className="products-add-heading">Add Product</h2>
@@ -50,19 +54,20 @@ export const Products = () => {
             </select>
         </div>
         <div className="products-add-image">
-                <p>Images</p>
-                <div className="image-preview-container">
-                    {images.map((imageDataUrl, index) => (
-                        <div key={index} className="image-preview">
-                            <img src={imageDataUrl} alt={`Product ${index + 1}`} />
-                        </div>
-                    ))}
-                    <label className="image-preview placeholder" htmlFor="file-input">
-                        <img src={upload_placeholder} alt="Upload" />
-                        <input onChange={imageHandler} type="file" name="image" id="file-input" multiple hidden />
-                    </label>
-                </div>
+            <p>Images</p>
+            <div className="image-preview-container">
+                {images.map((imageDataUrl, index) => (
+                    <div key={index} className="image-preview">
+                        <img src={imageDataUrl} alt={`Product ${index + 1}`} />
+                        <button className="image-preview-remove" onClick={() => removeImage(index)}>X</button>
+                    </div>
+                ))}
+                <label className="image-preview placeholder" htmlFor="file-input">
+                    <img src={upload_placeholder} alt="Upload" />
+                    <input onChange={imageHandler} type="file" name="image" id="file-input" multiple hidden />
+                </label>
             </div>
+        </div>
         <div className="products-add-description">
             <p>Description</p>
             <textarea name="description" placeholder="Required"></textarea>
