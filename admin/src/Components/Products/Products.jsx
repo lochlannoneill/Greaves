@@ -89,8 +89,12 @@ export const Products = () => {
     }
   };
   const removeTag = (index) => {
-    setTags((prevTags) => prevTags.filter((_, i) => i !== index));
+    setProductDetails((prevDetails) => ({
+      ...prevDetails,
+      tags: prevDetails.tags.filter((_, i) => i !== index),
+    }));
   };
+  
 
   return (
     <div className="products">
