@@ -8,9 +8,6 @@ export const Navbar = () => {
         <h1>Admin</h1>
       </div>
       <div className="navbar-right">
-        <a href="/admin/products">Products</a>
-        <a href="/admin/orders">Orders</a>
-        <a href="/admin/users">Users</a>
       </div>
     </div>
   );
