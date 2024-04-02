@@ -21,6 +21,28 @@ export const Products = () => {
 
   const AddProduct = async () => {
     console.log(productDetails);
+    try {
+      const formData = new FormData();
+      formData.append("title", productDetails.title);
+      formData.append("price", productDetails.price);
+      formData.append("price_old", productDetails.price_old);
+      formData.append("category", productDetails.category);
+      formData.append("description", productDetails.description);
+      productDetails.images.forEach((image) => {
+        formData.append("images", image); // Expect images as array
+      });
+      productDetails.tags.forEach((tag) => {
+        formData.append("tags", tag); // Expect tags as array
+      });
+      const response = await fetch("http://localhost:4000/products", {
+        method: "POST",
+        body: formData,
+      });
+      const responseData = await response.json();
+      console.log(responseData);
+    } catch (error) {
+      console.error("Error adding product:", error);
+    }
   };
 
   const imageHandler = (e) => {
