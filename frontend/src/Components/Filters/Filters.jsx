@@ -125,6 +125,28 @@ export const Filters = () => {
               />
               Elegant
             </label>
+            <label className="filters-form-tags-options-label" htmlFor="cool">
+              <input
+                type="checkbox"
+                id="cool"
+                name="tag"
+                value="cool"
+                checked={selectedTags.includes("cool")}
+                onChange={handleTagChange}
+              />
+              Cool
+            </label>
+            <label className="filters-form-tags-options-label" htmlFor="warm">
+              <input
+                type="checkbox"
+                id="warm"
+                name="tag"
+                value="warm"
+                checked={selectedTags.includes("warm")}
+                onChange={handleTagChange}
+              />
+              Warm
+            </label>
           </div>
         </div>
         <div className="filters-form-colors">
