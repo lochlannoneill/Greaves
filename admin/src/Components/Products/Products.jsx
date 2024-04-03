@@ -75,11 +75,11 @@ export const Products = () => {
 
   const [tags, setTags] = useState([]);
   const handleTagInputChange = (e) => {
-    const value = e.target.value.trim();
+    let value = e.target.value.trim();
     if (value.includes(",")) {
       const newTags = value
         .split(",")
-        .map((tag) => tag.trim())
+        .map((tag) => tag.trim().toLowerCase()) // Convert to lowercase
         .filter((tag) => tag !== "");
       setProductDetails((prevDetails) => ({
         ...prevDetails,
