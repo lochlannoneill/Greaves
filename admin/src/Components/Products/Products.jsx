@@ -75,12 +75,13 @@ export const Products = () => {
 
   const [tags, setTags] = useState([]);
   const handleTagInputChange = (e) => {
-    let value = e.target.value.trim();
+    let value = e.target.value.trim().toLowerCase(); // Convert to lowercase
     if (value.includes(",")) {
       const newTags = value
         .split(",")
-        .map((tag) => tag.trim().toLowerCase()) // Convert to lowercase
-        .filter((tag) => tag !== "");
+        .map((tag) => tag.trim())
+        .filter((tag) => tag !== "")
+        .filter((tag) => !productDetails.tags.includes(tag)); // Check for duplicates
       setProductDetails((prevDetails) => ({
         ...prevDetails,
         tags: [...prevDetails.tags, ...newTags],
@@ -94,7 +95,6 @@ export const Products = () => {
       tags: prevDetails.tags.filter((_, i) => i !== index),
     }));
   };
-  
 
   return (
     <div className="products">
