@@ -73,29 +73,23 @@ export const Products = () => {
     }));
   };
 
-  const [tags, setTags] = useState([]);
   const handleTagInputChange = (e) => {
-    let value = e.target.value.trim().toLowerCase(); // Convert to lowercase
+    let value = e.target.value.trim().toLowerCase();
     if (value.includes(",")) {
       const newTags = value
         .split(",")
         .map((tag) => tag.trim())
+        .filter((tag) => /^[a-z]+$/.test(tag))
         .filter((tag) => tag !== "")
-        .filter((tag) => !productDetails.tags.includes(tag)); // Check for duplicates
+        .filter((tag) => !productDetails.tags.includes(tag));
       setProductDetails((prevDetails) => ({
         ...prevDetails,
         tags: [...prevDetails.tags, ...newTags],
       }));
-      e.target.value = ""; // Clear input field
+      e.target.value = "";
     }
   };
-  const removeTag = (index) => {
-    setProductDetails((prevDetails) => ({
-      ...prevDetails,
-      tags: prevDetails.tags.filter((_, i) => i !== index),
-    }));
-  };
-
+  
   return (
     <div className="products">
       <h2 className="products-add-heading">Add Product</h2>
@@ -195,7 +189,7 @@ export const Products = () => {
         <input
           type="text"
           name="tags"
-          placeholder="Separate with commas"
+          placeholder="Separate with commas (letters only)"
           onChange={handleTagInputChange}
         />
       </div>
