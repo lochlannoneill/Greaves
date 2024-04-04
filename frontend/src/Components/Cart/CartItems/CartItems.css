@@ -135,10 +135,11 @@
   padding: 12px;
   cursor: pointer;
   transition: 0.25s;
-  color: #171717;
+  color: grey;
 }
 
 .cartitems-item-right button:hover {
+  color: #171717;
   background-color: #e0e0e0;
 }
 
@@ -150,10 +151,10 @@
   outline: none;
 }
 
-.cartitems-item-right-delete:hover {
+/* .cartitems-item-right-delete:hover {
   background-color: red !important;
   color: white;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .cartitems {
