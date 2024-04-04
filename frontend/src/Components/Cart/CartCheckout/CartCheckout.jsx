@@ -61,8 +61,8 @@ export const CartCheckout = () => {
           </div>
           {appliedDiscount && (
             <p className="cartcheckout-coupon-confirmation">
-              Coupon code applied: {appliedDiscount.code} (
-              {appliedDiscount.discountPercentage}% off)
+              Coupon applied: {appliedDiscount.code} (
+              -{appliedDiscount.discountPercentage}%)
             </p>
           )}
         </div>
