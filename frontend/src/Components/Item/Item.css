@@ -111,12 +111,13 @@
 .item-price.reduced {
   color: red;
   font-weight: 700;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 .item-price-old {
-  color: grey;
+  color: darkgrey;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: line-through;
 }
 

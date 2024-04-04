@@ -170,9 +170,9 @@
 }
 
 .productdisplay-right-price-old {
-  color: grey;
+  color: darkgrey;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: line-through;
 }
 
