@@ -50,7 +50,6 @@ export const CartCheckout = () => {
       {getCartCount() > 0 && (
         <div className="cartcheckout-child">
           <h2>Coupon</h2>
-          <p>Try a coupon code if you have one.</p>
           <div className="cartcheckout-coupon">
             <input
               type="text"
