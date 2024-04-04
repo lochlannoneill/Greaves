@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 32px;
+  color: #171717;
 }
 
 .cartitems * {
@@ -84,10 +85,6 @@
 .cartitems-item-right-reduced {
   color: red;
   font-weight: 700;
-}
-
-.cartitems-item-right-info b {
-  color: grey;
 }
 
 .cartitems-item-right-calculations {
