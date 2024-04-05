@@ -96,7 +96,10 @@
 }
 
 .review-purchase-size {
-  color: grey;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vh;
+  color: darkgrey;
 }
 
 .review-images {

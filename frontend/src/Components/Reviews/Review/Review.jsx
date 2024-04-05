@@ -70,6 +70,7 @@ const Review = ({ review }) => {
             </div>
             <div className="review-purchase-size">
               <p>Size: purchase.size</p>
+              <p>|</p>
               <p>Color: purchase.color</p>
             </div>
           </div>
