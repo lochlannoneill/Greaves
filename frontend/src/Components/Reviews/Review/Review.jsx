@@ -6,7 +6,6 @@ import {
   faCheck,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import placeholder_user from "../../../Assets/placeholder_user.jpg";
 import "./Review.css";
 
@@ -30,21 +29,21 @@ const Review = ({ review }) => {
             {[...Array(Math.floor(review.rating))].map((_, index) => (
               <FontAwesomeIcon
                 key={index}
-                className="review-info-rating-icon"
+                className="review-info-rating-full"
                 icon={faStar_solid}
               />
             ))}
             {review.rating % 1 !== 0 && (
               <FontAwesomeIcon
-                className="review-info-rating-icon"
+                className="review-info-rating-half"
                 icon={faStar_half}
               />
             )}
             {[...Array(5 - Math.ceil(review.rating))].map((_, index) => (
               <FontAwesomeIcon
                 key={index + Math.ceil(review.rating)}
-                className="review-info-rating-icon"
-                icon={faStar_regular}
+                className="review-info-rating-empty"
+                icon={faStar_solid}
               />
             ))}
           </span>

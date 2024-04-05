@@ -42,20 +42,29 @@
 .review-info-rating {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 0.5vh;
 }
 
 .review-info-rating * {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
 }
 
 .review-info-rating-number {
-  color: grey;
+  color: darkgrey;
 }
 
 .review-info-rating-stars {
   font-size: 1.2rem;
+  color: lightgrey;
+}
+
+.review-info-rating-half {
+  color: darkorange;
+}
+
+.review-info-rating-full {
   color: darkorange;
 }
 
