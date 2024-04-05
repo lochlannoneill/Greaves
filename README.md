@@ -23,7 +23,10 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
 1. Navigate to the entrypoint directory
    ```bash
    cd greaves/frontend
-2. Start the development server
+2. Install the required dependencies pre-supplied in **package.json**
+   ```bash
+   npm install
+3. Start the development server
    ```bash
    npm start  
 
