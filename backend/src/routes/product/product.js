@@ -13,7 +13,7 @@ router.post("/", (req, res) => {
     reviews: req.body.reviews,
     stock: req.body.stock,
     price: req.body.price,
-    price_old: req.body.price_old,
+    price_previous: req.body.price_previous,
   });
   console.log("Adding product:", newProduct);
   newProduct

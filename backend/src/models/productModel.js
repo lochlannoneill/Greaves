@@ -60,7 +60,7 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  price_old: Number,
+  price_previous: Number,
   purchases: {
     type: Number,
     default: 0,

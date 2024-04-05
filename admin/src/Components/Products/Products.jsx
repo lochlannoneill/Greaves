@@ -7,7 +7,7 @@ export const Products = () => {
   const [productDetails, setProductDetails] = useState({
     title: "",
     price: "",
-    price_old: "",
+    price_previous: "",
     category: "women", // Default category
     description: "",
     images: [],
@@ -25,7 +25,7 @@ export const Products = () => {
       const formData = new FormData();
       formData.append("title", productDetails.title);
       formData.append("price", productDetails.price);
-      formData.append("price_old", productDetails.price_old);
+      formData.append("price_previous", productDetails.price_previous);
       formData.append("category", productDetails.category);
       formData.append("description", productDetails.description);
       productDetails.images.forEach((image) => {
@@ -117,10 +117,10 @@ export const Products = () => {
         <div className="products-add-price-group">
           <p>Old Price</p>
           <input
-            value={productDetails.price_old}
+            value={productDetails.price_previous}
             onChange={changeHandler}
             type="text"
-            name="price_old"
+            name="price_previous"
             placeholder="Optional"
           />
         </div>
