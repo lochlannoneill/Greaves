@@ -127,6 +127,14 @@
 }
 
 .productdisplay-right-rating-stars {
+  color: lightgrey;
+}
+
+.productdisplay-right-rating-full {
+  color: darkorange;
+}
+
+.productdisplay-right-rating-half {
   color: darkorange;
 }
 

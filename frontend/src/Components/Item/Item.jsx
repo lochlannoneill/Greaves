@@ -8,7 +8,6 @@ import {
   faHeart as faHeart_solid,
   faCartShopping as faCartShopping_solid,
 } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faStar_regular } from "@fortawesome/free-regular-svg-icons";
 import { ShopContext } from "../../Context/ShopContext";
 import "./Item.css";
 
@@ -62,13 +61,13 @@ export const Item = (props) => {
                 {[...Array(Math.floor(reviewAverageRating))].map((_, index) => (
                   <FontAwesomeIcon
                     key={index}
-                    className="item-description-reviews-star-icon"
+                    className="item-description-reviews-star-solid"
                     icon={faStar_solid}
                   />
                 ))}
                 {reviewAverageRating % 1 !== 0 && (
                   <FontAwesomeIcon
-                    className="item-description-reviews-star-icon"
+                    className="item-description-reviews-star-half"
                     icon={faStar_half}
                   />
                 )}
@@ -77,8 +76,8 @@ export const Item = (props) => {
                 ].map((_, index) => (
                   <FontAwesomeIcon
                     key={index}
-                    className="item-description-reviews-star-icon"
-                    icon={faStar_regular}
+                    className="item-description-reviews-star-empty"
+                    icon={faStar_solid}
                   />
                 ))}
               </span>

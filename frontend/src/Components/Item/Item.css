@@ -73,6 +73,14 @@
 }
 
 .item-description-reviews-stars {
+  color: lightgrey;
+}
+
+.item-description-reviews-star-solid {
+  color: darkorange;
+}
+
+.item-description-reviews-star-half {
   color: darkorange;
 }
 
