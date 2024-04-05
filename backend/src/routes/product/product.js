@@ -214,4 +214,23 @@ router.get("/reduced", (req, res) => {
     });
 });
 
+// GET - product discount by ID
+router.get("/discount/:id", (req, res) => {
+  const id = req.params.id;
+  Product.findById(id)
+    .then((product) => {
+      if (!product.price_previous) {
+        console.log("Product does not have a discount:", id);
+        return res.status(404).json({ success: false, message: "Product does not have a discount" });
+      }
+      const discount = ((product.price_previous - product.price) / product.price_previous) * 100;
+      console.log(`Discount retrieved for product ${id}: ${discount}%`);
+      res.json({ discount: discount });
+    })
+    .catch((err) => {
+      console.error("Failed to retrieve discount:", err);
+      res.status(500).json({ success: false, message: "Failed to retrieve discount" });
+    });
+});
+
 module.exports = router;
