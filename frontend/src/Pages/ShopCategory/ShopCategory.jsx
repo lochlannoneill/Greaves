@@ -34,13 +34,13 @@ export const ShopCategory = (props) => {
               </div>
             </form>
           </div>
-          <div className="shopcategory-sort-button">
+          {/* <div className="shopcategory-sort-button">
             Sort by <FontAwesomeIcon icon={faChevronDown} size="2xs" />
-          </div>
+          </div> */}
         </div>
-        <p className="shopcategory-query">
+        {/* <p className="shopcategory-query">
           Results for '<b>products</b>'
-        </p>
+        </p> */}
         <div className="shopcateogry-items">
           <ItemList products={products} category={props.category} />
         </div>
