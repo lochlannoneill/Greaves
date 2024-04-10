@@ -1,11 +1,11 @@
 .filters {
   display: flex;
   flex-direction: column;
-  position: sticky;
   top: 0;
   gap: 4vh;
   padding: 4vh;
 }
+
 
 .filters * {
   accent-color: #171717;
@@ -57,5 +57,38 @@
 }
 
 @media screen and (max-width: 768px) {
+  .filters {
+    padding: 0;
+    background-color: lightgrey;
+  }
 
+  /* .filters-form {
+    display: none;
+  } */
+
+  .toggle-button {
+    display: block;
+    cursor: pointer;
+    padding: 2vh;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+  }
+
+  .filters-collapsed.toggle-button-chevron {
+    transform: rotate(180deg);
+  }
+
+  .filters.collapsed .filters-form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .toggle-button {
+    display: none;
+  }
 }
