@@ -89,6 +89,12 @@ export const Products = () => {
       e.target.value = "";
     }
   };
+  const removeTag = (index) => {
+    setProductDetails((prevDetails) => ({
+      ...prevDetails,
+      tags: prevDetails.tags.filter((_, i) => i !== index),
+    }));
+  };
   
   return (
     <div className="products">
