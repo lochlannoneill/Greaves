@@ -69,9 +69,9 @@ const Review = ({ review }) => {
               <p className="review-purchase-verification-text">Verified Purchase</p>
             </div>
             <div className="review-purchase-size">
-              <p>Size: purchase.size</p>
+              <p>purchase.size</p>
               <p>|</p>
-              <p>Color: purchase.color</p>
+              <p>purchase.color</p>
             </div>
           </div>
         </>
