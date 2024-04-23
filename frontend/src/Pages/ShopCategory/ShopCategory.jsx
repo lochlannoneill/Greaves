@@ -15,9 +15,9 @@ export const ShopCategory = (props) => {
 
   return (
     <div className="shopcategory">
-      <div className="shopcategory-left">
+      {/* <div className="shopcategory-left">
         <Filters />
-      </div>
+      </div> */}
       <div className="shopcategory-right">
         <div className="shopcategory-sort">
           <div className="shopcategory-sort-search">
