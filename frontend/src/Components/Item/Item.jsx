@@ -102,20 +102,20 @@ export const Item = (props) => {
               )}
             </div>
             <div className="item-status">
+              {isInCart(props.id) ? (
+                <FontAwesomeIcon
+                className={`item-cart ${
+                  isInCart(props.id) ? "isInCart" : ""
+                }`}
+                icon={faCartShopping_solid}
+                />
+              ) : null}
               {isFavorite(props.id) ? (
                 <FontAwesomeIcon
                   className={`item-favourite ${
                     isFavorite(props.id) ? "isFavorite" : ""
                   }`}
                   icon={faHeart_solid}
-                />
-              ) : null}
-              {isInCart(props.id) ? (
-                <FontAwesomeIcon
-                  className={`item-cart ${
-                    isInCart(props.id) ? "isInCart" : ""
-                  }`}
-                  icon={faCartShopping_solid}
                 />
               ) : null}
             </div>
