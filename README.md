@@ -1,6 +1,6 @@
 <!--https://github.com/darsaveli/Readme-Markdown-Syntax-->
 
-# [www.greaves.store](https://greaves.store/)
+# [https://greaves.store/](https://greaves.store/)
 ### Collaborators:
 * **[Lochlann O Neill](https://github.com/lochlannoneill)**
 
