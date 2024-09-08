@@ -287,11 +287,7 @@
 }
 
 .productdisplay-right-category-buttons-cart:hover {
-  background-color: orange !important;
-}
-
-.productdisplay-right-category-buttons-cart:active {
-  background-color: darkorange !important;
+  background: linear-gradient(135deg, #667eea, #764ba2) !important;
 }
 
 .productdisplay-right-filters {
