@@ -104,14 +104,6 @@ export const CartItems = () => {
                     <div className="cartitems-right-actions">
                       <div className="cartiems-right-actions-left">
                         <button
-                          className="cartitems-item-right-add"
-                          onClick={() => {
-                            addCart(product.id);
-                          }}
-                        >
-                          <FontAwesomeIcon icon={faPlus} />
-                        </button>
-                        <button
                           className="cartitems-item-right-remove"
                           onClick={() => {
                             removeCart(product.id);
@@ -119,16 +111,16 @@ export const CartItems = () => {
                         >
                           <FontAwesomeIcon icon={faMinus} />
                         </button>
-                      </div>
-                      <div className="cartitems-right-actions-right">
                         <button
-                          className="cartitems-item-right-delete"
+                          className="cartitems-item-right-add"
                           onClick={() => {
-                            removeAllCart(product.id);
+                            addCart(product.id);
                           }}
                         >
-                          <FontAwesomeIcon icon={faTrash} />
-                        </button>{" "}
+                          <FontAwesomeIcon icon={faPlus} />
+                        </button>
+                      </div>
+                      <div className="cartitems-right-actions-right">
                         <button
                           onClick={() => {
                             toggleFavorite(product.id);
@@ -145,6 +137,14 @@ export const CartItems = () => {
                             <FontAwesomeIcon icon={faHeart_regular} />
                           )}
                         </button>
+                        <button
+                          className="cartitems-item-right-delete"
+                          onClick={() => {
+                            removeAllCart(product.id);
+                          }}
+                        >
+                          <FontAwesomeIcon icon={faTrash} />
+                        </button>{" "}
                       </div>
                     </div>
                   </div>
