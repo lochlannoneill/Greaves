@@ -232,9 +232,3 @@
     padding: 16px;
   }
 }
-
-@media screen and (max-width: 360px) {
-  .review-images {
-    justify-content: center;
-  }
-}
