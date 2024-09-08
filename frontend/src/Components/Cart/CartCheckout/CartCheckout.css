@@ -61,14 +61,14 @@
 }
 
 .cartcheckout-coupon button:hover {
-  background-color: grey;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.025);
   transition: 0.25s;
 }
 
 .cartcheckout-coupon button:active {
-  background-color: #171717;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   transform: scale(0.975);
   transition: 0.25s;
 }
@@ -125,14 +125,14 @@
 }
 
 .cartcheckout-confirm:hover {
-  background-color: grey;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.025);
   transition: 0.25s;
 }
 
 .cartcheckout-confirm:active {
-  background-color: #171717;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transform: scale(0.975);
   transition: 0.25s;

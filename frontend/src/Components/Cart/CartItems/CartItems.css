@@ -37,7 +37,7 @@
   margin: 0;
   padding: 16px;
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .cartitems-item-left {
@@ -96,6 +96,12 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+.cartitems-item-price-old {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
 }
 
 .cartitems-item-price.is-reduced {

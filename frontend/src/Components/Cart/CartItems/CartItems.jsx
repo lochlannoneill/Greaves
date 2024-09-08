@@ -1,14 +1,26 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../../Context/ShopContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus, faTrash, faHeart as faHeart_solid } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlus,
+  faMinus,
+  faTrash,
+  faHeart as faHeart_solid,
+} from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeart_regular } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import "./CartItems.css";
 
 export const CartItems = () => {
-  const { products, cart, addCart, removeCart, removeAllCart, toggleFavorite, isFavorite } =
-    useContext(ShopContext); // Added toggleFavorite and isFavorite
+  const {
+    products,
+    cart,
+    addCart,
+    removeCart,
+    removeAllCart,
+    toggleFavorite,
+    isFavorite,
+  } = useContext(ShopContext); // Added toggleFavorite and isFavorite
   const cartEmpty = Object.values(cart).every((quantity) => quantity <= 0); // Check if there are any items in the cart
 
   // Calculate the discount percentage for each item individually
@@ -25,7 +37,9 @@ export const CartItems = () => {
             <div className="cartitems-list" key={product.id}>
               <div className="cartitems-item">
                 <div className="cartitems-item-left">
-                  <Link to={`/products/${product.id}`}> {/* TODO - remove gap under this (hard coded bottom:0.3rem for Link(a) ) */}
+                  <Link to={`/products/${product.id}`}>
+                    {" "}
+                    {/* TODO - remove gap under this (hard coded bottom:0.3rem for Link(a) ) */}
                     <img
                       className="cartitems-item-left-image"
                       src={product.image}
@@ -35,7 +49,10 @@ export const CartItems = () => {
                       <div className="cartitems-item-left-reduced">
                         <div className="cartitems-item-left-reduced-content">
                           -
-                          {calculateDiscountPercentage(product.price, product.price_previous)}
+                          {calculateDiscountPercentage(
+                            product.price,
+                            product.price_previous
+                          )}
                           %
                         </div>
                       </div>
@@ -67,9 +84,18 @@ export const CartItems = () => {
                         {cart[product.id]}
                       </p>
                       <p>x</p>
-                      <p className={`cartitems-item-price ${product.price_previous ? 'is-reduced' : ''}`}>
+                      <p
+                        className={`cartitems-item-price ${
+                          product.price_previous ? "is-reduced" : ""
+                        }`}
+                      >
                         &euro;{product.price}
                       </p>
+                      {product.price_previous && (
+                        <p className="cartitems-item-price-old">
+                          &euro;{product.price_previous}
+                        </p>
+                      )}
                       <p>=</p>
                       <p className="cartitems-item-right-total">
                         &euro;{(product.price * cart[product.id]).toFixed(2)}
@@ -108,7 +134,9 @@ export const CartItems = () => {
                             toggleFavorite(product.id);
                           }}
                           className={`cartitems-item-right-favourite ${
-                            isFavorite(product.id) ? "in-favorites" : "not-in-favorites"
+                            isFavorite(product.id)
+                              ? "in-favorites"
+                              : "not-in-favorites"
                           }`}
                         >
                           {isFavorite(product.id) ? (
