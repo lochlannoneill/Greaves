@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import upload_placeholder from "../../Assets/placeholder.jpg";
 import "./Products.css";
 
@@ -159,6 +161,12 @@ export const Products = () => {
             </div>
           ))}
           <label className="image-preview placeholder" htmlFor="file-input">
+            <div className="image-preview-expand">
+              <FontAwesomeIcon
+                className="image-preview-expand-icon"
+                icon={faPlus}
+              />
+            </div>
             <img src={upload_placeholder} alt="Upload" />
             <input
               onChange={imageHandler}
