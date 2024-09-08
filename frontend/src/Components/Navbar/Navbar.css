@@ -161,10 +161,10 @@
 
 .nav-state-cart-count {
   position: absolute;
-  top: -14px;
-  right: -14px;
-  min-width: 16px;
-  height: 16px;
+  top: -50%;
+  right: -50%;
+  min-width: 32px;
+  height: 32px;
   background: linear-gradient(135deg, #667eea, #764ba2);
   border: 2px solid white;
   color: white;
