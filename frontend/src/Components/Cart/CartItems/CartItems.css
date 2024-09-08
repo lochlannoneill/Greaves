@@ -82,6 +82,11 @@
   font-weight: 600;
 }
 
+.cartitems-item-right-info b {
+  font-weight: 600;
+  color: grey;
+}
+
 .cartitems-item-right-reduced {
   color: red;
   font-weight: 700;
