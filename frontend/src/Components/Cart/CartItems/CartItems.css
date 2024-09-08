@@ -24,6 +24,7 @@
 
 .cartitems h1 {
   color: #171717;
+  margin-bottom: 16px;
 }
 
 .cartitems-message {
@@ -167,6 +168,7 @@
 @media screen and (max-width: 768px) {
   .cartitems {
     padding: 0;
+    gap: 0;
   }
   .cartitems-list {
     margin: 0;
@@ -180,5 +182,6 @@
   }
   .cartitems-item-right {
     margin-top: 8px;
+    gap: 0;
   }
 }
