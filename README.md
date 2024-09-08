@@ -1,6 +1,6 @@
 <!--https://github.com/darsaveli/Readme-Markdown-Syntax-->
 
-# [www.greaves.store](https://greaves.store/)
+# [https://greaves.store/](https://greaves.store/)
 ### Collaborators:
 * **[Lochlann O Neill](https://github.com/lochlannoneill)**
 
@@ -56,7 +56,7 @@ Developed an E-Commerce website from inception to deployment, utilizing the MERN
    npm install
 6. Start the backend server
    ```bash
-   node .\index.js
+   node .\app.js
 
 Express App running on port 4000:  
 ![backend](https://github.com/lochlannoneill/greaves/blob/main/screenshots/backend.png?raw=true)  
