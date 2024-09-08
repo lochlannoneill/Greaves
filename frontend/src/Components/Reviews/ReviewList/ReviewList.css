@@ -26,14 +26,47 @@
   background-color: #f9f9f9;
 }
 
-.reviewlist-sort-verified label {
+/* Styling for Verified Checkbox */
+.reviewlist-sort-verified {
   display: flex;
   align-items: center;
-  gap: 0.5vh;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.reviewlist-sort-verified label input[type="checkbox"]:checked {
-  accent-color: grey;
+.reviewlist-sort-verified input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.reviewlist-sort-verified input[type="checkbox"]:checked {
+  background-color: grey;
+  border-color: grey;
+}
+
+.reviewlist-sort-verified input[type="checkbox"]:checked::after {
+  content: "✔"; /* Checkmark symbol */
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviewlist-sort-verified label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .reviewlist-reviews {

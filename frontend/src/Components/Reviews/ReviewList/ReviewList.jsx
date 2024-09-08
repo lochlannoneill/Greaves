@@ -57,9 +57,9 @@ export const ReviewList = ({ reviews }) => {
           </select>
         </div>
         <div className="reviewlist-sort-verified">
-          <label>
+          <label className="reviewlist-sort-verified-label">
             <input type="checkbox" checked={showVerifiedOnly} onChange={handleVerifiedChange} />
-            Show Verified Purchases Only
+            Verified
           </label>
         </div>
       </div>
