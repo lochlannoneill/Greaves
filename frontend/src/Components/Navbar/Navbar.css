@@ -81,7 +81,7 @@
   width: 80%;
   height: 3px;
   border-radius: 8px;
-  background: darkorange; /* TODO - Color variables */
+  background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .settings-dropdown {
@@ -165,7 +165,7 @@
   right: -14px;
   min-width: 16px;
   height: 16px;
-  background-color: darkorange;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   border: 2px solid white;
   color: white;
   font-size: 12px;
