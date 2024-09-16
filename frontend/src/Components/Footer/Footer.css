@@ -8,12 +8,27 @@
   font-family: Arial, sans-serif;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-form {
+    flex-direction: column;
+  }
+}
+
+
 .footer-form p {
   display: inline;
 }
 
 .footer-form-input {
-  margin-left: 8px;
+  /* margin-left: 8px; */
   padding: 8px;
   border: 1px solid #3a3a3a;
   background-color: #292929;
@@ -102,6 +117,13 @@
   gap: 2vw;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-social-icons {
+    gap: 4vw;
+  }
+}
+
 
 .footer-icon {
   height: 32px;

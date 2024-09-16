@@ -16,18 +16,20 @@ export const Footer = () => {
       <div className="footer-content">
         <form className="footer-form">
           <p>Get Exclusive Offers And Updates</p>
-          <input
-            className="footer-form-input"
-            placeholder="Enter your email"
-            type="email"
-          />
-          <button className="footer-form-button">
-            Sign Up{" "}
-            <FontAwesomeIcon
-              className="footer-icon envelope"
-              icon={faEnvelope}
+          <div className="footer-form-input-group">
+            <input
+              className="footer-form-input"
+              placeholder="Enter your email"
+              type="email"
             />
-          </button>
+            <button className="footer-form-button">
+              Sign Up{" "}
+              <FontAwesomeIcon
+                className="footer-icon envelope"
+                icon={faEnvelope}
+              />
+            </button>
+          </div>
         </form>
         <hr />
         <div className="footer-information">
@@ -44,9 +46,14 @@ export const Footer = () => {
             <p>Fantasyland</p>
           </div>
           <div className="footer-information-child footer-middle">
+            <h2>GREAVES</h2>
+            <p>2024 &copy; Greaves. All Rights Reserved.</p>
+            <br />
+          </div>
+          <div className="footer-information-child footer-right">
             <h2>Show Us Your Haul</h2>
             <p>
-              Tag us <a href="https://greaves.store/">#greaves</a> for a chance
+              Tag us <a href="https://greaves.store/">#greaves.store</a> for a chance
               to be featured!
             </p>
             <div className="footer-social-icons">
@@ -91,11 +98,6 @@ export const Footer = () => {
                 </a>
               </span>
             </div>
-          </div>
-          <div className="footer-information-child footer-right">
-            <h2>GREAVES</h2>
-            <p>2024 &copy; Greaves. All Rights Reserved.</p>
-            <br />
           </div>
         </div>
       </div>
