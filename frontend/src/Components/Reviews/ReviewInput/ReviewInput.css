@@ -29,7 +29,7 @@
 .reviewinput input {
   padding: 8px 2vh;
   border: none;
-  background-color: #f0f0f0;
+  background-color: #fff;
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -41,14 +41,13 @@
 .reviewinput input:focus {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   outline: none;
-  background-color: #f0f0f0;
 }
 
 .reviewinput textarea {
   height: 10vh;
   padding: 1vh 2vh;
   border: none;
-  background-color: #f0f0f0;
+  background-color: #fff;
   border-radius: 4px;
   font-size: 1rem;
   font-family: inherit;
@@ -58,7 +57,6 @@
 .reviewinput textarea:focus {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   outline: none;
-  background-color: #f0f0f0;
 }
 
 .reviewinput-submit button {
