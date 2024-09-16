@@ -31,13 +31,12 @@
   object-position: center;
 }
 
-/* Add styles for the section */
 .item-reduced {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.7);
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0));
   color: white;
   text-align: center;
   padding: 8px;
