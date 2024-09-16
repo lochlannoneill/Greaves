@@ -24,6 +24,18 @@
   line-height: 1.375;
 }
 
+.review-user-name-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-user-verified {
+  color: #764ba2;
+  font-size: 1.2rem;
+}
+
 .review-user-name {
   font-size: 1.2rem;
   font-weight: 600;

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faSquareCheck,
   faStar as faStar_solid,
   faStarHalfStroke as faStar_half,
   faCheck,
@@ -19,7 +20,17 @@ const Review = ({ review }) => {
           alt="user"
         />
         <div className="review-user-info">
-          <p className="review-user-name">{review.userName}</p>
+          <div className="review-user-name-group">
+            {review.verified ? (
+            <>
+              <FontAwesomeIcon
+                    className="review-user-verified"
+                    icon={faSquareCheck}
+                  />
+            </>
+            ) : null}
+            <p className="review-user-name">{review.userName}</p>
+          </div>
           <p className="review-user-handle">{review.userHandle}</p>
         </div>
       </div>
@@ -61,7 +72,7 @@ const Review = ({ review }) => {
       {review.verified ? (
         <>
           <div className="review-purchase">
-            <div className="review-purchase-verification">
+            {/* <div className="review-purchase-verification">
               <FontAwesomeIcon
                 className="review-purchase-verification-checkmark"
                 icon={faCheck}
