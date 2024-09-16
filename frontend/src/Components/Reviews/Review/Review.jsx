@@ -68,6 +68,11 @@ const Review = ({ review }) => {
             {review.date} at {review.time}
           </p>
         </div>
+        <div className="review-info-size">
+              <p>purchase.size</p>
+              <p>|</p>
+              <p>purchase.color</p>
+            </div>
       </div>
       {review.verified ? (
         <>
@@ -78,12 +83,7 @@ const Review = ({ review }) => {
                 icon={faCheck}
               />
               <p className="review-purchase-verification-text">Verified Purchase</p>
-            </div>
-            <div className="review-purchase-size">
-              <p>purchase.size</p>
-              <p>|</p>
-              <p>purchase.color</p>
-            </div>
+            </div> */}
           </div>
         </>
       ) : null}
@@ -92,7 +92,6 @@ const Review = ({ review }) => {
           {review.images.slice(0, 3).map((image, index) => (
             <img key={index} src={image} alt={`review-${index}`} />
           ))}
-          {/* Conditionally render the expand button */}
           {review.images.length > 3 && (
             <div className="review-images-expand">
               <FontAwesomeIcon
