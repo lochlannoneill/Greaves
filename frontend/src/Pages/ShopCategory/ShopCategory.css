@@ -30,26 +30,46 @@
 .shopcategory-sort-search-bar {
   display: flex;
   flex-direction: row;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid lightgrey;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
   width: 100%;
-  width: 32vh;
-  min-width: 20vw;
-  gap: 4px;
+  width: 35vh;
+  min-width: 25vw;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.shopcategory-sort-search-bar:hover {
+  border-color: lightgrey;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .shopcategory-sort-search-icon {
-  color: lightgrey;
+  color: #999;
+  font-size: 18px;
 }
 
+
 .shopcategory-sort-search input {
-  width: calc(100% - 24px); /* Adjust width to account for padding and border */
-  color: grey;
+  width: calc(100% - 24px);
+  color: #333;
   border: none;
   outline: none;
   background: transparent;
   font-size: 16px;
+  padding-left: 8px;
+}
+
+.shopcategory-sort-search input::placeholder {
+  color: #999;
+}
+
+.shopcategory-sort-search input:focus::placeholder {
+  color: #ccc;
 }
 
 .shopcategory-sort-button {
@@ -114,8 +134,8 @@
   }
 
   .shopcategory-sort-search-bar {
-    width: 32vh;
-    min-width: 32vw;
+    width: 35vh;
+    min-width: 35vw;
   }
 }
 
