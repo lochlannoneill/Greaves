@@ -20,7 +20,7 @@ const truncateTitle = (title) => {
 };
 
 export const Item = (props) => {
-  const { isFavorite, isInCart, reviews, getReviewInfo } =
+  const { isFavorite, isInCart, countInCart, reviews, getReviewInfo } =
     useContext(ShopContext);
   const [reviewCount, setReviewCount] = useState(0);
   const [reviewAverageRating, setReviewAverageRating] = useState(0);
@@ -102,21 +102,24 @@ export const Item = (props) => {
               )}
             </div>
             <div className="item-status">
-              {isInCart(props.id) ? (
-                <FontAwesomeIcon
-                className={`item-cart ${
-                  isInCart(props.id) ? "isInCart" : ""
-                }`}
-                icon={faCartShopping_solid}
-                />
-              ) : null}
               {isFavorite(props.id) ? (
                 <FontAwesomeIcon
-                  className={`item-favourite ${
-                    isFavorite(props.id) ? "isFavorite" : ""
-                  }`}
-                  icon={faHeart_solid}
+                className={`item-favourite ${
+                  isFavorite(props.id) ? "isFavorite" : ""
+                }`}
+                icon={faHeart_solid}
                 />
+              ) : null}
+              {isInCart(props.id) ? (
+                <div className="item-cart-container">
+                  <FontAwesomeIcon
+                    className={`item-cart ${isInCart(props.id) ? "isInCart" : ""}`}
+                    icon={faCartShopping_solid}
+                  />
+                  {countInCart(props.id) > 1 && (
+                    <span className="item-cart-count">{countInCart(props.id)}</span>
+                  )}
+                </div>
               ) : null}
             </div>
           </div>

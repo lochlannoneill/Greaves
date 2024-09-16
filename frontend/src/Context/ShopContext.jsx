@@ -40,6 +40,9 @@ const ShopContextProvider = (props) => {
   const isInCart = (productId) => {
     return cart[productId] > 0;
   };
+  const countInCart = (productId) => {
+    return cart[productId];
+  };
   const addCart = (productId) => {
     setCart((prevCart) => ({
       ...prevCart,
@@ -116,6 +119,7 @@ const ShopContextProvider = (props) => {
     cart,
     getCartCount,
     isInCart,
+    countInCart,
     addCart,
     removeCart,
     removeAllCart,
