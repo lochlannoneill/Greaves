@@ -9,7 +9,12 @@ router.post("/", (req, res) => {
       console.error("File upload failed:", err);
       return res
         .status(500)
-        .json({ success: false, message: "File upload failed" });
+        .json({ success: false, message: "File upload failed", error: err.message});
+    }
+    if (!req.file) {
+      return res
+        .status(400)
+        .json({ success: false, message: "No file uploaded" });
     }
     console.log("Image uploaded successfully.");
     res.json({
