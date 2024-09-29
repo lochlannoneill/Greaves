@@ -28,8 +28,13 @@ const uploadToAzure = async (file) => {
   const blobName = `${uuidv4()}${path.extname(file.originalname)}`;
   const blockBlobClient = containerClient.getBlockBlobClient(blobName);
 
-  // Upload the file buffer to Azure Blob Storage
-  const uploadResponse = await blockBlobClient.uploadData(file.buffer);
+  // Set the content type based on the file's mimetype
+  const contentType = file.mimetype; // Use the mimetype from the uploaded file
+
+  // Upload the file buffer to Azure Blob Storage with the specified content type
+  const uploadResponse = await blockBlobClient.uploadData(file.buffer, {
+    blobHTTPHeaders: { blobContentType: contentType }, // Specify the content type here
+  });
 
   // Return the URL of the uploaded image
   return blockBlobClient.url;
