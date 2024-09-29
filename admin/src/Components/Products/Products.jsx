@@ -49,23 +49,10 @@ export const Products = () => {
 
   const imageHandler = (e) => {
     const files = Array.from(e.target.files);
-    Promise.all(
-      files.map((file) => {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = (e) => {
-            resolve(e.target.result);
-          };
-          reader.onerror = reader.onabort = reject;
-          reader.readAsDataURL(file);
-        });
-      })
-    ).then((images) => {
-      setProductDetails((prevDetails) => ({
-        ...prevDetails,
-        images: [...prevDetails.images, ...images],
-      }));
-    });
+    setProductDetails((prevDetails) => ({
+      ...prevDetails,
+      images: [...prevDetails.images, ...files], // Add raw file objects directly
+    }));
   };
 
   const removeImage = (index) => {
@@ -97,7 +84,7 @@ export const Products = () => {
       tags: prevDetails.tags.filter((_, i) => i !== index),
     }));
   };
-  
+
   return (
     <div className="products">
       <h2 className="products-add-heading">Add Product</h2>
