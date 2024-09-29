@@ -1,0 +1,16 @@
+node.js is the runtime environment.
+express is the framework that allows for api interactions, on top of node.js
+
+linter -> checks code for further errors before hosting (Cloudflare)
+
+.env file for senstitive information
+	include in .gitignore
+		mongodb connection
+		ports
+
+bcrypt hashing
+	same passwords give different hash output (salt)
+
+React -> stateful components -> the useState hook to re-render component (variable) values
+
+uploading product images -> upload each image and return each url, append to image url list
