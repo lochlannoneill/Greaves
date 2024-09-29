@@ -68,11 +68,11 @@ const Review = ({ review }) => {
             {review.date} at {review.time}
           </p>
         </div>
-        <div className="review-info-size">
+        {/* <div className="review-info-size">
           <p>purchase.size</p>
           <p>|</p>
           <p>purchase.color</p>
-        </div>
+        </div> */}
       </div>
       {review.verified ? (
         <>
