@@ -33,7 +33,7 @@ export const Products = () => {
           body: formData,
         });
         const responseData = await response.json();
-        imageUrls.push(responseData.image_url);
+        imageUrls.push(responseData.image_url); // Use image URL from Azure Blob Storage
       }
 
       // Once image URLs are ready, update product details
