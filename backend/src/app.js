@@ -1,3 +1,4 @@
+const env = require("../config/env.js"); // Import your env.js
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -10,12 +11,9 @@ app.use(express.json());
 app.use(cors());
 app.use("/images", express.static(path.join(__dirname, "upload/images")));
 
-// MongoDB database connection
+// MongoDB database connection using environment variable
 mongoose
-  .connect(
-    "mongodb+srv://lochlannoneill:zADROgfBCV2oUdx8@cluster0.5jlntnb.mongodb.net/greaves",
-    {}
-  )
+  .connect(env.MONGODB_URI, {}) // Use env.js for connection string
   .then(() => {
     console.log("MongoDB connected: cluster0.5jlntnb.mongodb.net/greaves");
   })
@@ -27,6 +25,7 @@ mongoose
 // API Creation
 app.use("/", routes); // Just pass the router object
 
+// Start the server
 app.listen(4000, () => {
   console.log("Server is running on port: 4000");
 });
