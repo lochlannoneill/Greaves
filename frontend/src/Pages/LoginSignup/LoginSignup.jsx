@@ -22,8 +22,8 @@ export const LoginSignup = () => {
           <div className="loginsignup-agree">
             <input className="checkbox" type="checkbox" name="terms" id="terms" />
             <label htmlFor="terms">
-              I agree to the <a href="#">Terms of Service</a> and{" "}
-              <a href="#">Privacy Policy</a>
+              I agree to the <a href="https://greaves.store/">Terms of Service</a> and{" "}
+              <a href="https://greaves.store/">Privacy Policy</a>
             </label>
           </div>
           {/* Add Error Message Below If Needed */}
