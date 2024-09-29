@@ -14,3 +14,10 @@ bcrypt hashing
 React -> stateful components -> the useState hook to re-render component (variable) values
 
 uploading product images -> upload each image and return each url, append to image url list
+
+Azure
+	create a storage account
+	create a container for blobs
+	set access level -> anon read access
+	each blob holds an image at url
+	use container string in react app
