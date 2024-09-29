@@ -15,6 +15,8 @@ Developed an E-Commerce website, utilizing the MERN stack.
 ~~**COMPLETED** - Incorporated Express.js for API development, for communication between the frontend and backend.~~  
 
 ~~**COMPLETED** - Implemented MongoDB as the database solution.~~  
+
+**DOING** - Implement Azure as the Cloud storage solution.~~  
   
 -----
   
