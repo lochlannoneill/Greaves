@@ -1,3 +1,9 @@
+# Node modules
 admin/node_modules/
 backend/node_modules/
+
+# Environment configuration
 backend/config/env.js
+
+# Personal TODO file
+todo.txt
