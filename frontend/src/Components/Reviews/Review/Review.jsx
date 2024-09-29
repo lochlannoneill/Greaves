@@ -4,8 +4,6 @@ import {
   faSquareCheck,
   faStar as faStar_solid,
   faStarHalfStroke as faStar_half,
-  faCheck,
-  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import placeholder_user from "../../../Assets/placeholder_user.jpg";
 import "./Review.css";
