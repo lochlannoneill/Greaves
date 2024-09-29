@@ -24,19 +24,23 @@ export const Products = () => {
   const AddProduct = async () => {
     console.log(productDetails);
     try {
-      const formData = new FormData();
-      formData.append("title", productDetails.title);
-      formData.append("price", productDetails.price);
-      formData.append("price_previous", productDetails.price_previous);
-      formData.append("category", productDetails.category);
-      formData.append("description", productDetails.description);
-      productDetails.images.forEach((image) => {
-        formData.append("images", image); // Expect images as array
-      });
-      productDetails.tags.forEach((tag) => {
-        formData.append("tags", tag); // Expect tags as array
-      });
-      const response = await fetch("http://localhost:4000/products", {
+      const imageUrls = [];
+      for (const image of productDetails.images) {
+        const formData = new FormData();
+        formData.append("image", image);
+        const response = await fetch("http://localhost:4000/images", {
+          method: "POST",
+          body: formData,
+        });
+        const responseData = await response.json();
+        imageUrls.push(responseData.image_url);
+      }
+
+      // Once image URLs are ready, update product details
+      const finalProductDetails = { ...productDetails, images: imageUrls };
+
+      // Now send the final product details with image URLs
+      const productResponse = await fetch("http://localhost:4000/products", {
         method: "POST",
         body: formData,
       });
