@@ -4,7 +4,6 @@ import {
   faSquareCheck,
   faStar as faStar_solid,
   faStarHalfStroke as faStar_half,
-  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import placeholder_user from "../../../Assets/placeholder_user.jpg";
 import "./Review.css";
@@ -21,12 +20,12 @@ const Review = ({ review }) => {
         <div className="review-user-info">
           <div className="review-user-name-group">
             {review.verified ? (
-            <>
-              <FontAwesomeIcon
-                    className="review-user-verified"
-                    icon={faSquareCheck}
-                  />
-            </>
+              <>
+                <FontAwesomeIcon
+                  className="review-user-verified"
+                  icon={faSquareCheck}
+                />
+              </>
             ) : null}
             <p className="review-user-name">{review.userName}</p>
           </div>
@@ -67,11 +66,11 @@ const Review = ({ review }) => {
             {review.date} at {review.time}
           </p>
         </div>
-        <div className="review-info-size">
-              <p>purchase.size</p>
-              <p>|</p>
-              <p>purchase.color</p>
-            </div>
+        {/* <div className="review-info-size">
+          <p>purchase.size</p>
+          <p>|</p>
+          <p>purchase.color</p>
+        </div> */}
       </div>
       {review.verified ? (
         <>
@@ -93,10 +92,9 @@ const Review = ({ review }) => {
           ))}
           {review.images.length > 3 && (
             <div className="review-images-expand">
-              <FontAwesomeIcon
-                className="review-images-expand-icon"
-                icon={faPlus}
-              />
+              <span className="review-images-expand-icon">
+                +{review.images.length - 3}
+              </span>
               <img src={review.images[3]} alt={`review-3`} />
             </div>
           )}
