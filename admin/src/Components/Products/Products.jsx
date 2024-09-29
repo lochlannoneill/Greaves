@@ -42,10 +42,13 @@ export const Products = () => {
       // Now send the final product details with image URLs
       const productResponse = await fetch("http://localhost:4000/products", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(finalProductDetails),
       });
-      const responseData = await response.json();
-      console.log(responseData);
+      const productData = await productResponse.json();
+      console.log(productData);
     } catch (error) {
       console.error("Error adding product:", error);
     }
@@ -53,16 +56,26 @@ export const Products = () => {
 
   const imageHandler = (e) => {
     const files = Array.from(e.target.files);
+
+    // Create data URLs for each file for preview
+    const newImagePreviews = files.map((file) => URL.createObjectURL(file));
+
+    // Store file objects and previews separately
     setProductDetails((prevDetails) => ({
       ...prevDetails,
-      images: [...prevDetails.images, ...files], // Add raw file objects directly
+      images: [...prevDetails.images, ...files], // Store the actual file objects
+      imagePreviews: [
+        ...(prevDetails.imagePreviews || []),
+        ...newImagePreviews,
+      ], // Store the preview URLs
     }));
   };
 
   const removeImage = (index) => {
     setProductDetails((prevDetails) => ({
       ...prevDetails,
-      images: prevDetails.images.filter((_, i) => i !== index),
+      images: prevDetails.images.filter((_, i) => i !== index), // Remove the file
+      imagePreviews: prevDetails.imagePreviews.filter((_, i) => i !== index), // Remove the preview URL
     }));
   };
 
@@ -140,17 +153,18 @@ export const Products = () => {
       <div className="products-add-image">
         <p>Images</p>
         <div className="image-preview-container">
-          {productDetails.images.map((imageDataUrl, index) => (
-            <div key={index} className="image-preview">
-              <img src={imageDataUrl} alt={`Product ${index + 1}`} />
-              <button
-                className="image-preview-remove"
-                onClick={() => removeImage(index)}
-              >
-                X
-              </button>
-            </div>
-          ))}
+          {productDetails.imagePreviews &&
+            productDetails.imagePreviews.map((imageDataUrl, index) => (
+              <div key={index} className="image-preview">
+                <img src={imageDataUrl} alt={`Product ${index + 1}`} />
+                <button
+                  className="image-preview-remove"
+                  onClick={() => removeImage(index)}
+                >
+                  X
+                </button>
+              </div>
+            ))}
           <label className="image-preview placeholder" htmlFor="file-input">
             <div className="image-preview-expand">
               <FontAwesomeIcon
