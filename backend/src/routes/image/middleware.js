@@ -14,7 +14,7 @@ const upload = multer({
 
 const uploadToAzure = async (file) => {
   const blobServiceClient = BlobServiceClient.fromConnectionString(
-      env.AZURE_STORAGE_CONNECTION_STRING
+    env.AZURE_STORAGE_CONNECTION_STRING
   );
 
   // Specify the container name (create it if it doesn't exist)
