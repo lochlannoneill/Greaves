@@ -16,7 +16,7 @@ Developed an E-Commerce website, utilizing the MERN stack.
 
 ~~**COMPLETED** - Implemented MongoDB as the database solution.~~  
 
-**DOING** - Implement Azure as the Cloud storage solution.~~  
+~~**COMPLETED** - Implement Azure as the Cloud storage solution.~~  
   
 -----
   
