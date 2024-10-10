@@ -6,6 +6,9 @@
 .productdisplay-left {
   display: flex;
   gap: 1vw;
+  position: sticky;
+  top: 2vh;
+  align-self: flex-start;
 }
 
 .productdisplay-img-list {
@@ -334,6 +337,7 @@
   }
 
   .productdisplay-left {
+    position: relative;
     margin: auto;
   }
 }
