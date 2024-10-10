@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart as faHeart_solid,
@@ -23,6 +23,8 @@ export const ProductDisplay = (props) => {
     0
   );
 
+  const [selectedImage, setSelectedImage] = useState(product.images[0]); // State to hold the selected image
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []); // Empty dependency array ensures this effect runs only once after mounting
@@ -34,21 +36,30 @@ export const ProductDisplay = (props) => {
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
           {product.images.slice(0, 3).map((image, index) => (
-            <img key={index} src={image} alt={`Product thumbnail ${index}`} />
+            <img
+              key={index}
+              src={image}
+              alt={`Product thumbnail ${index}`}
+              onClick={() => setSelectedImage(image)} // Update selected image on click
+              className={`thumbnail ${selectedImage === image ? "active" : ""}`} // Optional: highlight active thumbnail
+            />
           ))}
           {product.images.length > 3 && (
             <div className="product-images-expand">
               <span className="product-images-expand-icon">
                 +{product.images.length - 3}
               </span>
-              <img src={product.images[3]} alt={`product-3`} />
+              <img
+                src={product.images[3]}
+                alt={`product-3`}
+              />
             </div>
           )}
         </div>
         <div className="productdisplay-img">
           <img
             className="productdisplay-main-img"
-            src={product.images[0]} // Display the first image as the main image
+            src={selectedImage} // Use the selected image as the main image
             alt="Main product"
           />
         </div>
