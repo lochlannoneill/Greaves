@@ -40,7 +40,7 @@ export const ProductDisplay = (props) => {
               key={index}
               src={image}
               alt={`Product thumbnail ${index}`}
-              onClick={() => setSelectedImage(image)} // Update selected image on click
+              onMouseEnter={() => setSelectedImage(image)} // Update selected image on hover
               className={`thumbnail ${selectedImage === image ? "active" : ""}`} // highlight active thumbnail
             />
           ))}
@@ -49,10 +49,7 @@ export const ProductDisplay = (props) => {
               <span className="product-images-expand-icon">
                 +{product.images.length - 3}
               </span>
-              <img
-                src={product.images[3]}
-                alt={`product-3`}
-              />
+              <img src={product.images[3]} alt={`product-3`} />
             </div>
           )}
         </div>
