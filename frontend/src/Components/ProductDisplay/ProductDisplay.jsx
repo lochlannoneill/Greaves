@@ -205,11 +205,6 @@ export const ProductDisplay = (props) => {
             Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} />
           </button>
         </div>
-        {/* <div className="productdisplay-right-filters">
-                    <div className="productdisplay-right-id"><span>Product Id: </span>{product.id}</div>
-                    <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
-                    <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
-                </div> */}
         {cart[product.id] > 0 && (
           <p className="productdisplay-right-already">
             {cart[product.id] === 1 ? "This item is" : `${cart[product.id]} x `}{" "}
