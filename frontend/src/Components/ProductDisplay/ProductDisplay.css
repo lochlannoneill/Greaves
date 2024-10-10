@@ -100,6 +100,10 @@
   font-size: 2rem;
 }
 
+.productdisplay-right hr {
+  border: 0.5px solid #ddd;
+}
+
 .productdisplay-right a {
   color: darkgrey;
   text-decoration: none;
@@ -185,11 +189,25 @@
   text-decoration: line-through;
 }
 
-.productdisplay-right-details {
+.productdisplay-right-detail-item {
+  margin: 0.5vh 0;
   font-size: 1rem;
 }
 
-.productdisplay-right-details p {
+.productdisplay-right-detail-item strong {
+  color: #3a3a3a; /* Dark color for labels */
+}
+
+.productdisplay-right-detail-item span {
+  color: #171717; /* Standard text color for values */
+}
+
+
+.productdisplay-right-about {
+  font-size: 1rem;
+}
+
+.productdisplay-right-about p {
   font-weight: 400;
 }
 

@@ -168,8 +168,18 @@ export const ProductDisplay = (props) => {
             </p>
           </div>
         </div>
+        <hr />
         <div className="productdisplay-right-details">
           <h2>Product Details</h2>
+          <div className="productdisplay-right-detail-item">
+            <strong>Tags:</strong> <span>{product.tags.join(", ")}</span>
+          </div>
+          <div className="productdisplay-right-detail-item">
+            <strong>Category:</strong> <span>{product.category}</span>
+          </div>
+        </div>
+        <div className="productdisplay-right-about">
+          <h2>About this item</h2>
           <p>{product.description}</p>
         </div>
         <div className="productdisplay-right-size">
