@@ -45,7 +45,7 @@ let products = [
   {
     id: 1,
     title: "Long Sleeved Knit Sweater",
-    images: [p1_img],
+    images: [p1_img, p2_img, p3_img, p4_img, p5_img],
     description:
       "Stay cozy and stylish during the colder months with this striped knit sweater. Made from soft and warm fabric, it features a timeless striped pattern that adds a touch of sophistication to any outfit.",
     tags: ["popular", "elegant", "knit", "cozy"],
