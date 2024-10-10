@@ -34,6 +34,11 @@
   transition: 0.25s;
 }
 
+.productdisplay-img-list > .active {
+  background-color: lightgrey;
+  opacity: 0.65;
+}
+
 .product-images-expand {
   position: relative;
   display: flex;
