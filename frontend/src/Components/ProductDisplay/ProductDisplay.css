@@ -34,7 +34,7 @@
   transition: 0.25s;
 }
 
-.productdisplay-img-list-expand {
+.product-images-expand {
   position: relative;
   display: flex;
   justify-content: center;
@@ -42,25 +42,24 @@
   width: 6vw;
   height: 6vw;
   border-radius: 50%;
-  background-color: darkgrey;
-  font-size: 1.5vw;
+  background-color: black;
   overflow: hidden;
 }
 
-.productdisplay-img-list-expand-icon {
+.product-images-expand-icon {
   color: white;
   z-index: 1; /* TODO - why is this above navbar? .headroom z-index is set to 1000 */
 }
 
-.productdisplay-img-list-expand:hover {
+.product-images-expand:hover {
   background-color: grey;
 }
 
-.productdisplay-img-list-expand:active {
+.product-images-expand:active {
   background-color: #171717;
 }
 
-.productdisplay-img-list-expand img {
+.product-images-expand img {
   filter: blur(2px);
   width: 100%;
   height: 100%;
@@ -69,7 +68,7 @@
   border-radius: 16px;
 }
 
-.productdisplay-img-list-expand-icon {
+.product-images-expand-icon {
   position: absolute;
   align-items: center;
   color: white;
@@ -322,7 +321,7 @@
     object-fit: cover;
   }
 
-  .productdisplay-img-list-expand {
+  .product-images-expand {
     font-size: 2.5vw;
   }
 
@@ -355,7 +354,7 @@
     object-fit: cover;
   }
 
-  .productdisplay-img-list-expand {
+  .product-images-expand {
     font-size: 4vw;
   }
 

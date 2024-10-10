@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart as faHeart_solid,
-  faPlus,
   faStar as faStar_solid,
   faStarHalfStroke as faStar_half,
   faCartShopping as faCartShopping_solid,
@@ -38,12 +37,11 @@ export const ProductDisplay = (props) => {
             <img key={index} src={image} alt={`Product thumbnail ${index}`} />
           ))}
           {product.images.length > 3 && (
-            <div className="productdisplay-img-list-expand">
-              <FontAwesomeIcon
-                className="productdisplay-img-list-expand-icon"
-                icon={faPlus}
-              />
-              <span>+{product.images.length - 3}</span>
+            <div className="product-images-expand">
+              <span className="product-images-expand-icon">
+                +{product.images.length - 3}
+              </span>
+              <img src={product.images[3]} alt={`product-3`} />
             </div>
           )}
         </div>
