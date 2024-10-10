@@ -117,9 +117,9 @@ export const ProductDisplay = (props) => {
                   href="#reviews"
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("reviews")
-                      .scrollIntoView({ behavior: "smooth" });
+                    document.getElementById("reviews").scrollIntoView({
+                      behavior: "smooth",
+                    });
                   }}
                 >
                   out of {reviewCount} reviews
