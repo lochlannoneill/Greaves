@@ -44,6 +44,7 @@
   border-radius: 50%;
   background-color: black;
   overflow: hidden;
+  font-size: 1.25vw;
 }
 
 .product-images-expand-icon {
