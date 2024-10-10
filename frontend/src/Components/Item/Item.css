@@ -1,11 +1,18 @@
 .item {
-  position: relative; /* Add relative positioning */
+  position: relative;
   width: 280px;
   background: rgb(252, 252, 252); /* TODO: Color variable */
   border-radius: 16px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin-bottom: auto;
+  overflow: hidden;
+}
+
+.item:hover {
+  transform: scale(1.025);
+  transition: 0.6s;
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.4);
 }
 
 .item * {
@@ -13,7 +20,7 @@
 }
 
 .item-image-container {
-  position: relative; /* Add relative positioning */
+  position: relative;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   overflow: hidden;
@@ -146,7 +153,7 @@
 }
 
 .item-cart {
-  color: orange;
+  color: #667eea;
 }
 
 .item-cart-count {
@@ -160,17 +167,12 @@
   font-size: 0.75rem;
   font-weight: bold;
   line-height: 1;
-  width: 20px;
-  height: 20px;
+  min-width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.item:hover {
-  transform: scale(1.025);
-  transition: 0.6s;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 768px) {

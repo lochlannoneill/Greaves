@@ -42,7 +42,7 @@ export const Item = (props) => {
     <div className="item">
       <Link to={`/products/${props.id}`} onClick={() => window.scrollTo(0, 0)}>
         <div className="item-image-container">
-          <img className="item-image" src={props.img} alt={props.title} />
+          <img className="item-image" src={props.images[0]} alt={props.title} />
           {props.price < props.price_previous && (
             <div className="item-reduced">
               <div className="item-reduced-content">

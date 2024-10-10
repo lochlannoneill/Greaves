@@ -45,7 +45,7 @@ let products = [
   {
     id: 1,
     title: "Long Sleeved Knit Sweater",
-    image: p1_img,
+    images: [p1_img, p2_img, p3_img, p4_img, p5_img],
     description:
       "Stay cozy and stylish during the colder months with this striped knit sweater. Made from soft and warm fabric, it features a timeless striped pattern that adds a touch of sophistication to any outfit.",
     tags: ["popular", "elegant", "knit", "cozy"],
@@ -64,7 +64,7 @@ let products = [
   {
     id: 2,
     title: "Floral Print Ruffle Trim Wrap Dress",
-    image: p2_img,
+    images: [p2_img],
     description:
       "Add a touch of elegance to your wardrobe with this stunning floral print wrap dress. Featuring a flattering ruffle trim and a comfortable fit, it's perfect for both casual outings and special occasions.",
     tags: ["new", "popular", "wrap Dress", "elegant", "knit"],
@@ -82,7 +82,7 @@ let products = [
   {
     id: 3,
     title: "Denim Button-Up Shirt",
-    image: p3_img,
+    images: [p3_img],
     description:
       "Stay effortlessly cool with this timeless denim button-up shirt. Crafted with high-quality denim fabric, it offers both style and comfort. Pair it with your favorite jeans for a classic double denim look.",
     tags: ["popular", "denim", "button-up", "casual", "modern"],
@@ -100,7 +100,7 @@ let products = [
   {
     id: 4,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p4_img,
+    images: [p4_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["popular", "modern", "latest"],
@@ -119,7 +119,7 @@ let products = [
   {
     id: 5,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p5_img,
+    images: [p5_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["popular", "modern", "latest"],
@@ -137,7 +137,7 @@ let products = [
   {
     id: 6,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p6_img,
+    images: [p6_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "elegant", "latest"],
@@ -155,7 +155,7 @@ let products = [
   {
     id: 7,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p7_img,
+    images: [p7_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -173,7 +173,7 @@ let products = [
   {
     id: 8,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p8_img,
+    images: [p8_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "modern", "latest"],
@@ -191,7 +191,7 @@ let products = [
   {
     id: 9,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p9_img,
+    images: [p9_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest", "floral"],
@@ -209,7 +209,7 @@ let products = [
   {
     id: 10,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p10_img,
+    images: [p10_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -227,7 +227,7 @@ let products = [
   {
     id: 11,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p11_img,
+    images: [p11_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -245,7 +245,7 @@ let products = [
   {
     id: 12,
     title: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p12_img,
+    images: [p12_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "modern", "latest"],
@@ -264,7 +264,7 @@ let products = [
   {
     id: 13,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p13_img,
+    images: [p13_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["popular", "modern", "latest"],
@@ -282,7 +282,7 @@ let products = [
   {
     id: 14,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p14_img,
+    images: [p14_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "popular", "modern", "latest"],
@@ -301,7 +301,7 @@ let products = [
   {
     id: 15,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p15_img,
+    images: [p15_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "popular", "modern", "latest"],
@@ -319,7 +319,7 @@ let products = [
   {
     id: 16,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p16_img,
+    images: [p16_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["popular", "modern", "latest"],
@@ -337,7 +337,7 @@ let products = [
   {
     id: 17,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p17_img,
+    images: [p17_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "popular", "modern", "latest"],
@@ -356,7 +356,7 @@ let products = [
   {
     id: 18,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p18_img,
+    images: [p18_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -374,7 +374,7 @@ let products = [
   {
     id: 19,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p19_img,
+    images: [p19_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -392,7 +392,7 @@ let products = [
   {
     id: 20,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p20_img,
+    images: [p20_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -410,7 +410,7 @@ let products = [
   {
     id: 21,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p21_img,
+    images: [p21_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -428,7 +428,7 @@ let products = [
   {
     id: 22,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p22_img,
+    images: [p22_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -446,7 +446,7 @@ let products = [
   {
     id: 23,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p23_img,
+    images: [p23_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -465,7 +465,7 @@ let products = [
   {
     id: 24,
     title: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p24_img,
+    images: [p24_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -483,7 +483,7 @@ let products = [
   {
     id: 25,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p25_img,
+    images: [p25_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -502,7 +502,7 @@ let products = [
   {
     id: 26,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p26_img,
+    images: [p26_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -520,7 +520,7 @@ let products = [
   {
     id: 27,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p27_img,
+    images: [p27_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -538,7 +538,7 @@ let products = [
   {
     id: 28,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p28_img,
+    images: [p28_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "modern", "latest"],
@@ -556,7 +556,7 @@ let products = [
   {
     id: 29,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p29_img,
+    images: [p29_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -575,7 +575,7 @@ let products = [
   {
     id: 30,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p30_img,
+    images: [p30_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -593,7 +593,7 @@ let products = [
   {
     id: 31,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p31_img,
+    images: [p31_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -611,7 +611,7 @@ let products = [
   {
     id: 32,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p32_img,
+    images: [p32_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -630,7 +630,7 @@ let products = [
   {
     id: 33,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p33_img,
+    images: [p33_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -648,7 +648,7 @@ let products = [
   {
     id: 34,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p34_img,
+    images: [p34_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -666,7 +666,7 @@ let products = [
   {
     id: 35,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p35_img,
+    images: [p35_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["new", "modern", "latest"],
@@ -684,7 +684,7 @@ let products = [
   {
     id: 36,
     title: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p36_img,
+    images: [p36_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -702,7 +702,7 @@ let products = [
   {
     id: 37,
     title: "Blue Hooded Jacket",
-    image: p37_img,
+    images: [p37_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -720,7 +720,7 @@ let products = [
   {
     id: 38,
     title: "Black Hooded Jacket",
-    image: p38_img,
+    images: [p38_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -739,7 +739,7 @@ let products = [
   {
     id: 39,
     title: "Yellow Cardigan",
-    image: p39_img,
+    images: [p39_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -757,7 +757,7 @@ let products = [
   {
     id: 40,
     title: "Yellow Cardigan",
-    image: p40_img,
+    images: [p40_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -775,7 +775,7 @@ let products = [
   {
     id: 41,
     title: "Blue Denim Jacket",
-    image: p41_img,
+    images: [p41_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],
@@ -794,7 +794,7 @@ let products = [
   {
     id: 42,
     title: "Pink Fulffy Jacket",
-    image: p42_img,
+    images: [p42_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     tags: ["modern", "latest"],

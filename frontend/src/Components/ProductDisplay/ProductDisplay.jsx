@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
-import { useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart as faHeart_solid,
-  faPlus,
   faStar as faStar_solid,
   faStarHalfStroke as faStar_half,
   faCartShopping as faCartShopping_solid,
@@ -25,6 +23,8 @@ export const ProductDisplay = (props) => {
     0
   );
 
+  const [selectedImage, setSelectedImage] = useState(product.images[0]); // State to hold the selected image
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []); // Empty dependency array ensures this effect runs only once after mounting
@@ -35,21 +35,31 @@ export const ProductDisplay = (props) => {
       {/* Render the modal if showPopup is true */}
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
-          <img src={product.image} alt="Product" />
-          <img src={product.image} alt="Product" />
-          <img src={product.image} alt="Product" />
-          <div className="productdisplay-img-list-expand">
-            <FontAwesomeIcon
-              className="productdisplay-img-list-expand-icon"
-              icon={faPlus}
+          {product.images.slice(0, 3).map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Product thumbnail ${index}`}
+              onClick={() => setSelectedImage(image)} // Update selected image on click
+              className={`thumbnail ${selectedImage === image ? "active" : ""}`} // highlight active thumbnail
             />
-            <img src={product.image} alt="Product" />
-          </div>
+          ))}
+          {product.images.length > 3 && (
+            <div className="product-images-expand">
+              <span className="product-images-expand-icon">
+                +{product.images.length - 3}
+              </span>
+              <img
+                src={product.images[3]}
+                alt={`product-3`}
+              />
+            </div>
+          )}
         </div>
         <div className="productdisplay-img">
           <img
             className="productdisplay-main-img"
-            src={product.image}
+            src={selectedImage} // Use the selected image as the main image
             alt="Main product"
           />
         </div>
@@ -107,9 +117,9 @@ export const ProductDisplay = (props) => {
                   href="#reviews"
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("reviews")
-                      .scrollIntoView({ behavior: "smooth" });
+                    document.getElementById("reviews").scrollIntoView({
+                      behavior: "smooth",
+                    });
                   }}
                 >
                   out of {reviewCount} reviews
@@ -204,11 +214,6 @@ export const ProductDisplay = (props) => {
             Add to Cart <FontAwesomeIcon icon={faCartShopping_solid} />
           </button>
         </div>
-        {/* <div className="productdisplay-right-filters">
-                    <div className="productdisplay-right-id"><span>Product Id: </span>{product.id}</div>
-                    <div className="productdisplay-right-category"><span>Categories: </span>{product.categories.join(', ')}</div>
-                    <div className="productdisplay-right-tags"><span>Tags: </span>{product.tags.join(', ')}</div>
-                </div> */}
         {cart[product.id] > 0 && (
           <p className="productdisplay-right-already">
             {cart[product.id] === 1 ? "This item is" : `${cart[product.id]} x `}{" "}

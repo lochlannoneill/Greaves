@@ -21,7 +21,7 @@ export const FavouriteItems = () => {
                   key={product.id}
                   id={product.id}
                   title={product.title}
-                  img={product.image}
+                  images={product.images}
                   price={product.price}
                   price_previous={product.price_previous}
                 />
