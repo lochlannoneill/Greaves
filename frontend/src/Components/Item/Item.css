@@ -1,5 +1,5 @@
 .item {
-  position: relative; /* Add relative positioning */
+  position: relative;
   width: 280px;
   background: rgb(252, 252, 252); /* TODO: Color variable */
   border-radius: 16px;
@@ -13,7 +13,7 @@
 }
 
 .item-image-container {
-  position: relative; /* Add relative positioning */
+  position: relative;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   overflow: hidden;
