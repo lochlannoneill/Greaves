@@ -41,7 +41,7 @@ export const ProductDisplay = (props) => {
               src={image}
               alt={`Product thumbnail ${index}`}
               onClick={() => setSelectedImage(image)} // Update selected image on click
-              className={`thumbnail ${selectedImage === image ? "active" : ""}`} // Optional: highlight active thumbnail
+              className={`thumbnail ${selectedImage === image ? "active" : ""}`} // highlight active thumbnail
             />
           ))}
           {product.images.length > 3 && (
