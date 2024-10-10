@@ -42,7 +42,7 @@ export const CartItems = () => {
                     {/* TODO - remove gap under this (hard coded bottom:0.3rem for Link(a) ) */}
                     <img
                       className="cartitems-item-left-image"
-                      src={product.image}
+                      src={product.images[0]}
                       alt=""
                     />
                     {product.price < product.price_previous && (
