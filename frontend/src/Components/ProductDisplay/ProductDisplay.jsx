@@ -35,21 +35,23 @@ export const ProductDisplay = (props) => {
       {/* Render the modal if showPopup is true */}
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
-          <img src={product.image} alt="Product" />
-          <img src={product.image} alt="Product" />
-          <img src={product.image} alt="Product" />
-          <div className="productdisplay-img-list-expand">
-            <FontAwesomeIcon
-              className="productdisplay-img-list-expand-icon"
-              icon={faPlus}
-            />
-            <img src={product.image} alt="Product" />
-          </div>
+          {product.images.slice(0, 3).map((image, index) => (
+            <img key={index} src={image} alt={`Product thumbnail ${index}`} />
+          ))}
+          {product.images.length > 3 && (
+            <div className="productdisplay-img-list-expand">
+              <FontAwesomeIcon
+                className="productdisplay-img-list-expand-icon"
+                icon={faPlus}
+              />
+              <span>+{product.images.length - 3}</span>
+            </div>
+          )}
         </div>
         <div className="productdisplay-img">
           <img
             className="productdisplay-main-img"
-            src={product.image}
+            src={product.images[0]} // Display the first image as the main image
             alt="Main product"
           />
         </div>
