@@ -222,11 +222,11 @@
 }
 
 .productdisplay-right-size a:hover {
-  color: orange;
+  color: #667eea;
 }
 
 .productdisplay-right-size a:active {
-  color: darkorange;
+  color: #764ba2
 }
 
 .productdisplay-right-sizes {
