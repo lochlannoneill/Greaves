@@ -182,6 +182,12 @@ export const ProductDisplay = (props) => {
           <h2>About this item</h2>
           <p>{product.description}</p>
         </div>
+        <div className="productdisplay-right-color">
+          <h2>Select Colour</h2>
+          <div className="productdisplay-right-colors">
+            <div>product.colors</div>
+          </div>
+        </div>
         <div className="productdisplay-right-size">
           <h2>Select Size</h2>
           <p>
@@ -189,6 +195,7 @@ export const ProductDisplay = (props) => {
             <a href="/">Find your recommended size</a> or check out our{" "}
             <a href="/">size guide</a>.
           </p>
+          <p>product.sizes</p>
           <div className="productdisplay-right-sizes">
             <div>S</div>
             <div>M</div>
