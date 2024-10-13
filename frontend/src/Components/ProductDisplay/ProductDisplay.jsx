@@ -40,7 +40,7 @@ export const ProductDisplay = (props) => {
               key={index}
               src={image}
               alt={`Product thumbnail ${index}`}
-              onClick={() => setSelectedImage(image)} // Update selected image on click
+              onMouseEnter={() => setSelectedImage(image)} // Update selected image on hover
               className={`thumbnail ${selectedImage === image ? "active" : ""}`} // highlight active thumbnail
             />
           ))}
@@ -49,10 +49,7 @@ export const ProductDisplay = (props) => {
               <span className="product-images-expand-icon">
                 +{product.images.length - 3}
               </span>
-              <img
-                src={product.images[3]}
-                alt={`product-3`}
-              />
+              <img src={product.images[3]} alt={`product-3`} />
             </div>
           )}
         </div>
@@ -171,9 +168,25 @@ export const ProductDisplay = (props) => {
             </p>
           </div>
         </div>
+        <hr />
         <div className="productdisplay-right-details">
           <h2>Product Details</h2>
+          <div className="productdisplay-right-detail-item">
+            <strong>Tags:</strong> <span>{product.tags.join(", ")}</span>
+          </div>
+          <div className="productdisplay-right-detail-item">
+            <strong>Category:</strong> <span>{product.category}</span>
+          </div>
+        </div>
+        <div className="productdisplay-right-about">
+          <h2>About this item</h2>
           <p>{product.description}</p>
+        </div>
+        <div className="productdisplay-right-color">
+          <h2>Select Colour</h2>
+          <div className="productdisplay-right-colors">
+            <div>product.colors</div>
+          </div>
         </div>
         <div className="productdisplay-right-size">
           <h2>Select Size</h2>
@@ -182,6 +195,7 @@ export const ProductDisplay = (props) => {
             <a href="/">Find your recommended size</a> or check out our{" "}
             <a href="/">size guide</a>.
           </p>
+          <p>product.sizes</p>
           <div className="productdisplay-right-sizes">
             <div>S</div>
             <div>M</div>
