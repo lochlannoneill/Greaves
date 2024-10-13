@@ -1,5 +1,11 @@
 .reviewlist {
   display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.reviewlist-group {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 4vw;
@@ -9,9 +15,72 @@
   display: flex;
   gap: 1vw;
   position: sticky;
-  top: 2vh;
+  top: 4vh;
   align-self: flex-start;
-  background-color: grey;
+}
+
+.reviewlist-average {
+  width: 16vw;
+}
+
+.reviewlist-average-rating-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 1.5vh;
+}
+
+.reviewlist-average-rating-breakdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.reviewlist-average-rating-breakdown-bar {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviewlist-average-rating-breakdown-bar-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 4px 0 0 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.reviewlist-average-rating-breakdown-item p {
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.reviewlist-average-rating-breakdown-item p:first-child {
+  width: 40px; /* Ensure consistent spacing for the star rating text */
+}
+
+.reviewlist-average-rating-breakdown-bar-fill::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Add a subtle shading effect */
+  border-radius: 4px 0 0 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .reviewlist-average-rating-breakdown-item {
+    font-size: 0.8rem;
+  }
+
+  .reviewlist-average-rating-breakdown-bar {
+    height: 6px;
+  }
 }
 
 .reviewlist-right {
