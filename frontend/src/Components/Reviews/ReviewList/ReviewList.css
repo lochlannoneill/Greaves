@@ -7,7 +7,6 @@
 .reviewlist-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 4vw;
 }
 
@@ -90,6 +89,7 @@
 .reviewlist-right {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 4vh;
 }
 
