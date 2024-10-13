@@ -4,6 +4,12 @@
   gap: 2vh;
 }
 
+.reviewlist-no-reviews {
+  color: lightgrey;
+  font-weight: 500;
+  margin: auto;
+}
+
 .reviewlist-group {
   display: flex;
   flex-direction: row;
