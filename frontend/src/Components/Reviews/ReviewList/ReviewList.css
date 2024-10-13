@@ -6,18 +6,20 @@
 
 .reviewlist-sort {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .reviewlist-sort * {
   color: grey;
 }
 
-.reviewlist-sort-filter {
-  font-size: 1rem;
+.reviewlist-sort-label {
   font-weight: 500;
+}
+
+.reviewlist-sort-filter-option {
+  color: grey;
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
@@ -25,26 +27,25 @@
   width: 180px;
 }
 
-.reviewlist-sort-filter select {
+.reviewlist-sort-filter-option select {
   width: 100%;
   border: none;
   background-color: transparent;
-  color: #333;
   font-size: 1rem;
   font-weight: 500;
   padding: 8px;
   appearance: none;
 }
 
-.reviewlist-sort-filter select:hover {
+.reviewlist-sort-filter-option select:hover {
   cursor: pointer;
 }
 
-.reviewlist-sort-filter select:focus {
+.reviewlist-sort-filter-option select:focus {
   outline: none;
 }
 
-.reviewlist-sort-filter:after {
+.reviewlist-sort-filter-option:after {
   content: "▼";
   position: absolute;
   top: 50%;
@@ -59,8 +60,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 .reviewlist-sort-verified input[type="checkbox"] {

@@ -48,13 +48,16 @@ export const ReviewList = ({ reviews }) => {
   return (
     <div className="reviewlist">
       <div className="reviewlist-sort">
+        <label className="reviewlist-sort-label">Sort by:</label>
         <div className="reviewlist-sort-filter">
-          <select id="sortOption" value={sortOption} onChange={handleSortChange}>
-            <option value="rating">Highest Ratings</option>
-            <option value="lowestRating">Lowest Ratings</option> {/* Added option for lowest ratings */}
-            <option value="date">Most Recent</option>
-            <option value="helpful">Most Helpful</option>
-          </select>
+          <div className="reviewlist-sort-filter-option">
+            <select id="sortOption" value={sortOption} onChange={handleSortChange}>
+              <option value="rating">Highest Ratings</option>
+              <option value="lowestRating">Lowest Ratings</option> {/* Added option for lowest ratings */}
+              <option value="date">Most Recent</option>
+              <option value="helpful">Most Helpful</option>
+            </select>
+          </div>
         </div>
         <div className="reviewlist-sort-verified">
           <label className="reviewlist-sort-verified-label">
