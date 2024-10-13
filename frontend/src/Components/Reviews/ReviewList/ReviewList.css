@@ -1,5 +1,21 @@
 .reviewlist {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.reviewlist-left {
+  display: flex;
+  gap: 1vw;
+  position: sticky;
+  top: 2vh;
+  align-self: flex-start;
+  background-color: grey;
+}
+
+.reviewlist-right {
+  display: flex;
   flex-direction: column;
   gap: 4vh;
 }

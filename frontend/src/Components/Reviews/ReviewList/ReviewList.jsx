@@ -47,41 +47,47 @@ export const ReviewList = ({ reviews }) => {
 
   return (
     <div className="reviewlist">
-      <div className="reviewlist-header">
-        <div className="reviewlist-ratings">
-          <p>Based on {reviews.length} reviews</p>
-          <p>4.5 Average Rating</p>
+      <div className="reviewlist-left">
+        <div className="reviewlist-average">
+          <p>placeholder</p>
         </div>
-        <div className="reviewlist-sort">
-          <label className="reviewlist-sort-label">Sort by:</label>
-          <div className="reviewlist-sort-filter">
-            <div className="reviewlist-sort-filter-option">
-              <select id="sortOption" value={sortOption} onChange={handleSortChange}>
-                <option value="rating">Highest Ratings</option>
-                <option value="lowestRating">Lowest Ratings</option> {/* Added option for lowest ratings */}
-                <option value="date">Most Recent</option>
-                <option value="helpful">Most Helpful</option>
-              </select>
+      </div>
+      <div className="reviewlist-right">
+        <div className="reviewlist-header">
+          <div className="reviewlist-placeholder">
+            <p>Placeholder text</p>
+          </div>
+          <div className="reviewlist-sort">
+            <label className="reviewlist-sort-label">Sort by:</label>
+            <div className="reviewlist-sort-filter">
+              <div className="reviewlist-sort-filter-option">
+                <select id="sortOption" value={sortOption} onChange={handleSortChange}>
+                  <option value="rating">Highest Ratings</option>
+                  <option value="lowestRating">Lowest Ratings</option> {/* Added option for lowest ratings */}
+                  <option value="date">Most Recent</option>
+                  <option value="helpful">Most Helpful</option>
+                </select>
+              </div>
+            </div>
+            <div className="reviewlist-sort-verified">
+              <label className="reviewlist-sort-verified-label">
+                Verified
+                <input type="checkbox" checked={showVerifiedOnly} onChange={handleVerifiedChange} />
+              </label>
             </div>
           </div>
-          <div className="reviewlist-sort-verified">
-            <label className="reviewlist-sort-verified-label">
-              Verified
-              <input type="checkbox" checked={showVerifiedOnly} onChange={handleVerifiedChange} />
-            </label>
-          </div>
+        </div>
+        <div className="reviewlist-reviews">
+          {sortedAndFilteredReviews.map((review) => (
+            <Review key={review.id} review={review} />
+          ))}
+        </div>
+        <div className="reviewlist-showmore">
+          <p>
+            Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
+          </p>
         </div>
       </div>
-      <div className="reviewlist-reviews">
-        {sortedAndFilteredReviews.map((review) => (
-          <Review key={review.id} review={review} />
-        ))}
       </div>
-      <div className="reviewlist-showmore">
-        <p>
-          Show More <FontAwesomeIcon icon={faChevronDown} size="2xs" />
-        </p>
-      </div>
-    </div>
   );
 };
