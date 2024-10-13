@@ -13,12 +13,6 @@
   flex-direction: column;
 }
 
-.reviewinput form h3 {
-  color: #3a3a3a;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 .reviewinput label {
   margin-right: 1vh;
   color: #3a3a3a;

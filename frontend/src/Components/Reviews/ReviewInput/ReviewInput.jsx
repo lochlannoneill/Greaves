@@ -5,7 +5,7 @@ export const ReviewInput = () => {
   return (
     <div className="reviewinput">
         <form>
-          <h3>Leave a review</h3>
+          <h2>Leave a review</h2>
           <div className="reviewinput-rating">
             <label htmlFor="rating">Rating</label>
             <input
