@@ -8,6 +8,13 @@ export const ReviewList = ({ reviews }) => {
   const [sortOption, setSortOption] = useState("");
   const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
 
+  // Calculate the average rating
+  const calculateAverageRating = () => {
+    if (reviews.length === 0) return 0;
+    const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0);
+    return (totalRating / reviews.length).toFixed(1); // Return one decimal place
+  };
+
   // Sorting function based on the selected option
   const sortByOption = (option) => {
     switch (option) {
@@ -44,6 +51,8 @@ export const ReviewList = ({ reviews }) => {
 
   // Sort and filter reviews
   const sortedAndFilteredReviews = filterByVerification(sortByOption(sortOption));
+  const averageRating = calculateAverageRating(); // Calculate the average rating
+  const reviewCount = reviews.length; // Get the total number of reviews
 
   return (
     <div className="reviewlist">
@@ -55,7 +64,7 @@ export const ReviewList = ({ reviews }) => {
             <div className="reviewlist-average">
               <h3>Average Ratings</h3>
               <div className="reviewlist-average-rating">
-                <p>4.5 ★★★★☆ out of 100 reviews</p>
+              <p>{averageRating} ★{"★".repeat(Math.floor(averageRating))}{"☆".repeat(5 - Math.ceil(averageRating))} out of {reviewCount} reviews</p>
               </div>
               <div className="reviewlist-average-rating-breakdown">
                 <div className="reviewlist-average-rating-breakdown-item">
