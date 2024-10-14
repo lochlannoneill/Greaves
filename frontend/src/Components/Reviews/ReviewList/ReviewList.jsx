@@ -16,7 +16,7 @@ export const ReviewList = ({ reviews }) => {
       case "date":
         return reviews.sort((a, b) => new Date(b.date) - new Date(a.date));
       case "helpful":
-        return reviews.sort((a, b) => b.helpfulCount - a.helpfulCount);
+        return reviews.sort((a, b) => b.helpful.length - a.helpful.length);
       case "lowestRating":
         return reviews.sort((a, b) => a.rating - b.rating);
       default:
