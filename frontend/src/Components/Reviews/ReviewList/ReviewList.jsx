@@ -8,6 +8,7 @@ export const ReviewList = ({ reviews }) => {
   const [sortOption, setSortOption] = useState("");
   const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
 
+  // TODO - Helpful -> does not continue after first.
   // Sorting function based on the selected option
   const sortByOption = (option) => {
     switch (option) {
@@ -62,10 +63,10 @@ export const ReviewList = ({ reviews }) => {
                 value={sortOption}
                 onChange={handleSortChange}
               >
+                <option value="helpful">Most Helpful</option>
                 <option value="rating">Highest Ratings</option>
                 <option value="lowestRating">Lowest Ratings</option>
                 <option value="date">Most Recent</option>
-                <option value="helpful">Most Helpful</option>
               </select>
             </div>
           </div>
