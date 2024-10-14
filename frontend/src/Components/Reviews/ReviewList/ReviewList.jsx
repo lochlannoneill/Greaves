@@ -116,7 +116,7 @@ export const ReviewList = ({ reviews }) => {
           </div>
           <div className="reviewlist-right">
             <div className="reviewlist-header">
-              <div className="reviewlist-placeholder">
+              <div className="reviewlist-title">
                 <h2>Customer Reviews</h2>
               </div>
               <div className="reviewlist-sort">

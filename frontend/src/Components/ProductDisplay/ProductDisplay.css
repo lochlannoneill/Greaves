@@ -343,6 +343,7 @@
   .productdisplay-left {
     position: relative;
     margin: auto;
+    top: 0;
   }
 }
 
