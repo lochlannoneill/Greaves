@@ -1,5 +1,6 @@
 import React from "react";
 import { ReviewAverage } from "./ReviewAverage/ReviewAverage";
+import { ReviewSentiment } from "./ReviewSentiment/ReviewSentiment"
 import { ReviewInput } from "./ReviewInput/ReviewInput";
 import { ReviewList } from "./ReviewList/ReviewList";
 import "./Reviews.css";
@@ -18,15 +19,7 @@ export const Reviews = ({ reviews, productId }) => {
         <div className="reviews-group">
           <div className="reviews-left">
             <ReviewAverage reviews={reviews} />
-            <div className="reviewlist-sentiment">
-              <h3>Customers Say</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                libero laboriosam, aut, minus quis odio recusandae quaerat ut,
-                voluptatum facere dolorem! Ex blanditiis necessitatibus eum ea
-                sit, natus accusantium eaque?
-              </p>
-            </div>
+            <ReviewSentiment />
           </div>
           <div className="reviews-right">
             <ReviewInput />
