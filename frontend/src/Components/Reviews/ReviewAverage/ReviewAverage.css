@@ -1,93 +1,93 @@
 .reviewaverage {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    width: 16vw;
-  }
-  
-  @media screen and (max-width: 1250px) {
-    .reviewaverage {
-      width: 100%;
-    }
-  }
-  
-  .reviewaverage-rating {
-    color: grey;
-  }
-  
-  .reviewaverage-rating-stars {
-    color: lightgrey;
-  }
-  
-  .reviewaverage-rating-stars-full,
-  .reviewaverage-rating-stars-half {
-    color: orange;
-  }
-  
-  .reviewaverage-rating-breakdown {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    color: grey;
-  }
-  
-  .reviewaverage-rating-breakdown-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1vw;
-    font-size: 0.9rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 16vw;
+}
 
-  /* TODO -  Correct width not being applied to right side */
-  .reviewaverage-rating-breakdown-star,
-  .reviewaverage-rating-breakdown-percentage {
-    width: 8px;
+@media screen and (max-width: 1250px) {
+  .reviewaverage {
+    width: 100%;
   }
-  
+}
+
+.reviewaverage-rating {
+  color: grey;
+}
+
+.reviewaverage-rating-stars {
+  color: lightgrey;
+}
+
+.reviewaverage-rating-stars-full,
+.reviewaverage-rating-stars-half {
+  color: orange;
+}
+
+.reviewaverage-rating-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  color: grey;
+}
+
+.reviewaverage-rating-breakdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  font-size: 0.9rem;
+}
+
+/* TODO -  Correct width not being applied to right side */
+.reviewaverage-rating-breakdown-star,
+.reviewaverage-rating-breakdown-percentage {
+  width: 8px;
+}
+
 @media (max-width: 768px) {
   .reviewaverage-rating-breakdown-star,
   .reviewaverage-rating-breakdown-percentage {
     width: 24px;
   }
 }
-  
+
+.reviewaverage-rating-breakdown-bar {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
   .reviewaverage-rating-breakdown-bar {
-    flex-grow: 1;
-    height: 8px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
   }
-  
-  @media screen and (max-width: 768px) {
-    .reviewaverage-rating-breakdown-bar {
-      width: 100%;
-    }
-  }
-  
-  .reviewaverage-rating-breakdown-bar-fill {
-    height: 100%;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 4px 0 0 4px;
-    transition: width 0.3s ease-in-out;
+}
+
+.reviewaverage-rating-breakdown-bar-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 4px 0 0 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.reviewaverage-rating-breakdown-bar-fill::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px 0 0 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .reviewaverage-rating-breakdown-item {
+    font-size: 0.8rem;
   }
 
-  .reviewaverage-rating-breakdown-bar-fill::before {
-    content: "";
-    display: block;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px 0 0 4px;
+  .reviewaverage-rating-breakdown-bar {
+    height: 6px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .reviewaverage-rating-breakdown-item {
-      font-size: 0.8rem;
-    }
-  
-    .reviewaverage-rating-breakdown-bar {
-      height: 6px;
-    }
-  }
+}

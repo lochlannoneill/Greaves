@@ -25,14 +25,17 @@ export const ReviewAverage = ({ reviews }) => {
     });
     return counts;
   };
-  
+
   const renderRatingBreakdown = (ratingCounts) => {
     const totalReviews = reviewCount;
-    const sortedRatings = Object.entries(ratingCounts).sort(([ratingA], [ratingB]) => {
-      return parseInt(ratingB) - parseInt(ratingA); // Sort by rating descending
-    });
+    const sortedRatings = Object.entries(ratingCounts).sort(
+      ([ratingA], [ratingB]) => {
+        return parseInt(ratingB) - parseInt(ratingA); // Sort by rating descending
+      }
+    );
     return sortedRatings.map(([rating, count]) => {
-      const percentage = totalReviews > 0 ? ((count / totalReviews) * 100).toFixed(0) : 0;
+      const percentage =
+        totalReviews > 0 ? ((count / totalReviews) * 100).toFixed(0) : 0;
       return (
         <div className="reviewaverage-rating-breakdown-item" key={rating}>
           <span className="reviewaverage-rating-breakdown-star">{rating}</span>
@@ -42,7 +45,9 @@ export const ReviewAverage = ({ reviews }) => {
               style={{ width: `${percentage}%` }}
             />
           </div>
-          <span className="reviewaverage-rating-breakdown-percentage">{percentage}%</span>
+          <span className="reviewaverage-rating-breakdown-percentage">
+            {percentage}%
+          </span>
         </div>
       );
     });
@@ -54,9 +59,7 @@ export const ReviewAverage = ({ reviews }) => {
       <div className="reviewaverage">
         <h3 className="reviewaverage-title">Average Ratings</h3>
         <div className="reviewaverage-rating">
-          <span className="reviewaverage-rating-value">
-            {averageRating}{" "}
-          </span>
+          <span className="reviewaverage-rating-value">{averageRating} </span>
           <span className="reviewaverage-rating-stars">
             {renderStars(averageRating, "reviewaverage-rating-stars")}
           </span>
