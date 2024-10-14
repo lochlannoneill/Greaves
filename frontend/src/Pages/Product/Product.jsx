@@ -33,8 +33,8 @@ export const Product = () => {
 
   return (
     <div className="product">
-      <div className="product-components">
-        <Breadcrumb product={product} />
+      <Breadcrumb product={product} />
+      <div className="product-group">
         <ProductDisplay product={product} reviewAverageRating={reviewAverageRating} reviewCount={reviewCount} />
         <Related tags={product.tags} category={product.category} />
         <Reviews reviews={reviews} productId={product.id} />

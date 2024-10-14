@@ -1,5 +1,9 @@
-.product-components {
+.product-group {
   display: flex;
   flex-direction: column;
-  gap: 8vh;
+  gap: 6vh;
+}
+
+.product h2 {
+  text-align: center;
 }

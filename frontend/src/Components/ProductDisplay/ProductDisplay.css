@@ -1,6 +1,6 @@
 .productdisplay {
   display: flex;
-  margin: 0 12vw; /* TODO - for some reason there's a gap at the top of the page */
+  margin: 0 12vw;
 }
 
 .productdisplay-left {
@@ -119,11 +119,6 @@
 
 .productdisplay-right a:active {
   color: orange;
-}
-
-.productdisplay-right h2 {
-  color: #3a3a3a;
-  font-size: 1.2rem;
 }
 
 .productdisplay-right-rating {

@@ -72,12 +72,14 @@ export const Products = () => {
   };
 
   const removeImage = (index) => {
+    URL.revokeObjectURL(productDetails.imagePreviews[index]); // Release memory
     setProductDetails((prevDetails) => ({
       ...prevDetails,
-      images: prevDetails.images.filter((_, i) => i !== index), // Remove the file
-      imagePreviews: prevDetails.imagePreviews.filter((_, i) => i !== index), // Remove the preview URL
+      images: prevDetails.images.filter((_, i) => i !== index),
+      imagePreviews: prevDetails.imagePreviews.filter((_, i) => i !== index),
     }));
   };
+  
 
   const handleTagInputChange = (e) => {
     let value = e.target.value.trim().toLowerCase();

@@ -2,10 +2,6 @@
   margin: 0 12vw;
 }
 
-.related h2 {
-  color: #3a3a3a;
-}
-
 .related-items-parent {
   display: flex;
   flex-direction: column;

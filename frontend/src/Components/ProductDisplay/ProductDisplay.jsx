@@ -171,7 +171,7 @@ export const ProductDisplay = (props) => {
         </div>
         <hr />
         <div className="productdisplay-right-details">
-          <h2>Product Details</h2>
+          <h3>Product Details</h3>
           <div className="productdisplay-right-detail-item">
             <strong>Tags:</strong> <span>{product.tags.join(", ")}</span>
           </div>
@@ -180,17 +180,17 @@ export const ProductDisplay = (props) => {
           </div>
         </div>
         <div className="productdisplay-right-about">
-          <h2>About this item</h2>
+          <h3>About this item</h3>
           <p>{product.description}</p>
         </div>
         <div className="productdisplay-right-color">
-          <h2>Select Colour</h2>
+          <h3>Select Colour</h3>
           <div className="productdisplay-right-colors">
             <div>product.colors</div>
           </div>
         </div>
         <div className="productdisplay-right-size">
-          <h2>Select Size</h2>
+          <h3>Select Size</h3>
           <p>
             Still unsure what size to get?{" "}
             <a href="/">Find your recommended size</a> or check out our{" "}
