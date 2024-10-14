@@ -16,7 +16,7 @@
   color: grey;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .reviewlist-header {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     justify-content: flex-start;
     gap: 2vh;
   }
-}
+} */
 
 @media screen and (max-width: 1250px) {
   .reviewlist-title {
