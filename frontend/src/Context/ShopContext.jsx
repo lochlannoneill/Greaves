@@ -118,23 +118,23 @@ const ShopContextProvider = (props) => {
   };
 
   // Function to render stars based on a rating
-  const renderStars = (rating) => {
+  const renderStars = (rating, baseClassName) => {
     const stars = [];
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 !== 0;
     const emptyStars = 5 - Math.ceil(rating);
-
+  
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <FontAwesomeIcon key={`full-${i}`} icon={faStarSolid} className="reviewlist-average-rating-full" />
+        <FontAwesomeIcon key={`full-${i}`} icon={faStarSolid} className={`${baseClassName}-full`} />
       );
     }
     if (halfStar) {
-      stars.push(<FontAwesomeIcon key="half" icon={faStarHalf} className="reviewlist-average-rating-half" />);
+      stars.push(<FontAwesomeIcon key="half" icon={faStarHalf} className={`${baseClassName}-half`} />);
     }
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
-        <FontAwesomeIcon key={`empty-${i}`} icon={faStarSolid} className="reviewlist-average-rating-empty" />
+        <FontAwesomeIcon key={`empty-${i}`} icon={faStarSolid} className={`${baseClassName}-empty`} />
       );
     }
     return stars;

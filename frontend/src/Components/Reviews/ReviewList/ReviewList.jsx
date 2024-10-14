@@ -68,7 +68,9 @@ export const ReviewList = ({ reviews }) => {
               <h3>Average Ratings</h3>
               <div className="reviewlist-average-rating">
                 <span className="reviewlist-average-rating-value">{averageRating} </span>
-                <span className="reviewlist-average-rating-stars">{renderStars(averageRating)}</span>
+                <span className="reviewlist-average-rating-stars">
+                  {renderStars(averageRating, "reviewlist-average-rating-stars")}
+                </span>
                 <span> out of {reviewCount} reviews</span>
               </div>
               <div className="reviewlist-average-rating-breakdown">
