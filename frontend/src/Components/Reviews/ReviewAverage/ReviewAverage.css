@@ -38,6 +38,19 @@
     gap: 1vw;
     font-size: 0.9rem;
   }
+
+  /* TODO -  Correct width not being applied to right side */
+  .reviewaverage-rating-breakdown-star,
+  .reviewaverage-rating-breakdown-percentage {
+    width: 8px;
+  }
+  
+@media (max-width: 768px) {
+  .reviewaverage-rating-breakdown-star,
+  .reviewaverage-rating-breakdown-percentage {
+    width: 24px;
+  }
+}
   
   .reviewaverage-rating-breakdown-bar {
     flex-grow: 1;
