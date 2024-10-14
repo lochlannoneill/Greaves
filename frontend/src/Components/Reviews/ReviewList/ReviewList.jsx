@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Review from "../Review/Review";
+import { ReviewInput } from "../ReviewInput/ReviewInput";
 import { ShopContext } from "../../../Context/ShopContext";
 import "./ReviewList.css";
 
@@ -125,10 +126,7 @@ export const ReviewList = ({ reviews }) => {
                 {renderRatingBreakdown(ratingCounts)}
               </div>
             </div>
-            <div className="reviewlist-sentiment">
-              <h3>Customers Say</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero laboriosam, aut, minus quis odio recusandae quaerat ut, voluptatum facere dolorem! Ex blanditiis necessitatibus eum ea sit, natus accusantium eaque?</p>
-            </div>
+            <ReviewInput />
           </div>
           <div className="reviewlist-right">
             <div className="reviewlist-header">
@@ -163,6 +161,11 @@ export const ReviewList = ({ reviews }) => {
                 </div>
               </div>
             </div>
+            <div className="reviewlist-sentiment">
+              <h3>Customers Say</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero laboriosam, aut, minus quis odio recusandae quaerat ut, voluptatum facere dolorem! Ex blanditiis necessitatibus eum ea sit, natus accusantium eaque?</p>
+            </div>
+            <hr />
             <div className="reviewlist-reviews">
               {sortedAndFilteredReviews.map((review) => (
                 <Review key={review.id} review={review} />
