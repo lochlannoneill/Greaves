@@ -59,7 +59,8 @@
   color: lightgrey;
 }
 
-.reviewlist-average-rating-stars-full, .reviewlist-average-rating-stars-half {
+.reviewlist-average-rating-stars-full,
+.reviewlist-average-rating-stars-half {
   color: orange;
 }
 

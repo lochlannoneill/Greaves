@@ -53,7 +53,9 @@ export const ReviewList = ({ reviews }) => {
   };
 
   // Sort and filter reviews
-  const sortedAndFilteredReviews = filterByVerification(sortByOption(sortOption));
+  const sortedAndFilteredReviews = filterByVerification(
+    sortByOption(sortOption)
+  );
   const averageRating = calculateAverageRating();
   const reviewCount = reviews.length;
 
@@ -67,9 +69,14 @@ export const ReviewList = ({ reviews }) => {
             <div className="reviewlist-average">
               <h3>Average Ratings</h3>
               <div className="reviewlist-average-rating">
-                <span className="reviewlist-average-rating-value">{averageRating} </span>
+                <span className="reviewlist-average-rating-value">
+                  {averageRating}{" "}
+                </span>
                 <span className="reviewlist-average-rating-stars">
-                  {renderStars(averageRating, "reviewlist-average-rating-stars")}
+                  {renderStars(
+                    averageRating,
+                    "reviewlist-average-rating-stars"
+                  )}
                 </span>
                 <span> out of {reviewCount} reviews</span>
               </div>
@@ -78,28 +85,40 @@ export const ReviewList = ({ reviews }) => {
                   <span>5</span>
                   {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
                   <div className="reviewlist-average-rating-breakdown-bar">
-                    <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "80%" }} />
+                    <div
+                      className="reviewlist-average-rating-breakdown-bar-fill"
+                      style={{ width: "80%" }}
+                    />
                   </div>
                   <span>80%</span>
                 </div>
                 <div className="reviewlist-average-rating-breakdown-item">
                   <span>4</span>
                   <div className="reviewlist-average-rating-breakdown-bar">
-                    <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "10%" }} />
+                    <div
+                      className="reviewlist-average-rating-breakdown-bar-fill"
+                      style={{ width: "10%" }}
+                    />
                   </div>
                   <span>10%</span>
                 </div>
                 <div className="reviewlist-average-rating-breakdown-item">
                   <span>3</span>
                   <div className="reviewlist-average-rating-breakdown-bar">
-                    <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "5%" }} />
+                    <div
+                      className="reviewlist-average-rating-breakdown-bar-fill"
+                      style={{ width: "5%" }}
+                    />
                   </div>
                   <span>5%</span>
                 </div>
                 <div className="reviewlist-average-rating-breakdown-item">
                   <span>2</span>
                   <div className="reviewlist-average-rating-breakdown-bar">
-                    <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "3%" }} />
+                    <div
+                      className="reviewlist-average-rating-breakdown-bar-fill"
+                      style={{ width: "3%" }}
+                    />
                   </div>
                   <span>3%</span>
                 </div>
@@ -107,7 +126,10 @@ export const ReviewList = ({ reviews }) => {
                   <span>1</span>
                   {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
                   <div className="reviewlist-average-rating-breakdown-bar">
-                    <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "2%" }} />
+                    <div
+                      className="reviewlist-average-rating-breakdown-bar-fill"
+                      style={{ width: "2%" }}
+                    />
                   </div>
                   <span>2%</span>
                 </div>
@@ -123,7 +145,11 @@ export const ReviewList = ({ reviews }) => {
                 <label className="reviewlist-sort-label">Sort by:</label>
                 <div className="reviewlist-sort-filter">
                   <div className="reviewlist-sort-filter-option">
-                    <select id="sortOption" value={sortOption} onChange={handleSortChange}>
+                    <select
+                      id="sortOption"
+                      value={sortOption}
+                      onChange={handleSortChange}
+                    >
                       <option value="rating">Highest Ratings</option>
                       <option value="lowestRating">Lowest Ratings</option>
                       <option value="date">Most Recent</option>
@@ -134,7 +160,11 @@ export const ReviewList = ({ reviews }) => {
                 <div className="reviewlist-sort-verified">
                   <label className="reviewlist-sort-verified-label">
                     Verified
-                    <input type="checkbox" checked={showVerifiedOnly} onChange={handleVerifiedChange} />
+                    <input
+                      type="checkbox"
+                      checked={showVerifiedOnly}
+                      onChange={handleVerifiedChange}
+                    />
                   </label>
                 </div>
               </div>
