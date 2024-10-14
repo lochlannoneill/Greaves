@@ -16,7 +16,7 @@
   gap: 4vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .reviewlist-group {
     flex-direction: column;
   }
@@ -30,7 +30,7 @@
   align-self: flex-start;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1250px) {
   .reviewlist-left {
     position: relative;
     width: 100%;
@@ -45,7 +45,7 @@
   width: 16vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .reviewlist-average {
     width: 100%;
   }
@@ -142,15 +142,6 @@
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .reviewlist-header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 2vh;
-  }
-}
-
 .reviewlist-header * {
   color: grey;
 }
@@ -165,17 +156,17 @@
   }
 }
 
-.reviewlist-sort {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (max-width: 768px) {
-  .reviewlist-sort {
-    margin-left: auto;
+  .reviewlist-title {
+    display: none;
   }
 }
 
+.reviewlist-sort {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
 
 .reviewlist-sort-label {
   font-weight: 500;
