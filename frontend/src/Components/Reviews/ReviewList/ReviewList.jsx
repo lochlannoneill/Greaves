@@ -27,7 +27,7 @@ export const ReviewList = ({ reviews }) => {
         return reviews.sort((a, b) => new Date(b.date) - new Date(a.date));
       case "helpful":
         return reviews.sort((a, b) => b.helpfulCount - a.helpfulCount);
-      case "lowestRating": // New case for sorting by lowest ratings
+      case "lowestRating":
         return reviews.sort((a, b) => a.rating - b.rating);
       default:
         return reviews; // Default case returns original array
@@ -54,8 +54,8 @@ export const ReviewList = ({ reviews }) => {
 
   // Sort and filter reviews
   const sortedAndFilteredReviews = filterByVerification(sortByOption(sortOption));
-  const averageRating = calculateAverageRating(); // Calculate the average rating
-  const reviewCount = reviews.length; // Get the total number of reviews
+  const averageRating = calculateAverageRating();
+  const reviewCount = reviews.length;
 
   return (
     <div className="reviewlist">

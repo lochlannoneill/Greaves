@@ -60,7 +60,7 @@
 }
 
 .reviewlist-average-rating-stars-full, .reviewlist-average-rating-stars-half {
-  color: orange; /* Color for full stars */
+  color: orange;
 }
 
 .reviewlist-average-rating-breakdown {
@@ -107,14 +107,14 @@
 }
 
 .reviewlist-average-rating-breakdown-item p:first-child {
-  width: 40px; /* Ensure consistent spacing for the star rating text */
+  width: 40px;
 }
 
 .reviewlist-average-rating-breakdown-bar-fill::before {
   content: "";
   display: block;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* Add a subtle shading effect */
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px 0 0 4px;
 }
 
