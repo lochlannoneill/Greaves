@@ -118,7 +118,7 @@
 }
 
 .productdisplay-right a:active {
-  color: darkorange;
+  color: orange;
 }
 
 .productdisplay-right h2 {
@@ -143,11 +143,11 @@
 }
 
 .productdisplay-right-rating-full {
-  color: darkorange;
+  color: orange;
 }
 
 .productdisplay-right-rating-half {
-  color: darkorange;
+  color: orange;
 }
 
 .productdisplay-right-discount {
