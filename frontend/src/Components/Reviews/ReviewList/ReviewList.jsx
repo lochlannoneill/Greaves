@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Review from "../Review/Review";
+import { ShopContext } from "../../../Context/ShopContext";
 import "./ReviewList.css";
 
 export const ReviewList = ({ reviews }) => {
   const [sortOption, setSortOption] = useState("");
   const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
+
+  const { renderStars } = useContext(ShopContext);
 
   // Calculate the average rating
   const calculateAverageRating = () => {
@@ -64,12 +67,14 @@ export const ReviewList = ({ reviews }) => {
             <div className="reviewlist-average">
               <h3>Average Ratings</h3>
               <div className="reviewlist-average-rating">
-              <p>{averageRating} ★{"★".repeat(Math.floor(averageRating))}{"☆".repeat(5 - Math.ceil(averageRating))} out of {reviewCount} reviews</p>
+                <span className="reviewlist-average-rating-value">{averageRating} </span>
+                <span className="reviewlist-average-rating-stars">{renderStars(averageRating)}</span>
+                <span> out of {reviewCount} reviews</span>
               </div>
               <div className="reviewlist-average-rating-breakdown">
                 <div className="reviewlist-average-rating-breakdown-item">
                   <span>5</span>
-                  {/* TODO - THIS BAR ENDS SLIGHTLY BEFORE OTHERS */}
+                  {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
                   <div className="reviewlist-average-rating-breakdown-bar">
                     <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "80%" }} />
                   </div>
@@ -98,7 +103,7 @@ export const ReviewList = ({ reviews }) => {
                 </div>
                 <div className="reviewlist-average-rating-breakdown-item">
                   <span>1</span>
-                  {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE OTHERS */}
+                  {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
                   <div className="reviewlist-average-rating-breakdown-bar">
                     <div className="reviewlist-average-rating-breakdown-bar-fill" style={{ width: "2%" }} />
                   </div>
@@ -118,7 +123,7 @@ export const ReviewList = ({ reviews }) => {
                   <div className="reviewlist-sort-filter-option">
                     <select id="sortOption" value={sortOption} onChange={handleSortChange}>
                       <option value="rating">Highest Ratings</option>
-                      <option value="lowestRating">Lowest Ratings</option> {/* Added option for lowest ratings */}
+                      <option value="lowestRating">Lowest Ratings</option>
                       <option value="date">Most Recent</option>
                       <option value="helpful">Most Helpful</option>
                     </select>

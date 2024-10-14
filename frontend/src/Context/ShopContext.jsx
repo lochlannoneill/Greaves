@@ -1,6 +1,11 @@
 import React, { createContext, useState } from "react";
 import products from "../Assets/products/product_data";
 import reviews from "../Assets/reviews/reviews";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faStar as faStarSolid,
+  faStarHalfStroke as faStarHalf
+} from "@fortawesome/free-solid-svg-icons";
 
 export const ShopContext = createContext(null);
 
@@ -111,24 +116,49 @@ const ShopContextProvider = (props) => {
     
     return { reviewCount, reviewAverageRating };
   };
+
+  // Function to render stars based on a rating
+  const renderStars = (rating) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 !== 0;
+    const emptyStars = 5 - Math.ceil(rating);
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <FontAwesomeIcon key={`full-${i}`} icon={faStarSolid} className="reviewlist-average-rating-full" />
+      );
+    }
+    if (halfStar) {
+      stars.push(<FontAwesomeIcon key="half" icon={faStarHalf} className="reviewlist-average-rating-half" />);
+    }
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(
+        <FontAwesomeIcon key={`empty-${i}`} icon={faStarSolid} className="reviewlist-average-rating-empty" />
+      );
+    }
+    return stars;
+  };
   
+  // Export the context and provider
   const contextValue = {
-    products,
-    reviews,
-    popupMessage,
-    cart,
-    getCartCount,
-    isInCart,
-    countInCart,
-    addCart,
-    removeCart,
-    removeAllCart,
-    favorites,
-    getFavoriteCount,
-    isFavorite,
-    toggleFavorite,
-    getReviewInfo,
-    showPopup,
+      products,
+      reviews,
+      popupMessage,
+      cart,
+      getCartCount,
+      isInCart,
+      countInCart,
+      addCart,
+      removeCart,
+      removeAllCart,
+      favorites,
+      getFavoriteCount,
+      isFavorite,
+      toggleFavorite,
+      getReviewInfo,
+      renderStars,
+      showPopup,
   };
 
   return (

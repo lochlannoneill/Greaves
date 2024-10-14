@@ -32,6 +32,15 @@
   color: grey;
 }
 
+.reviewlist-average-rating-stars {
+  color: lightgrey;
+}
+
+.reviewlist-average-rating-stars .reviewlist-average-rating-full,
+.reviewlist-average-rating-stars .reviewlist-average-rating-half {
+  color: orange; /* Color for full stars */
+}
+
 .reviewlist-average-rating-breakdown {
   display: flex;
   flex-direction: column;
