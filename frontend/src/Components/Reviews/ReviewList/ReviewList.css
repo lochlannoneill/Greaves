@@ -4,50 +4,6 @@
   gap: 2vh;
 }
 
-.reviewlist-no-reviews {
-  color: lightgrey;
-  font-weight: 500;
-  margin: auto;
-}
-
-.reviewlist-group {
-  display: flex;
-  flex-direction: row;
-  gap: 4vw;
-}
-
-@media screen and (max-width: 1250px) {
-  .reviewlist-group {
-    flex-direction: column;
-    gap: 8vh;
-  }
-}
-
-.reviewlist-left {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  position: sticky;
-  top: 4vh;
-  align-self: flex-start;
-  width: 32vw;
-}
-
-@media screen and (max-width: 1250px) {
-  .reviewlist-left {
-    position: relative;
-    width: 100%;
-    top: 0;
-  }
-}
-
-.reviewlist-right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 4vh;
-}
-
 .reviewlist-header {
   /* display: flex;
   flex-direction: row;
