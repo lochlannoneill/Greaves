@@ -11,16 +11,13 @@ export const Reviews = ({ reviews, productId }) => {
 
   return (
     <div id="reviews" className="reviews">
-      <h2>Reviews</h2>
+      {/* <h2>Reviews</h2> */}
       {filteredReviews.length === 0 ? (
         <p className="reviews-empty">There are no reviews yet.</p>
       ) : (
         <div className="reviews-group">
           <div className="reviews-left">
             <ReviewAverage reviews={reviews} />
-            <ReviewInput />
-          </div>
-          <div className="reviews-right">
             <div className="reviewlist-sentiment">
               <h3>Customers Say</h3>
               <p>
@@ -30,6 +27,9 @@ export const Reviews = ({ reviews, productId }) => {
                 sit, natus accusantium eaque?
               </p>
             </div>
+          </div>
+          <div className="reviews-right">
+            <ReviewInput />
             <hr />
             <ReviewList reviews={filteredReviews} />
           </div>
