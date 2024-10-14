@@ -53,6 +53,7 @@ export const ProductDisplay = (props) => {
             </div>
           )}
         </div>
+        {/* // TODO - This image stays when nagivating to another product */}
         <div className="productdisplay-img">
           <img
             className="productdisplay-main-img"

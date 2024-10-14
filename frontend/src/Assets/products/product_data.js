@@ -48,7 +48,7 @@ let products = [
     images: [p1_img, p2_img, p3_img, p4_img, p5_img],
     description:
       "Stay cozy and stylish during the colder months with this striped knit sweater. Made from soft and warm fabric, it features a timeless striped pattern that adds a touch of sophistication to any outfit.",
-    tags: ["popular", "elegant", "knit", "cozy"],
+    tags: ["popular", "modern", "elegant", "knit", "cozy"],
     category: "women",
     rating: 4.0,
     stock: {
@@ -103,7 +103,7 @@ let products = [
     images: [p4_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["popular", "modern", "latest"],
+    tags: ["popular", "modern", "latest", "elegant", "knit"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -122,7 +122,7 @@ let products = [
     images: [p5_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["popular", "modern", "latest"],
+    tags: ["popular", "modern", "latest", "modern", "cozy"],
     category: "women",
     rating: 3.5,
     stock: {
@@ -158,7 +158,7 @@ let products = [
     images: [p7_img],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["modern", "latest"],
+    tags: ["modern", "latest", "cozy"],
     category: "women",
     rating: 3.5,
     stock: {

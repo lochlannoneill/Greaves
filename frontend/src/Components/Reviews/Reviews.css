@@ -1,8 +1,19 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  margin: 0 24vw 4vh 24vw;
+  margin: 0 12vw 4vh 12vw;
   gap: 4vh;
+}
+
+.reviews-empty {
+  margin: auto;
+  color: lightgrey;
+}
+
+.reviews-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 
 .reviews h2 {
