@@ -59,6 +59,47 @@ export const ReviewList = ({ reviews }) => {
   const averageRating = calculateAverageRating();
   const reviewCount = reviews.length;
 
+  // Calculate the count of each rating for the breakdown
+  const calculateRatingCounts = () => {
+    const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    reviews.forEach((review) => {
+      const rating = Math.floor(review.rating); // Round down ratings to the nearest whole number
+      if (rating >= 1 && rating <= 5) {
+        counts[rating]++;
+      }
+    });
+    return counts;
+  };
+  
+  const renderRatingBreakdown = (ratingCounts) => {
+    const totalReviews = reviews.length;
+  
+    // Create an array of rating entries and sort it in descending order
+    const sortedRatings = Object.entries(ratingCounts).sort(([ratingA], [ratingB]) => {
+      return parseInt(ratingB) - parseInt(ratingA); // Sort by rating descending
+    });
+
+    return sortedRatings.map(([rating, count]) => {
+      const percentage = totalReviews > 0 ? ((count / totalReviews) * 100).toFixed(0) : 0;
+
+      return (
+        <div className="reviewlist-average-rating-breakdown-item" key={rating}>
+          <span>{rating}</span>
+          <div className="reviewlist-average-rating-breakdown-bar">
+            <div
+              className="reviewlist-average-rating-breakdown-bar-fill"
+              style={{ width: `${percentage}%` }}
+            />
+          </div>
+          <span>{percentage}%</span>
+        </div>
+      );
+    });
+  };
+
+  const ratingCounts = calculateRatingCounts();
+
+
   return (
     <div className="reviewlist">
       {reviews.length === 0 ? (
@@ -67,7 +108,7 @@ export const ReviewList = ({ reviews }) => {
         <div className="reviewlist-group">
           <div className="reviewlist-left">
             <div className="reviewlist-average">
-              <h3>Average Ratings</h3>
+              <h3 className="reviewlist-average-title">Average Ratings</h3>
               <div className="reviewlist-average-rating">
                 <span className="reviewlist-average-rating-value">
                   {averageRating}{" "}
@@ -81,59 +122,12 @@ export const ReviewList = ({ reviews }) => {
                 <span> out of {reviewCount} reviews</span>
               </div>
               <div className="reviewlist-average-rating-breakdown">
-                <div className="reviewlist-average-rating-breakdown-item">
-                  <span>5</span>
-                  {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
-                  <div className="reviewlist-average-rating-breakdown-bar">
-                    <div
-                      className="reviewlist-average-rating-breakdown-bar-fill"
-                      style={{ width: "80%" }}
-                    />
-                  </div>
-                  <span>80%</span>
-                </div>
-                <div className="reviewlist-average-rating-breakdown-item">
-                  <span>4</span>
-                  <div className="reviewlist-average-rating-breakdown-bar">
-                    <div
-                      className="reviewlist-average-rating-breakdown-bar-fill"
-                      style={{ width: "10%" }}
-                    />
-                  </div>
-                  <span>10%</span>
-                </div>
-                <div className="reviewlist-average-rating-breakdown-item">
-                  <span>3</span>
-                  <div className="reviewlist-average-rating-breakdown-bar">
-                    <div
-                      className="reviewlist-average-rating-breakdown-bar-fill"
-                      style={{ width: "5%" }}
-                    />
-                  </div>
-                  <span>5%</span>
-                </div>
-                <div className="reviewlist-average-rating-breakdown-item">
-                  <span>2</span>
-                  <div className="reviewlist-average-rating-breakdown-bar">
-                    <div
-                      className="reviewlist-average-rating-breakdown-bar-fill"
-                      style={{ width: "3%" }}
-                    />
-                  </div>
-                  <span>3%</span>
-                </div>
-                <div className="reviewlist-average-rating-breakdown-item">
-                  <span>1</span>
-                  {/* TODO - THIS BAR STARTS SLIGHTLY BEFORE THE OTHERS */}
-                  <div className="reviewlist-average-rating-breakdown-bar">
-                    <div
-                      className="reviewlist-average-rating-breakdown-bar-fill"
-                      style={{ width: "2%" }}
-                    />
-                  </div>
-                  <span>2%</span>
-                </div>
+                {renderRatingBreakdown(ratingCounts)}
               </div>
+            </div>
+            <div className="reviewlist-sentiment">
+              <h3>Customers Say</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero laboriosam, aut, minus quis odio recusandae quaerat ut, voluptatum facere dolorem! Ex blanditiis necessitatibus eum ea sit, natus accusantium eaque?</p>
             </div>
           </div>
           <div className="reviewlist-right">
