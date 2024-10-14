@@ -103,9 +103,6 @@ export const ReviewList = ({ reviews }) => {
 
   return (
     <div className="reviewlist">
-      {reviews.length === 0 ? (
-        <div className="reviewlist-no-reviews">There are no reviews yet</div>
-      ) : (
         <div className="reviewlist-group">
           <div className="reviewlist-left">
             <div className="reviewlist-average">
@@ -178,7 +175,6 @@ export const ReviewList = ({ reviews }) => {
             </div>
           </div>
         </div>
-      )}
     </div>
   );
 };

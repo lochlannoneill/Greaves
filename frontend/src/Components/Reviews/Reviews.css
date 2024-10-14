@@ -5,6 +5,17 @@
   gap: 4vh;
 }
 
+.reviews-empty {
+  margin: auto;
+  color: lightgrey;
+}
+
+.reviews-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
 .reviews h2 {
   color: #3a3a3a;
   font-size: 2rem;
