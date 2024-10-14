@@ -24,10 +24,12 @@
 
 .reviewlist-left {
   display: flex;
+  flex-direction: column;
   gap: 2vw;
   position: sticky;
   top: 4vh;
   align-self: flex-start;
+  width: 32vw;
 }
 
 @media screen and (max-width: 1250px) {
@@ -157,7 +159,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .reviewlist-title {
     display: none;
   }
