@@ -1,6 +1,6 @@
 .productdisplay {
   display: flex;
-  margin: 0 12vw; /* TODO - for some reason there's a gap at the top of the page */
+  margin: 0 12vw;
 }
 
 .productdisplay-left {
