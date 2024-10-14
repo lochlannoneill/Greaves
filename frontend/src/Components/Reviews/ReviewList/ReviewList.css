@@ -26,7 +26,7 @@
 .reviewlist-left {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 2vh;
   position: sticky;
   top: 4vh;
   align-self: flex-start;
