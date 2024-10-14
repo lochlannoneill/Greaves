@@ -51,11 +51,11 @@ export const ReviewList = ({ reviews }) => {
     <div className="reviewlist">
       <div className="reviewlist-header">
         <div className="reviewlist-title">
-          <h2>Customer Reviews</h2>
+          <h3>Reviews From Ireland</h3>
         </div>
         <div className="reviewlist-sort">
-          <label className="reviewlist-sort-label">Sort by:</label>
           <div className="reviewlist-sort-filter">
+          <label className="reviewlist-sort-filter-label">Sort by</label>
             <div className="reviewlist-sort-filter-option">
               <select
                 id="sortOption"
@@ -72,12 +72,12 @@ export const ReviewList = ({ reviews }) => {
           <div className="reviewlist-sort-verified">
             <label className="reviewlist-sort-verified-label">
               Verified
-              <input
-                type="checkbox"
-                checked={showVerifiedOnly}
-                onChange={handleVerifiedChange}
-              />
             </label>
+            <input className="reviewlist-sort-verified-input"
+              type="checkbox"
+              checked={showVerifiedOnly}
+              onChange={handleVerifiedChange}
+            />
           </div>
         </div>
       </div>

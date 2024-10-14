@@ -1,22 +1,17 @@
 .reviewlist {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 4vh;
 }
 
 .reviewlist-header {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; */
-  display: none;
+  align-items: center;
 }
 
-.reviewlist-header * {
-  color: grey;
-}
-
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .reviewlist-header {
     display: flex;
     flex-direction: column;
@@ -24,22 +19,29 @@
     justify-content: flex-start;
     gap: 2vh;
   }
-} */
-
-@media screen and (max-width: 1250px) {
-  .reviewlist-title {
-    display: none;
-  }
 }
 
 .reviewlist-sort {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  gap: 0.5vh;
 }
 
-.reviewlist-sort-label {
-  font-weight: 500;
+.reviewlist-sort * {
+  color: grey;
+}
+
+.reviewlist-sort > * {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  min-height: 2rem;
+}
+
+.reviewlist-sort-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .reviewlist-sort-filter-option {
@@ -83,7 +85,6 @@
 .reviewlist-sort-verified {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .reviewlist-sort-verified input[type="checkbox"] {
@@ -117,7 +118,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .reviewlist-reviews {

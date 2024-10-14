@@ -32,7 +32,7 @@
   position: sticky;
   top: 4vh;
   align-self: flex-start;
-  width: 24vw;
+  width: 32vw;
 }
 
 @media screen and (max-width: 1250px) {
