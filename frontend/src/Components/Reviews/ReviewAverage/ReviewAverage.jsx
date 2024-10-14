@@ -35,14 +35,14 @@ export const ReviewAverage = ({ reviews }) => {
       const percentage = totalReviews > 0 ? ((count / totalReviews) * 100).toFixed(0) : 0;
       return (
         <div className="reviewaverage-rating-breakdown-item" key={rating}>
-          <span>{rating}</span>
+          <span className="reviewaverage-rating-breakdown-star">{rating}</span>
           <div className="reviewaverage-rating-breakdown-bar">
             <div
               className="reviewaverage-rating-breakdown-bar-fill"
               style={{ width: `${percentage}%` }}
             />
           </div>
-          <span>{percentage}%</span>
+          <span className="reviewaverage-rating-breakdown-percentage">{percentage}%</span>
         </div>
       );
     });
