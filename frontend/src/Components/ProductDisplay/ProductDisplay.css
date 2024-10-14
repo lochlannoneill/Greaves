@@ -121,11 +121,6 @@
   color: orange;
 }
 
-.productdisplay-right h2 {
-  color: #3a3a3a;
-  font-size: 1.2rem;
-}
-
 .productdisplay-right-rating {
   display: flex;
   flex-wrap: wrap;
