@@ -1,23 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Review from "../Review/Review";
+import { ReviewAverage } from "../ReviewAverage/ReviewAverage";
 import { ReviewInput } from "../ReviewInput/ReviewInput";
-import { ShopContext } from "../../../Context/ShopContext";
 import "./ReviewList.css";
 
 export const ReviewList = ({ reviews }) => {
   const [sortOption, setSortOption] = useState("");
   const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
-
-  const { renderStars } = useContext(ShopContext);
-
-  // Calculate the average rating
-  const calculateAverageRating = () => {
-    if (reviews.length === 0) return 0;
-    const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0);
-    return (totalRating / reviews.length).toFixed(1); // Return one decimal place
-  };
 
   // Sorting function based on the selected option
   const sortByOption = (option) => {
@@ -57,72 +48,12 @@ export const ReviewList = ({ reviews }) => {
   const sortedAndFilteredReviews = filterByVerification(
     sortByOption(sortOption)
   );
-  const averageRating = calculateAverageRating();
-  const reviewCount = reviews.length;
-
-  // Calculate the count of each rating for the breakdown
-  const calculateRatingCounts = () => {
-    const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-    reviews.forEach((review) => {
-      const rating = Math.floor(review.rating); // Round down ratings to the nearest whole number
-      if (rating >= 1 && rating <= 5) {
-        counts[rating]++;
-      }
-    });
-    return counts;
-  };
-  
-  const renderRatingBreakdown = (ratingCounts) => {
-    const totalReviews = reviews.length;
-  
-    // Create an array of rating entries and sort it in descending order
-    const sortedRatings = Object.entries(ratingCounts).sort(([ratingA], [ratingB]) => {
-      return parseInt(ratingB) - parseInt(ratingA); // Sort by rating descending
-    });
-
-    return sortedRatings.map(([rating, count]) => {
-      const percentage = totalReviews > 0 ? ((count / totalReviews) * 100).toFixed(0) : 0;
-
-      return (
-        <div className="reviewlist-average-rating-breakdown-item" key={rating}>
-          <span>{rating}</span>
-          <div className="reviewlist-average-rating-breakdown-bar">
-            <div
-              className="reviewlist-average-rating-breakdown-bar-fill"
-              style={{ width: `${percentage}%` }}
-            />
-          </div>
-          <span>{percentage}%</span>
-        </div>
-      );
-    });
-  };
-
-  const ratingCounts = calculateRatingCounts();
-
 
   return (
     <div className="reviewlist">
         <div className="reviewlist-group">
           <div className="reviewlist-left">
-            <div className="reviewlist-average">
-              <h3 className="reviewlist-average-title">Average Ratings</h3>
-              <div className="reviewlist-average-rating">
-                <span className="reviewlist-average-rating-value">
-                  {averageRating}{" "}
-                </span>
-                <span className="reviewlist-average-rating-stars">
-                  {renderStars(
-                    averageRating,
-                    "reviewlist-average-rating-stars"
-                  )}
-                </span>
-                <span> out of {reviewCount} reviews</span>
-              </div>
-              <div className="reviewlist-average-rating-breakdown">
-                {renderRatingBreakdown(ratingCounts)}
-              </div>
-            </div>
+            <ReviewAverage reviews={reviews}/>
             <ReviewInput />
           </div>
           <div className="reviewlist-right">
