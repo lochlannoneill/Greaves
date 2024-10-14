@@ -63,10 +63,10 @@ export const ReviewList = ({ reviews }) => {
                 value={sortOption}
                 onChange={handleSortChange}
               >
-                <option value="helpful">Most Helpful</option>
-                <option value="rating">Highest Ratings</option>
-                <option value="lowestRating">Lowest Ratings</option>
-                <option value="date">Most Recent</option>
+                <option value="helpful">most helpful</option>
+                <option value="rating">highest ratings</option>
+                <option value="lowestRating">lowest ratings</option>
+                <option value="date">most recent</option>
               </select>
             </div>
           </div>
