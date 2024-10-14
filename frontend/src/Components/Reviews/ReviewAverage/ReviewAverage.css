@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  width: 16vw;
 }
 
 @media screen and (max-width: 1250px) {
@@ -42,7 +41,7 @@
 /* TODO -  Correct width not being applied to right side */
 .reviewaverage-rating-breakdown-star,
 .reviewaverage-rating-breakdown-percentage {
-  width: 8px;
+  min-width: 16px;
 }
 
 @media (max-width: 768px) {
