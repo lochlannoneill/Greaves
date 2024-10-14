@@ -1,7 +1,7 @@
 .product-group {
   display: flex;
   flex-direction: column;
-  gap: 4vh;
+  gap: 6vh;
 }
 
 .product h2 {
