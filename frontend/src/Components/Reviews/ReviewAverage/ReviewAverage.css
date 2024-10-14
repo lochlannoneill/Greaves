@@ -1,7 +1,7 @@
 .reviewaverage {
     display: flex;
     flex-direction: column;
-    gap: 0.5vh;
+    gap: 1vh;
     width: 16vw;
   }
   
