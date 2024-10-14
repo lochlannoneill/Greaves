@@ -3,3 +3,7 @@
   flex-direction: column;
   gap: 4vh;
 }
+
+.product h2 {
+  text-align: center;
+}
