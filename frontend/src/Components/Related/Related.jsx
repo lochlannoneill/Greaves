@@ -7,7 +7,7 @@ export const Related = ({ tags, category }) => {
   const relatedProducts = products.filter((product) =>
     product.tags.some((tag) => tags.includes(tag) && tag !== "popular") &&
     product.category === category
-  ).slice(0, 5); // Limit to a maximum of 5 items
+  ).slice(0, 4); // Limit to a maximum of 5 items
 
   return (
     <div className="related">
