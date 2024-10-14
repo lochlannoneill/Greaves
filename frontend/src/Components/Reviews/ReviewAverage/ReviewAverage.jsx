@@ -18,7 +18,7 @@ export const ReviewAverage = ({ reviews }) => {
   const calculateRatingCounts = () => {
     const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
     reviews.forEach((review) => {
-      const rating = Math.floor(review.rating); // Round down ratings to the nearest whole number
+      const rating = Math.floor(review.rating);
       if (rating >= 1 && rating <= 5) {
         counts[rating]++;
       }
