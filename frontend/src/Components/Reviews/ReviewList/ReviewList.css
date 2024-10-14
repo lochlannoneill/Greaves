@@ -19,6 +19,7 @@
 @media screen and (max-width: 1250px) {
   .reviewlist-group {
     flex-direction: column;
+    gap: 8vh;
   }
 }
 
