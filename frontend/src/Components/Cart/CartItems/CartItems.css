@@ -24,12 +24,12 @@
 
 .cartitems h1 {
   color: #171717;
-  margin-bottom: 16px;
 }
 
 .cartitems-message {
   color: lightgrey;
   font-weight: 600;
+  margin-top: 16px;
 }
 
 .cartitems-item {
