@@ -197,28 +197,27 @@
 }
 
 .productdisplay-right-detail-item strong {
-  color: #3a3a3a; /* Dark color for labels */
+  color: #3a3a3a;
 }
 
 .productdisplay-right-detail-item span {
-  color: #171717; /* Standard text color for values */
+  color: #171717;
 }
 
 .productdisplay-tags {
-  display: flex; /* Align tags in a row */
-  gap: 0.5rem; /* Space between tags */
-  flex-wrap: wrap; /* Wrap tags on smaller screens */
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .productdisplay-tag {
-  background-color: grey; /* Tag background */
+  background-color: grey;
   padding: 0.4rem 0.8rem; 
   border-radius: 20px; 
   display: inline-block;
   font-size: 0.9rem; 
-  /* font-weight: bold; */
-  color: white; /* Text color for better contrast */
-  text-transform: capitalize; /* Optional: Capitalize each tag */
+  color: white;
+  text-transform: capitalize;
 }
 
 .productdisplay-right-about {

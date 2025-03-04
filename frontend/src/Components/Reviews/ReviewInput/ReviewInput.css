@@ -40,18 +40,15 @@
   background-color: white;
 }
 
-/* Hover effect */
 .reviewinput-input textarea:hover, .reviewinput-input input:hover {
   background-color: #e5e5e5;
 }
 
-/* Focus effect */
 .reviewinput-input textarea:focus, .reviewinput-input input:focus {
   background-color: white;
   outline: none;
 }
 
-/* Placeholder styling */
 .reviewinput-input ::placeholder {
   color: darkgrey;
 }
@@ -118,16 +115,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   color: white;
 }
 
 .reviewinput-image-placeholder:hover .plus-icon {
-  opacity: 1; /* Show the plus icon on hover */
+  opacity: 1;
 }
 
 .reviewinput-image-placeholder:hover {
-  opacity: 0.85; /* Slight opacity on hover */
+  opacity: 0.85;
 }
 
 .reviewinput-image-placeholder:hover::before {
@@ -137,7 +134,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
 }
 
