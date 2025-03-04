@@ -26,6 +26,10 @@ export const ProductDisplay = (props) => {
   const [selectedImage, setSelectedImage] = useState(product.images[0]); // State to hold the selected image
 
   useEffect(() => {
+    setSelectedImage(product.images[0]); // Reset to the first image when product changes
+  }, [product]);
+  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []); // Empty dependency array ensures this effect runs only once after mounting
 
@@ -170,14 +174,12 @@ export const ProductDisplay = (props) => {
           </div>
         </div>
         <hr />
-        <div className="productdisplay-right-details">
-          <h3>Product Details</h3>
-          <div className="productdisplay-right-detail-item">
-            <strong>Tags:</strong> <span>{product.tags.join(", ")}</span>
-          </div>
-          <div className="productdisplay-right-detail-item">
-            <strong>Category:</strong> <span>{product.category}</span>
-          </div>
+        <div className="productdisplay-tags">
+          {product.tags.map((tag, index) => (
+            <span key={index} className="productdisplay-tag">
+              {tag}
+            </span>
+          ))}
         </div>
         <div className="productdisplay-right-about">
           <h3>About this item</h3>
@@ -186,17 +188,23 @@ export const ProductDisplay = (props) => {
         <div className="productdisplay-right-color">
           <h3>Select Colour</h3>
           <div className="productdisplay-right-colors">
-            <div>product.colors</div>
+            <div>White</div>
+            <div>Black</div>
+            <div>Blue</div>
+            <div>Green</div>
+            <div>Grey</div>
+            <div>Red</div>
+            <div>Yellow</div>
+            <div>Purple</div>
           </div>
         </div>
         <div className="productdisplay-right-size">
           <h3>Select Size</h3>
           <p>
             Still unsure what size to get?{" "}
-            <a href="/">Find your recommended size</a> or check out our{" "}
+            Find your <a href="/"> recommended size</a> or check out our{" "}
             <a href="/">size guide</a>.
           </p>
-          <p>product.sizes</p>
           <div className="productdisplay-right-sizes">
             <div>S</div>
             <div>M</div>

@@ -46,9 +46,10 @@ Developed an E-Commerce website, utilizing the MERN stack.
 1. Create **backend/config/env.js** to store your MongoDB connection URI  
    ```bash
    module.exports = {
-     mongoURI:
-     "YOUR_MONGODB_URI",
+    MONGODB_URI: "YOUR_MONGODB_URI",
+    AZURE_STORAGE_CONNECTION_STRING: "YOUR_AZURE_URI"
    };
+
 2. Replace "YOUR_MONGODB_URI" with your MongoDB connection URI
 3. Navigate to the entrypoint directory
    ```bash
