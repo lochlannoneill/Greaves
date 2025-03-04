@@ -26,6 +26,10 @@ export const ProductDisplay = (props) => {
   const [selectedImage, setSelectedImage] = useState(product.images[0]); // State to hold the selected image
 
   useEffect(() => {
+    setSelectedImage(product.images[0]); // Reset to the first image when product changes
+  }, [product]);
+  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []); // Empty dependency array ensures this effect runs only once after mounting
 
