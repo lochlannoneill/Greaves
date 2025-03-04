@@ -174,14 +174,12 @@ export const ProductDisplay = (props) => {
           </div>
         </div>
         <hr />
-        <div className="productdisplay-right-details">
-          <h3>Product Details</h3>
-          <div className="productdisplay-right-detail-item">
-            <strong>Tags:</strong> <span>{product.tags.join(", ")}</span>
-          </div>
-          <div className="productdisplay-right-detail-item">
-            <strong>Category:</strong> <span>{product.category}</span>
-          </div>
+        <div className="productdisplay-tags">
+          {product.tags.map((tag, index) => (
+            <span key={index} className="productdisplay-tag">
+              {tag}
+            </span>
+          ))}
         </div>
         <div className="productdisplay-right-about">
           <h3>About this item</h3>

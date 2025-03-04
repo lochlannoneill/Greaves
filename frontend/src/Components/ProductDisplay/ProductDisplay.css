@@ -204,6 +204,22 @@
   color: #171717; /* Standard text color for values */
 }
 
+.productdisplay-tags {
+  display: flex; /* Align tags in a row */
+  gap: 0.5rem; /* Space between tags */
+  flex-wrap: wrap; /* Wrap tags on smaller screens */
+}
+
+.productdisplay-tag {
+  background-color: grey; /* Tag background */
+  padding: 0.4rem 0.8rem; 
+  border-radius: 20px; 
+  display: inline-block;
+  font-size: 0.9rem; 
+  font-weight: bold;
+  color: white; /* Text color for better contrast */
+  text-transform: capitalize; /* Optional: Capitalize each tag */
+}
 
 .productdisplay-right-about {
   font-size: 1rem;
