@@ -216,7 +216,7 @@
   border-radius: 20px; 
   display: inline-block;
   font-size: 0.9rem; 
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white; /* Text color for better contrast */
   text-transform: capitalize; /* Optional: Capitalize each tag */
 }
